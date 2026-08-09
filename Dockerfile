@@ -29,7 +29,7 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Copy Nginx config and Supervisor config
-COPY docker/nginx/conf.d/app.conf /etc/nginx/sites-available/default
+COPY docker/nginx/conf.d/standalone.conf /etc/nginx/sites-available/default
 COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Install Composer dependencies
