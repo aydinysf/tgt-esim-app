@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Giriş Yap — TGT eSIM Panel')
+@section('title', 'Giriş Yap — POLO SIM')
 
 @section('content')
 <div class="min-h-[80vh] flex flex-col justify-center items-center">

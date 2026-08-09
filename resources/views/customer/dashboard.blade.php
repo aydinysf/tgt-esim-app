@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Müşteri eSIM Portalı — TGT eSIM Panel')
+@section('title', 'Müşteri eSIM Portalı — POLO SIM')
 
 @section('content')
 <div class="space-y-8">
@@ -325,13 +325,13 @@
         
         <h3 class="text-lg font-bold text-white flex items-center gap-2">
             <i class="fa-solid fa-chart-pie text-cyan-400"></i>
-            <span>Canlı TGT eSIM Kullanım Durumu</span>
+            <span>Canlı eSIM Kullanım Durumu</span>
         </h3>
 
         <div id="usageContent" class="space-y-4">
             <div class="text-center py-6 text-slate-400">
                 <i class="fa-solid fa-spinner fa-spin text-2xl text-blue-400 mb-2"></i>
-                <p>TGT sunucularından anlık veri çekiliyor...</p>
+                <p>API sunucularından anlık veri çekiliyor...</p>
             </div>
         </div>
     </div>
@@ -487,7 +487,7 @@
         content.innerHTML = `
             <div class="text-center py-6 text-slate-400">
                 <i class="fa-solid fa-spinner fa-spin text-2xl text-blue-400 mb-2"></i>
-                <p>TGT API sunucularından canlı veriler sorgulanıyor...</p>
+                <p>API sunucularından canlı veriler sorgulanıyor...</p>
             </div>
         `;
 

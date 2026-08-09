@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Müşteri Yönetimi — TGT eSIM Panel')
+@section('title', 'Müşteri Yönetimi — POLO SIM')
 
 @section('content')
 <div class="space-y-6">

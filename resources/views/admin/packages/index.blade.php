@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Paket Yönetimi & Müşteriye Atama — TGT eSIM Panel')
+@section('title', 'Paket Yönetimi & Müşteriye Atama — POLO SIM')
 
 @section('content')
 <div class="space-y-8">
@@ -9,16 +9,16 @@
         <div>
             <h1 class="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
                 <i class="fa-solid fa-box-open text-blue-400"></i>
-                <span>TGT eSIM Paketleri & Müşteriye Özel Fiyatlandırma</span>
+                <span>eSIM Paketleri & Müşteriye Özel Fiyatlandırma</span>
             </h1>
-            <p class="text-slate-400 text-sm mt-1">TGT firmasından API ile çekilen paketleri listeleyin, müşterilere atayın ve satış fiyatlarını belirleyin.</p>
+            <p class="text-slate-400 text-sm mt-1">API ile çekilen paketleri listeleyin, müşterilere atayın ve satış fiyatlarını belirleyin.</p>
         </div>
 
         <form action="{{ route('admin.packages.sync') }}" method="POST">
             @csrf
             <button type="submit" class="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm rounded-xl shadow-lg glow-blue transition flex items-center gap-2">
                 <i class="fa-solid fa-cloud-arrow-down"></i>
-                <span>TGT API'den Paketleri Çek / Yenile</span>
+                <span>API'den Paketleri Çek / Yenile</span>
             </button>
         </form>
     </div>
@@ -45,7 +45,7 @@
             </div>
 
             <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">2. TGT eSIM Paketi</label>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">2. eSIM Paketi</label>
                 <select id="tgtProductSelect" name="tgt_product_id" required onchange="updateProfitCalculation()" class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500">
                     <option value="" data-net="0">-- Paket Seçiniz --</option>
                     @foreach($products as $p)
@@ -72,17 +72,17 @@
 
         <!-- Live Estimated Profit Indicator -->
         <div id="profitPreviewBar" class="mt-4 p-3 bg-slate-900/60 rounded-xl border border-slate-800 flex items-center justify-between text-xs text-slate-400">
-            <div>TGT Alış Fiyatı: <span id="netPriceSpan" class="font-semibold text-slate-200">₺0.00</span></div>
+            <div>Alış Fiyatı (Net): <span id="netPriceSpan" class="font-semibold text-slate-200">₺0.00</span></div>
             <div>Müşteri Satış Fiyatı: <span id="salePriceSpan" class="font-semibold text-slate-200">₺0.00</span></div>
             <div class="font-bold text-sm">Tahmini Paket Başı Kâr: <span id="profitSpan" class="text-emerald-400 font-extrabold">₺0.00</span></div>
         </div>
     </div>
 
-    <!-- Section 2: Catalog of Available TGT Products -->
+    <!-- Section 2: Catalog of Available Products -->
     <div class="glass-panel p-6 rounded-2xl space-y-4">
         <h2 class="text-lg font-bold text-white flex items-center gap-2">
             <i class="fa-solid fa-list-check text-blue-400"></i>
-            <span>TGT Firmasından Çekilen Canlı Paketler Katalog Tablosu</span>
+            <span>Canlı Paketler Katalog Tablosu</span>
         </h2>
 
         <div class="overflow-x-auto">
@@ -92,7 +92,7 @@
                         <th class="py-3.5 px-4 font-semibold">Paket Kodu</th>
                         <th class="py-3.5 px-4 font-semibold">Paket Adı</th>
                         <th class="py-3.5 px-4 font-semibold">Ülkeler</th>
-                        <th class="py-3.5 px-4 font-semibold">TGT Alış Fiyatı (Net)</th>
+                        <th class="py-3.5 px-4 font-semibold">Alış Fiyatı (Net)</th>
                         <th class="py-3.5 px-4 font-semibold">Veri Miktarı</th>
                         <th class="py-3.5 px-4 font-semibold">Kullanım Süresi</th>
                         <th class="py-3.5 px-4 font-semibold text-center">Atandığı Müşteri</th>
@@ -126,7 +126,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="7" class="py-8 text-center text-slate-500">TGT firmasından henüz paket çekilmemiş. Yukarıdaki senkronizasyon butonunu kullanabilirsiniz.</td>
+                            <td colspan="7" class="py-8 text-center text-slate-500">Henüz paket çekilmemiş. Yukarıdaki senkronizasyon butonunu kullanabilirsiniz.</td>
                         </tr>
                     @endforelse
                 </tbody>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Admin Dashboard — TGT eSIM Panel')
+@section('title', 'Admin Dashboard — POLO SIM')
 
 @section('content')
 <div class="space-y-8">
@@ -8,12 +8,12 @@
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
             <h1 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Yönetici Paneli</h1>
-            <p class="text-slate-400 text-sm mt-1">TGT Global eSIM altyapısı ve müşteri satış özetleri</p>
+            <p class="text-slate-400 text-sm mt-1">Global eSIM altyapısı ve müşteri satış özetleri</p>
         </div>
         <div class="flex items-center gap-3">
             <a href="{{ route('admin.packages.index') }}" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold rounded-xl shadow-lg glow-blue transition flex items-center gap-2">
                 <i class="fa-solid fa-sync"></i>
-                <span>TGT Paket Senkronizasyonu</span>
+                <span>Paket Senkronizasyonu</span>
             </a>
         </div>
     </div>
@@ -70,11 +70,11 @@
             </div>
         </div>
 
-        <!-- Card 4: TGT Canlı Bakiye -->
+        <!-- Card 4: Canlı Bakiye -->
         <div class="glass-card p-6 rounded-2xl relative overflow-hidden group hover:border-cyan-500/40 transition">
             <div class="flex items-center justify-between">
                 <div>
-                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">TGT Hesabı Bakiyesi</span>
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Kanal Hesabı Bakiyesi</span>
                     <div class="text-3xl font-extrabold text-cyan-300 mt-1">
                         ${{ number_format((float)($accountBalance['accountList'][0]['balance'] ?? 0), 2) }}
                     </div>
@@ -84,8 +84,8 @@
                 </div>
             </div>
             <div class="mt-4 flex items-center text-xs text-slate-400 gap-1">
-                <span class="text-cyan-400 font-semibold">TGT Sandbox / Prod</span>
-                <span>canlı bakiye</span>
+                <span class="text-cyan-400 font-semibold">Canlı Bakiye</span>
+                <span>kredi durumu</span>
             </div>
         </div>
     </div>
@@ -109,7 +109,12 @@
                         <th class="py-3.5 px-4 font-semibold">Sipariş No</th>
                         <th class="py-3.5 px-4 font-semibold">Müşteri</th>
                         <th class="py-3.5 px-4 font-semibold">Paket Kodu & Adı</th>
-                        <th class="py-3.5 px-4 font-semibold">Alış (TGT)</th>
+                        <th class="py-3.5 px-4 font-semibold">Alış (Net)</th>
+                        <th class="py-3.5 px-4 font-semibold">Satış (Müşteri)</th>
+                        <th class="py-3.5 px-4 font-semibold text-emerald-400">Kâr Miktarı</th>
+                        <th class="py-3.5 px-4 font-semibold">Tarih</th>
+                    </tr>
+                </thead>
                         <th class="py-3.5 px-4 font-semibold">Satış (Müşteri)</th>
                         <th class="py-3.5 px-4 font-semibold text-emerald-400">Kâr Miktarı</th>
                         <th class="py-3.5 px-4 font-semibold">Tarih</th>

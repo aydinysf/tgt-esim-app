@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Satış & Kâr Raporları — TGT eSIM Panel')
+@section('title', 'Satış & Kâr Raporları — POLO SIM')
 
 @section('content')
 <div class="space-y-8">
@@ -38,7 +38,7 @@
         </div>
 
         <div class="glass-card p-6 rounded-2xl">
-            <div class="text-xs font-semibold text-slate-400 uppercase">Toplam TGT Alış Maliyeti</div>
+            <div class="text-xs font-semibold text-slate-400 uppercase">Toplam Alış Maliyeti</div>
             <div class="text-3xl font-extrabold text-slate-300 mt-1">₺{{ number_format($totalCost, 2) }}</div>
         </div>
 
@@ -62,7 +62,7 @@
                         <th class="py-3.5 px-4 font-semibold">Paket Adı</th>
                         <th class="py-3.5 px-4 font-semibold text-center">Satış Adedi</th>
                         <th class="py-3.5 px-4 font-semibold">Toplam Ciro</th>
-                        <th class="py-3.5 px-4 font-semibold">Toplam TGT Maliyeti</th>
+                        <th class="py-3.5 px-4 font-semibold">Toplam Maliyet</th>
                         <th class="py-3.5 px-4 font-semibold text-emerald-400">Toplam Kâr</th>
                     </tr>
                 </thead>
@@ -99,10 +99,15 @@
             <table class="w-full text-left text-sm text-slate-300">
                 <thead class="text-xs uppercase bg-slate-900/60 text-slate-400 border-b border-slate-800">
                     <tr>
-                        <th class="py-3.5 px-4 font-semibold">TGT Sipariş No</th>
+                        <th class="py-3.5 px-4 font-semibold">Sipariş No</th>
                         <th class="py-3.5 px-4 font-semibold">Müşteri</th>
                         <th class="py-3.5 px-4 font-semibold">Paket</th>
-                        <th class="py-3.5 px-4 font-semibold">TGT Maliyet</th>
+                        <th class="py-3.5 px-4 font-semibold">Maliyet (Net)</th>
+                        <th class="py-3.5 px-4 font-semibold">Müşteri Fiyatı</th>
+                        <th class="py-3.5 px-4 font-semibold text-emerald-400">Elde Edilen Kâr</th>
+                        <th class="py-3.5 px-4 font-semibold">Tarih</th>
+                    </tr>
+                </thead>
                         <th class="py-3.5 px-4 font-semibold">Müşteri Fiyatı</th>
                         <th class="py-3.5 px-4 font-semibold text-emerald-400">Elde Edilen Kâr</th>
                         <th class="py-3.5 px-4 font-semibold">Tarih</th>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'TGT eSIM Platformu')</title>
+    <title>@yield('title', 'POLO SIM — ONE SIM ONE WORLD')</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons CDN -->
@@ -99,7 +99,7 @@
 
                     <a href="{{ route('admin.settings.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.settings.*') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
                         <i class="fa-solid fa-sliders w-5 text-center"></i>
-                        <span>TGT API Ayarları</span>
+                        <span>API Ayarları</span>
                     </a>
 
                 @else
@@ -171,7 +171,7 @@
 
         <!-- Footer -->
         <footer class="p-4 border-t border-slate-800/40 text-center text-xs text-slate-500">
-            TGT Technology Global-eSIM API 2.0 Integration &copy; {{ date('Y') }} — Tüm Hakları Saklıdır.
+            POLO SIM Portal &copy; {{ date('Y') }} — Tüm Hakları Saklıdır.
         </footer>
     </main>
 

@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
-@section('title', 'TGT API Ayarları — TGT eSIM Panel')
+@section('title', 'API Ayarları — POLO SIM')
 
 @section('content')
 <div class="space-y-8 max-w-4xl">
     <div>
         <h1 class="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
             <i class="fa-solid fa-sliders text-blue-400"></i>
-            <span>TGT Global eSIM API Ayarları</span>
+            <span>Global eSIM API Ayarları</span>
         </h1>
-        <p class="text-slate-400 text-sm mt-1">TGT firması tarafınca sağlanan accountId, secret ve API ortam parametreleri.</p>
+        <p class="text-slate-400 text-sm mt-1">API sağlayıcınız tarafınca verilen accountId, secret ve ortam parametreleri.</p>
     </div>
 
     <!-- Live Balance Card -->
     <div class="glass-panel p-6 rounded-2xl border-l-4 border-cyan-500 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-            <div class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">TGT Canlı Kanal Bakiyesi</div>
+            <div class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Canlı Kanal Bakiyesi</div>
             <div class="text-3xl font-extrabold text-white mt-1">
                 ${{ number_format((float)($accountBalance['accountList'][0]['balance'] ?? 0), 2) }} {{ $accountBalance['currency'] ?? 'USD' }}
             </div>
@@ -53,7 +53,7 @@
             </div>
 
             <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">TGT Base URL (HTTPS)</label>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">API Base URL (HTTPS)</label>
                 <input type="url" name="tgt_base_url" value="{{ old('tgt_base_url', $baseUrl) }}" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white font-mono text-sm focus:outline-none focus:border-blue-500">
                 <span class="text-xs text-slate-500 mt-1 block">Test Sandbox: https://enterpriseapisandbox.tugegroup.com:8070/openapi</span>
             </div>
