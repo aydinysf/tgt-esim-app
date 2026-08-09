@@ -63,12 +63,12 @@
         <div>
             <!-- Brand Logo Header -->
             <div class="p-5 border-b border-slate-800/60 flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 flex items-center justify-center text-white shadow-lg glow-blue font-black text-xl">
-                    <i class="fa-solid fa-sim-card"></i>
+                <div class="bg-white/90 p-1.5 rounded-xl shadow-lg glow-blue shrink-0">
+                    <img src="/images/logo.png" alt="POLO SIM" class="h-9 w-auto object-contain">
                 </div>
-                <div>
-                    <h1 class="font-bold text-lg text-white tracking-wide leading-tight">TGT Global</h1>
-                    <span class="text-xs text-blue-400 font-medium tracking-widest uppercase">eSIM Management</span>
+                <div class="truncate">
+                    <h1 class="font-bold text-base text-white tracking-wide leading-tight uppercase font-mono">POLO SIM</h1>
+                    <span class="text-[10px] text-amber-400 font-semibold tracking-wider uppercase block">ONE SIM ONE WORLD</span>
                 </div>
             </div>
 

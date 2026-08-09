@@ -7,11 +7,11 @@
     <div class="w-full max-w-md">
         <!-- Logo Branding -->
         <div class="text-center mb-8">
-            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 flex items-center justify-center text-white shadow-2xl glow-blue mx-auto mb-4 text-3xl font-black">
-                <i class="fa-solid fa-sim-card"></i>
+            <div class="bg-white/95 p-3 rounded-2xl shadow-2xl glow-blue mx-auto mb-4 inline-block">
+                <img src="/images/logo.png" alt="POLO SIM" class="h-16 w-auto object-contain">
             </div>
-            <h2 class="text-2xl font-bold text-white tracking-tight">TGT eSIM Portalı</h2>
-            <p class="text-sm text-slate-400 mt-1">Lütfen hesabınıza giriş yapın</p>
+            <h2 class="text-2xl font-bold text-white tracking-tight uppercase">POLO SIM Portalı</h2>
+            <p class="text-xs text-amber-400 font-semibold uppercase tracking-widest mt-1">ONE SIM ONE WORLD</p>
         </div>
 
         <!-- Login Form Card -->
