@@ -22,8 +22,9 @@ php artisan view:clear || true
 php artisan storage:link --force || true
 
 # Auto-run migrations and seeds on startup
-echo "Running Database Migrations..."
+echo "Running Database Migrations and Seeders..."
 php artisan migrate --force || echo "Migration skipped or failed (check DB credentials)"
+php artisan db:seed --force || echo "Seeding skipped or failed"
 
 echo "Starting Supervisord (Nginx + PHP-FPM)..."
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf

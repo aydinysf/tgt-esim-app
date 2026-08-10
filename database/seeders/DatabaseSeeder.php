@@ -15,15 +15,37 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // 1. Create Admin Account
+        // 1. Create Admin Accounts
         $admin = User::firstOrCreate(
             ['email' => 'admin@tgt.com'],
             [
-                'name' => 'TGT Sistem Yöneticisi',
+                'name' => 'POLO SIM Sistem Yöneticisi',
                 'password' => Hash::make('password123'),
                 'role' => 'admin',
-                'company_name' => 'TGT Technology HQ',
+                'company_name' => 'POLO SIM HQ',
                 'phone' => '+90 555 000 0000',
+            ]
+        );
+
+        $admin2 = User::firstOrCreate(
+            ['email' => 'admin@polosim.com'],
+            [
+                'name' => 'POLO SIM Admin',
+                'password' => Hash::make('password123'),
+                'role' => 'admin',
+                'company_name' => 'POLO SIM Global',
+                'phone' => '+90 555 111 2222',
+            ]
+        );
+
+        $admin3 = User::firstOrCreate(
+            ['email' => 'aydinysf@polosim.com'],
+            [
+                'name' => 'Yusuf Aydın',
+                'password' => Hash::make('password123'),
+                'role' => 'admin',
+                'company_name' => 'POLO SIM',
+                'phone' => '+90 555 333 4444',
             ]
         );
 
@@ -39,8 +61,8 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        $customer2 = User::firstOrCreate(
-            ['email' => 'mehmet@seyahat.com'],
+        $customerPolo = User::firstOrCreate(
+            ['email' => 'customer@polosim.com'],
             [
                 'name' => 'Mehmet Kaya',
                 'password' => Hash::make('password123'),
