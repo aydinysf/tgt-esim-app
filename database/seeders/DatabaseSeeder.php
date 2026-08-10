@@ -178,10 +178,10 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 6. Settings default
+        // 6. Settings default (Updated with official checkfortrips-test credentials)
         Setting::set('tgt_environment', 'sandbox');
         Setting::set('tgt_base_url', 'https://enterpriseapisandbox.tugegroup.com:8070/openapi');
-        Setting::set('tgt_account_id', 'TGT_Channel_Demo');
-        Setting::set('tgt_secret', 'jzXUuQVIlFwf3peM');
+        Setting::set('tgt_account_id', 'checkfortrips-test');
+        Setting::set('tgt_secret', '2BA2nY3SzAFrL1E0');
     }
 }
