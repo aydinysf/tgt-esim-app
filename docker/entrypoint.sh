@@ -26,5 +26,11 @@ echo "Running Database Migrations and Seeders..."
 php artisan migrate --force || echo "Migration skipped or failed (check DB credentials)"
 php artisan db:seed --force || echo "Seeding skipped or failed"
 
+# Fix permissions for www-data user AFTER all artisan commands complete
+echo "Fixing storage permissions for www-data..."
+touch /var/www/html/storage/logs/laravel.log || true
+chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache || true
+chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache || true
+
 echo "Starting Supervisord (Nginx + PHP-FPM)..."
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
