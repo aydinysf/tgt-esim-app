@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 2. Create Customer Accounts
+        // 2. Create Customer Accounts with initial credit balance
         $customer1 = User::firstOrCreate(
             ['email' => 'customer@tgt.com'],
             [
@@ -58,6 +58,7 @@ class DatabaseSeeder extends Seeder
                 'role' => 'customer',
                 'company_name' => 'Yılmaz Turizm & Seyehat A.Ş.',
                 'phone' => '+90 532 111 2233',
+                'balance' => 1500.00,
             ]
         );
 
@@ -69,6 +70,7 @@ class DatabaseSeeder extends Seeder
                 'role' => 'customer',
                 'company_name' => 'Kaya Telecom',
                 'phone' => '+90 533 444 5566',
+                'balance' => 2500.00,
             ]
         );
 

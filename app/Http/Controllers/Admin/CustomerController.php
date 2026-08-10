@@ -40,6 +40,21 @@ class CustomerController extends Controller
             ->with('success', 'Müşteri başarıyla tanımlandı.');
     }
 
+    public function addBalance(Request $request, User $customer)
+    {
+        $request->validate([
+            'amount' => 'required|numeric',
+        ]);
+
+        $amount = (float) $request->amount;
+        $customer->balance = max(0, (float) $customer->balance + $amount);
+        $customer->save();
+
+        $actionText = $amount >= 0 ? 'eklendi' : 'düşüldü';
+        return redirect()->route('admin.customers.index')
+            ->with('success', "{$customer->name} isimli müşteriye ₺" . number_format(abs($amount), 2) . " bakiye {$actionText}. Güncel Bakiye: ₺" . number_format($customer->balance, 2));
+    }
+
     public function destroy(User $customer)
     {
         if ($customer->role === 'admin') {

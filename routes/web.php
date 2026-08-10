@@ -28,6 +28,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     // Customers
     Route::get('/customers', [AdminCustomer::class, 'index'])->name('customers.index');
     Route::post('/customers', [AdminCustomer::class, 'store'])->name('customers.store');
+    Route::post('/customers/{customer}/balance', [AdminCustomer::class, 'addBalance'])->name('customers.balance');
     Route::delete('/customers/{customer}', [AdminCustomer::class, 'destroy'])->name('customers.destroy');
 
     // Packages & Assignment

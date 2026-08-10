@@ -17,6 +17,7 @@ class User extends Authenticatable
         'role',
         'company_name',
         'phone',
+        'balance',
     ];
 
     protected $hidden = [
@@ -29,6 +30,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'balance' => 'decimal:2',
         ];
     }
 
@@ -40,6 +42,26 @@ class User extends Authenticatable
     public function isCustomer(): bool
     {
         return $this->role === 'customer';
+    }
+
+    public function hasBalance(float $amount): bool
+    {
+        return (float) $this->balance >= $amount;
+    }
+
+    public function deductBalance(float $amount): bool
+    {
+        if ($this->hasBalance($amount)) {
+            $this->balance = (float) $this->balance - $amount;
+            return $this->save();
+        }
+        return false;
+    }
+
+    public function addBalance(float $amount): bool
+    {
+        $this->balance = (float) $this->balance + $amount;
+        return $this->save();
     }
 
     public function customerPackages()

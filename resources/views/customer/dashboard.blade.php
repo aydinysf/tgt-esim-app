@@ -4,18 +4,31 @@
 
 @section('content')
 <div class="space-y-8">
-    <!-- Top Greeting Header -->
+    <!-- Top Greeting Header & Customer Balance Card -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
             <h1 class="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
                 <i class="fa-solid fa-qrcode text-blue-400"></i>
                 <span>Hoş Geldiniz, {{ Auth::user()->name }}</span>
             </h1>
-            <p class="text-slate-400 text-sm mt-1">Size özel tanımlanmış eSIM paketlerini kredi kartı ile güvenle satın alabilir, QR kod ve ICCID bilgilerinize erişebilirsiniz.</p>
+            <p class="text-slate-400 text-sm mt-1">Yalnızca size özel atanan eSIM paketlerini bakiyenizle anında satın alabilir, QR kod ve aktivasyon detaylarına erişebilirsiniz.</p>
         </div>
-        <div class="glass-card px-4 py-2 rounded-xl text-xs text-slate-300 border border-slate-700 flex items-center gap-2">
-            <i class="fa-solid fa-building text-blue-400"></i>
-            <span>{{ Auth::user()->company_name ?? 'Bireysel Müşteri' }}</span>
+
+        <div class="flex items-center gap-3">
+            <div class="glass-panel px-5 py-3 rounded-2xl border-l-4 border-cyan-400 flex items-center gap-3 shadow-lg glow-blue">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg font-bold shrink-0">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <div>
+                    <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 block">Hesap Bakiyeniz</span>
+                    <div class="text-xl font-black text-cyan-300 leading-tight">₺{{ number_format(Auth::user()->balance, 2) }}</div>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex glass-card px-4 py-3 rounded-2xl text-xs text-slate-300 border border-slate-700 items-center gap-2">
+                <i class="fa-solid fa-building text-blue-400"></i>
+                <span>{{ Auth::user()->company_name ?? 'Bireysel Müşteri' }}</span>
+            </div>
         </div>
     </div>
 
@@ -88,9 +101,9 @@
                             data-data="{{ $product->data_total }} {{ $product->data_unit }}"
                             data-period="{{ $product->usage_period }} Gün"
                             onclick="openPaymentModalFromBtn(this)"
-                            class="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm rounded-xl shadow-lg glow-blue transition flex items-center gap-2">
-                            <i class="fa-solid fa-credit-card"></i>
-                            <span>Kart ile Satın Al</span>
+                            class="px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-sm rounded-xl shadow-lg glow-emerald transition flex items-center gap-2">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Bakiyem İle Satın Al</span>
                         </button>
                     </div>
                 </div>
@@ -177,112 +190,52 @@
                 <h3 class="text-xl font-bold text-white flex items-center gap-2">
                     <i class="fa-solid fa-shield-halved text-blue-400"></i>
                     <span>Güvenli Kredi Kartı Ödemesi</span>
-                </h3>
-                <p class="text-xs text-slate-400 mt-0.5">256-bit SSL ve 3D Secure Güvenlik Korumalı</p>
-            </div>
-            <!-- Visa & Mastercard Logos -->
-            <div class="flex items-center gap-2 text-2xl text-slate-300">
-                <i class="fa-brands fa-cc-visa text-blue-400" title="Visa"></i>
-                <i class="fa-brands fa-cc-mastercard text-amber-500" title="Mastercard"></i>
-            </div>
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-wallet text-cyan-400"></i>
+                <span>Bakiye İle Paket Satın Alma</span>
+            </h3>
+            <button onclick="document.getElementById('checkoutModal').classList.add('hidden')" class="text-slate-400 hover:text-white text-2xl">&times;</button>
         </div>
 
-        <!-- Interactive Virtual Credit Card Graphic -->
-        <div class="w-full h-48 rounded-2xl bg-gradient-to-tr from-slate-900 via-indigo-950 to-blue-900 p-5 border border-slate-700/80 shadow-2xl relative overflow-hidden flex flex-col justify-between text-white">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl"></div>
+        <!-- Account Balance Summary -->
+        <div class="mt-4 p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Mevcut Bakiyeniz:</span>
+                <span class="font-bold text-base text-cyan-300">₺{{ number_format(Auth::user()->balance, 2) }}</span>
+            </div>
             
-            <div class="flex justify-between items-start">
-                <div class="flex items-center gap-2">
-                    <div class="w-10 h-7 bg-amber-400/90 rounded-md border border-amber-300/50 flex items-center justify-center">
-                        <div class="w-6 h-4 border border-amber-600/60 rounded"></div>
-                    </div>
-                    <span class="text-xs font-mono tracking-widest text-slate-300">DEBIT / CREDIT</span>
-                </div>
-                <div id="cardBrandLogo" class="text-2xl font-bold italic tracking-wider text-slate-200">
-                    <i class="fa-brands fa-cc-visa text-blue-400"></i>
-                </div>
+            <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-2">
+                <span>Seçilen Paket Adı:</span>
+                <span class="font-bold text-white" id="modalPackName">Paket Adı</span>
             </div>
 
-            <!-- Card Number Preview -->
-            <div class="font-mono text-xl md:text-2xl tracking-[0.2em] font-extrabold text-slate-100" id="cardNumPreview">
-                •••• •••• •••• ••••
+            <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Paket Satış Tutarı:</span>
+                <span class="font-bold text-rose-400">-₺<span id="modalPackPrice">0.00</span></span>
             </div>
 
-            <!-- Cardholder & Expiry Preview -->
-            <div class="flex justify-between items-end text-xs uppercase font-mono">
-                <div>
-                    <div class="text-[9px] text-slate-400 uppercase">Kart Sahibi</div>
-                    <div class="font-bold tracking-wider text-slate-200" id="cardHolderPreview">AD SOYAD</div>
-                </div>
-                <div>
-                    <div class="text-[9px] text-slate-400 uppercase">Son Kullanma</div>
-                    <div class="font-bold text-slate-200" id="cardExpPreview">MM/YY</div>
-                </div>
+            <div class="flex items-center justify-between text-xs text-slate-300 border-t border-slate-800/80 pt-2 font-bold">
+                <span>Satın Alma Sonrası Kalan Bakiye:</span>
+                <span class="font-extrabold text-emerald-400 text-sm">₺<span id="modalRemainingPrice">0.00</span></span>
             </div>
         </div>
 
-        <!-- Order Summary Pill -->
-        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 flex items-center justify-between text-xs">
-            <div>
-                <div class="font-semibold text-white" id="modalPackName">Paket Adı</div>
-                <div class="text-slate-400"><span id="modalPackData"></span> — <span id="modalPackPeriod"></span></div>
-            </div>
-            <div class="text-right">
-                <div class="text-[10px] text-slate-400 uppercase font-semibold">Toplam Ödenecek</div>
-                <div class="text-xl font-extrabold text-emerald-400">₺<span id="modalPackPrice">0.00</span></div>
-            </div>
-        </div>
-
-        <!-- Checkout Payment Form -->
-        <form action="{{ route('customer.buy') }}" method="POST" id="checkoutForm" class="space-y-4" onsubmit="handlePaymentSubmit(event)">
+        <!-- Purchase Confirmation Form -->
+        <form action="{{ route('customer.buy') }}" method="POST" id="checkoutForm" class="mt-5 space-y-4" onsubmit="handlePaymentSubmit(event)">
             @csrf
             <input type="hidden" name="customer_package_id" id="modalCustomerPackageId">
 
-            <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Kart Üzerindeki İsim</label>
-                <input type="text" id="cardHolderInput" required placeholder="AHMET YILMAZ" oninput="updateCardGraphic()"
-                    class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-mono uppercase text-sm focus:outline-none focus:border-blue-500">
+            <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-xs text-blue-300 flex items-start gap-2">
+                <i class="fa-solid fa-circle-info text-blue-400 text-base shrink-0 mt-0.5"></i>
+                <span>Satın alma onaylandığında paket ücreti bakiyenizden düşülecek ve eSIM QR kodunuz ile aktivasyon bilgileri anında ekranınıza yüklenecektir.</span>
             </div>
 
-            <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Kart Numarası (Visa / Mastercard)</label>
-                <div class="relative">
-                    <input type="text" id="cardNumInput" maxlength="19" required placeholder="5549 1234 5678 9012" oninput="formatCardNum(this); updateCardGraphic();"
-                        class="w-full pl-3.5 pr-12 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-mono text-sm focus:outline-none focus:border-blue-500">
-                    <span id="inputBrandIcon" class="absolute right-3 top-2.5 text-xl text-slate-400">
-                        <i class="fa-solid fa-credit-card"></i>
-                    </span>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Son Kullanma (AY/YIL)</label>
-                    <input type="text" id="cardExpInput" maxlength="5" required placeholder="12/28" oninput="formatExp(this); updateCardGraphic();"
-                        class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-mono text-sm text-center focus:outline-none focus:border-blue-500">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Güvenlik Kodu (CVC/CVV)</label>
-                    <input type="password" maxlength="3" required placeholder="•••"
-                        class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-mono text-sm text-center focus:outline-none focus:border-blue-500">
-                </div>
-            </div>
-
-            <!-- Demo Auto-Fill Preset Button -->
-            <div class="pt-1 flex items-center justify-between text-xs text-slate-400">
-                <span>3D Secure 2.0 Doğrulamalı İşlem</span>
-                <button type="button" onclick="autoFillDemoCard()" class="text-blue-400 hover:text-white font-medium underline">
-                    ⚡ Hızlı Test Kartı Doldur
-                </button>
-            </div>
-
-            <!-- Action Button -->
-            <div class="pt-2">
+            <div class="flex items-center justify-end gap-3 pt-2">
+                <button type="button" onclick="document.getElementById('checkoutModal').classList.add('hidden')" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm rounded-xl font-semibold">İptal</button>
                 <button type="submit" id="paySubmitBtn"
-                    class="w-full py-3.5 px-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-blue-600 hover:from-emerald-500 hover:to-blue-500 text-white font-bold rounded-xl shadow-lg glow-emerald transition flex items-center justify-center gap-2 text-base">
-                    <i class="fa-solid fa-lock"></i>
-                    <span>₺<span id="btnPayPrice">0.00</span> Ödeme Yap ve eSIM'i Aktif Et</span>
+                    class="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-xl shadow-lg glow-emerald transition flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-check-double"></i>
+                    <span>Bakiyem İle Satın Al</span>
                 </button>
             </div>
         </form>
@@ -357,19 +310,26 @@
 
     function openPaymentModalFromBtn(btn) {
         const packageId = btn.getAttribute('data-package-id');
-        const name = btn.getAttribute('data-name');
+        const packName = btn.getAttribute('data-name');
         const price = btn.getAttribute('data-price');
-        const data = btn.getAttribute('data-data');
-        const period = btn.getAttribute('data-period');
-
+        const userBalance = {{ (float) Auth::user()->balance }};
+        
         document.getElementById('modalCustomerPackageId').value = packageId;
-        document.getElementById('modalPackName').innerText = name;
-        document.getElementById('modalPackPrice').innerText = price;
-        document.getElementById('btnPayPrice').innerText = price;
-        document.getElementById('modalPackData').innerText = data;
-        document.getElementById('modalPackPeriod').innerText = period;
+        document.getElementById('modalPackName').innerText = packName;
+        document.getElementById('modalPackPrice').innerText = parseFloat(price).toFixed(2);
 
-        document.getElementById('paymentModal').classList.remove('hidden');
+        const remaining = userBalance - parseFloat(price);
+        const remSpan = document.getElementById('modalRemainingPrice');
+        if (remSpan) {
+            remSpan.innerText = remaining.toFixed(2);
+            if (remaining < 0) {
+                remSpan.className = 'font-extrabold text-rose-400 text-sm';
+            } else {
+                remSpan.className = 'font-extrabold text-emerald-400 text-sm';
+            }
+        }
+
+        document.getElementById('checkoutModal').classList.remove('hidden');
     }
 
     function closePaymentModal() {

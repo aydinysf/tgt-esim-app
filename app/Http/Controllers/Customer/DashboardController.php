@@ -44,6 +44,13 @@ class DashboardController extends Controller
             ->firstOrFail();
 
         $product = $assignment->product;
+        $salePrice = (float) $assignment->sale_price;
+
+        // Check if customer has enough credit balance
+        if (!$user->hasBalance($salePrice)) {
+            return back()->with('error', 'Yetersiz Bakiye! Bu paket için ₺' . number_format($salePrice, 2) . ' bakiye gereklidir. Mevcut Bakiyeniz: ₺' . number_format($user->balance, 2));
+        }
+
         $channelOrderNo = 'TGT-' . date('Ymd') . '-' . Str::random(6);
         $idempotencyKey = (string) Str::uuid();
 
@@ -56,11 +63,13 @@ class DashboardController extends Controller
         );
 
         if (!$apiResult['success']) {
-            return back()->with('error', 'Sipariş oluşturulamadı: ' . ($apiResult['msg'] ?? 'Bilinmeyen Hata'));
+            return back()->with('error', 'TGT API Sipariş oluşturulamadı: ' . ($apiResult['msg'] ?? 'Bilinmeyen Hata'));
         }
 
-        $netPrice = $product->net_price;
-        $salePrice = $assignment->sale_price;
+        // Deduct balance from customer account
+        $user->deductBalance($salePrice);
+
+        $netPrice = (float) $product->net_price;
         $profit = $salePrice - $netPrice;
 
         $order = Order::create([
@@ -79,8 +88,15 @@ class DashboardController extends Controller
             'raw_response' => $apiResult['raw'] ?? [],
         ]);
 
+        // Send Email Notification to Customer
+        try {
+            \Illuminate\Support\Facades\Mail::to($user->email)->send(new \App\Mail\EsimPurchasedMail($order));
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::warning('eSIM Email sending failed: ' . $e->getMessage());
+        }
+
         return redirect()->route('customer.dashboard')
-            ->with('success', "{$product->product_name} paketiniz başarıyla tanımlandı! ICCID: {$order->iccid}");
+            ->with('success', "{$product->product_name} paketiniz ₺" . number_format($salePrice, 2) . " bakiyeniz düşülerek başarıyla satın alındı ve QR kodunuz e-posta olarak gönderildi! Kalan Bakiyeniz: ₺" . number_format($user->balance, 2));
     }
 
     public function getUsageInfo(Order $order, TgtEsimService $tgtService)
