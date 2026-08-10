@@ -58,11 +58,27 @@
 <body class="h-full font-sans antialiased flex flex-col md:flex-row bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 min-h-screen text-slate-200 selection:bg-blue-500 selection:text-white">
 
     @auth
-    <!-- Sidebar Navigation -->
-    <aside class="w-full md:w-64 glass-panel border-r border-slate-800/80 flex flex-col justify-between shrink-0">
+    <!-- Mobile Header Bar (Only visible on mobile screens) -->
+    <header class="md:hidden glass-panel border-b border-slate-800/80 p-4 flex items-center justify-between sticky top-0 z-40">
+        <div class="flex items-center gap-3">
+            <div class="bg-white/90 p-1.5 rounded-xl shadow-lg glow-blue shrink-0">
+                <img src="/images/logo.png" alt="POLO SIM" class="h-7 w-auto object-contain">
+            </div>
+            <div>
+                <h1 class="font-bold text-sm text-white tracking-wide leading-tight uppercase font-mono">POLO SIM</h1>
+                <span class="text-[9px] text-amber-400 font-semibold tracking-wider uppercase block">ONE SIM ONE WORLD</span>
+            </div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:text-white focus:outline-none shadow-md">
+            <i id="mobileMenuIcon" class="fa-solid fa-bars text-lg"></i>
+        </button>
+    </header>
+
+    <!-- Sidebar Navigation (Hidden by default on mobile, collapsible via toggle) -->
+    <aside id="sidebarMenu" class="hidden md:flex w-full md:w-64 glass-panel border-r border-slate-800/80 flex-col justify-between shrink-0">
         <div>
-            <!-- Brand Logo Header -->
-            <div class="p-5 border-b border-slate-800/60 flex items-center gap-3">
+            <!-- Desktop Brand Logo Header -->
+            <div class="hidden md:flex p-5 border-b border-slate-800/60 items-center gap-3">
                 <div class="bg-white/90 p-1.5 rounded-xl shadow-lg glow-blue shrink-0">
                     <img src="/images/logo.png" alt="POLO SIM" class="h-9 w-auto object-contain">
                 </div>
@@ -174,6 +190,24 @@
             POLO SIM Portal &copy; {{ date('Y') }} — Tüm Hakları Saklıdır.
         </footer>
     </main>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('sidebarMenu');
+            const icon = document.getElementById('mobileMenuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.remove('flex');
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
 
     @stack('scripts')
 </body>
