@@ -7,72 +7,72 @@
     <!-- Header & Action -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-            <h1 class="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
-                <i class="fa-solid fa-users text-blue-400"></i>
+            <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <i class="fa-solid fa-users text-blue-600"></i>
                 <span>Müşteri Yönetimi</span>
             </h1>
-            <p class="text-slate-400 text-sm mt-1">Sisteme müşteri tanımlayın, atanan paketleri ve kâr marjlarını yönetin.</p>
+            <p class="text-slate-500 text-sm mt-1">Sisteme müşteri tanımlayın, bakiye ekleyin ve atanan paketleri yönetin.</p>
         </div>
         <button onclick="document.getElementById('createCustomerModal').classList.remove('hidden')" 
-            class="px-4 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm rounded-xl shadow-lg glow-blue transition flex items-center gap-2">
+            class="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
             <i class="fa-solid fa-user-plus"></i>
             <span>Yeni Müşteri Ekle</span>
         </button>
     </div>
 
     <!-- Customer Table -->
-    <div class="glass-panel p-6 rounded-2xl">
+    <div class="glass-panel p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
         <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm text-slate-300">
-                <thead class="text-xs uppercase bg-slate-900/60 text-slate-400 border-b border-slate-800">
+            <table class="w-full text-left text-sm text-slate-700">
+                <thead class="text-xs uppercase bg-slate-50 text-slate-500 border-b border-slate-200">
                     <tr>
-                        <th class="py-3.5 px-4 font-semibold">Müşteri / Firma</th>
-                        <th class="py-3.5 px-4 font-semibold">E-Posta & Tel</th>
-                        <th class="py-3.5 px-4 font-semibold text-cyan-400">Mevcut Bakiye</th>
-                        <th class="py-3.5 px-4 font-semibold text-center">Atanmış Paket</th>
-                        <th class="py-3.5 px-4 font-semibold text-center">Satın Alma</th>
-                        <th class="py-3.5 px-4 font-semibold text-emerald-400">Toplam Kâr</th>
-                        <th class="py-3.5 px-4 font-semibold text-right">İşlemler</th>
+                        <th class="py-3.5 px-4 font-bold">Müşteri / Firma</th>
+                        <th class="py-3.5 px-4 font-bold">E-Posta & Tel</th>
+                        <th class="py-3.5 px-4 font-bold text-cyan-700">Mevcut Bakiye</th>
+                        <th class="py-3.5 px-4 font-bold text-center">Atanmış Paket</th>
+                        <th class="py-3.5 px-4 font-bold text-center">Satın Alma</th>
+                        <th class="py-3.5 px-4 font-bold text-emerald-700">Toplam Kâr</th>
+                        <th class="py-3.5 px-4 font-bold text-right">İşlemler</th>
                     </tr>
                 </thead>
-                <tbody class="divide-y divide-slate-800/60">
+                <tbody class="divide-y divide-slate-100">
                     @forelse($customers as $customer)
-                        <tr class="hover:bg-slate-800/40 transition">
+                        <tr class="hover:bg-slate-50 transition">
                             <td class="py-4 px-4">
-                                <div class="font-semibold text-white">{{ $customer->name }}</div>
-                                <div class="text-xs text-slate-400">{{ $customer->company_name ?? 'Bireysel Müşteri' }}</div>
+                                <div class="font-bold text-slate-900">{{ $customer->name }}</div>
+                                <div class="text-xs text-slate-500 font-medium">{{ $customer->company_name ?? 'Bireysel Müşteri' }}</div>
                             </td>
                             <td class="py-4 px-4">
-                                <div class="font-mono text-xs text-slate-300">{{ $customer->email }}</div>
+                                <div class="font-mono text-xs text-slate-800 font-semibold">{{ $customer->email }}</div>
                                 <div class="text-xs text-slate-500">{{ $customer->phone ?? '-' }}</div>
                             </td>
                             <td class="py-4 px-4">
-                                <span class="text-base font-extrabold text-cyan-300">₺{{ number_format($customer->balance, 2) }}</span>
+                                <span class="text-base font-black text-cyan-700">₺{{ number_format($customer->balance, 2) }}</span>
                             </td>
                             <td class="py-4 px-4 text-center">
-                                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-blue-50 text-blue-700 border border-blue-200">
                                     {{ $customer->customer_packages_count }} Paket
                                 </span>
                             </td>
                             <td class="py-4 px-4 text-center">
-                                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-purple-50 text-purple-700 border border-purple-200">
                                     {{ $customer->orders_count }} Sipariş
                                 </span>
                             </td>
-                            <td class="py-4 px-4 font-extrabold text-emerald-400">
+                            <td class="py-4 px-4 font-black text-emerald-600">
                                 ₺{{ number_format($customer->orders_sum_profit ?? 0, 2) }}
                             </td>
                             <td class="py-4 px-4 text-right space-x-2">
-                                <button onclick="openBalanceModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ $customer->balance }})" class="px-3 py-1.5 bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 text-xs font-semibold rounded-lg border border-cyan-500/30 transition inline-flex items-center gap-1">
+                                <button onclick="openBalanceModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ $customer->balance }})" class="px-3 py-1.5 bg-cyan-50 hover:bg-cyan-100 text-cyan-700 text-xs font-bold rounded-lg border border-cyan-200 transition inline-flex items-center gap-1 active:scale-95">
                                     <i class="fa-solid fa-coins"></i> Bakiye Yükle
                                 </button>
-                                <a href="{{ route('admin.packages.index') }}?customer_id={{ $customer->id }}" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-blue-400 text-xs font-semibold rounded-lg border border-blue-500/20 transition inline-flex items-center gap-1">
+                                <a href="{{ route('admin.packages.index') }}?customer_id={{ $customer->id }}" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold rounded-lg border border-blue-200 transition inline-flex items-center gap-1">
                                     <i class="fa-solid fa-box"></i> Paket Ata
                                 </a>
                                 <form action="{{ route('admin.customers.destroy', $customer->id) }}" method="POST" class="inline" onsubmit="return confirm('Bu müşteriyi ve tüm tanımlarını silmek istediğinize emin misiniz?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="px-3 py-1.5 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 text-xs font-semibold rounded-lg border border-rose-500/20 transition">
+                                    <button type="submit" class="px-3 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-bold rounded-lg border border-rose-200 transition">
                                         <i class="fa-solid fa-trash-can"></i> Sil
                                     </button>
                                 </form>
@@ -80,7 +80,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="7" class="py-8 text-center text-slate-500">Henüz müşteri tanımlanmamış.</td>
+                            <td colspan="7" class="py-8 text-center text-slate-400 font-medium">Henüz müşteri tanımlanmamış.</td>
                         </tr>
                     @endforelse
                 </tbody>
@@ -90,81 +90,81 @@
 </div>
 
 <!-- Modal: Create Customer -->
-<div id="createCustomerModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center hidden p-4">
-    <div class="glass-panel max-w-lg w-full p-6 rounded-2xl shadow-2xl relative">
-        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i class="fa-solid fa-user-plus text-blue-400"></i>
+<div id="createCustomerModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="bg-white max-w-lg w-full p-6 rounded-3xl shadow-2xl relative border border-slate-200">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-user-plus text-blue-600"></i>
                 <span>Yeni Müşteri Tanımla</span>
             </h3>
-            <button onclick="document.getElementById('createCustomerModal').classList.add('hidden')" class="text-slate-400 hover:text-white">&times;</button>
+            <button onclick="document.getElementById('createCustomerModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
         </div>
 
         <form action="{{ route('admin.customers.store') }}" method="POST" class="mt-4 space-y-4">
             @csrf
             <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Müşteri Ad Soyad</label>
-                <input type="text" name="name" required class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500">
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Müşteri Ad Soyad</label>
+                <input type="text" name="name" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
             </div>
 
             <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Firma / Kurum Adı</label>
-                <input type="text" name="company_name" placeholder="Örn: ABC Turizm Ltd." class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500">
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Firma / Kurum Adı</label>
+                <input type="text" name="company_name" placeholder="Örn: ABC Turizm Ltd." class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">E-Posta Adresi (Giriş İçin)</label>
-                    <input type="email" name="email" required class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500">
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">E-Posta Adresi (Giriş İçin)</label>
+                    <input type="email" name="email" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Telefon</label>
-                    <input type="text" name="phone" placeholder="+90 5XX XXX XX XX" class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500">
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Telefon</label>
+                    <input type="text" name="phone" placeholder="+90 5XX XXX XX XX" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
                 </div>
             </div>
 
             <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Şifre</label>
-                <input type="password" name="password" required class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500" placeholder="••••••••">
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Şifre</label>
+                <input type="password" name="password" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600" placeholder="••••••••">
             </div>
 
-            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-800">
-                <button type="button" onclick="document.getElementById('createCustomerModal').classList.add('hidden')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm rounded-xl font-medium">İptal</button>
-                <button type="submit" class="px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold rounded-xl shadow-lg glow-blue">Müşteriyi Kaydet</button>
+            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100">
+                <button type="button" onclick="document.getElementById('createCustomerModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm rounded-xl font-bold">İptal</button>
+                <button type="submit" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl shadow-md">Müşteriyi Kaydet</button>
             </div>
         </form>
     </div>
 </div>
 
 <!-- Modal: Add / Deduct Balance -->
-<div id="balanceModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center hidden p-4">
-    <div class="glass-panel max-w-md w-full p-6 rounded-2xl shadow-2xl relative">
-        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i class="fa-solid fa-coins text-cyan-400"></i>
+<div id="balanceModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="bg-white max-w-md w-full p-6 rounded-3xl shadow-2xl relative border border-slate-200">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-coins text-cyan-600"></i>
                 <span>Müşteriye Bakiye Yükle / Düş</span>
             </h3>
-            <button onclick="document.getElementById('balanceModal').classList.add('hidden')" class="text-slate-400 hover:text-white">&times;</button>
+            <button onclick="document.getElementById('balanceModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
         </div>
 
         <form id="balanceForm" method="POST" class="mt-4 space-y-4">
             @csrf
             <div>
-                <label class="block text-xs font-semibold text-slate-400 uppercase mb-1">Müşteri</label>
-                <div id="balanceCustomerName" class="text-base font-bold text-white"></div>
-                <div class="text-xs text-slate-400 mt-0.5">Mevcut Bakiye: <span id="balanceCurrentAmount" class="font-bold text-cyan-300"></span></div>
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Müşteri</label>
+                <div id="balanceCustomerName" class="text-base font-extrabold text-slate-900"></div>
+                <div class="text-xs text-slate-500 mt-0.5 font-medium">Mevcut Bakiye: <span id="balanceCurrentAmount" class="font-extrabold text-cyan-700"></span></div>
             </div>
 
             <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Yüklenecek / Düşülecek Miktar (₺)</label>
-                <input type="number" step="0.01" name="amount" required placeholder="Örn: 500 veya -100" class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-bold focus:outline-none focus:border-cyan-500">
-                <span class="text-xs text-slate-500 mt-1 block">Bakiye eklemek için pozitif (Örn: 500), bakiye düşmek için eksi (Örn: -100) yazın.</span>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Yüklenecek / Düşülecek Miktar (₺)</label>
+                <input type="number" step="0.01" name="amount" required placeholder="Örn: 500 veya -100" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-extrabold focus:outline-none focus:border-cyan-600">
+                <span class="text-xs text-slate-500 mt-1 block font-medium">Bakiye eklemek için pozitif (Örn: 500), bakiye düşmek için eksi (Örn: -100) yazın.</span>
             </div>
 
-            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-800">
-                <button type="button" onclick="document.getElementById('balanceModal').classList.add('hidden')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm rounded-xl font-medium">İptal</button>
-                <button type="submit" class="px-5 py-2 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-semibold rounded-xl shadow-lg glow-cyan">Bakiyeyi Güncelle</button>
+            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100">
+                <button type="button" onclick="document.getElementById('balanceModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm rounded-xl font-bold">İptal</button>
+                <button type="submit" class="px-5 py-2 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-bold rounded-xl shadow-md">Bakiyeyi Güncelle</button>
             </div>
         </form>
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr" class="h-full bg-slate-950 text-slate-100">
+<html lang="tr" class="h-full bg-slate-50 text-slate-900">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,9 @@
                         brand: {
                             50: '#f0f7ff',
                             100: '#e0effe',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
                         }
                     }
                 }
@@ -37,92 +37,91 @@
     </script>
     <style>
         .glass-panel {
-            background: rgba(15, 23, 42, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
         }
         .glass-card {
-            background: rgba(30, 41, 59, 0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
         }
         .glow-blue {
-            box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.15);
         }
         .glow-emerald {
-            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.3);
+            box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.15);
         }
     </style>
 </head>
-<body class="h-full font-sans antialiased flex flex-col md:flex-row bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 min-h-screen text-slate-200 selection:bg-blue-500 selection:text-white">
+<body class="h-full font-sans antialiased flex flex-col md:flex-row bg-slate-50 min-h-screen text-slate-800 selection:bg-blue-600 selection:text-white">
 
     @auth
     <!-- Mobile Header Bar (Only visible on mobile screens) -->
-    <header class="md:hidden glass-panel border-b border-slate-800/80 p-4 flex items-center justify-between sticky top-0 z-40">
+    <header class="md:hidden glass-panel border-b border-slate-200 p-4 flex items-center justify-between sticky top-0 z-40">
         <div class="flex items-center gap-3">
-            <div class="bg-white/90 p-1.5 rounded-xl shadow-lg glow-blue shrink-0">
+            <div class="bg-white p-1 rounded-xl shadow border border-slate-200 shrink-0">
                 <img src="/images/logo.png" alt="POLO SIM" class="h-7 w-auto object-contain">
             </div>
             <div>
-                <h1 class="font-bold text-sm text-white tracking-wide leading-tight uppercase font-mono">POLO SIM</h1>
-                <span class="text-[9px] text-amber-400 font-semibold tracking-wider uppercase block">ONE SIM ONE WORLD</span>
+                <h1 class="font-bold text-sm text-slate-900 tracking-wide leading-tight uppercase font-mono">POLO SIM</h1>
+                <span class="text-[9px] text-amber-600 font-bold tracking-wider uppercase block">ONE SIM ONE WORLD</span>
             </div>
         </div>
-        <button onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:text-white focus:outline-none shadow-md">
+        <button onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-slate-100 border border-slate-300 text-slate-700 hover:text-slate-900 focus:outline-none shadow-sm">
             <i id="mobileMenuIcon" class="fa-solid fa-bars text-lg"></i>
         </button>
     </header>
 
     <!-- Sidebar Navigation (Hidden by default on mobile, collapsible via toggle) -->
-    <aside id="sidebarMenu" class="hidden md:flex w-full md:w-64 glass-panel border-r border-slate-800/80 flex-col justify-between shrink-0">
+    <aside id="sidebarMenu" class="hidden md:flex w-full md:w-64 glass-panel border-r border-slate-200 flex-col justify-between shrink-0">
         <div>
             <!-- Desktop Brand Logo Header -->
-            <div class="hidden md:flex p-5 border-b border-slate-800/60 items-center gap-3">
-                <div class="bg-white/90 p-1.5 rounded-xl shadow-lg glow-blue shrink-0">
+            <div class="hidden md:flex p-5 border-b border-slate-100 items-center gap-3">
+                <div class="bg-white p-1.5 rounded-xl shadow border border-slate-200 shrink-0">
                     <img src="/images/logo.png" alt="POLO SIM" class="h-9 w-auto object-contain">
                 </div>
                 <div class="truncate">
-                    <h1 class="font-bold text-base text-white tracking-wide leading-tight uppercase font-mono">POLO SIM</h1>
-                    <span class="text-[10px] text-amber-400 font-semibold tracking-wider uppercase block">ONE SIM ONE WORLD</span>
+                    <h1 class="font-bold text-base text-slate-900 tracking-wide leading-tight uppercase font-mono">POLO SIM</h1>
+                    <span class="text-[10px] text-amber-600 font-bold tracking-wider uppercase block">ONE SIM ONE WORLD</span>
                 </div>
             </div>
 
             <!-- Navigation Links -->
             <nav class="p-4 space-y-1.5">
                 @if(Auth::user()->isAdmin())
-                    <div class="px-3 py-1.5 text-xs font-semibold text-slate-500 uppercase tracking-wider">Yönetim Menüsü</div>
+                    <div class="px-3 py-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider">Yönetim Menüsü</div>
 
-                    <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.dashboard') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
-                        <i class="fa-solid fa-chart-pie w-5 text-center"></i>
+                    <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.dashboard') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-chart-pie w-5 text-center text-blue-600"></i>
                         <span>Dashboard</span>
                     </a>
 
-                    <a href="{{ route('admin.customers.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.customers.*') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
-                        <i class="fa-solid fa-users w-5 text-center"></i>
+                    <a href="{{ route('admin.customers.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.customers.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-users w-5 text-center text-blue-600"></i>
                         <span>Müşteri Yönetimi</span>
                     </a>
 
-                    <a href="{{ route('admin.packages.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.packages.*') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
-                        <i class="fa-solid fa-box-open w-5 text-center"></i>
+                    <a href="{{ route('admin.packages.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.packages.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-box-open w-5 text-center text-blue-600"></i>
                         <span>Paketler & Fiyatlama</span>
                     </a>
 
-                    <a href="{{ route('admin.reports.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.reports.*') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
-                        <i class="fa-solid fa-file-invoice-dollar w-5 text-center"></i>
+                    <a href="{{ route('admin.reports.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.reports.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-file-invoice-dollar w-5 text-center text-blue-600"></i>
                         <span>Satış & Kâr Raporu</span>
                     </a>
 
-                    <a href="{{ route('admin.settings.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.settings.*') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
-                        <i class="fa-solid fa-sliders w-5 text-center"></i>
+                    <a href="{{ route('admin.settings.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.settings.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-sliders w-5 text-center text-blue-600"></i>
                         <span>API Ayarları</span>
                     </a>
 
                 @else
-                    <div class="px-3 py-1.5 text-xs font-semibold text-slate-500 uppercase tracking-wider">Müşteri Portalı</div>
+                    <div class="px-3 py-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider">Müşteri Portalı</div>
 
-                    <a href="{{ route('customer.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.dashboard') ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 font-semibold' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' }}">
-                        <i class="fa-solid fa-qrcode w-5 text-center"></i>
+                    <a href="{{ route('customer.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.dashboard') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-qrcode w-5 text-center text-blue-600"></i>
                         <span>Paketlerim & Mağaza</span>
                     </a>
                 @endif
@@ -130,23 +129,23 @@
         </div>
 
         <!-- User Footer Profile -->
-        <div class="p-4 border-t border-slate-800/60 bg-slate-900/40">
+        <div class="p-4 border-t border-slate-200 bg-slate-50/80">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3 overflow-hidden">
-                    <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white shrink-0">
+                    <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center font-bold text-white shrink-0 shadow-sm">
                         {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
                     </div>
                     <div class="truncate">
-                        <div class="font-medium text-sm text-slate-200 truncate">{{ Auth::user()->name }}</div>
-                        <div class="text-xs text-slate-400 capitalize flex items-center gap-1">
-                            <span class="w-2 h-2 rounded-full {{ Auth::user()->isAdmin() ? 'bg-emerald-400' : 'bg-blue-400' }}"></span>
+                        <div class="font-bold text-sm text-slate-900 truncate">{{ Auth::user()->name }}</div>
+                        <div class="text-xs text-slate-500 capitalize flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full {{ Auth::user()->isAdmin() ? 'bg-emerald-500' : 'bg-blue-500' }}"></span>
                             {{ Auth::user()->role === 'admin' ? 'Yönetici' : 'Müşteri' }}
                         </div>
                     </div>
                 </div>
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
-                    <button type="submit" class="text-slate-400 hover:text-red-400 p-2 rounded-lg transition duration-200" title="Çıkış Yap">
+                    <button type="submit" class="text-slate-400 hover:text-rose-600 p-2 rounded-lg transition duration-200" title="Çıkış Yap">
                         <i class="fa-solid fa-right-from-bracket text-base"></i>
                     </button>
                 </form>
@@ -161,22 +160,22 @@
         <!-- Flash Alert Messages -->
         <div class="p-4 max-w-7xl w-full mx-auto pb-0">
             @if (session('success'))
-                <div class="glass-card border-l-4 border-emerald-500 text-emerald-300 p-4 rounded-xl shadow-lg mb-4 flex items-center justify-between">
+                <div class="bg-emerald-50 border-l-4 border-emerald-500 text-emerald-800 p-4 rounded-xl shadow-sm mb-4 flex items-center justify-between border border-emerald-200">
                     <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
-                        <span>{{ session('success') }}</span>
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-xl"></i>
+                        <span class="font-medium text-sm">{{ session('success') }}</span>
                     </div>
-                    <button onclick="this.parentElement.remove()" class="text-emerald-400 hover:text-white">&times;</button>
+                    <button onclick="this.parentElement.remove()" class="text-emerald-500 hover:text-emerald-800">&times;</button>
                 </div>
             @endif
 
             @if (session('error'))
-                <div class="glass-card border-l-4 border-rose-500 text-rose-300 p-4 rounded-xl shadow-lg mb-4 flex items-center justify-between">
+                <div class="bg-rose-50 border-l-4 border-rose-500 text-rose-800 p-4 rounded-xl shadow-sm mb-4 flex items-center justify-between border border-rose-200">
                     <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-triangle-exclamation text-rose-400 text-xl"></i>
-                        <span>{{ session('error') }}</span>
+                        <i class="fa-solid fa-triangle-exclamation text-rose-600 text-xl"></i>
+                        <span class="font-medium text-sm">{{ session('error') }}</span>
                     </div>
-                    <button onclick="this.parentElement.remove()" class="text-rose-400 hover:text-white">&times;</button>
+                    <button onclick="this.parentElement.remove()" class="text-rose-500 hover:text-rose-800">&times;</button>
                 </div>
             @endif
         </div>
@@ -186,7 +185,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="p-4 border-t border-slate-800/40 text-center text-xs text-slate-500">
+        <footer class="p-4 border-t border-slate-200 text-center text-xs text-slate-500 bg-white">
             POLO SIM Portal &copy; {{ date('Y') }} — Tüm Hakları Saklıdır.
         </footer>
     </main>
