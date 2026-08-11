@@ -67,27 +67,79 @@ class PackageController extends Controller
     public function assign(Request $request)
     {
         $validated = $request->validate([
-            'user_id' => 'required|exists:users,id',
-            'tgt_product_id' => 'required|exists:tgt_products,id',
-            'sale_price' => 'required|numeric|min:0.01',
+            'target_customers' => 'required', // 'all' or array of user_ids
+            'user_ids' => 'nullable|array',
+            'user_ids.*' => 'exists:users,id',
+            'target_products' => 'required', // 'all' or array of product_ids
+            'product_ids' => 'nullable|array',
+            'product_ids.*' => 'exists:tgt_products,id',
+            'pricing_type' => 'required|in:fixed,margin_percent,margin_fixed',
+            'price_value' => 'required|numeric|min:0',
         ]);
 
-        $product = TgtProduct::findOrFail($validated['tgt_product_id']);
+        // Resolve Target Customers
+        if ($validated['target_customers'] === 'all') {
+            $customerIds = User::where('role', 'customer')->pluck('id')->toArray();
+        } else {
+            $customerIds = $validated['user_ids'] ?? [];
+        }
 
-        CustomerPackage::updateOrCreate(
-            [
-                'user_id' => $validated['user_id'],
-                'tgt_product_id' => $validated['tgt_product_id'],
-            ],
-            [
-                'sale_price' => $validated['sale_price'],
-                'is_active' => true,
-            ]
-        );
+        if (empty($customerIds)) {
+            return back()->with('error', 'Lütfen en az bir müşteri seçin veya "Tüm Müşteriler" seçeneğini işaretleyin.');
+        }
 
-        $customer = User::find($validated['user_id']);
+        // Resolve Target Products
+        if ($validated['target_products'] === 'all') {
+            $products = TgtProduct::all();
+        } else {
+            $productIds = $validated['product_ids'] ?? [];
+            $products = TgtProduct::whereIn('id', $productIds)->get();
+        }
 
-        return back()->with('success', "{$product->product_name} paketi {$customer->name} müşterisine ₺{$validated['sale_price']} fiyatla atandı.");
+        if ($products->isEmpty()) {
+            return back()->with('error', 'Lütfen en az bir paket seçin veya "Tüm Paketler" seçeneğini işaretleyin.');
+        }
+
+        $pricingType = $validated['pricing_type'];
+        $priceValue = (float) $validated['price_value'];
+        $assignedCount = 0;
+
+        foreach ($customerIds as $userId) {
+            foreach ($products as $product) {
+                $netPrice = (float) $product->net_price;
+                
+                // Calculate custom selling price based on pricing rule
+                if ($pricingType === 'margin_percent') {
+                    $salePrice = round($netPrice * (1 + ($priceValue / 100)), 2);
+                } elseif ($pricingType === 'margin_fixed') {
+                    $salePrice = round($netPrice + $priceValue, 2);
+                } else { // fixed
+                    $salePrice = round($priceValue, 2);
+                }
+
+                if ($salePrice <= 0) {
+                    $salePrice = max(0.01, $netPrice);
+                }
+
+                CustomerPackage::updateOrCreate(
+                    [
+                        'user_id' => $userId,
+                        'tgt_product_id' => $product->id,
+                    ],
+                    [
+                        'sale_price' => $salePrice,
+                        'is_active' => true,
+                    ]
+                );
+
+                $assignedCount++;
+            }
+        }
+
+        $customerCount = count($customerIds);
+        $productCount = $products->count();
+
+        return back()->with('success', "Toplu paket ataması tamamlandı! Toplam {$productCount} adet paket, {$customerCount} farklı müşteriye (Toplam {$assignedCount} atama) başarıyla tanımlandı.");
     }
 
     public function removeAssignment(CustomerPackage $assignment)
