@@ -28,7 +28,9 @@ WORKDIR /var/www/html
 # Copy application files
 COPY . /var/www/html
 
-# Copy Nginx config, Supervisor config, and Entrypoint script
+# Copy Nginx config, SSL certificates, Supervisor config, and Entrypoint script
+RUN mkdir -p /etc/nginx/ssl
+COPY docker/ssl/ /etc/nginx/ssl/
 COPY docker/nginx/conf.d/standalone.conf /etc/nginx/sites-available/default
 COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
@@ -41,7 +43,7 @@ RUN composer install --no-dev --optimize-autoloader
 # Storage permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-EXPOSE 80
+EXPOSE 80 443
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
