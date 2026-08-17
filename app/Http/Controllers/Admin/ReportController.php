@@ -14,32 +14,68 @@ class ReportController extends Controller
     public function index(Request $request)
     {
         $selectedCustomerId = $request->query('customer_id');
+        $selectedBranchId = $request->query('branch_id');
 
-        $query = Order::with(['customer', 'product'])->latest();
+        $query = Order::with(['customer', 'branch', 'product'])->latest();
 
         if ($selectedCustomerId) {
             $query->where('user_id', $selectedCustomerId);
         }
 
+        if ($selectedBranchId) {
+            $query->where('branch_id', $selectedBranchId);
+        }
+
         $orders = $query->paginate(20);
 
         // Overall Sales & Profit Breakdown by Package
-        $productStats = Order::select(
+        $productStatsQuery = Order::select(
             'tgt_product_id',
             DB::raw('count(*) as total_sales'),
             DB::raw('sum(sale_price) as total_revenue'),
             DB::raw('sum(net_price) as total_cost'),
             DB::raw('sum(profit) as total_profit')
-        )
-        ->groupBy('tgt_product_id')
-        ->with('product')
-        ->get();
+        );
 
-        $totalRevenue = Order::sum('sale_price');
-        $totalCost = Order::sum('net_price');
-        $totalProfit = Order::sum('profit');
+        if ($selectedCustomerId) {
+            $productStatsQuery->where('user_id', $selectedCustomerId);
+        }
+        if ($selectedBranchId) {
+            $productStatsQuery->where('branch_id', $selectedBranchId);
+        }
 
-        $customers = User::where('role', 'customer')->get();
+        $productStats = $productStatsQuery->groupBy('tgt_product_id')
+            ->with('product')
+            ->get();
+
+        $totalRevenueQuery = Order::query();
+        $totalCostQuery = Order::query();
+        $totalProfitQuery = Order::query();
+
+        if ($selectedCustomerId) {
+            $totalRevenueQuery->where('user_id', $selectedCustomerId);
+            $totalCostQuery->where('user_id', $selectedCustomerId);
+            $totalProfitQuery->where('user_id', $selectedCustomerId);
+        }
+        if ($selectedBranchId) {
+            $totalRevenueQuery->where('branch_id', $selectedBranchId);
+            $totalCostQuery->where('branch_id', $selectedBranchId);
+            $totalProfitQuery->where('branch_id', $selectedBranchId);
+        }
+
+        $totalRevenue = $totalRevenueQuery->sum('sale_price');
+        $totalCost = $totalCostQuery->sum('net_price');
+        $totalProfit = $totalProfitQuery->sum('profit');
+
+        $customers = User::where('role', 'customer')->with('branches')->get();
+
+        $availableBranches = collect();
+        if ($selectedCustomerId) {
+            $customer = $customers->firstWhere('id', $selectedCustomerId);
+            if ($customer) {
+                $availableBranches = $customer->branches;
+            }
+        }
 
         return view('admin.reports.index', compact(
             'orders',
@@ -48,7 +84,9 @@ class ReportController extends Controller
             'totalCost',
             'totalProfit',
             'customers',
-            'selectedCustomerId'
+            'selectedCustomerId',
+            'selectedBranchId',
+            'availableBranches'
         ));
     }
 }

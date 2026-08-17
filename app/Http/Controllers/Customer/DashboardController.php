@@ -22,19 +22,23 @@ class DashboardController extends Controller
             ->with('product')
             ->get();
 
+        // Branches defined by this customer
+        $branches = $user->branches()->where('is_active', true)->get();
+
         // Orders purchased by this customer
         $orders = Order::where('user_id', $user->id)
-            ->with('product')
+            ->with(['product', 'branch'])
             ->latest()
             ->get();
 
-        return view('customer.dashboard', compact('assignedPackages', 'orders'));
+        return view('customer.dashboard', compact('assignedPackages', 'orders', 'branches'));
     }
 
     public function buyPackage(Request $request, TgtEsimService $tgtService)
     {
         $validated = $request->validate([
             'customer_package_id' => 'required|exists:customer_packages,id',
+            'branch_id' => 'nullable|exists:branches,id',
         ]);
 
         $user = Auth::user();
@@ -42,6 +46,11 @@ class DashboardController extends Controller
             ->where('user_id', $user->id)
             ->with('product')
             ->firstOrFail();
+
+        $branch = null;
+        if (!empty($validated['branch_id'])) {
+            $branch = $user->branches()->where('id', $validated['branch_id'])->first();
+        }
 
         $product = $assignment->product;
         $salePrice = (float) $assignment->sale_price;
@@ -76,6 +85,8 @@ class DashboardController extends Controller
             'order_no' => $apiResult['orderNo'],
             'channel_order_no' => $channelOrderNo,
             'user_id' => $user->id,
+            'branch_id' => $branch?->id,
+            'branch_name' => $branch?->name ?? 'Merkez / Genel',
             'tgt_product_id' => $product->id,
             'net_price' => $netPrice,
             'sale_price' => $salePrice,

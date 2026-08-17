@@ -43,6 +43,9 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     // Settings & API Credentials
     Route::get('/settings', [AdminSetting::class, 'index'])->name('settings.index');
     Route::post('/settings', [AdminSetting::class, 'update'])->name('settings.update');
+    // Branches
+    Route::post('/customers/{customer}/branches', [AdminCustomer::class, 'storeBranch'])->name('customers.branches.store');
+    Route::delete('/branches/{branch}', [AdminCustomer::class, 'destroyBranch'])->name('branches.destroy');
 });
 
 // Customer Routes
@@ -50,4 +53,9 @@ Route::middleware(['auth', 'role:customer'])->prefix('customer')->name('customer
     Route::get('/dashboard', [CustomerDashboard::class, 'index'])->name('dashboard');
     Route::post('/buy', [CustomerDashboard::class, 'buyPackage'])->name('buy');
     Route::get('/orders/{order}/usage', [CustomerDashboard::class, 'getUsageInfo'])->name('orders.usage');
+    
+    // Branches
+    Route::get('/branches', [\App\Http\Controllers\Customer\BranchController::class, 'index'])->name('branches.index');
+    Route::post('/branches', [\App\Http\Controllers\Customer\BranchController::class, 'store'])->name('branches.store');
+    Route::delete('/branches/{branch}', [\App\Http\Controllers\Customer\BranchController::class, 'destroy'])->name('branches.destroy');
 });

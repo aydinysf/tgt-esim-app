@@ -107,7 +107,7 @@
                 <thead class="text-xs uppercase bg-slate-50 text-slate-500 border-b border-slate-200">
                     <tr>
                         <th class="py-3.5 px-4 font-bold">Sipariş No</th>
-                        <th class="py-3.5 px-4 font-bold">Müşteri</th>
+                        <th class="py-3.5 px-4 font-bold">Müşteri / Şube</th>
                         <th class="py-3.5 px-4 font-bold">Paket Kodu & Adı</th>
                         <th class="py-3.5 px-4 font-bold">Alış (Net)</th>
                         <th class="py-3.5 px-4 font-bold">Satış (Müşteri)</th>
@@ -119,7 +119,10 @@
                     @forelse($recentOrders as $order)
                         <tr class="hover:bg-slate-50 transition">
                             <td class="py-3.5 px-4 font-mono text-xs text-blue-700 font-bold">{{ $order->order_no ?? $order->channel_order_no }}</td>
-                            <td class="py-3.5 px-4 font-bold text-slate-900">{{ $order->customer->name ?? 'Müşteri Silinmiş' }}</td>
+                            <td class="py-3.5 px-4 font-bold text-slate-900">
+                                {{ $order->customer->name ?? 'Müşteri Silinmiş' }}
+                                <div class="text-xs font-normal text-indigo-700 mt-0.5"><i class="fa-solid fa-store text-[10px] mr-1"></i>{{ $order->branch_name ?? 'Merkez / Genel' }}</div>
+                            </td>
                             <td class="py-3.5 px-4">
                                 <div class="font-bold text-slate-800">{{ $order->product->product_name ?? 'Paket' }}</div>
                                 <div class="text-xs text-slate-400 font-mono">{{ $order->product->product_code ?? '' }}</div>

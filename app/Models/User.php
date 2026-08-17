@@ -69,6 +69,11 @@ class User extends Authenticatable
         return $this->hasMany(CustomerPackage::class, 'user_id');
     }
 
+    public function branches()
+    {
+        return $this->hasMany(Branch::class, 'user_id');
+    }
+
     public function orders()
     {
         return $this->hasMany(Order::class, 'user_id');

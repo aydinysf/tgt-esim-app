@@ -29,6 +29,7 @@
                         <th class="py-3.5 px-4 font-bold">Müşteri / Firma</th>
                         <th class="py-3.5 px-4 font-bold">E-Posta & Tel</th>
                         <th class="py-3.5 px-4 font-bold text-cyan-700">Mevcut Bakiye</th>
+                        <th class="py-3.5 px-4 font-bold text-center">Şubeler</th>
                         <th class="py-3.5 px-4 font-bold text-center">Atanmış Paket</th>
                         <th class="py-3.5 px-4 font-bold text-center">Satın Alma</th>
                         <th class="py-3.5 px-4 font-bold text-emerald-700">Toplam Kâr</th>
@@ -50,6 +51,11 @@
                                 <span class="text-base font-black text-cyan-700">₺{{ number_format($customer->balance, 2) }}</span>
                             </td>
                             <td class="py-4 px-4 text-center">
+                                <button onclick="openBranchModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->branches) }})" class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition">
+                                    <i class="fa-solid fa-store text-[10px] mr-1"></i>{{ $customer->branches_count }} Şube
+                                </button>
+                            </td>
+                            <td class="py-4 px-4 text-center">
                                 <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-blue-50 text-blue-700 border border-blue-200">
                                     {{ $customer->customer_packages_count }} Paket
                                 </span>
@@ -63,6 +69,9 @@
                                 ₺{{ number_format($customer->orders_sum_profit ?? 0, 2) }}
                             </td>
                             <td class="py-4 px-4 text-right space-x-2">
+                                <button onclick="openBranchModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->branches) }})" class="px-2.5 py-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-lg border border-indigo-200 transition inline-flex items-center gap-1">
+                                    <i class="fa-solid fa-store"></i> Şubeler
+                                </button>
                                 <button onclick="openBalanceModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ $customer->balance }})" class="px-3 py-1.5 bg-cyan-50 hover:bg-cyan-100 text-cyan-700 text-xs font-bold rounded-lg border border-cyan-200 transition inline-flex items-center gap-1 active:scale-95">
                                     <i class="fa-solid fa-coins"></i> Bakiye Yükle
                                 </button>
@@ -170,12 +179,79 @@
     </div>
 </div>
 
+<!-- Modal: Admin Branch Management -->
+<div id="adminBranchModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="bg-white max-w-lg w-full p-6 rounded-3xl shadow-2xl relative border border-slate-200 space-y-4">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-store text-indigo-600"></i>
+                    <span>Müşteri Şubeleri / Bayileri</span>
+                </h3>
+                <div id="branchModalCustomerName" class="text-xs text-slate-500 font-medium"></div>
+            </div>
+            <button onclick="document.getElementById('adminBranchModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
+        </div>
+
+        <!-- Add Branch Form -->
+        <form id="adminAddBranchForm" method="POST" class="space-y-3 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+            @csrf
+            <div class="text-xs font-bold text-slate-700 uppercase">Müşteriye Yeni Şube Ekle</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" name="name" required placeholder="Şube Adı (Örn: Bakırköy)" class="px-3 py-2 bg-white border border-slate-300 rounded-xl text-slate-900 text-xs font-bold focus:outline-none focus:border-indigo-600">
+                <input type="text" name="phone" placeholder="Telefon (İsteğe Bağlı)" class="px-3 py-2 bg-white border border-slate-300 rounded-xl text-slate-900 text-xs font-medium focus:outline-none focus:border-indigo-600">
+            </div>
+            <input type="text" name="address" placeholder="Adres (İsteğe Bağlı)" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-slate-900 text-xs font-medium focus:outline-none focus:border-indigo-600">
+            <button type="submit" class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-xl shadow transition">Şubeyi Kaydet</button>
+        </form>
+
+        <!-- Existing Branch List -->
+        <div class="space-y-2 max-h-60 overflow-y-auto">
+            <div class="text-xs font-bold text-slate-400 uppercase">Tanımlı Şubeler</div>
+            <div id="branchListContainer" class="space-y-2"></div>
+        </div>
+    </div>
+</div>
+
 <script>
     function openBalanceModal(customerId, customerName, currentBalance) {
         document.getElementById('balanceCustomerName').innerText = customerName;
         document.getElementById('balanceCurrentAmount').innerText = '₺' + parseFloat(currentBalance).toFixed(2);
         document.getElementById('balanceForm').action = '/admin/customers/' + customerId + '/balance';
         document.getElementById('balanceModal').classList.remove('hidden');
+    }
+
+    function openBranchModal(customerId, customerName, branches) {
+        document.getElementById('branchModalCustomerName').innerText = customerName;
+        document.getElementById('adminAddBranchForm').action = '/admin/customers/' + customerId + '/branches';
+
+        const container = document.getElementById('branchListContainer');
+        container.innerHTML = '';
+
+        if (branches && branches.length > 0) {
+            branches.forEach(b => {
+                const item = document.createElement('div');
+                item.className = 'flex items-center justify-between p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs';
+                item.innerHTML = `
+                    <div>
+                        <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                            <i class="fa-solid fa-location-dot text-rose-500"></i> ${b.name}
+                        </div>
+                        ${b.address ? `<div class="text-slate-500 text-[11px]">${b.address}</div>` : ''}
+                    </div>
+                    <form action="/admin/branches/${b.id}" method="POST" onsubmit="return confirm('Şubeyi silmek istediğinize emin misiniz?');">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="text-rose-600 hover:text-rose-800 font-bold px-2 py-1 rounded bg-rose-50 border border-rose-200">Sil</button>
+                    </form>
+                `;
+                container.appendChild(item);
+            });
+        } else {
+            container.innerHTML = '<div class="text-xs text-slate-400 py-3 text-center">Henüz şube tanımlanmamış.</div>';
+        }
+
+        document.getElementById('adminBranchModal').classList.remove('hidden');
     }
 </script>
 @endsection

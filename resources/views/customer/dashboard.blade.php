@@ -143,6 +143,12 @@
                     <!-- ICCID & Details Box -->
                     <div class="bg-slate-50 p-4 rounded-xl space-y-2 border border-slate-200">
                         <div class="flex items-center justify-between text-xs">
+                            <span class="text-slate-500 font-medium">İşlem Yapan Şube:</span>
+                            <span class="px-2 py-0.5 rounded-md font-bold text-xs bg-indigo-50 text-indigo-700 border border-indigo-200">
+                                <i class="fa-solid fa-store text-[10px] mr-1"></i>{{ $order->branch_name ?? 'Merkez / Genel' }}
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs pt-1 border-t border-slate-200/60">
                             <span class="text-slate-500 font-medium">ICCID Numarası:</span>
                             <button onclick="copyToClipboard('{{ $order->iccid }}')" class="text-blue-600 hover:text-blue-800 font-bold flex items-center gap-1">
                                 <i class="fa-solid fa-copy"></i> Kopyala
@@ -217,6 +223,18 @@
         <form action="{{ route('customer.buy') }}" method="POST" id="checkoutForm" class="space-y-4">
             @csrf
             <input type="hidden" name="customer_package_id" id="modalCustomerPackageId">
+
+            @if(count($branches) > 0)
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">İşlem Yapılan Şube</label>
+                    <select name="branch_id" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600 text-sm">
+                        <option value="">-- Merkez / Genel --</option>
+                        @foreach($branches as $b)
+                            <option value="{{ $b->id }}">{{ $b->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            @endif
 
             <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl text-xs text-blue-800 flex items-start gap-2">
                 <i class="fa-solid fa-circle-info text-blue-600 text-base shrink-0 mt-0.5"></i>

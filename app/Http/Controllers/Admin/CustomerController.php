@@ -13,12 +13,35 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = User::where('role', 'customer')
-            ->withCount(['customerPackages', 'orders'])
+            ->withCount(['customerPackages', 'orders', 'branches'])
             ->withSum('orders', 'profit')
+            ->with('branches')
             ->latest()
             ->get();
 
         return view('admin.customers.index', compact('customers'));
+    }
+
+    public function storeBranch(Request $request, User $customer)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'address' => 'nullable|string|max:255',
+            'phone' => 'nullable|string|max:50',
+        ]);
+
+        $customer->branches()->create($validated);
+
+        return redirect()->route('admin.customers.index')
+            ->with('success', "{$customer->name} müşterisine '{$validated['name']}' şubesi başarıyla eklendi.");
+    }
+
+    public function destroyBranch(\App\Models\Branch $branch)
+    {
+        $branch->delete();
+
+        return redirect()->route('admin.customers.index')
+            ->with('success', 'Şube silindi.');
     }
 
     public function store(Request $request)

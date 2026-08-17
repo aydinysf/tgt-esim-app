@@ -13,6 +13,8 @@ class Order extends Model
         'order_no',
         'channel_order_no',
         'user_id',
+        'branch_id',
+        'branch_name',
         'tgt_product_id',
         'net_price',
         'sale_price',
@@ -35,6 +37,11 @@ class Order extends Model
     public function customer()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function branch()
+    {
+        return $this->belongsTo(Branch::class, 'branch_id');
     }
 
     public function product()
