@@ -56,14 +56,16 @@ Route::middleware('auth')->group(function () {
     Route::post('/profile/password', [\App\Http\Controllers\ProfileController::class, 'updatePassword'])->name('profile.password');
 });
 
-// Customer Routes
-Route::middleware(['auth', 'role:customer'])->prefix('customer')->name('customer.')->group(function () {
+// Customer & Branch User Shared Routes
+Route::middleware(['auth'])->prefix('customer')->name('customer.')->group(function () {
     Route::get('/dashboard', [CustomerDashboard::class, 'index'])->name('dashboard');
     Route::post('/buy', [CustomerDashboard::class, 'buyPackage'])->name('buy');
     Route::get('/orders/{order}/usage', [CustomerDashboard::class, 'getUsageInfo'])->name('orders.usage');
     
-    // Branches
+    // Branches & Staff Management (Only for main Customer role)
     Route::get('/branches', [\App\Http\Controllers\Customer\BranchController::class, 'index'])->name('branches.index');
     Route::post('/branches', [\App\Http\Controllers\Customer\BranchController::class, 'store'])->name('branches.store');
+    Route::post('/branches/{branch}/staff', [\App\Http\Controllers\Customer\BranchController::class, 'storeStaff'])->name('branches.staff.store');
+    Route::delete('/staff/{staff}', [\App\Http\Controllers\Customer\BranchController::class, 'destroyStaff'])->name('branches.staff.destroy');
     Route::delete('/branches/{branch}', [\App\Http\Controllers\Customer\BranchController::class, 'destroy'])->name('branches.destroy');
 });

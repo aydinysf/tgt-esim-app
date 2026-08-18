@@ -15,49 +15,61 @@ class DashboardController extends Controller
     public function index()
     {
         $user = Auth::user();
+        $effectiveCustomer = $user->getEffectiveCustomer();
 
-        // Packages assigned to this customer by Admin
-        $assignedPackages = CustomerPackage::where('user_id', $user->id)
+        // Packages assigned to effective customer by Admin
+        $assignedPackages = CustomerPackage::where('user_id', $effectiveCustomer->id)
             ->where('is_active', true)
             ->with('product')
             ->get();
 
-        // Branches defined by this customer
-        $branches = $user->branches()->where('is_active', true)->get();
+        // Branches defined by effective customer
+        $branches = $effectiveCustomer->branches()->where('is_active', true)->get();
 
-        // Orders purchased by this customer
-        $orders = Order::where('user_id', $user->id)
-            ->with(['product', 'branch'])
-            ->latest()
-            ->get();
+        // Orders query
+        $ordersQuery = Order::where('user_id', $effectiveCustomer->id)
+            ->with(['product', 'branch']);
 
-        return view('customer.dashboard', compact('assignedPackages', 'orders', 'branches'));
+        // If user is a branch staff, filter only their branch orders!
+        if ($user->isBranchUser() && $user->branch_id) {
+            $ordersQuery->where('branch_id', $user->branch_id);
+        }
+
+        $orders = $ordersQuery->latest()->get();
+
+        return view('customer.dashboard', compact('assignedPackages', 'orders', 'branches', 'effectiveCustomer'));
     }
 
     public function buyPackage(Request $request, TgtEsimService $tgtService)
     {
+        $user = Auth::user();
+        $effectiveCustomer = $user->getEffectiveCustomer();
+
         $validated = $request->validate([
             'customer_package_id' => 'required|exists:customer_packages,id',
             'branch_id' => 'nullable|exists:branches,id',
         ]);
 
-        $user = Auth::user();
         $assignment = CustomerPackage::where('id', $validated['customer_package_id'])
-            ->where('user_id', $user->id)
+            ->where('user_id', $effectiveCustomer->id)
             ->with('product')
             ->firstOrFail();
 
         $branch = null;
-        if (!empty($validated['branch_id'])) {
-            $branch = $user->branches()->where('id', $validated['branch_id'])->first();
+
+        // If user is branch staff, locked to their assigned branch!
+        if ($user->isBranchUser() && $user->branch) {
+            $branch = $user->branch;
+        } elseif (!empty($validated['branch_id'])) {
+            $branch = $effectiveCustomer->branches()->where('id', $validated['branch_id'])->first();
         }
 
         $product = $assignment->product;
         $salePrice = (float) $assignment->sale_price;
 
-        // Check if customer has enough credit balance
-        if (!$user->hasBalance($salePrice)) {
-            return back()->with('error', 'Yetersiz Bakiye! Bu paket için ₺' . number_format($salePrice, 2) . ' bakiye gereklidir. Mevcut Bakiyeniz: ₺' . number_format($user->balance, 2));
+        // Check if effective customer has enough credit balance
+        if (!$effectiveCustomer->hasBalance($salePrice)) {
+            return back()->with('error', 'Yetersiz Bakiye! Bu paket için ₺' . number_format($salePrice, 2) . ' bakiye gereklidir. Mevcut Bakiyeniz: ₺' . number_format($effectiveCustomer->balance, 2));
         }
 
         $channelOrderNo = 'TGT-' . date('Ymd') . '-' . Str::random(6);
@@ -75,7 +87,7 @@ class DashboardController extends Controller
             return back()->with('error', 'TGT API Sipariş oluşturulamadı: ' . ($apiResult['msg'] ?? 'Bilinmeyen Hata'));
         }
 
-        // Deduct balance from customer account
+        // Deduct balance from effective customer account
         $user->deductBalance($salePrice);
 
         $netPrice = (float) $product->net_price;
@@ -84,7 +96,7 @@ class DashboardController extends Controller
         $order = Order::create([
             'order_no' => $apiResult['orderNo'],
             'channel_order_no' => $channelOrderNo,
-            'user_id' => $user->id,
+            'user_id' => $effectiveCustomer->id,
             'branch_id' => $branch?->id,
             'branch_name' => $branch?->name ?? 'Merkez / Genel',
             'tgt_product_id' => $product->id,
@@ -99,7 +111,7 @@ class DashboardController extends Controller
             'raw_response' => $apiResult['raw'] ?? [],
         ]);
 
-        // Send Email Notification to Customer
+        // Send Email Notification to Customer and Staff
         try {
             \Illuminate\Support\Facades\Mail::to($user->email)->send(new \App\Mail\EsimPurchasedMail($order));
         } catch (\Throwable $e) {
@@ -107,12 +119,15 @@ class DashboardController extends Controller
         }
 
         return redirect()->route('customer.dashboard')
-            ->with('success', "{$product->product_name} paketiniz ₺" . number_format($salePrice, 2) . " bakiyeniz düşülerek başarıyla satın alındı ve QR kodunuz e-posta olarak gönderildi! Kalan Bakiyeniz: ₺" . number_format($user->balance, 2));
+            ->with('success', "{$product->product_name} paketiniz ₺" . number_format($salePrice, 2) . " bakiyeniz düşülerek (" . ($branch?->name ?? 'Merkez') . " adına) başarıyla satın alındı ve QR kodunuz e-posta olarak gönderildi! Kalan Bakiyeniz: ₺" . number_format($effectiveCustomer->balance, 2));
     }
 
     public function getUsageInfo(Order $order, TgtEsimService $tgtService)
     {
-        if ($order->user_id !== Auth::id()) {
+        $user = Auth::user();
+        $effectiveCustomer = $user->getEffectiveCustomer();
+
+        if ($order->user_id !== $effectiveCustomer->id) {
             return response()->json(['error' => 'Yetkisiz erişim'], 403);
         }
 

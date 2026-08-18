@@ -18,6 +18,8 @@ class User extends Authenticatable
         'company_name',
         'phone',
         'balance',
+        'parent_id',
+        'branch_id',
     ];
 
     protected $hidden = [
@@ -44,24 +46,40 @@ class User extends Authenticatable
         return $this->role === 'customer';
     }
 
+    public function isBranchUser(): bool
+    {
+        return $this->role === 'branch' || !empty($this->branch_id);
+    }
+
+    public function getEffectiveCustomer(): User
+    {
+        if ($this->isBranchUser() && $this->parent) {
+            return $this->parent;
+        }
+        return $this;
+    }
+
     public function hasBalance(float $amount): bool
     {
-        return (float) $this->balance >= $amount;
+        $owner = $this->getEffectiveCustomer();
+        return (float) $owner->balance >= $amount;
     }
 
     public function deductBalance(float $amount): bool
     {
-        if ($this->hasBalance($amount)) {
-            $this->balance = (float) $this->balance - $amount;
-            return $this->save();
+        $owner = $this->getEffectiveCustomer();
+        if ($owner->hasBalance($amount)) {
+            $owner->balance = (float) $owner->balance - $amount;
+            return $owner->save();
         }
         return false;
     }
 
     public function addBalance(float $amount): bool
     {
-        $this->balance = (float) $this->balance + $amount;
-        return $this->save();
+        $owner = $this->getEffectiveCustomer();
+        $owner->balance = (float) $owner->balance + $amount;
+        return $owner->save();
     }
 
     public function customerPackages()
@@ -72,6 +90,21 @@ class User extends Authenticatable
     public function branches()
     {
         return $this->hasMany(Branch::class, 'user_id');
+    }
+
+    public function branch()
+    {
+        return $this->belongsTo(Branch::class, 'branch_id');
+    }
+
+    public function parent()
+    {
+        return $this->belongsTo(User::class, 'parent_id');
+    }
+
+    public function staff()
+    {
+        return $this->hasMany(User::class, 'parent_id');
     }
 
     public function orders()
