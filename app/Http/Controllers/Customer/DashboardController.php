@@ -8,14 +8,18 @@ use App\Models\Order;
 use App\Services\TgtEsimService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $user = Auth::user();
         $effectiveCustomer = $user->getEffectiveCustomer();
+
+        // Selected branch filter (for dealer admin)
+        $selectedBranchId = $request->query('branch_id');
 
         // Packages assigned to effective customer by Admin
         $assignedPackages = CustomerPackage::where('user_id', $effectiveCustomer->id)
@@ -33,11 +37,31 @@ class DashboardController extends Controller
         // If user is a branch staff, filter only their branch orders!
         if ($user->isBranchUser() && $user->branch_id) {
             $ordersQuery->where('branch_id', $user->branch_id);
+        } elseif ($selectedBranchId) {
+            $ordersQuery->where('branch_id', $selectedBranchId);
         }
 
         $orders = $ordersQuery->latest()->get();
 
-        return view('customer.dashboard', compact('assignedPackages', 'orders', 'branches', 'effectiveCustomer'));
+        // Calculate sales summary per branch for dealer admin
+        $branchStats = Order::select(
+            'branch_id',
+            'branch_name',
+            DB::raw('count(*) as total_orders'),
+            DB::raw('sum(sale_price) as total_spent')
+        )
+        ->where('user_id', $effectiveCustomer->id)
+        ->groupBy('branch_id', 'branch_name')
+        ->get();
+
+        return view('customer.dashboard', compact(
+            'assignedPackages',
+            'orders',
+            'branches',
+            'effectiveCustomer',
+            'selectedBranchId',
+            'branchStats'
+        ));
     }
 
     public function buyPackage(Request $request, TgtEsimService $tgtService)

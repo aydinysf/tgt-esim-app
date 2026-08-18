@@ -32,19 +32,64 @@
         </div>
     </div>
 
-    <!-- Main Navigation Tabs -->
-    <div class="flex border-b border-slate-200 gap-4" id="portalTabs">
-        <button onclick="switchTab('store')" id="tabBtn-store" class="py-3 px-4 font-bold text-sm border-b-2 border-blue-600 text-blue-600 transition flex items-center gap-2">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Bana Özel eSIM Paketleri</span>
-            <span class="px-2 py-0.5 rounded-full text-xs bg-blue-100 text-blue-700 font-extrabold">{{ count($assignedPackages) }}</span>
-        </button>
-        <button onclick="switchTab('myEsims')" id="tabBtn-myEsims" class="py-3 px-4 font-bold text-sm border-b-2 border-transparent text-slate-500 hover:text-slate-900 transition flex items-center gap-2">
-            <i class="fa-solid fa-sim-card"></i>
-            <span>Satın Alınan eSIM'lerim</span>
-            <span class="px-2 py-0.5 rounded-full text-xs bg-purple-100 text-purple-700 font-extrabold">{{ count($orders) }}</span>
-        </button>
+    <!-- Main Navigation Tabs & Branch Filter Bar -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-200 gap-4" id="portalTabs">
+        <div class="flex gap-4">
+            <button onclick="switchTab('store')" id="tabBtn-store" class="py-3 px-4 font-bold text-sm border-b-2 border-blue-600 text-blue-600 transition flex items-center gap-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Bana Özel eSIM Paketleri</span>
+                <span class="px-2 py-0.5 rounded-full text-xs bg-blue-100 text-blue-700 font-extrabold">{{ count($assignedPackages) }}</span>
+            </button>
+            <button onclick="switchTab('myEsims')" id="tabBtn-myEsims" class="py-3 px-4 font-bold text-sm border-b-2 border-transparent text-slate-500 hover:text-slate-900 transition flex items-center gap-2">
+                <i class="fa-solid fa-sim-card"></i>
+                <span>Satın Alınan eSIM'lerim</span>
+                <span class="px-2 py-0.5 rounded-full text-xs bg-purple-100 text-purple-700 font-extrabold">{{ count($orders) }}</span>
+            </button>
+        </div>
+
+        @if(!Auth::user()->isBranchUser() && count($branches) > 0)
+            <!-- Dealer Admin Branch Filter -->
+            <form method="GET" action="{{ route('customer.dashboard') }}" class="flex items-center gap-2 pb-2 md:pb-0">
+                <i class="fa-solid fa-filter text-slate-400 text-xs"></i>
+                <select name="branch_id" onchange="this.form.submit()" class="px-3 py-1.5 bg-white border border-slate-300 rounded-xl text-slate-900 text-xs font-bold focus:outline-none focus:border-blue-600 shadow-sm">
+                    <option value="">-- Tüm Şubelerin Satışları --</option>
+                    @foreach($branches as $b)
+                        <option value="{{ $b->id }}" {{ $selectedBranchId == $b->id ? 'selected' : '' }}>
+                            {{ $b->name }}
+                        </option>
+                    @endforeach
+                </select>
+                @if($selectedBranchId)
+                    <a href="{{ route('customer.dashboard') }}" class="px-2.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs rounded-xl font-bold border border-slate-300">Temizle</a>
+                @endif
+            </form>
+        @endif
     </div>
+
+    @if(!Auth::user()->isBranchUser() && count($branchStats) > 0)
+        <!-- Dealer Admin Branch Performance Cards -->
+        <div class="space-y-3">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-store text-blue-600"></i>
+                <span>Şubelerinizin Satış Performans Özeti</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                @foreach($branchStats as $stat)
+                    <div class="glass-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="font-extrabold text-sm text-slate-900 truncate">{{ $stat->branch_name ?? 'Merkez / Genel' }}</span>
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-indigo-50 text-indigo-700 border border-indigo-200">
+                                {{ $stat->total_orders }} Sipariş
+                            </span>
+                        </div>
+                        <div class="text-base font-black text-slate-800">
+                            ₺{{ number_format($stat->total_spent, 2) }}
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif
 
     <!-- Tab 1: Available Assigned Packages Store -->
     <div id="tabContent-store" class="space-y-6">
