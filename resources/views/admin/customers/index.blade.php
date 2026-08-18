@@ -69,6 +69,9 @@
                                 ₺{{ number_format($customer->orders_sum_profit ?? 0, 2) }}
                             </td>
                             <td class="py-4 px-4 text-right space-x-2">
+                                <button onclick="openPasswordModal({{ $customer->id }}, '{{ addslashes($customer->name) }}')" class="px-2.5 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-bold rounded-lg border border-amber-200 transition inline-flex items-center gap-1">
+                                    <i class="fa-solid fa-key"></i> Şifre Değiştir
+                                </button>
                                 <button onclick="openBranchModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->branches) }})" class="px-2.5 py-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-lg border border-indigo-200 transition inline-flex items-center gap-1">
                                     <i class="fa-solid fa-store"></i> Şubeler
                                 </button>
@@ -213,12 +216,49 @@
     </div>
 </div>
 
+<!-- Modal: Admin Reset Customer Password -->
+<div id="passwordModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="bg-white max-w-md w-full p-6 rounded-3xl shadow-2xl relative border border-slate-200">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-key text-amber-500"></i>
+                <span>Müşteri Şifresini Değiştir</span>
+            </h3>
+            <button onclick="document.getElementById('passwordModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
+        </div>
+
+        <form id="passwordForm" method="POST" class="mt-4 space-y-4">
+            @csrf
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Müşteri</label>
+                <div id="passwordCustomerName" class="text-base font-extrabold text-slate-900"></div>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Yeni Şifre (En Az 6 Karakter)</label>
+                <input type="password" name="password" required placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-extrabold focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100">
+                <button type="button" onclick="document.getElementById('passwordModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm rounded-xl font-bold">İptal</button>
+                <button type="submit" class="px-5 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold rounded-xl shadow-md">Yeni Şifreyi Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <script>
     function openBalanceModal(customerId, customerName, currentBalance) {
         document.getElementById('balanceCustomerName').innerText = customerName;
         document.getElementById('balanceCurrentAmount').innerText = '₺' + parseFloat(currentBalance).toFixed(2);
         document.getElementById('balanceForm').action = '/admin/customers/' + customerId + '/balance';
         document.getElementById('balanceModal').classList.remove('hidden');
+    }
+
+    function openPasswordModal(customerId, customerName) {
+        document.getElementById('passwordCustomerName').innerText = customerName;
+        document.getElementById('passwordForm').action = '/admin/customers/' + customerId + '/password';
+        document.getElementById('passwordModal').classList.remove('hidden');
     }
 
     function openBranchModal(customerId, customerName, branches) {

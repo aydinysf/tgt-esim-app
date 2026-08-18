@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        $customerPolo = User::firstOrCreate(
+        $customer2 = User::firstOrCreate(
             ['email' => 'customer@polosim.com'],
             [
                 'name' => 'Mehmet Kaya',

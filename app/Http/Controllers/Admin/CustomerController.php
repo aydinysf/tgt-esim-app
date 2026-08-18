@@ -78,6 +78,19 @@ class CustomerController extends Controller
             ->with('success', "{$customer->name} isimli müşteriye ₺" . number_format(abs($amount), 2) . " bakiye {$actionText}. Güncel Bakiye: ₺" . number_format($customer->balance, 2));
     }
 
+    public function updatePassword(Request $request, User $customer)
+    {
+        $request->validate([
+            'password' => 'required|string|min:6',
+        ]);
+
+        $customer->password = Hash::make($request->password);
+        $customer->save();
+
+        return redirect()->route('admin.customers.index')
+            ->with('success', "{$customer->name} müşterisinin şifresi başarıyla güncellendi.");
+    }
+
     public function destroy(User $customer)
     {
         if ($customer->role === 'admin') {

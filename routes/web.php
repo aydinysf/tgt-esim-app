@@ -43,9 +43,17 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     // Settings & API Credentials
     Route::get('/settings', [AdminSetting::class, 'index'])->name('settings.index');
     Route::post('/settings', [AdminSetting::class, 'update'])->name('settings.update');
-    // Branches
+    // Branches & Customer Password Reset
     Route::post('/customers/{customer}/branches', [AdminCustomer::class, 'storeBranch'])->name('customers.branches.store');
+    Route::post('/customers/{customer}/password', [AdminCustomer::class, 'updatePassword'])->name('customers.password');
     Route::delete('/branches/{branch}', [AdminCustomer::class, 'destroyBranch'])->name('branches.destroy');
+});
+
+// Authenticated Shared Profile Routes
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
+    Route::post('/profile/info', [\App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('profile.update');
+    Route::post('/profile/password', [\App\Http\Controllers\ProfileController::class, 'updatePassword'])->name('profile.password');
 });
 
 // Customer Routes

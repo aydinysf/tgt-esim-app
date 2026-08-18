@@ -130,6 +130,13 @@
                         <span>Şubelerim</span>
                     </a>
                 @endif
+
+                <div class="pt-2">
+                    <a href="{{ route('profile.show') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('profile.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-user-gear w-5 text-center text-blue-600"></i>
+                        <span>Profil & Şifre</span>
+                    </a>
+                </div>
             </nav>
         </div>
 
