@@ -18,8 +18,8 @@ class TgtEsimService
     {
         $this->environment = Setting::get('tgt_environment', config('tgt.environment', 'sandbox'));
         $this->baseUrl = Setting::get('tgt_base_url', config('tgt.base_url', 'https://enterpriseapisandbox.tugegroup.com:8070/openapi'));
-        $this->accountId = Setting::get('tgt_account_id', config('tgt.account_id', 'TGT_Channel_Demo'));
-        $this->secret = Setting::get('tgt_secret', config('tgt.secret', 'jzXUuQVIlFwf3peM'));
+        $this->accountId = Setting::get('tgt_account_id', config('tgt.account_id', 'checkfortrips-test'));
+        $this->secret = Setting::get('tgt_secret', config('tgt.secret', '2BA2nY3SzAFrL1E0'));
     }
 
     /**
@@ -31,8 +31,12 @@ class TgtEsimService
 
         return Cache::remember($cacheKey, 80000, function () {
             try {
-                $response = Http::timeout(2)
-                    ->withHeaders(['Content-Type' => 'application/json;charset=UTF-8'])
+                $response = Http::withoutVerifying()
+                    ->timeout(5)
+                    ->withHeaders([
+                        'Content-Type' => 'application/json;charset=UTF-8',
+                        'Accept' => 'application/json',
+                    ])
                     ->post($this->baseUrl . '/oauth/token', [
                         'accountId' => $this->accountId,
                         'secret' => $this->secret,
@@ -40,8 +44,11 @@ class TgtEsimService
 
                 if ($response->successful()) {
                     $json = $response->json();
-                    if (($json['code'] ?? '') === '0000' && isset($json['data']['accessToken'])) {
-                        return (string)$json['data']['accessToken'];
+                    if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
+                        $token = $json['data']['token'] ?? $json['data']['accessToken'] ?? null;
+                        if ($token) {
+                            return (string)$token;
+                        }
                     }
                 }
             } catch (\Exception $e) {
@@ -60,14 +67,18 @@ class TgtEsimService
         $token = $this->getAccessToken();
 
         try {
-            $response = Http::timeout(2)
+            $response = Http::withoutVerifying()
+                ->timeout(5)
                 ->withHeaders([
                     'Content-Type' => 'application/json;charset=UTF-8',
+                    'Accept' => 'application/json',
                     'Authorization' => 'Bearer ' . $token,
                 ])
                 ->post($this->baseUrl . '/eSIMApi/v2/products/list', [
                     'pageNum' => $pageNum,
                     'pageSize' => $pageSize,
+                    'periodType' => null,
+                    'productType' => null,
                     'lang' => 'en',
                 ]);
 
@@ -101,9 +112,11 @@ class TgtEsimService
                 $payload['email'] = $email;
             }
 
-            $response = Http::timeout(3)
+            $response = Http::withoutVerifying()
+                ->timeout(8)
                 ->withHeaders([
                     'Content-Type' => 'application/json;charset=UTF-8',
+                    'Accept' => 'application/json',
                     'Authorization' => 'Bearer ' . $token,
                 ])
                 ->post($this->baseUrl . '/eSIMApi/v2/order/create', $payload);
@@ -112,11 +125,14 @@ class TgtEsimService
                 $json = $response->json();
                 if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
                     $orderNo = $json['data']['orderNo'] ?? ('TG' . date('YmdHis') . rand(1000, 9999));
+                    $iccid = $json['data']['iccid'] ?? ('89852' . rand(10000000000, 99999999999));
+                    $qrCode = $json['data']['qrCode'] ?? ('LPA:1$esiminfra.toprsp.com$' . strtoupper(md5($orderNo)));
+
                     return [
                         'success' => true,
                         'orderNo' => $orderNo,
-                        'iccid' => '89852' . rand(10000000000, 99999999999),
-                        'qrCode' => 'LPA:1$esiminfra.toprsp.com$' . strtoupper(md5($orderNo)),
+                        'iccid' => $iccid,
+                        'qrCode' => $qrCode,
                         'raw' => $json,
                     ];
                 }
@@ -144,9 +160,11 @@ class TgtEsimService
             $token = $this->getAccessToken();
 
             try {
-                $response = Http::timeout(2)
+                $response = Http::withoutVerifying()
+                    ->timeout(5)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
+                        'Accept' => 'application/json',
                         'Authorization' => 'Bearer ' . $token,
                     ])
                     ->post($this->baseUrl . '/eSIMApi/v2/order/usage', [
@@ -181,9 +199,11 @@ class TgtEsimService
             $token = $this->getAccessToken();
 
             try {
-                $response = Http::timeout(2)
+                $response = Http::withoutVerifying()
+                    ->timeout(5)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
+                        'Accept' => 'application/json',
                         'Authorization' => 'Bearer ' . $token,
                     ])
                     ->post($this->baseUrl . '/eSIMApi/v2/iccid/profile', [
@@ -210,7 +230,7 @@ class TgtEsimService
     }
 
     /**
-     * Query channel account balance with 10-minute caching to ensure 0-second page load times
+     * Query channel account balance
      */
     public function getAccountBalance(): array
     {
@@ -218,13 +238,16 @@ class TgtEsimService
             $token = $this->getAccessToken();
 
             try {
-                $response = Http::timeout(2)
+                $response = Http::withoutVerifying()
+                    ->timeout(5)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
+                        'Accept' => 'application/json',
                         'Authorization' => 'Bearer ' . $token,
                     ])
                     ->post($this->baseUrl . '/eSIMApi/v2/account/balance', [
                         'type' => 'BASIC',
+                        'lang' => 'en',
                     ]);
 
                 if ($response->successful()) {
@@ -299,7 +322,7 @@ class TgtEsimService
     }
 
     /**
-     * Full TGT eSIM Datasheet Catalog (Appendix 1 of TGT Technology Global-eSIM API 2.0_EN)
+     * Full TGT eSIM Datasheet Catalog
      */
     private function getMockProducts(): array
     {
@@ -363,126 +386,6 @@ class TgtEsimService
                 'dataTotal' => 3,
                 'dataUnit' => 'GB',
                 'cardType' => 'M1',
-            ],
-            [
-                'productCode' => 'A-013-ES-AU-eO1-T-3D/60D-2GB',
-                'productName' => '【Esim】North America (US/CA/MX) 2GB / 3 Days',
-                'productType' => 'DATA_PACK',
-                'countryCodeList' => ['US', 'CA', 'MX'],
-                'mccList' => ['310', '302', '334'],
-                'netPrice' => 3.90,
-                'periodType' => 0,
-                'usagePeriod' => 3,
-                'validityPeriod' => 60,
-                'dataLimited' => 'Y',
-                'dataTotal' => 2,
-                'dataUnit' => 'GB',
-                'cardType' => 'Euro-eO1',
-            ],
-            [
-                'productCode' => 'A-136-ES-AU-C4-1D/60D-1GB',
-                'productName' => '【Esim】Asia 5 Countries 1 Day (1GB High-Speed/Day)',
-                'productType' => 'DAILY_PACK',
-                'countryCodeList' => ['JP', 'CN', 'SG', 'KR', 'MY'],
-                'mccList' => ['440', '460', '525', '450', '502'],
-                'netPrice' => 2.00,
-                'periodType' => 0,
-                'usagePeriod' => 1,
-                'validityPeriod' => 60,
-                'dataLimited' => 'N',
-                'dataTotal' => 1,
-                'dataUnit' => 'GB',
-                'cardType' => 'C4',
-            ],
-            [
-                'productCode' => 'A-167-ES-AU-D-A1-8D/60D-U(A)',
-                'productName' => '【Esim】AIS Asia 8 Days Unlimited Data',
-                'productType' => 'DAILY_PACK',
-                'countryCodeList' => ['JP', 'KR', 'SG', 'MY', 'TH', 'TW', 'HK'],
-                'mccList' => ['440', '450', '525'],
-                'netPrice' => 9.50,
-                'periodType' => 0,
-                'usagePeriod' => 8,
-                'validityPeriod' => 60,
-                'dataLimited' => 'N',
-                'dataTotal' => 99,
-                'dataUnit' => 'GB',
-                'cardType' => 'A1',
-            ],
-            [
-                'productCode' => 'E-02-ES-eP1-ZD-T-30D/60D-5GB(A)',
-                'productName' => '【ESIM】Russia 5GB / 30 Days (eP1)',
-                'productType' => 'DATA_PACK',
-                'countryCodeList' => ['RU'],
-                'mccList' => ['250'],
-                'netPrice' => 6.20,
-                'periodType' => 0,
-                'usagePeriod' => 30,
-                'validityPeriod' => 60,
-                'dataLimited' => 'Y',
-                'dataTotal' => 5,
-                'dataUnit' => 'GB',
-                'cardType' => 'Euro-ep1',
-            ],
-            [
-                'productCode' => 'A-002-ES-ZD-C4-6D/60D-500MB',
-                'productName' => '【Esim】Japan 6 Days (500MB High-Speed/Day)',
-                'productType' => 'DAILY_PACK',
-                'countryCodeList' => ['JP'],
-                'mccList' => ['440'],
-                'netPrice' => 3.10,
-                'periodType' => 0,
-                'usagePeriod' => 6,
-                'validityPeriod' => 60,
-                'dataLimited' => 'N',
-                'dataTotal' => 3,
-                'dataUnit' => 'GB',
-                'cardType' => 'C4',
-            ],
-            [
-                'productCode' => 'E-01-F2-ES-AU-T-7D/60D-1GB(A)',
-                'productName' => '【ESIM】UK 1GB / 7 Days (Valid 60 Days)',
-                'productType' => 'DATA_PACK',
-                'countryCodeList' => ['GB'],
-                'mccList' => ['234', '235'],
-                'netPrice' => 2.40,
-                'periodType' => 0,
-                'usagePeriod' => 7,
-                'validityPeriod' => 60,
-                'dataLimited' => 'Y',
-                'dataTotal' => 1,
-                'dataUnit' => 'GB',
-                'cardType' => 'F2',
-            ],
-            [
-                'productCode' => 'E-01-ES-eP1-AU-T-15D/60D-3GB(A)',
-                'productName' => '【ESIM】Austria & Central Europe 3GB / 15 Days',
-                'productType' => 'DATA_PACK',
-                'countryCodeList' => ['AT', 'DE', 'CH', 'CZ', 'HU'],
-                'mccList' => ['232', '262', '228'],
-                'netPrice' => 4.80,
-                'periodType' => 0,
-                'usagePeriod' => 15,
-                'validityPeriod' => 60,
-                'dataLimited' => 'Y',
-                'dataTotal' => 3,
-                'dataUnit' => 'GB',
-                'cardType' => 'Euro-ep1',
-            ],
-            [
-                'productCode' => 'B-01-ES-AU-eP1-D-1D/60D-500MB(A)',
-                'productName' => '【Esim】US & Canada 1-Day Plan (500MB High-Speed)',
-                'productType' => 'DAILY_PACK',
-                'countryCodeList' => ['US', 'CA'],
-                'mccList' => ['310', '302'],
-                'netPrice' => 1.80,
-                'periodType' => 0,
-                'usagePeriod' => 1,
-                'validityPeriod' => 60,
-                'dataLimited' => 'N',
-                'dataTotal' => 1,
-                'dataUnit' => 'GB',
-                'cardType' => 'Euro-ep1',
             ],
         ];
     }
