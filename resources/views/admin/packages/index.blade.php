@@ -147,13 +147,73 @@
 
     <!-- Section 2: Catalog of Available Products -->
     <div class="glass-panel p-6 rounded-2xl space-y-4 bg-white border border-slate-200 shadow-sm">
-        <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-            <i class="fa-solid fa-list-check text-blue-600"></i>
-            <span>Canlı Paketler Katalog Tablosu</span>
-        </h2>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-100">
+            <div>
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-list-check text-blue-600"></i>
+                    <span>Canlı Paketler Katalog Tablosu</span>
+                </h2>
+                <p class="text-xs text-slate-500 mt-0.5">Sistemde kayıtlı paketler arasında anlık arama ve filtreleme yapın.</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200" id="filterCountBadge">
+                    Gösterilen: {{ count($products) }} / {{ count($products) }} Paket
+                </span>
+            </div>
+        </div>
+
+        <!-- Live Instant Filter Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <!-- Filter 1: Search Box -->
+            <div class="relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
+                <input type="text" id="tableSearchInput" onkeyup="filterCatalogTable()" placeholder="Paket Adı veya Kodu Ara..." class="w-full pl-9 pr-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+            </div>
+
+            <!-- Filter 2: Country Filter -->
+            <div>
+                <select id="tableCountryFilter" onchange="filterCatalogTable()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                    <option value="">-- Tüm Ülkeler --</option>
+                    <option value="tr">🇹🇷 Türkiye (TR)</option>
+                    <option value="us">🇺🇸 Amerika (US)</option>
+                    <option value="gb">🇬🇧 İngiltere (GB)</option>
+                    <option value="de">🇩🇪 Almanya (DE)</option>
+                    <option value="fr">🇫🇷 Fransa (FR)</option>
+                    <option value="it">🇮🇹 İtalya (IT)</option>
+                    <option value="es">🇪🇸 İspanya (ES)</option>
+                    <option value="jp">🇯🇵 Japonya (JP)</option>
+                    <option value="kr">🇰🇷 Güney Kore (KR)</option>
+                    <option value="th">🇹🇭 Tayland (TH)</option>
+                    <option value="ae">🇦🇪 BAE (AE)</option>
+                </select>
+            </div>
+
+            <!-- Filter 3: Product Type Filter -->
+            <div>
+                <select id="tableTypeFilter" onchange="filterCatalogTable()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                    <option value="">-- Tüm Paket Tipleri --</option>
+                    <option value="DATA_PACK">📦 Sabit Toplam Veri (DATA_PACK)</option>
+                    <option value="DAILY_PACK">⚡ Günlük Yenilenen (DAILY_PACK)</option>
+                </select>
+            </div>
+
+            <!-- Filter 4: Duration Filter -->
+            <div>
+                <select id="tablePeriodFilter" onchange="filterCatalogTable()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                    <option value="">-- Tüm Süreler --</option>
+                    <option value="1">1 Gün</option>
+                    <option value="3">3 Gün</option>
+                    <option value="7">7 Gün</option>
+                    <option value="8">8 Gün</option>
+                    <option value="10">10 Gün</option>
+                    <option value="15">15 Gün</option>
+                    <option value="30">30 Gün</option>
+                </select>
+            </div>
+        </div>
 
         <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm text-slate-700">
+            <table class="w-full text-left text-sm text-slate-700" id="catalogTable">
                 <thead class="text-xs uppercase bg-slate-50 text-slate-500 border-b border-slate-200">
                     <tr>
                         <th class="py-3.5 px-4 font-bold">Paket Kodu</th>
@@ -167,7 +227,12 @@
                 </thead>
                 <tbody class="divide-y divide-slate-100">
                     @forelse($products as $product)
-                        <tr class="hover:bg-slate-50 transition">
+                        <tr class="catalog-row hover:bg-slate-50 transition" 
+                            data-code="{{ strtolower($product->product_code) }}"
+                            data-name="{{ strtolower($product->product_name) }}"
+                            data-countries="{{ strtolower(implode(',', $product->country_code_list ?? [])) }}"
+                            data-type="{{ $product->product_type }}"
+                            data-period="{{ $product->usage_period }}">
                             <td class="py-3.5 px-4 font-mono text-xs text-blue-700 font-bold">{{ $product->product_code }}</td>
                             <td class="py-3.5 px-4 font-bold text-slate-900">{{ $product->product_name }}</td>
                             <td class="py-3.5 px-4">
@@ -342,6 +407,41 @@
         } else {
             btnBulk.className = 'px-3 py-1.5 text-xs font-bold rounded-lg bg-blue-600 text-white shadow transition';
             btnSingle.className = 'px-3 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition';
+        }
+    }
+
+    function filterCatalogTable() {
+        const search = (document.getElementById('tableSearchInput').value || '').toLowerCase().trim();
+        const country = (document.getElementById('tableCountryFilter').value || '').toLowerCase().trim();
+        const type = (document.getElementById('tableTypeFilter').value || '').trim();
+        const period = (document.getElementById('tablePeriodFilter').value || '').trim();
+
+        const rows = document.querySelectorAll('.catalog-row');
+        let visibleCount = 0;
+
+        rows.forEach(row => {
+            const code = row.getAttribute('data-code') || '';
+            const name = row.getAttribute('data-name') || '';
+            const countries = row.getAttribute('data-countries') || '';
+            const rowType = row.getAttribute('data-type') || '';
+            const rowPeriod = row.getAttribute('data-period') || '';
+
+            let matchesSearch = !search || code.includes(search) || name.includes(search) || countries.includes(search);
+            let matchesCountry = !country || countries.includes(country);
+            let matchesType = !type || rowType === type;
+            let matchesPeriod = !period || rowPeriod === period;
+
+            if (matchesSearch && matchesCountry && matchesType && matchesPeriod) {
+                row.style.display = '';
+                visibleCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        const badge = document.getElementById('filterCountBadge');
+        if (badge) {
+            badge.innerText = `Gösterilen: ${visibleCount} / ${rows.length} Paket`;
         }
     }
 </script>
