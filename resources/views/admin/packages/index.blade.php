@@ -151,7 +151,7 @@
                         <th class="py-3.5 px-4 font-bold">Paket Kodu</th>
                         <th class="py-3.5 px-4 font-bold">Paket Adı</th>
                         <th class="py-3.5 px-4 font-bold">Ülkeler</th>
-                        <th class="py-3.5 px-4 font-bold">Alış Fiyatı (Net)</th>
+                        <th class="py-3.5 px-4 font-bold">Alış Fiyatı (Net USD)</th>
                         <th class="py-3.5 px-4 font-bold">Veri Miktarı</th>
                         <th class="py-3.5 px-4 font-bold">Kullanım Süresi</th>
                         <th class="py-3.5 px-4 font-bold text-center">Atandığı Müşteri</th>
@@ -172,7 +172,7 @@
                                     @endif
                                 </div>
                             </td>
-                            <td class="py-3.5 px-4 font-extrabold text-slate-900">₺{{ number_format($product->net_price, 2) }}</td>
+                            <td class="py-3.5 px-4 font-extrabold text-slate-900">${{ number_format($product->net_price, 2) }} USD</td>
                             <td class="py-3.5 px-4">
                                 <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-cyan-50 text-cyan-700 border border-cyan-200">
                                     {{ $product->data_total }} {{ $product->data_unit }}
