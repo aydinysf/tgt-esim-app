@@ -19,9 +19,15 @@ class PackageController extends Controller
         return view('admin.packages.index', compact('products', 'customers'));
     }
 
-    public function sync(TgtEsimService $tgtService)
+    public function sync(Request $request, TgtEsimService $tgtService)
     {
-        $apiProducts = $tgtService->getProducts(1, 100);
+        $filters = [
+            'countryCode' => $request->input('country_code'),
+            'productType' => $request->input('product_type'),
+            'usagePeriod' => $request->input('usage_period'),
+        ];
+
+        $apiProducts = $tgtService->getProducts($filters, 1, 100);
 
         $newCount = 0;
         $updatedCount = 0;
@@ -59,9 +65,15 @@ class PackageController extends Controller
         }
 
         $totalProducts = TgtProduct::count();
+        $filterSummary = [];
+        if (!empty($filters['countryCode'])) $filterSummary[] = "Ülke: " . strtoupper($filters['countryCode']);
+        if (!empty($filters['productType'])) $filterSummary[] = "Tip: " . ($filters['productType'] === 'DATA_PACK' ? 'Sabit Veri' : 'Günlük');
+        if (!empty($filters['usagePeriod'])) $filterSummary[] = "Süre: " . $filters['usagePeriod'] . " Gün";
+        
+        $filterText = count($filterSummary) > 0 ? " [" . implode(', ', $filterSummary) . "]" : "";
 
         return redirect()->route('admin.packages.index')
-            ->with('success', "TGT API / Datasheet senkronizasyonu tamamlandı. ({$newCount} yeni paket eklendi, {$updatedCount} paket güncellendi. Toplam: {$totalProducts} aktif paket)");
+            ->with('success', "TGT API senkronizasyonu{$filterText} tamamlandı. ({$newCount} yeni paket eklendi, {$updatedCount} paket güncellendi. Kataloğunuzda Toplam: {$totalProducts} aktif paket)");
     }
 
     public function assign(Request $request)

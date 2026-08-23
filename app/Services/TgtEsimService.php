@@ -60,27 +60,37 @@ class TgtEsimService
     }
 
     /**
-     * Fetch products list with caching
+     * Fetch products list with optional filters (productType, countryCode, usagePeriod)
      */
-    public function getProducts(int $pageNum = 1, int $pageSize = 100): array
+    public function getProducts(array $filters = [], int $pageNum = 1, int $pageSize = 100): array
     {
         $token = $this->getAccessToken();
 
         try {
+            $payload = [
+                'pageNum' => $pageNum,
+                'pageSize' => $pageSize,
+                'periodType' => $filters['periodType'] ?? null,
+                'productType' => !empty($filters['productType']) ? $filters['productType'] : null,
+                'lang' => 'en',
+            ];
+
+            if (!empty($filters['countryCode'])) {
+                $payload['countryCode'] = strtoupper($filters['countryCode']);
+            }
+
+            if (!empty($filters['usagePeriod'])) {
+                $payload['usagePeriod'] = (int) $filters['usagePeriod'];
+            }
+
             $response = Http::withoutVerifying()
-                ->timeout(5)
+                ->timeout(8)
                 ->withHeaders([
                     'Content-Type' => 'application/json;charset=UTF-8',
                     'Accept' => 'application/json',
                     'Authorization' => 'Bearer ' . $token,
                 ])
-                ->post($this->baseUrl . '/eSIMApi/v2/products/list', [
-                    'pageNum' => $pageNum,
-                    'pageSize' => $pageSize,
-                    'periodType' => null,
-                    'productType' => null,
-                    'lang' => 'en',
-                ]);
+                ->post($this->baseUrl . '/eSIMApi/v2/products/list', $payload);
 
             if ($response->successful()) {
                 $json = $response->json();

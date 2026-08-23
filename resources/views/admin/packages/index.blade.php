@@ -14,13 +14,21 @@
             <p class="text-slate-500 text-sm mt-1">API ile çekilen paketleri listeleyin, müşterilere atayın ve satış fiyatlarını belirleyin.</p>
         </div>
 
-        <form action="{{ route('admin.packages.sync') }}" method="POST">
-            @csrf
-            <button type="submit" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-                <span>API'den Paketleri Çek / Yenile</span>
+        <div class="flex items-center gap-2">
+            <form action="{{ route('admin.packages.sync') }}" method="POST">
+                @csrf
+                <button type="submit" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl border border-slate-300 transition flex items-center gap-2 active:scale-95" title="Tüm kataloğu çek">
+                    <i class="fa-solid fa-cloud-arrow-down text-blue-600"></i>
+                    <span>Tüm Kataloğu Çek</span>
+                </button>
+            </form>
+
+            <button onclick="document.getElementById('filteredSyncModal').classList.remove('hidden')" 
+                class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Filtreli Paket Çek (Ülke & Tip)</span>
             </button>
-        </form>
+        </div>
     </div>
 
     <!-- Section 1: Bulk / Single Customer Package Assignment Form -->
@@ -191,6 +199,86 @@
                 </tbody>
             </table>
         </div>
+    </div>
+</div>
+
+<!-- Modal: Filtered Package Sync from TGT API -->
+<div id="filteredSyncModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="bg-white max-w-lg w-full p-6 rounded-3xl shadow-2xl relative border border-slate-200">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-sliders text-blue-600"></i>
+                <span>Filtreli TGT Paket Çekme</span>
+            </h3>
+            <button onclick="document.getElementById('filteredSyncModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
+        </div>
+
+        <form action="{{ route('admin.packages.sync') }}" method="POST" class="mt-4 space-y-4">
+            @csrf
+
+            <!-- Country / Region Filter -->
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                    <i class="fa-solid fa-earth-americas text-blue-600"></i>
+                    <span>Ülke / Bölge Seçimi</span>
+                </label>
+                <select name="country_code" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                    <option value="">-- Tüm Ülkeler & Bölgeler --</option>
+                    <option value="TR">🇹🇷 Türkiye (TR)</option>
+                    <option value="US">🇺🇸 Amerika Birleşik Devletleri (US)</option>
+                    <option value="GB">🇬🇧 Birleşik Krallık / İngiltere (GB)</option>
+                    <option value="DE">🇩🇪 Almanya (DE)</option>
+                    <option value="FR">🇫🇷 Fransa (FR)</option>
+                    <option value="IT">🇮🇹 İtalya (IT)</option>
+                    <option value="ES">🇪🇸 İspanya (ES)</option>
+                    <option value="JP">🇯🇵 Japonya (JP)</option>
+                    <option value="KR">🇰🇷 Güney Kore (KR)</option>
+                    <option value="TH">🇹🇭 Tayland (TH)</option>
+                    <option value="AE">🇦🇪 Birleşik Arap Emirlikleri (AE)</option>
+                    <option value="IL">🇮🇱 İsrail (IL)</option>
+                </select>
+                <span class="text-[11px] text-slate-400 mt-1 block font-medium">Belli bir ülkeye özel paketleri çekmek için ülke seçin.</span>
+            </div>
+
+            <!-- Product Type Filter -->
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                    <i class="fa-solid fa-box text-indigo-600"></i>
+                    <span>Paket Tipi</span>
+                </label>
+                <select name="product_type" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                    <option value="">-- Tüm Paket Tipleri --</option>
+                    <option value="DATA_PACK">📦 Sabit Toplam Veri Paketi (DATA_PACK - Örn: 3GB, 5GB, 10GB)</option>
+                    <option value="DAILY_PACK">⚡ Günlük Yenilenen Paket (DAILY_PACK - Örn: Günlük 1GB/2GB)</option>
+                </select>
+            </div>
+
+            <!-- Usage Period Filter -->
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                    <i class="fa-solid fa-clock text-amber-500"></i>
+                    <span>Kullanım Süresi (Gün)</span>
+                </label>
+                <select name="usage_period" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                    <option value="">-- Tüm Süreler --</option>
+                    <option value="1">1 Günlük</option>
+                    <option value="3">3 Günlük</option>
+                    <option value="7">7 Günlük</option>
+                    <option value="8">8 Günlük</option>
+                    <option value="10">10 Günlük</option>
+                    <option value="15">15 Günlük</option>
+                    <option value="30">30 Günlük</option>
+                </select>
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100">
+                <button type="button" onclick="document.getElementById('filteredSyncModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm rounded-xl font-bold">İptal</button>
+                <button type="submit" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl shadow-md flex items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Seçili Paketleri API'den Çek</span>
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 
