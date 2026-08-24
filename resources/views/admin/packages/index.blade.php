@@ -281,6 +281,34 @@
         <form action="{{ route('admin.packages.sync') }}" method="POST" class="mt-4 space-y-4">
             @csrf
 
+            <!-- Product Name Search -->
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                    <i class="fa-solid fa-magnifying-glass text-blue-600"></i>
+                    <span>Paket Adında Kelime Ara (Örn: Turkey, Europe, Japan)</span>
+                </label>
+                <input type="text" name="product_name" placeholder="Örn: Turkey" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                <span class="text-[11px] text-slate-400 mt-1 block font-medium">Belli bir isim geçen paketleri (Örn: Turkey) çekmek için yazın.</span>
+            </div>
+
+            <!-- Card Type / Family Filter -->
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                    <i class="fa-solid fa-id-card text-purple-600"></i>
+                    <span>Kart Tipi / Ailesi (Card Type)</span>
+                </label>
+                <select name="card_type" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                    <option value="">-- Tüm Kart Tipleri --</option>
+                    <option value="ep2">🇹🇷 ep2 (Turkey Daypass / High-Speed 82+ Türkiye Paketi Burada!)</option>
+                    <option value="ep1">🇪🇺 ep1 (Euro / Global eP1 Paketleri)</option>
+                    <option value="eO1">⚡ eO1 (Euro-eO1 Yüksek Hızlı İnternet Paketleri)</option>
+                    <option value="M1">🕌 M1 (Middle East / Israel M1 Paketleri)</option>
+                    <option value="A1">🌏 A1 (AIS Thailand & Asya Paketleri)</option>
+                    <option value="C4">🌸 C4 (Asya C4 Günlük Paketler)</option>
+                    <option value="F2">🇬🇧 F2 (İngiltere / Avrupa F2 Paketleri)</option>
+                </select>
+            </div>
+
             <!-- Country / Region Filter -->
             <div>
                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
@@ -300,9 +328,7 @@
                     <option value="KR">🇰🇷 Güney Kore (KR)</option>
                     <option value="TH">🇹🇭 Tayland (TH)</option>
                     <option value="AE">🇦🇪 Birleşik Arap Emirlikleri (AE)</option>
-                    <option value="IL">🇮🇱 İsrail (IL)</option>
                 </select>
-                <span class="text-[11px] text-slate-400 mt-1 block font-medium">Belli bir ülkeye özel paketleri çekmek için ülke seçin.</span>
             </div>
 
             <!-- Product Type Filter -->
@@ -318,21 +344,16 @@
                 </select>
             </div>
 
-            <!-- Usage Period Filter -->
+            <!-- Sync Depth / Pages -->
             <div>
                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-clock text-amber-500"></i>
-                    <span>Kullanım Süresi (Gün)</span>
+                    <i class="fa-solid fa-layer-group text-emerald-600"></i>
+                    <span>Çekim Derinliği (Sayfa / Paket Adedi)</span>
                 </label>
-                <select name="usage_period" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                    <option value="">-- Tüm Süreler --</option>
-                    <option value="1">1 Günlük</option>
-                    <option value="3">3 Günlük</option>
-                    <option value="7">7 Günlük</option>
-                    <option value="8">8 Günlük</option>
-                    <option value="10">10 Günlük</option>
-                    <option value="15">15 Günlük</option>
-                    <option value="30">30 Günlük</option>
+                <select name="max_pages" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                    <option value="5" selected>5 Sayfa Derinlik (Yaklaşık 500 Paket)</option>
+                    <option value="10">10 Sayfa Derinlik (Yaklaşık 1.000 Paket)</option>
+                    <option value="1">Yalnızca 1. Sayfa (100 Paket)</option>
                 </select>
             </div>
 

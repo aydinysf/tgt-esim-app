@@ -25,9 +25,13 @@ class PackageController extends Controller
             'countryCode' => $request->input('country_code'),
             'productType' => $request->input('product_type'),
             'usagePeriod' => $request->input('usage_period'),
+            'cardType' => $request->input('card_type'),
+            'productName' => $request->input('product_name'),
+            'maxPages' => $request->input('max_pages', 5),
         ];
 
-        $apiProducts = $tgtService->getProducts($filters, 1, 100);
+        $maxPages = (int) $filters['maxPages'];
+        $apiProducts = $tgtService->getProducts($filters, $maxPages, 100);
 
         $newCount = 0;
         $updatedCount = 0;

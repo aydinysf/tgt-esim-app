@@ -60,46 +60,74 @@ class TgtEsimService
     }
 
     /**
-     * Fetch products list with optional filters (productType, countryCode, usagePeriod)
+     * Fetch products list with optional filters and multi-page loop
      */
-    public function getProducts(array $filters = [], int $pageNum = 1, int $pageSize = 100): array
+    public function getProducts(array $filters = [], int $maxPages = 3, int $pageSize = 100): array
     {
         $token = $this->getAccessToken();
+        $allProducts = [];
 
-        try {
-            $payload = [
-                'pageNum' => $pageNum,
-                'pageSize' => $pageSize,
-                'periodType' => $filters['periodType'] ?? null,
-                'productType' => !empty($filters['productType']) ? $filters['productType'] : null,
-                'lang' => 'en',
-            ];
+        $requestedMaxPages = !empty($filters['maxPages']) ? min(10, max(1, (int)$filters['maxPages'])) : $maxPages;
 
-            if (!empty($filters['countryCode'])) {
-                $payload['countryCode'] = strtoupper($filters['countryCode']);
-            }
+        for ($page = 1; $page <= $requestedMaxPages; $page++) {
+            try {
+                $payload = [
+                    'pageNum' => $page,
+                    'pageSize' => $pageSize,
+                    'periodType' => $filters['periodType'] ?? null,
+                    'productType' => !empty($filters['productType']) ? $filters['productType'] : null,
+                    'lang' => 'en',
+                ];
 
-            if (!empty($filters['usagePeriod'])) {
-                $payload['usagePeriod'] = (int) $filters['usagePeriod'];
-            }
-
-            $response = Http::withoutVerifying()
-                ->timeout(8)
-                ->withHeaders([
-                    'Content-Type' => 'application/json;charset=UTF-8',
-                    'Accept' => 'application/json',
-                    'Authorization' => 'Bearer ' . $token,
-                ])
-                ->post($this->baseUrl . '/eSIMApi/v2/products/list', $payload);
-
-            if ($response->successful()) {
-                $json = $response->json();
-                if (($json['code'] ?? '') === '0000' && !empty($json['data']['list'])) {
-                    return $json['data']['list'];
+                if (!empty($filters['cardType'])) {
+                    $payload['cardType'] = trim($filters['cardType']);
                 }
+
+                if (!empty($filters['productName'])) {
+                    $payload['productName'] = trim($filters['productName']);
+                }
+
+                if (!empty($filters['countryCode'])) {
+                    $payload['countryCode'] = strtoupper(trim($filters['countryCode']));
+                }
+
+                if (!empty($filters['usagePeriod'])) {
+                    $payload['usagePeriod'] = (int) $filters['usagePeriod'];
+                }
+
+                $response = Http::withoutVerifying()
+                    ->timeout(10)
+                    ->withHeaders([
+                        'Content-Type' => 'application/json;charset=UTF-8',
+                        'Accept' => 'application/json',
+                        'Authorization' => 'Bearer ' . $token,
+                    ])
+                    ->post($this->baseUrl . '/eSIMApi/v2/products/list', $payload);
+
+                if ($response->successful()) {
+                    $json = $response->json();
+                    if (($json['code'] ?? '') === '0000' && !empty($json['data']['list'])) {
+                        $items = $json['data']['list'];
+                        $allProducts = array_merge($allProducts, $items);
+
+                        // If returned items count is less than pageSize, we reached the end
+                        if (count($items) < $pageSize) {
+                            break;
+                        }
+                    } else {
+                        break;
+                    }
+                } else {
+                    break;
+                }
+            } catch (\Exception $e) {
+                Log::info("TGT API getProducts page {$page} error: " . $e->getMessage());
+                break;
             }
-        } catch (\Exception $e) {
-            Log::info('TGT API getProducts info: ' . $e->getMessage());
+        }
+
+        if (!empty($allProducts)) {
+            return $allProducts;
         }
 
         return $this->getMockProducts();
@@ -123,7 +151,7 @@ class TgtEsimService
             }
 
             $response = Http::withoutVerifying()
-                ->timeout(8)
+                ->timeout(10)
                 ->withHeaders([
                     'Content-Type' => 'application/json;charset=UTF-8',
                     'Accept' => 'application/json',
