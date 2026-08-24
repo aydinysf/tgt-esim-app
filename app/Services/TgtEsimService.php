@@ -60,14 +60,15 @@ class TgtEsimService
     }
 
     /**
-     * Fetch products list with optional filters and multi-page loop
+     * Fetch all matching products continuously across all pages until end of catalog
      */
-    public function getProducts(array $filters = [], int $maxPages = 3, int $pageSize = 100): array
+    public function getProducts(array $filters = [], int $maxPages = 50, int $pageSize = 100): array
     {
         $token = $this->getAccessToken();
         $allProducts = [];
 
-        $requestedMaxPages = !empty($filters['maxPages']) ? min(10, max(1, (int)$filters['maxPages'])) : $maxPages;
+        // Allow fetching up to 100 pages (10,000 products) or user requested maxPages
+        $requestedMaxPages = !empty($filters['maxPages']) ? max(1, (int)$filters['maxPages']) : $maxPages;
 
         for ($page = 1; $page <= $requestedMaxPages; $page++) {
             try {
@@ -96,7 +97,7 @@ class TgtEsimService
                 }
 
                 $response = Http::withoutVerifying()
-                    ->timeout(10)
+                    ->timeout(12)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
                         'Accept' => 'application/json',
@@ -110,7 +111,7 @@ class TgtEsimService
                         $items = $json['data']['list'];
                         $allProducts = array_merge($allProducts, $items);
 
-                        // If returned items count is less than pageSize, we reached the end
+                        // Stop automatically when we reach the last page
                         if (count($items) < $pageSize) {
                             break;
                         }

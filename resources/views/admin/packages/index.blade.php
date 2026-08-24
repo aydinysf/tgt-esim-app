@@ -351,8 +351,9 @@
                     <span>Çekim Derinliği (Sayfa / Paket Adedi)</span>
                 </label>
                 <select name="max_pages" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                    <option value="5" selected>5 Sayfa Derinlik (Yaklaşık 500 Paket)</option>
+                    <option value="50" selected>🚀 TÜM PAKETLERİ EKSİKSİZ ÇEK (Tüm Sayfaları Sonu Gelene Kadar Tara)</option>
                     <option value="10">10 Sayfa Derinlik (Yaklaşık 1.000 Paket)</option>
+                    <option value="5">5 Sayfa Derinlik (Yaklaşık 500 Paket)</option>
                     <option value="1">Yalnızca 1. Sayfa (100 Paket)</option>
                 </select>
             </div>
