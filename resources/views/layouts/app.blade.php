@@ -323,10 +323,8 @@
             });
         });
 
-                // Show loader immediately on page load (page is loading)
-        // Already shown via "visible" class in HTML.
-        // Hide it once everything is loaded.
-        window.addEventListener('load', function() {
+        // Hide it once HTML is parsed (don't wait for all images/frames to load)
+        document.addEventListener('DOMContentLoaded', function() {
             hideLoader();
         });
 
