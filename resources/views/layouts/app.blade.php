@@ -86,12 +86,12 @@
 </head>
 <body class="h-full font-sans antialiased flex flex-col md:flex-row bg-slate-50 min-h-screen text-slate-800 selection:bg-blue-600 selection:text-white">
     <!-- ── Global Page Loader ── -->
-    <div id="topProgressBar"></div>
-    <div id="pageLoader">
+    <div id="topProgressBar" style="width:20%"></div>
+    <div id="pageLoader" class="visible">
         <div class="loader-card">
             <div class="spinner"></div>
-            <div class="loader-text" id="loaderText">İşlem yapılıyor...</div>
-            <div class="loader-sub" id="loaderSub">Lütfen bekleyin</div>
+            <div class="loader-text" id="loaderText">Sayfa yükleniyor...</div>
+            <div class="loader-sub" id="loaderSub">Hazırlanıyor</div>
         </div>
     </div>
 
@@ -323,6 +323,13 @@
             });
         });
 
+                // Show loader immediately on page load (page is loading)
+        // Already shown via "visible" class in HTML.
+        // Hide it once everything is loaded.
+        window.addEventListener('load', function() {
+            hideLoader();
+        });
+
         // Hide loader when browser fires pageshow (covers back/forward navigation)
         window.addEventListener('pageshow', function() {
             hideLoader();
@@ -331,4 +338,5 @@
 @stack('scripts')
 </body>
 </html>
+
 
