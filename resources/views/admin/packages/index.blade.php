@@ -100,17 +100,22 @@
                     </label>
                 </div>
 
-                <!-- Product Checkboxes Container -->
-                <div id="productCheckboxesContainer" class="hidden pt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-slate-50 rounded-xl border border-slate-200 max-h-56 overflow-y-auto">
-                    @foreach($products as $p)
-                        <label class="flex items-center justify-between p-2 hover:bg-white rounded-lg cursor-pointer text-xs border border-transparent hover:border-slate-200">
-                            <div class="flex items-center gap-2">
-                                <input type="checkbox" name="product_ids[]" value="{{ $p->id }}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
-                                <span class="font-bold text-slate-800">{{ $p->product_name }}</span>
-                            </div>
-                            <span class="font-mono text-cyan-700 font-bold">₺{{ number_format($p->net_price, 2) }}</span>
-                        </label>
-                    @endforeach
+                <!-- Product Checkboxes Wrapper -->
+                <div id="productCheckboxesWrapper" class="hidden space-y-3 pt-3">
+                    <input type="text" id="assignProductSearch" onkeyup="filterAssignProducts()" placeholder="🔍 Paket adı ile ara..." 
+                        class="w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-slate-50 rounded-xl border border-slate-200 max-h-56 overflow-y-auto">
+                        @foreach($products as $p)
+                            <label class="assign-product-label flex items-center justify-between p-2 hover:bg-white rounded-lg cursor-pointer text-xs border border-transparent hover:border-slate-200" data-name="{{ strtolower($p->product_name) }}">
+                                <div class="flex items-center gap-2">
+                                    <input type="checkbox" name="product_ids[]" value="{{ $p->id }}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="font-bold text-slate-800">{{ $p->product_name }}</span>
+                                </div>
+                                <span class="font-mono text-emerald-700 font-bold">${{ number_format($p->net_price, 2) }} USD</span>
+                            </label>
+                        @endforeach
+                    </div>
                 </div>
             </div>
 
@@ -380,12 +385,25 @@
     }
 
     function toggleProductSelection(val) {
-        const container = document.getElementById('productCheckboxesContainer');
+        const wrapper = document.getElementById('productCheckboxesWrapper');
         if (val === 'selected') {
-            container.classList.remove('hidden');
+            wrapper.classList.remove('hidden');
         } else {
-            container.classList.add('hidden');
+            wrapper.classList.add('hidden');
         }
+    }
+
+    function filterAssignProducts() {
+        const search = document.getElementById('assignProductSearch').value.toLowerCase().trim();
+        const labels = document.querySelectorAll('.assign-product-label');
+        labels.forEach(label => {
+            const name = label.getAttribute('data-name') || '';
+            if (!search || name.includes(search)) {
+                label.style.display = 'flex';
+            } else {
+                label.style.display = 'none';
+            }
+        });
     }
 
     function updatePriceLabel() {
