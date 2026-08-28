@@ -106,7 +106,7 @@
                         class="w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-slate-50 rounded-xl border border-slate-200 max-h-56 overflow-y-auto">
-                        @foreach($products as $p)
+                        @foreach($allProducts as $p)
                             <label class="assign-product-label flex items-center justify-between p-2 hover:bg-white rounded-lg cursor-pointer text-xs border border-transparent hover:border-slate-200" data-name="{{ strtolower($p->product_name) }}">
                                 <div class="flex items-center gap-2">
                                     <input type="checkbox" name="product_ids[]" value="{{ $p->id }}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
@@ -161,58 +161,75 @@
                 <p class="text-xs text-slate-500 mt-0.5">Sistemde kayıtlı paketler arasında anlık arama ve filtreleme yapın.</p>
             </div>
             <div class="flex items-center gap-2">
-                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200" id="filterCountBadge">
-                    Gösterilen: {{ count($products) }} / {{ count($products) }} Paket
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                    Toplam: {{ $products->total() }} Paket &nbsp;|&nbsp; Sayfa {{ $products->currentPage() }} / {{ $products->lastPage() }}
                 </span>
             </div>
         </div>
 
-        <!-- Live Instant Filter Bar -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-200">
-            <!-- Filter 1: Search Box -->
-            <div class="relative">
-                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
-                <input type="text" id="tableSearchInput" onkeyup="filterCatalogTable()" placeholder="Paket Adı veya Kodu Ara..." class="w-full pl-9 pr-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
-            </div>
+        <!-- Server-Side Filter + Per-Page Form -->
+        <form method="GET" action="{{ route('admin.packages.index') }}" data-no-loader id="catalogFilterForm">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-200">
+                <!-- Search -->
+                <div class="relative md:col-span-2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
+                    <input type="text" name="search" value="{{ $search }}" placeholder="Paket Adı veya Kodu Ara..."
+                        class="w-full pl-9 pr-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                </div>
 
-            <!-- Filter 2: Country Filter -->
-            <div>
-                <select id="tableCountryFilter" onchange="filterCatalogTable()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
-                    <option value="">-- Tüm Ülkeler --</option>
-                    <option value="tr">🇹🇷 Türkiye (TR)</option>
-                    <option value="us">🇺🇸 Amerika (US)</option>
-                    <option value="gb">🇬🇧 İngiltere (GB)</option>
-                    <option value="de">🇩🇪 Almanya (DE)</option>
-                    <option value="fr">🇫🇷 Fransa (FR)</option>
-                    <option value="it">🇮🇹 İtalya (IT)</option>
-                    <option value="es">🇪🇸 İspanya (ES)</option>
-                    <option value="jp">🇯🇵 Japonya (JP)</option>
-                    <option value="kr">🇰🇷 Güney Kore (KR)</option>
-                    <option value="th">🇹🇭 Tayland (TH)</option>
-                    <option value="ae">🇦🇪 BAE (AE)</option>
-                </select>
-            </div>
+                <!-- Country -->
+                <div>
+                    <select name="country" onchange="this.form.submit()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                        <option value="">-- Tüm Ülkeler --</option>
+                        <option value="TR" {{ $country === 'TR' ? 'selected' : '' }}>🇹🇷 Türkiye (TR)</option>
+                        <option value="US" {{ $country === 'US' ? 'selected' : '' }}>🇺🇸 Amerika (US)</option>
+                        <option value="GB" {{ $country === 'GB' ? 'selected' : '' }}>🇬🇧 İngiltere (GB)</option>
+                        <option value="DE" {{ $country === 'DE' ? 'selected' : '' }}>🇩🇪 Almanya (DE)</option>
+                        <option value="FR" {{ $country === 'FR' ? 'selected' : '' }}>🇫🇷 Fransa (FR)</option>
+                        <option value="IT" {{ $country === 'IT' ? 'selected' : '' }}>🇮🇹 İtalya (IT)</option>
+                        <option value="ES" {{ $country === 'ES' ? 'selected' : '' }}>🇪🇸 İspanya (ES)</option>
+                        <option value="JP" {{ $country === 'JP' ? 'selected' : '' }}>🇯🇵 Japonya (JP)</option>
+                        <option value="KR" {{ $country === 'KR' ? 'selected' : '' }}>🇰🇷 Güney Kore (KR)</option>
+                        <option value="TH" {{ $country === 'TH' ? 'selected' : '' }}>🇹🇭 Tayland (TH)</option>
+                        <option value="AE" {{ $country === 'AE' ? 'selected' : '' }}>🇦🇪 BAE (AE)</option>
+                    </select>
+                </div>
 
-            <!-- Filter 3: Product Type Filter -->
-            <div>
-                <select id="tableTypeFilter" onchange="filterCatalogTable()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
-                    <option value="">-- Tüm Paket Tipleri --</option>
-                    <option value="DATA_PACK">📦 Sabit Toplam Veri (DATA_PACK)</option>
-                    <option value="DAILY_PACK">⚡ Günlük Yenilenen (DAILY_PACK)</option>
-                </select>
-            </div>
+                <!-- Type -->
+                <div>
+                    <select name="type" onchange="this.form.submit()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                        <option value="">-- Tüm Tipler --</option>
+                        <option value="DATA_PACK"  {{ $type === 'DATA_PACK'  ? 'selected' : '' }}>📦 Sabit Veri</option>
+                        <option value="DAILY_PACK" {{ $type === 'DAILY_PACK' ? 'selected' : '' }}>⚡ Günlük</option>
+                    </select>
+                </div>
 
-            <!-- Filter 4: Duration Filter -->
-            <div>
-                <select id="tablePeriodFilter" onchange="filterCatalogTable()" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
-                    <option value="">-- Tüm Süreler --</option>
-                    <option value="1">1 Gün</option>
-                    <option value="3">3 Gün</option>
-                    <option value="7">7 Gün</option>
-                    <option value="8">8 Gün</option>
-                    <option value="10">10 Gün</option>
-                    <option value="15">15 Gün</option>
-                    <option value="30">30 Gün</option>
+                <!-- Search button + Clear -->
+                <div class="flex gap-2">
+                    <button type="submit" class="flex-1 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl shadow transition flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-search"></i> Ara
+                    </button>
+                    @if($search || $country || $type || $period)
+                    <a href="{{ route('admin.packages.index', ['per_page' => $perPage]) }}" class="py-2 px-3 bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold rounded-xl shadow transition flex items-center justify-center" title="Filtreyi Temizle">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                    @endif
+                </div>
+            </div>
+        </form>
+
+        <!-- Per-page selector row -->
+        <div class="flex items-center justify-between">
+            <p class="text-xs text-slate-500 font-medium">
+                {{ $products->firstItem() }}–{{ $products->lastItem() }} arası gösteriliyor (Toplam {{ $products->total() }})
+            </p>
+            <div class="flex items-center gap-2">
+                <label class="text-xs font-bold text-slate-600">Sayfa başına:</label>
+                <select onchange="window.location='{{ route('admin.packages.index') }}?' + new URLSearchParams({...Object.fromEntries(new URLSearchParams(location.search)), per_page: this.value, page: 1}).toString()"
+                    class="px-3 py-1.5 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm">
+                    @foreach([10, 25, 50, 100, 250] as $n)
+                        <option value="{{ $n }}" {{ $perPage == $n ? 'selected' : '' }}>{{ $n }} kayıt</option>
+                    @endforeach
                 </select>
             </div>
         </div>
@@ -232,7 +249,7 @@
                 </thead>
                 <tbody class="divide-y divide-slate-100">
                     @forelse($products as $product)
-                        <tr class="catalog-row hover:bg-slate-50 transition" 
+                        <tr class="catalog-row hover:bg-slate-50 transition"
                             data-code="{{ strtolower($product->product_code) }}"
                             data-name="{{ strtolower($product->product_name) }}"
                             data-countries="{{ strtolower(implode(',', $product->country_code_list ?? [])) }}"
@@ -242,8 +259,8 @@
                             <td class="py-3.5 px-4 font-bold text-slate-900">{{ $product->product_name }}</td>
                             <td class="py-3.5 px-4">
                                 <div class="flex flex-wrap gap-1">
-                                    @foreach(array_slice($product->country_code_list ?? [], 0, 4) as $country)
-                                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-mono text-slate-700 border border-slate-200 font-semibold">{{ $country }}</span>
+                                    @foreach(array_slice($product->country_code_list ?? [], 0, 4) as $c)
+                                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-mono text-slate-700 border border-slate-200 font-semibold">{{ $c }}</span>
                                     @endforeach
                                     @if(count($product->country_code_list ?? []) > 4)
                                         <span class="text-xs text-slate-500 font-medium align-middle">+{{ count($product->country_code_list) - 4 }}</span>
@@ -269,6 +286,56 @@
                 </tbody>
             </table>
         </div>
+
+        <!-- Pagination -->
+        @if($products->hasPages())
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-slate-100">
+            <p class="text-xs text-slate-500 font-medium">
+                Toplam <span class="font-bold text-slate-800">{{ $products->total() }}</span> paketten
+                <span class="font-bold text-slate-800">{{ $products->firstItem() }}–{{ $products->lastItem() }}</span> gösteriliyor
+            </p>
+            <div class="flex items-center gap-1">
+                {{-- Previous --}}
+                @if($products->onFirstPage())
+                    <span class="px-3 py-2 text-xs font-bold text-slate-300 bg-slate-50 border border-slate-200 rounded-lg cursor-not-allowed">‹</span>
+                @else
+                    <a href="{{ $products->previousPageUrl() }}" class="px-3 py-2 text-xs font-bold text-slate-600 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:border-blue-400 transition">‹</a>
+                @endif
+
+                {{-- Page numbers --}}
+                @php
+                    $start = max(1, $products->currentPage() - 2);
+                    $end   = min($products->lastPage(), $products->currentPage() + 2);
+                @endphp
+
+                @if($start > 1)
+                    <a href="{{ $products->url(1) }}" class="px-3 py-2 text-xs font-bold text-slate-600 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition">1</a>
+                    @if($start > 2) <span class="px-2 py-2 text-xs text-slate-400">…</span> @endif
+                @endif
+
+                @for($i = $start; $i <= $end; $i++)
+                    @if($i == $products->currentPage())
+                        <span class="px-3 py-2 text-xs font-bold text-white bg-blue-600 border border-blue-600 rounded-lg shadow-sm">{{ $i }}</span>
+                    @else
+                        <a href="{{ $products->url($i) }}" class="px-3 py-2 text-xs font-bold text-slate-600 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:border-blue-400 transition">{{ $i }}</a>
+                    @endif
+                @endfor
+
+                @if($end < $products->lastPage())
+                    @if($end < $products->lastPage() - 1) <span class="px-2 py-2 text-xs text-slate-400">…</span> @endif
+                    <a href="{{ $products->url($products->lastPage()) }}" class="px-3 py-2 text-xs font-bold text-slate-600 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition">{{ $products->lastPage() }}</a>
+                @endif
+
+                {{-- Next --}}
+                @if($products->hasMorePages())
+                    <a href="{{ $products->nextPageUrl() }}" class="px-3 py-2 text-xs font-bold text-slate-600 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:border-blue-400 transition">›</a>
+                @else
+                    <span class="px-3 py-2 text-xs font-bold text-slate-300 bg-slate-50 border border-slate-200 rounded-lg cursor-not-allowed">›</span>
+                @endif
+            </div>
+        </div>
+        @endif
+
     </div>
 </div>
 

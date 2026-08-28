@@ -11,12 +11,40 @@ use Illuminate\Http\Request;
 
 class PackageController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $products = TgtProduct::withCount('customerPackages')->latest()->get();
-        $customers = User::where('role', 'customer')->get();
+        $perPage   = in_array((int) $request->input('per_page', 25), [10, 25, 50, 100, 250]) ? (int) $request->input('per_page', 25) : 25;
+        $search    = $request->input('search');
+        $country   = $request->input('country');
+        $type      = $request->input('type');
+        $period    = $request->input('period');
 
-        return view('admin.packages.index', compact('products', 'customers'));
+        $query = TgtProduct::withCount('customerPackages')->latest();
+
+        if ($search) {
+            $query->where(function ($q) use ($search) {
+                $q->where('product_name', 'like', "%{$search}%")
+                  ->orWhere('product_code', 'like', "%{$search}%");
+            });
+        }
+
+        if ($country) {
+            $query->whereJsonContains('country_code_list', strtoupper($country));
+        }
+
+        if ($type) {
+            $query->where('product_type', $type);
+        }
+
+        if ($period) {
+            $query->where('usage_period', (int) $period);
+        }
+
+        $products    = $query->paginate($perPage)->withQueryString();
+        $allProducts = TgtProduct::withCount('customerPackages')->latest()->get(); // for assignment checkboxes
+        $customers   = User::where('role', 'customer')->get();
+
+        return view('admin.packages.index', compact('products', 'allProducts', 'customers', 'perPage', 'search', 'country', 'type', 'period'));
     }
 
     public function sync(Request $request, TgtEsimService $tgtService)
