@@ -41,7 +41,8 @@ class PackageController extends Controller
         }
 
         $products    = $query->paginate($perPage)->withQueryString();
-        $allProducts = TgtProduct::withCount('customerPackages')->latest()->get(); // for assignment checkboxes
+        // Only fetch minimal columns needed for assignment checkboxes - NO withCount for performance
+        $allProducts = TgtProduct::select('id', 'product_name', 'net_price')->orderBy('product_name')->get();
         $customers   = User::where('role', 'customer')->get();
 
         return view('admin.packages.index', compact('products', 'allProducts', 'customers', 'perPage', 'search', 'country', 'type', 'period'));
