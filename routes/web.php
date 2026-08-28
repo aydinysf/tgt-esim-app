@@ -33,6 +33,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 
     // Packages & Assignment
     Route::get('/packages', [AdminPackage::class, 'index'])->name('packages.index');
+    Route::get('/packages/products-json', [AdminPackage::class, 'productsJson'])->name('packages.products-json');
     Route::post('/packages/sync', [AdminPackage::class, 'sync'])->name('packages.sync');
     Route::post('/packages/assign', [AdminPackage::class, 'assign'])->name('packages.assign');
     Route::delete('/packages/assignment/{assignment}', [AdminPackage::class, 'removeAssignment'])->name('packages.removeAssignment');

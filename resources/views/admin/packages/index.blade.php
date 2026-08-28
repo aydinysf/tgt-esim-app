@@ -100,21 +100,16 @@
                     </label>
                 </div>
 
-                <!-- Product Checkboxes Wrapper -->
+                <!-- Product Checkboxes Wrapper - loaded via AJAX on demand -->
                 <div id="productCheckboxesWrapper" class="hidden space-y-3 pt-3">
-                    <input type="text" id="assignProductSearch" onkeyup="filterAssignProducts()" placeholder="🔍 Paket adı ile ara..." 
+                    <input type="text" id="assignProductSearch" onkeyup="filterAssignProducts()" placeholder="🔍 Paket adı ile ara..."
                         class="w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-slate-50 rounded-xl border border-slate-200 max-h-56 overflow-y-auto">
-                        @foreach($allProducts as $p)
-                            <label class="assign-product-label flex items-center justify-between p-2 hover:bg-white rounded-lg cursor-pointer text-xs border border-transparent hover:border-slate-200" data-name="{{ strtolower($p->product_name) }}">
-                                <div class="flex items-center gap-2">
-                                    <input type="checkbox" name="product_ids[]" value="{{ $p->id }}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
-                                    <span class="font-bold text-slate-800">{{ $p->product_name }}</span>
-                                </div>
-                                <span class="font-mono text-emerald-700 font-bold">${{ number_format($p->net_price, 2) }} USD</span>
-                            </label>
-                        @endforeach
+
+                    <div id="assignProductList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-slate-50 rounded-xl border border-slate-200 max-h-56 overflow-y-auto">
+                        <!-- Products loaded via AJAX -->
+                        <div id="assignProductLoader" class="col-span-3 py-6 flex items-center justify-center gap-3 text-slate-400 text-sm font-medium">
+                            <i class="fa-solid fa-spinner fa-spin text-blue-500"></i> Paketler yükleniyor...
+                        </div>
                     </div>
                 </div>
             </div>
@@ -451,13 +446,41 @@
         }
     }
 
+    let productsLoaded = false;
+
     function toggleProductSelection(val) {
         const wrapper = document.getElementById('productCheckboxesWrapper');
         if (val === 'selected') {
             wrapper.classList.remove('hidden');
+            // Lazy load products via AJAX only once
+            if (!productsLoaded) {
+                loadAssignProducts();
+            }
         } else {
             wrapper.classList.add('hidden');
         }
+    }
+
+    function loadAssignProducts() {
+        fetch('{{ route('admin.packages.products-json') }}')
+            .then(r => r.json())
+            .then(products => {
+                productsLoaded = true;
+                const list = document.getElementById('assignProductList');
+                list.innerHTML = products.map(p => `
+                    <label class="assign-product-label flex items-center justify-between p-2 hover:bg-white rounded-lg cursor-pointer text-xs border border-transparent hover:border-slate-200" data-name="${p.product_name.toLowerCase()}">
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" name="product_ids[]" value="${p.id}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+                            <span class="font-bold text-slate-800">${p.product_name}</span>
+                        </div>
+                        <span class="font-mono text-emerald-700 font-bold">$${parseFloat(p.net_price).toFixed(2)} USD</span>
+                    </label>
+                `).join('');
+            })
+            .catch(() => {
+                document.getElementById('assignProductList').innerHTML =
+                    '<div class="col-span-3 text-center text-rose-500 py-4 text-sm">Paketler yüklenemedi, sayfayı yenileyin.</div>';
+            });
     }
 
     function filterAssignProducts() {

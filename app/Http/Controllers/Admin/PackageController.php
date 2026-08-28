@@ -40,12 +40,22 @@ class PackageController extends Controller
             $query->where('usage_period', (int) $period);
         }
 
-        $products    = $query->paginate($perPage)->withQueryString();
-        // Only fetch minimal columns needed for assignment checkboxes - NO withCount for performance
-        $allProducts = TgtProduct::select('id', 'product_name', 'net_price')->orderBy('product_name')->get();
-        $customers   = User::where('role', 'customer')->get();
+        $products  = $query->paginate($perPage)->withQueryString();
+        $customers = User::where('role', 'customer')->get();
 
-        return view('admin.packages.index', compact('products', 'allProducts', 'customers', 'perPage', 'search', 'country', 'type', 'period'));
+        return view('admin.packages.index', compact('products', 'customers', 'perPage', 'search', 'country', 'type', 'period'));
+    }
+
+    /**
+     * AJAX: return all products as JSON for assignment checkboxes (lightweight)
+     */
+    public function productsJson()
+    {
+        $products = TgtProduct::select('id', 'product_name', 'net_price')
+            ->orderBy('product_name')
+            ->get();
+
+        return response()->json($products);
     }
 
     public function sync(Request $request, TgtEsimService $tgtService)
