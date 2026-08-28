@@ -19,7 +19,7 @@ class PackageController extends Controller
         $type      = $request->input('type');
         $period    = $request->input('period');
 
-        $query = TgtProduct::withCount('customerPackages')->latest();
+        $query = TgtProduct::withCount('customerPackages')->latest('id');
 
         if ($search) {
             $query->where(function ($q) use ($search) {
