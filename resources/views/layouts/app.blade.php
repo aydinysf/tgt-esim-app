@@ -52,9 +52,49 @@
         .glow-emerald {
             box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.15);
         }
-    </style>
+
+        /* ── Global Page Loading Overlay ── */
+        #pageLoader {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(15, 23, 42, 0.55);
+            backdrop-filter: blur(4px);
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center; gap: 18px;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        #pageLoader.visible { opacity: 1; pointer-events: all; }
+        #pageLoader .loader-card {
+            background: #fff; border-radius: 20px; padding: 28px 40px;
+            display: flex; flex-direction: column; align-items: center; gap: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2); min-width: 240px;
+        }
+        #pageLoader .spinner {
+            width: 44px; height: 44px;
+            border: 4px solid #e2e8f0; border-top-color: #2563eb;
+            border-radius: 50%; animation: spin 0.75s linear infinite;
+        }
+        #pageLoader .loader-text { font-size: 14px; font-weight: 700; color: #1e293b; }
+        #pageLoader .loader-sub { font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: -8px; }
+        #topProgressBar {
+            position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+            background: linear-gradient(90deg, #2563eb, #6366f1);
+            z-index: 10000; transition: width 0.4s ease;
+            border-radius: 0 3px 3px 0; box-shadow: 0 0 8px rgba(99,102,241,0.6);
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }    </style>
 </head>
 <body class="h-full font-sans antialiased flex flex-col md:flex-row bg-slate-50 min-h-screen text-slate-800 selection:bg-blue-600 selection:text-white">
+    <!-- ── Global Page Loader ── -->
+    <div id="topProgressBar"></div>
+    <div id="pageLoader">
+        <div class="loader-card">
+            <div class="spinner"></div>
+            <div class="loader-text" id="loaderText">İşlem yapılıyor...</div>
+            <div class="loader-sub" id="loaderSub">Lütfen bekleyin</div>
+        </div>
+    </div>
+
 
     @auth
     <!-- Mobile Header Bar (Only visible on mobile screens) -->
@@ -220,6 +260,75 @@
         }
     </script>
 
-    @stack('scripts')
+        <script>
+        /* ── Global Loader Controller ── */
+        const pageLoader  = document.getElementById('pageLoader');
+        const progressBar = document.getElementById('topProgressBar');
+        const loaderText  = document.getElementById('loaderText');
+        const loaderSub   = document.getElementById('loaderSub');
+
+        function showLoader(text, sub) {
+            loaderText.textContent = text || 'İşlem yapılıyor...';
+            loaderSub.textContent  = sub  || 'Lütfen bekleyin';
+            pageLoader.classList.add('visible');
+            progressBar.style.width = '30%';
+            setTimeout(() => { progressBar.style.width = '70%'; }, 400);
+        }
+
+        function hideLoader() {
+            progressBar.style.width = '100%';
+            setTimeout(() => {
+                pageLoader.classList.remove('visible');
+                progressBar.style.width = '0%';
+            }, 300);
+        }
+
+        // Auto-show on form submit (all forms except search/filter forms)
+        document.addEventListener('submit', function(e) {
+            const form = e.target;
+            // Skip forms with data-no-loader attribute
+            if (form.hasAttribute('data-no-loader')) return;
+            // Skip GET forms (search/filter)
+            if ((form.getAttribute('method') || 'GET').toUpperCase() === 'GET') return;
+
+            const submitBtn = form.querySelector('[type="submit"]');
+            let text = 'İşlem yapılıyor...';
+            let sub  = 'Lütfen bekleyin';
+
+            if (submitBtn) {
+                const btnText = submitBtn.innerText.trim();
+                if (btnText.includes('Paket')) { text = 'Paket işlemi yapılıyor...'; sub = 'Bu işlem biraz sürebilir'; }
+                else if (btnText.includes('Sync') || btnText.includes('Çek')) { text = 'TGT API\'den paketler çekiliyor...'; sub = 'Binlerce paket getiriliyor, bekleyin'; }
+                else if (btnText.includes('Atama') || btnText.includes('Ata')) { text = 'Paketler atanıyor...'; sub = 'Müşteri atamaları yapılıyor'; }
+                else if (btnText.includes('Kaydet') || btnText.includes('Güncelle')) { text = 'Kaydediliyor...'; sub = ''; }
+                else if (btnText.includes('Giriş')) { text = 'Giriş yapılıyor...'; sub = ''; }
+                else if (btnText.includes('Satın') || btnText.includes('Al')) { text = 'eSIM satın alınıyor...'; sub = 'TGT API üzerinden sipariş açılıyor'; }
+            }
+
+            showLoader(text, sub);
+        });
+
+        // Auto-show on sidebar/nav links click (page navigation)
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href]').forEach(function(link) {
+                const href = link.getAttribute('href');
+                // Only internal links that cause navigation, skip # anchors and JS links
+                if (!href || href.startsWith('#') || href.startsWith('javascript') || href.startsWith('mailto')) return;
+                // Skip links with data-no-loader
+                if (link.hasAttribute('data-no-loader')) return;
+                link.addEventListener('click', function(e) {
+                    if (e.ctrlKey || e.metaKey || e.shiftKey) return; // allow open-in-new-tab
+                    showLoader('Sayfa yükleniyor...', '');
+                });
+            });
+        });
+
+        // Hide loader when browser fires pageshow (covers back/forward navigation)
+        window.addEventListener('pageshow', function() {
+            hideLoader();
+        });
+    </script>
+@stack('scripts')
 </body>
 </html>
+
