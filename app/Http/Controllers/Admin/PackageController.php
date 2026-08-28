@@ -206,4 +206,11 @@ class PackageController extends Controller
         $assignment->delete();
         return back()->with('success', 'Paket ataması kaldırıldı.');
     }
+
+    public function destroy(TgtProduct $product)
+    {
+        $productName = $product->product_name;
+        $product->delete();
+        return back()->with('success', "{$productName} isimli paket başarıyla silindi.");
+    }
 }

@@ -240,6 +240,7 @@
                         <th class="py-3.5 px-4 font-bold">Veri Miktarı</th>
                         <th class="py-3.5 px-4 font-bold">Kullanım Süresi</th>
                         <th class="py-3.5 px-4 font-bold text-center">Atandığı Müşteri</th>
+                        <th class="py-3.5 px-4 font-bold text-center">İşlemler</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100">
@@ -272,10 +273,19 @@
                             <td class="py-3.5 px-4 text-center font-bold text-purple-700">
                                 {{ $product->customer_packages_count }} Müşteri
                             </td>
+                            <td class="py-3.5 px-4 text-center">
+                                <form action="{{ route('admin.packages.destroy', $product->id) }}" method="POST" class="inline-block" onsubmit="return confirm('Bu paketi silmek istediğinize emin misiniz? (Müşterilerden de silinir)');">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="px-3 py-1.5 bg-rose-50 text-rose-600 hover:bg-rose-100 hover:text-rose-700 rounded-lg text-xs font-bold transition">
+                                        <i class="fa-solid fa-trash"></i> Sil
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="7" class="py-8 text-center text-slate-400 font-medium">Henüz paket çekilmemiş. Yukarıdaki senkronizasyon butonunu kullanabilirsiniz.</td>
+                            <td colspan="8" class="py-8 text-center text-slate-400 font-medium">Henüz paket çekilmemiş. Yukarıdaki senkronizasyon butonunu kullanabilirsiniz.</td>
                         </tr>
                     @endforelse
                 </tbody>

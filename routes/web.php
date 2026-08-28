@@ -36,6 +36,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::get('/packages/products-json', [AdminPackage::class, 'productsJson'])->name('packages.products-json');
     Route::post('/packages/sync', [AdminPackage::class, 'sync'])->name('packages.sync');
     Route::post('/packages/assign', [AdminPackage::class, 'assign'])->name('packages.assign');
+    Route::delete('/packages/{product}', [AdminPackage::class, 'destroy'])->name('packages.destroy');
     Route::delete('/packages/assignment/{assignment}', [AdminPackage::class, 'removeAssignment'])->name('packages.removeAssignment');
 
     // Reports & Profit
