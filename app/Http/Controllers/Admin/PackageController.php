@@ -21,6 +21,10 @@ class PackageController extends Controller
 
     public function sync(Request $request, TgtEsimService $tgtService)
     {
+        // Increase execution time and memory for large API syncs (e.g. 11,000+ packages)
+        set_time_limit(600);
+        ini_set('memory_limit', '512M');
+
         $filters = [
             'countryCode' => $request->input('country_code'),
             'productType' => $request->input('product_type'),
