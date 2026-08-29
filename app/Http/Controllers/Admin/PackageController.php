@@ -156,6 +156,12 @@ class PackageController extends Controller
 
             // Local fallback filter if API ignored the countryCode
             $countryList = $p['countryCodeList'] ?? [];
+            if (!is_array($countryList)) {
+                // If the API returns a string like "TR,US", split it
+                $countryList = is_string($countryList) ? explode(',', $countryList) : (array)$countryList;
+            }
+            $countryList = array_map('strtoupper', array_map('trim', $countryList));
+
             if (!empty($countryCodeFilter)) {
                 $cc = strtoupper(trim($countryCodeFilter));
                 if (!in_array($cc, $countryList)) {
