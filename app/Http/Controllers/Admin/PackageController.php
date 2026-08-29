@@ -123,6 +123,79 @@ class PackageController extends Controller
             ->with('success', "TGT API senkronizasyonu{$filterText} tamamlandı. ({$newCount} yeni paket eklendi, {$updatedCount} paket güncellendi. Kataloğunuzda Toplam: {$totalProducts} aktif paket)");
     }
 
+    public function syncChunked(Request $request, TgtEsimService $tgtService)
+    {
+        $page = (int) $request->input('page', 1);
+        $maxPages = (int) $request->input('max_pages', 5);
+        $countryCodeFilter = $request->input('country_code');
+
+        $filters = [
+            'countryCode' => $countryCodeFilter,
+            'productType' => $request->input('product_type'),
+            'usagePeriod' => $request->input('usage_period'),
+            'cardType' => $request->input('card_type'),
+            'productName' => $request->input('product_name'),
+        ];
+
+        // Fetch exactly 1 page
+        $result = $tgtService->getProductsPage($filters, $page, 100);
+
+        if (!$result['success']) {
+            return response()->json([
+                'success' => false,
+                'message' => "Sayfa {$page} çekilirken TGT API hatası oluştu."
+            ]);
+        }
+
+        $items = $result['items'];
+        $savedCount = 0;
+
+        foreach ($items as $p) {
+            $productCode = $p['productCode'] ?? null;
+            if (!$productCode) continue;
+
+            // Local fallback filter if API ignored the countryCode
+            $countryList = $p['countryCodeList'] ?? [];
+            if (!empty($countryCodeFilter)) {
+                $cc = strtoupper(trim($countryCodeFilter));
+                if (!in_array($cc, $countryList)) {
+                    continue; // Skip if country doesn't match
+                }
+            }
+
+            TgtProduct::updateOrCreate(
+                ['product_code' => $productCode],
+                [
+                    'product_name' => $p['productName'] ?? 'eSIM Package',
+                    'product_type' => $p['productType'] ?? 'DATA_PACK',
+                    'country_code_list' => $countryList,
+                    'mcc_list' => $p['mccList'] ?? [],
+                    'net_price' => $p['netPrice'] ?? 0.00,
+                    'data_total' => $p['dataTotal'] ?? 1,
+                    'data_unit' => $p['dataUnit'] ?? 'GB',
+                    'usage_period' => $p['usagePeriod'] ?? 1,
+                    'validity_period' => $p['validityPeriod'] ?? 0,
+                    'card_type' => $p['cardType'] ?? null,
+                    'raw_data' => $p,
+                ]
+            );
+            $savedCount++;
+        }
+
+        $hasMore = $result['hasMore'];
+        if ($page >= $maxPages) {
+            $hasMore = false; // Stop if we hit the requested limit
+        }
+
+        return response()->json([
+            'success' => true,
+            'page' => $page,
+            'saved_count' => $savedCount,
+            'has_more' => $hasMore,
+            'next_page' => $hasMore ? $page + 1 : null
+        ]);
+    }
+
     public function assign(Request $request)
     {
         $validated = $request->validate([

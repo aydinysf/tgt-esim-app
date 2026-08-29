@@ -135,6 +135,58 @@ class TgtEsimService
     }
 
     /**
+     * Fetch a SINGLE PAGE of products from TGT API (Used for chunked sync to avoid timeouts)
+     */
+    public function getProductsPage(array $filters = [], int $page = 1, int $pageSize = 100): array
+    {
+        $token = $this->getAccessToken();
+        $payload = [
+            'pageNum' => $page,
+            'pageSize' => $pageSize,
+            'periodType' => $filters['periodType'] ?? null,
+            'productType' => !empty($filters['productType']) ? $filters['productType'] : null,
+            'lang' => 'en',
+        ];
+
+        if (!empty($filters['cardType'])) {
+            $payload['cardType'] = trim($filters['cardType']);
+        }
+        if (!empty($filters['productName'])) {
+            $payload['productName'] = trim($filters['productName']);
+        }
+        if (!empty($filters['countryCode'])) {
+            $payload['countryCode'] = strtoupper(trim($filters['countryCode']));
+        }
+        if (!empty($filters['usagePeriod'])) {
+            $payload['usagePeriod'] = (int) $filters['usagePeriod'];
+        }
+
+        try {
+            $response = Http::withoutVerifying()
+                ->timeout(12)
+                ->withHeaders([
+                    'Content-Type' => 'application/json;charset=UTF-8',
+                    'Accept' => 'application/json',
+                    'Authorization' => 'Bearer ' . $token,
+                ])
+                ->post($this->baseUrl . '/eSIMApi/v2/products/list', $payload);
+
+            if ($response->successful()) {
+                $json = $response->json();
+                if (($json['code'] ?? '') === '0000' && !empty($json['data']['list'])) {
+                    $items = $json['data']['list'];
+                    $hasMore = count($items) >= $pageSize;
+                    return ['success' => true, 'items' => $items, 'hasMore' => $hasMore];
+                }
+            }
+        } catch (\Exception $e) {
+            Log::info("TGT API getProductsPage {$page} error: " . $e->getMessage());
+        }
+
+        return ['success' => false, 'items' => [], 'hasMore' => false];
+    }
+
+    /**
      * Create eSIM order via TGT API
      */
     public function createOrder(string $productCode, string $channelOrderNo, string $idempotencyKey, ?string $email = null): array

@@ -355,87 +355,102 @@
             <button onclick="document.getElementById('filteredSyncModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
         </div>
 
-        <form action="{{ route('admin.packages.sync') }}" method="POST" class="mt-4 space-y-4">
+        <form action="{{ route('admin.packages.sync-chunked') }}" method="POST" id="syncForm" data-no-loader onsubmit="startChunkedSync(event)">
             @csrf
 
-            <!-- Product Name Search -->
-            <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-magnifying-glass text-blue-600"></i>
-                    <span>Paket Adında Kelime Ara (Örn: Turkey, Europe, Japan)</span>
-                </label>
-                <input type="text" name="product_name" placeholder="Örn: Turkey" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                <span class="text-[11px] text-slate-400 mt-1 block font-medium">Belli bir isim geçen paketleri (Örn: Turkey) çekmek için yazın.</span>
+            <!-- Sync Progress Indicator (Hidden by default) -->
+            <div id="syncProgressContainer" class="hidden mb-4 p-4 bg-blue-50 border border-blue-200 rounded-xl space-y-3">
+                <div class="flex justify-between text-xs font-bold text-blue-800">
+                    <span id="syncProgressText">Senkronizasyon başlatılıyor...</span>
+                    <span id="syncProgressPercentage">0%</span>
+                </div>
+                <div class="w-full bg-blue-200 rounded-full h-2.5 overflow-hidden">
+                    <div id="syncProgressBar" class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <p class="text-[10px] text-blue-600 font-mono" id="syncProgressDetails">Lütfen bekleyin, sayfadan ayrılmayın.</p>
             </div>
 
-            <!-- Card Type / Family Filter -->
-            <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-id-card text-purple-600"></i>
-                    <span>Kart Tipi / Ailesi (Card Type)</span>
-                </label>
-                <select name="card_type" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                    <option value="">-- Tüm Kart Tipleri --</option>
-                    <option value="ep2">🇹🇷 ep2 (Turkey Daypass / High-Speed 82+ Türkiye Paketi Burada!)</option>
-                    <option value="ep1">🇪🇺 ep1 (Euro / Global eP1 Paketleri)</option>
-                    <option value="eO1">⚡ eO1 (Euro-eO1 Yüksek Hızlı İnternet Paketleri)</option>
-                    <option value="M1">🕌 M1 (Middle East / Israel M1 Paketleri)</option>
-                    <option value="A1">🌏 A1 (AIS Thailand & Asya Paketleri)</option>
-                    <option value="C4">🌸 C4 (Asya C4 Günlük Paketler)</option>
-                    <option value="F2">🇬🇧 F2 (İngiltere / Avrupa F2 Paketleri)</option>
-                </select>
+            <div id="syncFormInputs" class="space-y-4">
+                <!-- Product Name Search -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-magnifying-glass text-blue-600"></i>
+                        <span>Paket Adında Kelime Ara (Örn: Turkey, Europe, Japan)</span>
+                    </label>
+                    <input type="text" name="product_name" placeholder="Örn: Turkey" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                    <span class="text-[11px] text-slate-400 mt-1 block font-medium">Belli bir isim geçen paketleri (Örn: Turkey) çekmek için yazın.</span>
+                </div>
+
+                <!-- Card Type / Family Filter -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-id-card text-purple-600"></i>
+                        <span>Kart Tipi / Ailesi (Card Type)</span>
+                    </label>
+                    <select name="card_type" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                        <option value="">-- Tüm Kart Tipleri --</option>
+                        <option value="ep2">🇹🇷 ep2 (Turkey Daypass / High-Speed 82+ Türkiye Paketi Burada!)</option>
+                        <option value="ep1">🇪🇺 ep1 (Euro / Global eP1 Paketleri)</option>
+                        <option value="eO1">⚡ eO1 (Euro-eO1 Yüksek Hızlı İnternet Paketleri)</option>
+                        <option value="M1">🕌 M1 (Middle East / Israel M1 Paketleri)</option>
+                        <option value="A1">🌏 A1 (AIS Thailand & Asya Paketleri)</option>
+                        <option value="C4">🌸 C4 (Asya C4 Günlük Paketler)</option>
+                        <option value="F2">🇬🇧 F2 (İngiltere / Avrupa F2 Paketleri)</option>
+                    </select>
+                </div>
+
+                <!-- Country / Region Filter -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-earth-americas text-blue-600"></i>
+                        <span>Ülke / Bölge Seçimi</span>
+                    </label>
+                    <select name="country_code" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                        <option value="">-- Tüm Ülkeler & Bölgeler --</option>
+                        <option value="TR">🇹🇷 Türkiye (TR)</option>
+                        <option value="US">🇺🇸 Amerika Birleşik Devletleri (US)</option>
+                        <option value="GB">🇬🇧 Birleşik Krallık / İngiltere (GB)</option>
+                        <option value="DE">🇩🇪 Almanya (DE)</option>
+                        <option value="FR">🇫🇷 Fransa (FR)</option>
+                        <option value="IT">🇮🇹 İtalya (IT)</option>
+                        <option value="ES">🇪🇸 İspanya (ES)</option>
+                        <option value="JP">🇯🇵 Japonya (JP)</option>
+                        <option value="KR">🇰🇷 Güney Kore (KR)</option>
+                        <option value="TH">🇹🇭 Tayland (TH)</option>
+                        <option value="AE">🇦🇪 Birleşik Arap Emirlikleri (AE)</option>
+                    </select>
+                </div>
+
+                <!-- Product Type Filter -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-box text-indigo-600"></i>
+                        <span>Paket Tipi</span>
+                    </label>
+                    <select name="product_type" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                        <option value="">-- Tüm Paket Tipleri --</option>
+                        <option value="DATA_PACK">📦 Sabit Toplam Veri Paketi (DATA_PACK - Örn: 3GB, 5GB, 10GB)</option>
+                        <option value="DAILY_PACK">⚡ Günlük Yenilenen Paket (DAILY_PACK - Örn: Günlük 1GB/2GB)</option>
+                    </select>
+                </div>
+
+                <!-- Sync Depth / Pages -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-layer-group text-emerald-600"></i>
+                        <span>Çekim Derinliği (Sayfa / Paket Adedi)</span>
+                    </label>
+                    <select name="max_pages" id="syncMaxPages" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
+                        <option value="120" selected>🚀 TÜM PAKETLERİ EKSİKSİZ ÇEK (Tüm Sayfaları Sonu Gelene Kadar Tara)</option>
+                        <option value="50">50 Sayfa Derinlik (Yaklaşık 5.000 Paket)</option>
+                        <option value="10">10 Sayfa Derinlik (Yaklaşık 1.000 Paket)</option>
+                        <option value="5">5 Sayfa Derinlik (Yaklaşık 500 Paket)</option>
+                        <option value="1">Yalnızca 1. Sayfa (100 Paket)</option>
+                    </select>
+                </div>
             </div>
 
-            <!-- Country / Region Filter -->
-            <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-earth-americas text-blue-600"></i>
-                    <span>Ülke / Bölge Seçimi</span>
-                </label>
-                <select name="country_code" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                    <option value="">-- Tüm Ülkeler & Bölgeler --</option>
-                    <option value="TR">🇹🇷 Türkiye (TR)</option>
-                    <option value="US">🇺🇸 Amerika Birleşik Devletleri (US)</option>
-                    <option value="GB">🇬🇧 Birleşik Krallık / İngiltere (GB)</option>
-                    <option value="DE">🇩🇪 Almanya (DE)</option>
-                    <option value="FR">🇫🇷 Fransa (FR)</option>
-                    <option value="IT">🇮🇹 İtalya (IT)</option>
-                    <option value="ES">🇪🇸 İspanya (ES)</option>
-                    <option value="JP">🇯🇵 Japonya (JP)</option>
-                    <option value="KR">🇰🇷 Güney Kore (KR)</option>
-                    <option value="TH">🇹🇭 Tayland (TH)</option>
-                    <option value="AE">🇦🇪 Birleşik Arap Emirlikleri (AE)</option>
-                </select>
-            </div>
-
-            <!-- Product Type Filter -->
-            <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-box text-indigo-600"></i>
-                    <span>Paket Tipi</span>
-                </label>
-                <select name="product_type" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                    <option value="">-- Tüm Paket Tipleri --</option>
-                    <option value="DATA_PACK">📦 Sabit Toplam Veri Paketi (DATA_PACK - Örn: 3GB, 5GB, 10GB)</option>
-                    <option value="DAILY_PACK">⚡ Günlük Yenilenen Paket (DAILY_PACK - Örn: Günlük 1GB/2GB)</option>
-                </select>
-            </div>
-
-            <!-- Sync Depth / Pages -->
-            <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-layer-group text-emerald-600"></i>
-                    <span>Çekim Derinliği (Sayfa / Paket Adedi)</span>
-                </label>
-                <select name="max_pages" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
-                    <option value="50" selected>🚀 TÜM PAKETLERİ EKSİKSİZ ÇEK (Tüm Sayfaları Sonu Gelene Kadar Tara)</option>
-                    <option value="10">10 Sayfa Derinlik (Yaklaşık 1.000 Paket)</option>
-                    <option value="5">5 Sayfa Derinlik (Yaklaşık 500 Paket)</option>
-                    <option value="1">Yalnızca 1. Sayfa (100 Paket)</option>
-                </select>
-            </div>
-
-            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100">
+            <div class="flex items-center justify-end gap-3 pt-4 border-t border-slate-100" id="syncFormButtons">
                 <button type="button" onclick="document.getElementById('filteredSyncModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm rounded-xl font-bold">İptal</button>
                 <button type="submit" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl shadow-md flex items-center gap-2">
                     <i class="fa-solid fa-cloud-arrow-down"></i>
@@ -582,6 +597,79 @@
         const badge = document.getElementById('filterCountBadge');
         if (badge) {
             badge.innerText = `Gösterilen: ${visibleCount} / ${rows.length} Paket`;
+        }
+    }
+
+    async function startChunkedSync(event) {
+        event.preventDefault();
+        
+        const form = event.target;
+        const inputs = document.getElementById('syncFormInputs');
+        const buttons = document.getElementById('syncFormButtons');
+        const progressContainer = document.getElementById('syncProgressContainer');
+        const progressBar = document.getElementById('syncProgressBar');
+        const progressText = document.getElementById('syncProgressText');
+        const progressDetails = document.getElementById('syncProgressDetails');
+        const progressPercentage = document.getElementById('syncProgressPercentage');
+        
+        const maxPages = parseInt(document.getElementById('syncMaxPages').value);
+        let currentPage = 1;
+        let totalSaved = 0;
+
+        // Hide inputs and show progress
+        inputs.classList.add('hidden');
+        buttons.classList.add('hidden');
+        progressContainer.classList.remove('hidden');
+
+        while (true) {
+            progressText.innerText = `Sayfa ${currentPage} / ${maxPages} çekiliyor...`;
+            let percent = Math.min(100, Math.round((currentPage / maxPages) * 100));
+            progressBar.style.width = percent + '%';
+            progressPercentage.innerText = percent + '%';
+            
+            try {
+                const formData = new FormData(form);
+                formData.append('page', currentPage);
+                
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' },
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    totalSaved += result.saved_count || 0;
+                    progressDetails.innerText = `Şu ana kadar ${totalSaved} eşleşen paket veritabanına kaydedildi.`;
+                    
+                    if (result.has_more && currentPage < maxPages) {
+                        currentPage = result.next_page;
+                    } else {
+                        // Finished
+                        progressText.innerText = 'Senkronizasyon tamamlandı!';
+                        progressBar.style.width = '100%';
+                        progressPercentage.innerText = '100%';
+                        progressDetails.innerText = `Toplam ${totalSaved} paket kaydedildi. Sayfa yenileniyor...`;
+                        
+                        setTimeout(() => window.location.reload(), 1500);
+                        break;
+                    }
+                } else {
+                    // Error
+                    progressText.innerText = 'Hata oluştu!';
+                    progressText.classList.replace('text-blue-800', 'text-rose-800');
+                    progressBar.classList.replace('bg-blue-600', 'bg-rose-600');
+                    progressDetails.innerText = result.message || 'Bilinmeyen bir hata oluştu.';
+                    buttons.classList.remove('hidden');
+                    break;
+                }
+            } catch (err) {
+                progressText.innerText = 'Bağlantı hatası!';
+                progressDetails.innerText = err.message || 'İstek zaman aşımına uğradı veya koptu.';
+                buttons.classList.remove('hidden');
+                break;
+            }
         }
     }
 </script>
