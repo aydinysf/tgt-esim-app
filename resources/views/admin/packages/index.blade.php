@@ -7,10 +7,17 @@
     <!-- Top Bar Header -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-            <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-                <i class="fa-solid fa-box-open text-blue-600"></i>
-                <span>eSIM Paketleri & Müşteriye Özel Fiyatlandırma</span>
-            </h1>
+            <div class="flex items-center gap-3">
+                <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-box-open text-blue-600"></i>
+                    <span>eSIM Paketleri & Müşteriye Özel Fiyatlandırma</span>
+                </h1>
+                <div class="hidden sm:inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-xl border border-emerald-200 text-xs font-bold shadow-sm">
+                    <i class="fa-solid fa-building-columns text-emerald-600"></i>
+                    <span>TCMB Canlı Kur: 1 $ = {{ $usdToEurRate ?? '0.92' }} €</span>
+                    <span class="text-[10px] text-emerald-600 font-medium font-mono">({{ $exchangeRates['date'] ?? date('d.m.Y') }})</span>
+                </div>
+            </div>
             <p class="text-slate-500 text-sm mt-1">API ile çekilen paketleri listeleyin, müşterilere atayın ve satış fiyatlarını belirleyin.</p>
         </div>
 
@@ -140,7 +147,10 @@
                         </button>
                     </div>
                 </div>
-                <p id="pricingHint" class="text-xs text-slate-500 mt-1 font-medium">Örnek: Alış fiyatı €100 olan pakete %30 kâr eklendiğinde müşteriye €130.00 fiyatla atanır.</p>
+                <p id="pricingHint" class="text-xs text-slate-500 mt-1 font-medium flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-info text-blue-500"></i>
+                    <span>TGT API'den gelen alış fiyatları TCMB canlı kuru (1 $ = {{ $usdToEurRate ?? '0.92' }} €) üzerinden Euro'ya dönüştürülüp satış fiyatı hesaplanır.</span>
+                </p>
             </div>
         </form>
     </div>
@@ -263,7 +273,10 @@
                                     @endif
                                 </div>
                             </td>
-                            <td class="py-3.5 px-4 font-extrabold text-slate-900">€{{ number_format($product->net_price, 2) }}</td>
+                            <td class="py-3.5 px-4 font-extrabold text-slate-900">
+                                <div>€{{ number_format((float)$product->net_price * ($usdToEurRate ?? 0.92), 2) }}</div>
+                                <div class="text-[10px] font-mono text-slate-400 font-normal">(${{ number_format($product->net_price, 2) }})</div>
+                            </td>
                             <td class="py-3.5 px-4">
                                 <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-cyan-50 text-cyan-700 border border-cyan-200">
                                     {{ $product->data_total }} {{ $product->data_unit }}
@@ -489,18 +502,25 @@
     function loadAssignProducts() {
         fetch('{{ route('admin.packages.products-json') }}')
             .then(r => r.json())
-            .then(products => {
+            .then(data => {
                 productsLoaded = true;
+                const items = data.products || (Array.isArray(data) ? data : []);
                 const list = document.getElementById('assignProductList');
-                list.innerHTML = products.map(p => `
+                list.innerHTML = items.map(p => {
+                    const eurPrice = p.net_price_eur !== undefined ? parseFloat(p.net_price_eur).toFixed(2) : parseFloat(p.net_price).toFixed(2);
+                    const usdPrice = p.net_price_usd !== undefined ? parseFloat(p.net_price_usd).toFixed(2) : null;
+                    return `
                     <label class="assign-product-label flex items-center justify-between p-2 hover:bg-white rounded-lg cursor-pointer text-xs border border-transparent hover:border-slate-200" data-name="${p.product_name.toLowerCase()}">
                         <div class="flex items-center gap-2">
                             <input type="checkbox" name="product_ids[]" value="${p.id}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
                             <span class="font-bold text-slate-800">${p.product_name}</span>
                         </div>
-                        <span class="font-mono text-emerald-700 font-bold">€${parseFloat(p.net_price).toFixed(2)}</span>
+                        <div class="text-right shrink-0">
+                            <span class="font-mono text-emerald-700 font-bold block">€${eurPrice}</span>
+                            ${usdPrice ? `<span class="font-mono text-[10px] text-slate-400">($${usdPrice})</span>` : ''}
+                        </div>
                     </label>
-                `).join('');
+                `;}).join('');
             })
             .catch(() => {
                 document.getElementById('assignProductList').innerHTML =

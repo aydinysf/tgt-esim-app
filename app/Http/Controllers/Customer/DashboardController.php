@@ -114,8 +114,9 @@ class DashboardController extends Controller
         // Deduct balance from effective customer account
         $user->deductBalance($salePrice);
 
-        $netPrice = (float) $product->net_price;
-        $profit = $salePrice - $netPrice;
+        $netPriceUsd = (float) $product->net_price;
+        $netPriceEur = \App\Services\CurrencyService::convertUsdToEur($netPriceUsd);
+        $profit = round($salePrice - $netPriceEur, 2);
 
         $order = Order::create([
             'order_no' => $apiResult['orderNo'],
@@ -124,7 +125,7 @@ class DashboardController extends Controller
             'branch_id' => $branch?->id,
             'branch_name' => $branch?->name ?? 'Merkez / Genel',
             'tgt_product_id' => $product->id,
-            'net_price' => $netPrice,
+            'net_price' => $netPriceEur,
             'sale_price' => $salePrice,
             'profit' => $profit,
             'iccid' => $apiResult['iccid'],

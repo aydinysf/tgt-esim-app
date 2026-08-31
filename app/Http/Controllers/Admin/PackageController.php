@@ -7,6 +7,7 @@ use App\Models\TgtProduct;
 use App\Models\User;
 use App\Models\CustomerPackage;
 use App\Services\TgtEsimService;
+use App\Services\CurrencyService;
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -40,22 +41,37 @@ class PackageController extends Controller
             $query->where('usage_period', (int) $period);
         }
 
-        $products  = $query->paginate($perPage)->withQueryString();
-        $customers = User::where('role', 'customer')->get();
+        $products      = $query->paginate($perPage)->withQueryString();
+        $customers     = User::where('role', 'customer')->get();
+        $exchangeRates = CurrencyService::getRates();
+        $usdToEurRate  = CurrencyService::getUsdToEurRate();
 
-        return view('admin.packages.index', compact('products', 'customers', 'perPage', 'search', 'country', 'type', 'period'));
+        return view('admin.packages.index', compact('products', 'customers', 'perPage', 'search', 'country', 'type', 'period', 'exchangeRates', 'usdToEurRate'));
     }
 
     /**
-     * AJAX: return all products as JSON for assignment checkboxes (lightweight)
+     * AJAX: return all products as JSON for assignment checkboxes (lightweight) with TCMB converted EUR prices
      */
     public function productsJson()
     {
+        $usdToEurRate = CurrencyService::getUsdToEurRate();
+
         $products = TgtProduct::select('id', 'product_name', 'net_price')
             ->orderBy('product_name')
-            ->get();
+            ->get()
+            ->map(function ($p) use ($usdToEurRate) {
+                return [
+                    'id' => $p->id,
+                    'product_name' => $p->product_name,
+                    'net_price_usd' => (float) $p->net_price,
+                    'net_price_eur' => round((float) $p->net_price * $usdToEurRate, 2),
+                ];
+            });
 
-        return response()->json($products);
+        return response()->json([
+            'products' => $products,
+            'usd_to_eur_rate' => $usdToEurRate,
+        ]);
     }
 
     public function sync(Request $request, TgtEsimService $tgtService)
@@ -241,22 +257,25 @@ class PackageController extends Controller
         $pricingType = $validated['pricing_type'];
         $priceValue = (float) $validated['price_value'];
         $assignedCount = 0;
+        $usdToEurRate = CurrencyService::getUsdToEurRate();
 
         foreach ($customerIds as $userId) {
             foreach ($products as $product) {
-                $netPrice = (float) $product->net_price;
+                $netPriceUsd = (float) $product->net_price;
+                // Convert USD net price from TGT to EUR via live TCMB rate
+                $netPriceEur = round($netPriceUsd * $usdToEurRate, 2);
                 
-                // Calculate custom selling price based on pricing rule
+                // Calculate custom selling price in EUR based on pricing rule
                 if ($pricingType === 'margin_percent') {
-                    $salePrice = round($netPrice * (1 + ($priceValue / 100)), 2);
+                    $salePrice = round($netPriceEur * (1 + ($priceValue / 100)), 2);
                 } elseif ($pricingType === 'margin_fixed') {
-                    $salePrice = round($netPrice + $priceValue, 2);
+                    $salePrice = round($netPriceEur + $priceValue, 2);
                 } else { // fixed
                     $salePrice = round($priceValue, 2);
                 }
 
                 if ($salePrice <= 0) {
-                    $salePrice = max(0.01, $netPrice);
+                    $salePrice = max(0.01, $netPriceEur);
                 }
 
                 CustomerPackage::updateOrCreate(
