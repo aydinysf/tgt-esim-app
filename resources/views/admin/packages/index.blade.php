@@ -122,8 +122,8 @@
                         <label class="block text-xs text-slate-500 font-bold mb-1">Fiyat Belirleme Türü</label>
                         <select name="pricing_type" id="pricingTypeSelect" onchange="updatePriceLabel()" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-bold focus:outline-none focus:border-blue-600">
                             <option value="margin_percent">Alış Fiyatına % Kar Marjı Ekle (%)</option>
-                            <option value="margin_fixed">Alış Fiyatına Sabit Tutarlı Kar Ekle (₺)</option>
-                            <option value="fixed">Sabit Satış Fiyatı Belirle (₺)</option>
+                            <option value="margin_fixed">Alış Fiyatına Sabit Tutarlı Kar Ekle (€)</option>
+                            <option value="fixed">Sabit Satış Fiyatı Belirle (€)</option>
                         </select>
                     </div>
 
@@ -140,7 +140,7 @@
                         </button>
                     </div>
                 </div>
-                <p id="pricingHint" class="text-xs text-slate-500 mt-1 font-medium">Örnek: Alış fiyatı ₺100 olan pakete %30 kâr eklendiğinde müşteriye ₺130.00 fiyatla atanır.</p>
+                <p id="pricingHint" class="text-xs text-slate-500 mt-1 font-medium">Örnek: Alış fiyatı €100 olan pakete %30 kâr eklendiğinde müşteriye €130.00 fiyatla atanır.</p>
             </div>
         </form>
     </div>
@@ -531,14 +531,14 @@
             label.innerText = 'Kâr Marjı Yüzdesi (%)';
             input.placeholder = 'Örn: 30';
             if (!input.value || input.value == '250') input.value = '30';
-            hint.innerText = 'Örnek: Alış fiyatı ₺100 olan pakete %30 kâr eklendiğinde müşteriye ₺130.00 satış fiyatıyla atanır.';
+            hint.innerText = 'Örnek: Alış fiyatı €100 olan pakete %30 kâr eklendiğinde müşteriye €130.00 satış fiyatıyla atanır.';
         } else if (type === 'margin_fixed') {
-            label.innerText = 'Sabit Kâr Miktarı (₺)';
+            label.innerText = 'Sabit Kâr Miktarı (€)';
             input.placeholder = 'Örn: 20';
             if (input.value == '30') input.value = '20';
-            hint.innerText = 'Örnek: Alış fiyatı ₺100 olan pakete ₺20 kâr eklendiğinde müşteriye ₺120.00 satış fiyatıyla atanır.';
+            hint.innerText = 'Örnek: Alış fiyatı €100 olan pakete €20 kâr eklendiğinde müşteriye €120.00 satış fiyatıyla atanır.';
         } else {
-            label.innerText = 'Sabit Satış Fiyatı (₺)';
+            label.innerText = 'Sabit Satış Fiyatı (€)';
             input.placeholder = 'Örn: 250';
             if (input.value == '20' || input.value == '30') input.value = '250';
             hint.innerText = 'Örnek: Seçilen tüm paketlerin müşterilere olan satış fiyatı doğrudan belirlenen tutar yapılır.';

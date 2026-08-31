@@ -21,7 +21,7 @@
                 </div>
                 <div>
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Hesap Bakiyeniz</span>
-                    <div class="text-xl font-black text-cyan-600 leading-tight">₺{{ number_format(Auth::user()->balance, 2) }}</div>
+                    <div class="text-xl font-black text-cyan-600 leading-tight">€{{ number_format(Auth::user()->balance, 2) }}</div>
                 </div>
             </div>
 
@@ -83,7 +83,7 @@
                             </span>
                         </div>
                         <div class="text-base font-black text-slate-800">
-                            ₺{{ number_format($stat->total_spent, 2) }}
+                            €{{ number_format($stat->total_spent, 2) }}
                         </div>
                     </div>
                 @endforeach
@@ -127,7 +127,7 @@
                             </div>
                             <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200 text-center">
                                 <div class="text-xs text-slate-500 font-medium">Süre</div>
-                                <div class="text-base font-extrabold text-slate-800">{{ $product->usage_period }} Gün</div>
+                                <div class="text-base font-extrabold text-slate-800">{{ $product->usage_period }}</div>
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                         <div>
                             <div class="text-xs text-slate-400 font-medium">Fiyat</div>
-                            <div class="text-2xl font-black text-slate-900">₺{{ number_format($assignment->sale_price, 2) }}</div>
+                            <div class="text-2xl font-black text-slate-900">€{{ number_format($assignment->sale_price, 2) }}</div>
                         </div>
 
                         <button type="button" 
@@ -144,7 +144,7 @@
                             data-name="{{ $product->product_name }}"
                             data-price="{{ number_format($assignment->sale_price, 2) }}"
                             data-data="{{ $product->data_total }} {{ $product->data_unit }}"
-                            data-period="{{ $product->usage_period }} Gün"
+                            data-period="{{ $product->usage_period }}"
                             onclick="openPaymentModalFromBtn(this)"
                             class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
                             <i class="fa-solid fa-wallet"></i>
@@ -245,7 +245,7 @@
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
             <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
                 <span>Mevcut Bakiyeniz:</span>
-                <span class="font-extrabold text-base text-cyan-700">₺{{ number_format(Auth::user()->balance, 2) }}</span>
+                <span class="font-extrabold text-base text-cyan-700">€{{ number_format(Auth::user()->balance, 2) }}</span>
             </div>
             
             <div class="flex items-center justify-between text-xs text-slate-500 border-t border-slate-200/80 pt-2">
@@ -255,12 +255,12 @@
 
             <div class="flex items-center justify-between text-xs text-slate-500">
                 <span>Paket Satış Tutarı:</span>
-                <span class="font-bold text-rose-600">-₺<span id="modalPackPrice">0.00</span></span>
+                <span class="font-bold text-rose-600">-€<span id="modalPackPrice">0.00</span></span>
             </div>
 
             <div class="flex items-center justify-between text-xs text-slate-700 border-t border-slate-200/80 pt-2 font-bold">
                 <span>Satın Alma Sonrası Kalan Bakiye:</span>
-                <span class="font-black text-emerald-600 text-sm">₺<span id="modalRemainingPrice">0.00</span></span>
+                <span class="font-black text-emerald-600 text-sm">€<span id="modalRemainingPrice">0.00</span></span>
             </div>
         </div>
 

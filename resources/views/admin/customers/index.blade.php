@@ -48,7 +48,7 @@
                                 <div class="text-xs text-slate-500">{{ $customer->phone ?? '-' }}</div>
                             </td>
                             <td class="py-4 px-4">
-                                <span class="text-base font-black text-cyan-700">₺{{ number_format($customer->balance, 2) }}</span>
+                                <span class="text-base font-black text-cyan-700">€{{ number_format($customer->balance, 2) }}</span>
                             </td>
                             <td class="py-4 px-4 text-center">
                                 <button onclick="openBranchModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->branches) }})" class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition">
@@ -66,7 +66,7 @@
                                 </span>
                             </td>
                             <td class="py-4 px-4 font-black text-emerald-600">
-                                ₺{{ number_format($customer->orders_sum_profit ?? 0, 2) }}
+                                €{{ number_format($customer->orders_sum_profit ?? 0, 2) }}
                             </td>
                             <td class="py-4 px-4 text-right space-x-2">
                                 <button onclick="openPasswordModal({{ $customer->id }}, '{{ addslashes($customer->name) }}')" class="px-2.5 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-bold rounded-lg border border-amber-200 transition inline-flex items-center gap-1">
@@ -169,7 +169,7 @@
             </div>
 
             <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Yüklenecek / Düşülecek Miktar (₺)</label>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Yüklenecek / Düşülecek Miktar (€)</label>
                 <input type="number" step="0.01" name="amount" required placeholder="Örn: 500 veya -100" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-extrabold focus:outline-none focus:border-cyan-600">
                 <span class="text-xs text-slate-500 mt-1 block font-medium">Bakiye eklemek için pozitif (Örn: 500), bakiye düşmek için eksi (Örn: -100) yazın.</span>
             </div>
@@ -250,7 +250,7 @@
 <script>
     function openBalanceModal(customerId, customerName, currentBalance) {
         document.getElementById('balanceCustomerName').innerText = customerName;
-        document.getElementById('balanceCurrentAmount').innerText = '₺' + parseFloat(currentBalance).toFixed(2);
+        document.getElementById('balanceCurrentAmount').innerText = '€' + parseFloat(currentBalance).toFixed(2);
         document.getElementById('balanceForm').action = '/admin/customers/' + customerId + '/balance';
         document.getElementById('balanceModal').classList.remove('hidden');
     }

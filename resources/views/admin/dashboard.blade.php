@@ -42,14 +42,14 @@
             <div class="flex items-center justify-between">
                 <div>
                     <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Toplam Ciro</span>
-                    <div class="text-3xl font-black text-slate-900 mt-1">₺{{ number_format($totalRevenue, 2) }}</div>
+                    <div class="text-3xl font-black text-slate-900 mt-1">€{{ number_format($totalRevenue, 2) }}</div>
                 </div>
                 <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-200 flex items-center justify-center text-xl">
                     <i class="fa-solid fa-wallet"></i>
                 </div>
             </div>
             <div class="mt-4 flex items-center text-xs text-slate-500 gap-1 font-medium">
-                <span>Net Maliyet: ₺{{ number_format($totalCost, 2) }}</span>
+                <span>Net Maliyet: €{{ number_format($totalCost, 2) }}</span>
             </div>
         </div>
 
@@ -58,7 +58,7 @@
             <div class="flex items-center justify-between">
                 <div>
                     <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Net Toplam Kâr</span>
-                    <div class="text-3xl font-black text-emerald-600 mt-1">₺{{ number_format($totalProfit, 2) }}</div>
+                    <div class="text-3xl font-black text-emerald-600 mt-1">€{{ number_format($totalProfit, 2) }}</div>
                 </div>
                 <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center text-xl">
                     <i class="fa-solid fa-sack-dollar"></i>
@@ -127,9 +127,9 @@
                                 <div class="font-bold text-slate-800">{{ $order->product->product_name ?? 'Paket' }}</div>
                                 <div class="text-xs text-slate-400 font-mono">{{ $order->product->product_code ?? '' }}</div>
                             </td>
-                            <td class="py-3.5 px-4 text-slate-500 font-medium">₺{{ number_format($order->net_price, 2) }}</td>
-                            <td class="py-3.5 px-4 font-extrabold text-slate-900">₺{{ number_format($order->sale_price, 2) }}</td>
-                            <td class="py-3.5 px-4 font-black text-emerald-600">+₺{{ number_format($order->profit, 2) }}</td>
+                            <td class="py-3.5 px-4 text-slate-500 font-medium">€{{ number_format($order->net_price, 2) }}</td>
+                            <td class="py-3.5 px-4 font-extrabold text-slate-900">€{{ number_format($order->sale_price, 2) }}</td>
+                            <td class="py-3.5 px-4 font-black text-emerald-600">+€{{ number_format($order->profit, 2) }}</td>
                             <td class="py-3.5 px-4 text-xs text-slate-500 font-medium">{{ $order->created_at->format('d.m.Y H:i') }}</td>
                         </tr>
                     @empty
