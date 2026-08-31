@@ -100,13 +100,13 @@
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                                {{ $product->product_type === 'DAILY_PACK' ? 'Günlük Paket' : 'Veri Paketi' }}
+                                Veri Paketi
                             </span>
                             <span class="text-xs font-mono text-slate-400 font-semibold">{{ $product->card_type ?? 'eSIM' }}</span>
                         </div>
 
                         <h3 class="text-lg font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition">
-                            {{ $product->product_name }}
+                            {{ $product->display_name }}
                         </h3>
 
                         <!-- Supported Countries -->
@@ -120,14 +120,13 @@
                         </div>
 
                         <!-- Package Metrics -->
-                        <div class="grid grid-cols-2 gap-3 pt-2">
-                            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200 text-center">
-                                <div class="text-xs text-slate-500 font-medium">Veri Kotası</div>
-                                <div class="text-base font-extrabold text-blue-700">{{ $product->data_total }} {{ $product->data_unit }}</div>
-                            </div>
-                            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200 text-center">
-                                <div class="text-xs text-slate-500 font-medium">Süre</div>
-                                <div class="text-base font-extrabold text-slate-800">{{ $product->usage_period }}</div>
+                        <div class="pt-2">
+                            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center justify-between px-4">
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1.5">
+                                    <i class="fa-solid fa-wifi text-blue-600"></i>
+                                    <span>Veri Kotası</span>
+                                </span>
+                                <span class="text-base font-extrabold text-blue-700">{{ $product->data_total }} {{ $product->data_unit }}</span>
                             </div>
                         </div>
                     </div>
@@ -141,10 +140,10 @@
 
                         <button type="button" 
                             data-package-id="{{ $assignment->id }}"
-                            data-name="{{ $product->product_name }}"
+                            data-name="{{ $product->display_name }}"
                             data-price="{{ number_format($assignment->sale_price, 2) }}"
                             data-data="{{ $product->data_total }} {{ $product->data_unit }}"
-                            data-period="{{ $product->usage_period }}"
+                            data-period=""
                             onclick="openPaymentModalFromBtn(this)"
                             class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
                             <i class="fa-solid fa-wallet"></i>
@@ -173,7 +172,7 @@
                             <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                 {{ $order->order_status }}
                             </span>
-                            <h3 class="text-lg font-bold text-slate-900 mt-2">{{ $product->product_name ?? 'eSIM Paket' }}</h3>
+                            <h3 class="text-lg font-bold text-slate-900 mt-2">{{ $product->display_name ?? ($product->product_name ?? 'eSIM Paket') }}</h3>
                             <div class="text-xs text-slate-400 font-mono mt-0.5">Sipariş: {{ $order->order_no ?? $order->channel_order_no }}</div>
                         </div>
 
