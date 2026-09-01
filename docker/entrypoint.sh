@@ -21,10 +21,9 @@ php artisan view:clear || true
 # Link storage
 php artisan storage:link --force || true
 
-# Auto-run migrations and seeds on startup
-echo "Running Database Migrations and Seeders..."
+# Auto-run migrations on startup
+echo "Running Database Migrations..."
 php artisan migrate --force || echo "Migration skipped or failed (check DB credentials)"
-php artisan db:seed --force || echo "Seeding skipped or failed"
 
 # Fix permissions for www-data user AFTER all artisan commands complete
 echo "Fixing storage permissions for www-data..."
