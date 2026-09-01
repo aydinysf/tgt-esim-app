@@ -23,16 +23,20 @@ class TgtEsimService
     }
 
     /**
-     * Obtain and cache access token for 24 hours (86400s)
+     * Obtain and cache access token with auto-refresh capability
      */
-    public function getAccessToken(): string
+    public function getAccessToken(bool $forceRefresh = false): string
     {
         $cacheKey = 'tgt_access_token_' . md5($this->accountId);
 
-        return Cache::remember($cacheKey, 80000, function () {
+        if ($forceRefresh) {
+            Cache::forget($cacheKey);
+        }
+
+        return Cache::remember($cacheKey, 7200, function () {
             try {
                 $response = Http::withoutVerifying()
-                    ->timeout(5)
+                    ->timeout(10)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
                         'Accept' => 'application/json',
@@ -167,8 +171,25 @@ class TgtEsimService
                 ])
                 ->post($this->baseUrl . '/eSIMApi/v2/products/list', $payload);
 
-            if ($response->successful()) {
-                $json = $response->json();
+            $json = $response->json();
+
+            // Auto-refresh token if Token Invalid
+            if (($json['code'] ?? '') === '2003' || str_contains(strtolower($json['msg'] ?? ''), 'token')) {
+                $token = $this->getAccessToken(true);
+                if (!empty($token)) {
+                    $response = Http::withoutVerifying()
+                        ->timeout(12)
+                        ->withHeaders([
+                            'Content-Type' => 'application/json;charset=UTF-8',
+                            'Accept' => 'application/json',
+                            'Authorization' => 'Bearer ' . $token,
+                        ])
+                        ->post($this->baseUrl . '/eSIMApi/v2/products/list', $payload);
+                    $json = $response->json();
+                }
+            }
+
+            if ($response->successful() && is_array($json)) {
                 if (($json['code'] ?? '') === '0000' && !empty($json['data']['list'])) {
                     $items = $json['data']['list'];
                     $hasMore = count($items) >= $pageSize;
@@ -221,6 +242,25 @@ class TgtEsimService
 
             $json = $response->json();
             Log::info("TGT API Order Response: ", $json ?? []);
+
+            // Auto-refresh token and retry once if Token Invalid error returned
+            if (($json['code'] ?? '') === '2003' || str_contains(strtolower($json['msg'] ?? ''), 'token')) {
+                Log::warning('TGT API Token invalid detected during order creation. Refreshing token and retrying...');
+                $token = $this->getAccessToken(true);
+                
+                if (!empty($token)) {
+                    $response = Http::withoutVerifying()
+                        ->timeout(20)
+                        ->withHeaders([
+                            'Content-Type' => 'application/json;charset=UTF-8',
+                            'Accept' => 'application/json',
+                            'Authorization' => 'Bearer ' . $token,
+                        ])
+                        ->post($this->baseUrl . '/eSIMApi/v2/order/create', $payload);
+                    $json = $response->json();
+                    Log::info("TGT API Order Retry Response: ", $json ?? []);
+                }
+            }
 
             if ($response->successful() && is_array($json)) {
                 if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
