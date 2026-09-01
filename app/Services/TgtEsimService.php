@@ -224,14 +224,52 @@ class TgtEsimService
 
             if ($response->successful() && is_array($json)) {
                 if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
-                    $orderNo = $json['data']['orderNo'] ?? null;
-                    $iccid = $json['data']['iccid'] ?? null;
-                    $qrCode = $json['data']['qrCode'] ?? $json['data']['acCode'] ?? null;
+                    $data = $json['data'];
+                    $orderNo = $data['orderNo'] ?? ($data['list'][0]['orderNo'] ?? null);
+                    $qrCode = $data['qrCode'] ?? ($data['acCode'] ?? ($data['list'][0]['qrCode'] ?? null));
+                    $iccid = $data['cardInfo']['iccid'] ?? ($data['iccid'] ?? ($data['list'][0]['cardInfo']['iccid'] ?? ($data['list'][0]['iccid'] ?? null)));
+
+                    // If qrCode or iccid is not directly in creation response, fetch from order/list
+                    if (empty($qrCode) || empty($iccid)) {
+                        usleep(600000); // 600ms wait for profile generation
+
+                        try {
+                            $listResponse = Http::withoutVerifying()
+                                ->timeout(10)
+                                ->withHeaders([
+                                    'Content-Type' => 'application/json;charset=UTF-8',
+                                    'Accept' => 'application/json',
+                                    'Authorization' => 'Bearer ' . $token,
+                                ])
+                                ->post($this->baseUrl . '/eSIMApi/v2/order/list', [
+                                    'pageNum' => 1,
+                                    'pageSize' => 10,
+                                ]);
+
+                            if ($listResponse->successful()) {
+                                $listJson = $listResponse->json();
+                                if (($listJson['code'] ?? '') === '0000' && !empty($listJson['data']['list'])) {
+                                    foreach ($listJson['data']['list'] as $item) {
+                                        if (($orderNo && ($item['orderNo'] ?? '') === $orderNo) ||
+                                            ($channelOrderNo && ($item['channelOrderNo'] ?? '') === $channelOrderNo)) {
+                                            $orderNo = $item['orderNo'] ?? $orderNo;
+                                            $qrCode = $item['qrCode'] ?? $qrCode;
+                                            $iccid = $item['cardInfo']['iccid'] ?? ($item['iccid'] ?? $iccid);
+                                            $json = $item;
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        } catch (\Exception $e) {
+                            Log::warning('TGT API order/list fallback check failed: ' . $e->getMessage());
+                        }
+                    }
 
                     if (!$orderNo || !$qrCode) {
                         return [
                             'success' => false,
-                            'msg' => 'TGT API siparişi onayladı ancak QR kod bilgisi eksik döndü.',
+                            'msg' => 'TGT API siparişi onayladı (' . ($orderNo ?? 'No-ID') . ') ancak QR kod bilgisi hazır değil. Lütfen birkaç saniye sonra tekrar deneyin.',
                             'raw' => $json,
                         ];
                     }
@@ -239,7 +277,7 @@ class TgtEsimService
                     return [
                         'success' => true,
                         'orderNo' => $orderNo,
-                        'iccid' => $iccid,
+                        'iccid' => $iccid ?? ('ICCID-' . $orderNo),
                         'qrCode' => $qrCode,
                         'raw' => $json,
                     ];
