@@ -305,6 +305,18 @@ class PackageController extends Controller
         return back()->with('success', 'Paket ataması kaldırıldı.');
     }
 
+    public function bulkRemoveAssignments(Request $request)
+    {
+        $validated = $request->validate([
+            'assignment_ids' => 'required|array',
+            'assignment_ids.*' => 'exists:customer_packages,id',
+        ]);
+
+        $count = CustomerPackage::whereIn('id', $validated['assignment_ids'])->delete();
+
+        return back()->with('success', "Seçilen {$count} adet paket ataması başarıyla kaldırıldı.");
+    }
+
     public function destroy(TgtProduct $product)
     {
         $productName = $product->product_name;

@@ -37,6 +37,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::post('/packages/sync', [AdminPackage::class, 'sync'])->name('packages.sync');
     Route::post('/packages/sync-chunked', [AdminPackage::class, 'syncChunked'])->name('packages.sync-chunked');
     Route::post('/packages/assign', [AdminPackage::class, 'assign'])->name('packages.assign');
+    Route::post('/packages/assignment/bulk-delete', [AdminPackage::class, 'bulkRemoveAssignments'])->name('packages.assignment.bulk-delete');
     Route::delete('/packages/{product}', [AdminPackage::class, 'destroy'])->name('packages.destroy');
     Route::delete('/packages/assignment/{assignment}', [AdminPackage::class, 'removeAssignment'])->name('packages.removeAssignment');
 

@@ -272,33 +272,45 @@
             </div>
         </div>
 
-        <!-- Search in assigned packages -->
-        <div class="shrink-0">
-            <input type="text" id="pkgModalSearchInput" onkeyup="filterPkgModalTable()" placeholder="🔍 Atanmış paketlerde ara..."
-                class="w-full px-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
+        <!-- Search & Bulk Action Toolbar -->
+        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+            <div class="flex-1 w-full">
+                <input type="text" id="pkgModalSearchInput" onkeyup="filterPkgModalTable()" placeholder="🔍 Atanmış paketlerde ara..."
+                    class="w-full px-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
+            </div>
+            
+            <button type="button" id="btnBulkDelete" onclick="submitBulkDelete()" 
+                class="hidden px-3.5 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold rounded-xl shadow transition items-center gap-1.5 shrink-0 active:scale-95">
+                <i class="fa-solid fa-trash-can"></i>
+                <span id="bulkDeleteBtnText">Seçilenleri Kaldır</span>
+            </button>
         </div>
 
-        <!-- Assigned Packages Table -->
-        <div class="overflow-y-auto flex-1 border border-slate-100 rounded-2xl">
+        <!-- Assigned Packages Table (Inside Bulk Delete Form) -->
+        <form action="{{ route('admin.packages.assignment.bulk-delete') }}" method="POST" id="bulkDeletePkgForm" class="overflow-y-auto flex-1 border border-slate-100 rounded-2xl">
+            @csrf
             <table class="w-full text-left text-xs text-slate-700">
                 <thead class="bg-slate-50 text-slate-500 uppercase sticky top-0 border-b border-slate-200">
                     <tr>
+                        <th class="py-2.5 px-3 w-8 text-center">
+                            <input type="checkbox" id="masterPkgCheckbox" onchange="toggleAllPkgCheckboxes(this)" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500" title="Tümünü Seç">
+                        </th>
                         <th class="py-2.5 px-3 font-bold">Paket Adı</th>
                         <th class="py-2.5 px-3 font-bold">Veri</th>
                         <th class="py-2.5 px-3 font-bold text-right">Alış Maliyeti (€)</th>
                         <th class="py-2.5 px-3 font-bold text-right text-slate-900">Satış Fiyatı (€)</th>
                         <th class="py-2.5 px-3 font-bold text-right text-emerald-600">Birim Kâr (€)</th>
-                        <th class="py-2.5 px-3 font-bold text-center">İşlem</th>
+                        <th class="py-2.5 px-3 font-bold text-center">Tekil Sil</th>
                     </tr>
                 </thead>
                 <tbody id="pkgModalTableBody" class="divide-y divide-slate-100">
                     <!-- Dynamic Rows -->
                 </tbody>
             </table>
-        </div>
+        </form>
 
         <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-500 shrink-0">
-            <span class="text-[11px] font-medium">Paketi kaldırdığınızda müşterinin ekranından anında silinir.</span>
+            <span class="text-[11px] font-medium">İstediğiniz paketleri sol kutucuktan seçip topluca veya en sağdaki butondan tekil olarak kaldırabilirsiniz.</span>
             <button type="button" onclick="document.getElementById('customerPackagesModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl">Kapat</button>
         </div>
     </div>
@@ -312,6 +324,8 @@
         document.getElementById('pkgModalCount').innerText = (packages ? packages.length : 0) + ' Paket';
         document.getElementById('pkgModalAddLink').href = '{{ route('admin.packages.index') }}?customer_id=' + customerId;
         document.getElementById('pkgModalSearchInput').value = '';
+        document.getElementById('masterPkgCheckbox').checked = false;
+        updateBulkDeleteButton();
 
         const tbody = document.getElementById('pkgModalTableBody');
         tbody.innerHTML = '';
@@ -328,6 +342,9 @@
                 tr.className = 'pkg-modal-row hover:bg-slate-50 transition';
                 tr.setAttribute('data-name', ((prod.product_name || '') + ' ' + (prod.product_code || '')).toLowerCase());
                 tr.innerHTML = `
+                    <td class="py-3 px-3 text-center">
+                        <input type="checkbox" name="assignment_ids[]" value="${pkg.id}" onchange="onPkgCheckboxChange()" class="pkg-row-checkbox rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+                    </td>
                     <td class="py-3 px-3">
                         <div class="font-bold text-slate-900">${prod.product_name || 'Bilinmeyen Paket'}</div>
                         <div class="text-[10px] font-mono text-blue-600 font-semibold">${prod.product_code || ''}</div>
@@ -362,7 +379,7 @@
         } else {
             tbody.innerHTML = `
                 <tr>
-                    <td colspan="6" class="py-8 text-center text-slate-400 font-medium">
+                    <td colspan="7" class="py-8 text-center text-slate-400 font-medium">
                         Bu müşteriye henüz atanmış bir paket bulunmuyor.
                     </td>
                 </tr>
@@ -370,6 +387,46 @@
         }
 
         document.getElementById('customerPackagesModal').classList.remove('hidden');
+    }
+
+    function toggleAllPkgCheckboxes(masterCheckbox) {
+        const visibleRows = Array.from(document.querySelectorAll('.pkg-modal-row')).filter(r => r.style.display !== 'none');
+        visibleRows.forEach(row => {
+            const cb = row.querySelector('.pkg-row-checkbox');
+            if (cb) cb.checked = masterCheckbox.checked;
+        });
+        updateBulkDeleteButton();
+    }
+
+    function onPkgCheckboxChange() {
+        updateBulkDeleteButton();
+    }
+
+    function updateBulkDeleteButton() {
+        const checkedBoxes = document.querySelectorAll('.pkg-row-checkbox:checked');
+        const btn = document.getElementById('btnBulkDelete');
+        const text = document.getElementById('bulkDeleteBtnText');
+        
+        if (checkedBoxes.length > 0) {
+            btn.classList.remove('hidden');
+            btn.classList.add('inline-flex');
+            text.innerText = `Seçilenleri Kaldır (${checkedBoxes.length})`;
+        } else {
+            btn.classList.add('hidden');
+            btn.classList.remove('inline-flex');
+        }
+    }
+
+    function submitBulkDelete() {
+        const checkedBoxes = document.querySelectorAll('.pkg-row-checkbox:checked');
+        if (checkedBoxes.length === 0) {
+            alert('Lütfen kaldırmak istediğiniz paketleri işaretleyin.');
+            return;
+        }
+
+        if (confirm(`Seçtiğiniz ${checkedBoxes.length} adet paketi bu müşteriden kaldırmak istediğinize emin misiniz?`)) {
+            document.getElementById('bulkDeletePkgForm').submit();
+        }
     }
 
     function filterPkgModalTable() {
