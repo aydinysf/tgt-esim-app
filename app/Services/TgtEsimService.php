@@ -52,10 +52,10 @@ class TgtEsimService
                     }
                 }
             } catch (\Exception $e) {
-                Log::info('TGT API Token info: ' . $e->getMessage());
+                Log::error('TGT API Token error: ' . $e->getMessage());
             }
 
-            return 'mock_tgt_token_' . md5($this->accountId);
+            return '';
         });
     }
 
@@ -127,11 +127,7 @@ class TgtEsimService
             }
         }
 
-        if (!empty($allProducts)) {
-            return $allProducts;
-        }
-
-        return $this->getMockProducts();
+        return $allProducts;
     }
 
     /**
