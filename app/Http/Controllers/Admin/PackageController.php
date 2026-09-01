@@ -323,4 +323,12 @@ class PackageController extends Controller
         $product->delete();
         return back()->with('success', "{$productName} isimli paket başarıyla silindi.");
     }
+
+    public function truncateAll()
+    {
+        CustomerPackage::query()->delete();
+        TgtProduct::query()->delete();
+
+        return back()->with('success', 'Mevcut tüm paket kataloğu ve müşteri paket atamaları tamamen sıfırlandı. Şimdi TGT API üzerinden temiz bir senkronizasyon yapabilirsiniz.');
+    }
 }

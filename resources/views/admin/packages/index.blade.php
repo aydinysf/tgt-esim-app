@@ -22,6 +22,14 @@
         </div>
 
         <div class="flex items-center gap-2">
+            <form action="{{ route('admin.packages.truncate-all') }}" method="POST" onsubmit="return confirm('DİKKAT: Mevcut tüm paketler ve atanmış müşteri paketleri veritabanından silinecektir! TGT API üzerinden temiz bir senkronizasyon yapabilmek için sıfırlamak istiyor musunuz?');">
+                @csrf
+                <button type="submit" class="px-3.5 py-2.5 bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-xs rounded-xl border border-rose-200 transition flex items-center gap-1.5 active:scale-95" title="Mevcut tüm paket kataloğunu ve atamaları temizle">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span>Tüm Paketleri Temizle</span>
+                </button>
+            </form>
+
             <form action="{{ route('admin.packages.sync') }}" method="POST">
                 @csrf
                 <button type="submit" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl border border-slate-300 transition flex items-center gap-2 active:scale-95" title="Tüm kataloğu çek">
