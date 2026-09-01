@@ -12,14 +12,16 @@ class CustomerController extends Controller
 {
     public function index()
     {
+        $usdToEurRate = \App\Services\CurrencyService::getUsdToEurRate();
+
         $customers = User::where('role', 'customer')
             ->withCount(['customerPackages', 'orders', 'branches'])
             ->withSum('orders', 'profit')
-            ->with('branches')
+            ->with(['branches', 'customerPackages.product'])
             ->latest()
             ->get();
 
-        return view('admin.customers.index', compact('customers'));
+        return view('admin.customers.index', compact('customers', 'usdToEurRate'));
     }
 
     public function storeBranch(Request $request, User $customer)

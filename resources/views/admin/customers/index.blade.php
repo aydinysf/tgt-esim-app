@@ -56,9 +56,9 @@
                                 </button>
                             </td>
                             <td class="py-4 px-4 text-center">
-                                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-blue-50 text-blue-700 border border-blue-200">
-                                    {{ $customer->customer_packages_count }} Paket
-                                </span>
+                                <button onclick="openCustomerPackagesModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->customerPackages) }})" class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition" title="Atanan Paketleri Gör / Yönet">
+                                    <i class="fa-solid fa-box text-[10px] mr-1"></i>{{ $customer->customer_packages_count }} Paket
+                                </button>
                             </td>
                             <td class="py-4 px-4 text-center">
                                 <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-purple-50 text-purple-700 border border-purple-200">
@@ -69,17 +69,20 @@
                                 €{{ number_format($customer->orders_sum_profit ?? 0, 2) }}
                             </td>
                             <td class="py-4 px-4 text-right space-x-2">
+                                <button onclick="openCustomerPackagesModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->customerPackages) }})" class="px-2.5 py-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold rounded-lg border border-blue-200 transition inline-flex items-center gap-1" title="Atanan Paketleri Gör / Yönet">
+                                    <i class="fa-solid fa-list-check"></i> Paketleri Gör
+                                </button>
                                 <button onclick="openPasswordModal({{ $customer->id }}, '{{ addslashes($customer->name) }}')" class="px-2.5 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-bold rounded-lg border border-amber-200 transition inline-flex items-center gap-1">
-                                    <i class="fa-solid fa-key"></i> Şifre Değiştir
+                                    <i class="fa-solid fa-key"></i> Şifre
                                 </button>
                                 <button onclick="openBranchModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ json_encode($customer->branches) }})" class="px-2.5 py-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-lg border border-indigo-200 transition inline-flex items-center gap-1">
                                     <i class="fa-solid fa-store"></i> Şubeler
                                 </button>
                                 <button onclick="openBalanceModal({{ $customer->id }}, '{{ addslashes($customer->name) }}', {{ $customer->balance }})" class="px-3 py-1.5 bg-cyan-50 hover:bg-cyan-100 text-cyan-700 text-xs font-bold rounded-lg border border-cyan-200 transition inline-flex items-center gap-1 active:scale-95">
-                                    <i class="fa-solid fa-coins"></i> Bakiye Yükle
+                                    <i class="fa-solid fa-coins"></i> Bakiye
                                 </button>
-                                <a href="{{ route('admin.packages.index') }}?customer_id={{ $customer->id }}" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold rounded-lg border border-blue-200 transition inline-flex items-center gap-1">
-                                    <i class="fa-solid fa-box"></i> Paket Ata
+                                <a href="{{ route('admin.packages.index') }}?customer_id={{ $customer->id }}" class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold rounded-lg border border-emerald-200 transition inline-flex items-center gap-1">
+                                    <i class="fa-solid fa-plus"></i> Paket Ata
                                 </a>
                                 <form action="{{ route('admin.customers.destroy', $customer->id) }}" method="POST" class="inline" onsubmit="return confirm('Bu müşteriyi ve tüm tanımlarını silmek istediğinize emin misiniz?');">
                                     @csrf
@@ -247,7 +250,141 @@
     </div>
 </div>
 
+<!-- Modal: View & Manage Customer Assigned Packages -->
+<div id="customerPackagesModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="bg-white max-w-3xl w-full p-6 rounded-3xl shadow-2xl relative border border-slate-200 space-y-4 max-h-[90vh] flex flex-col">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100 shrink-0">
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-box-open text-blue-600"></i>
+                    <span>Müşteriye Atanmış Paketler</span>
+                </h3>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">
+                    Müşteri: <span id="pkgModalCustomerName" class="font-extrabold text-slate-900"></span> &nbsp;|&nbsp; 
+                    Toplam: <span id="pkgModalCount" class="font-bold text-blue-700"></span>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <a id="pkgModalAddLink" href="#" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl shadow transition inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-plus"></i> Yeni Paket Ata
+                </a>
+                <button onclick="document.getElementById('customerPackagesModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-xl font-bold p-1">&times;</button>
+            </div>
+        </div>
+
+        <!-- Search in assigned packages -->
+        <div class="shrink-0">
+            <input type="text" id="pkgModalSearchInput" onkeyup="filterPkgModalTable()" placeholder="🔍 Atanmış paketlerde ara..."
+                class="w-full px-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:border-blue-600">
+        </div>
+
+        <!-- Assigned Packages Table -->
+        <div class="overflow-y-auto flex-1 border border-slate-100 rounded-2xl">
+            <table class="w-full text-left text-xs text-slate-700">
+                <thead class="bg-slate-50 text-slate-500 uppercase sticky top-0 border-b border-slate-200">
+                    <tr>
+                        <th class="py-2.5 px-3 font-bold">Paket Adı</th>
+                        <th class="py-2.5 px-3 font-bold">Veri</th>
+                        <th class="py-2.5 px-3 font-bold text-right">Alış Maliyeti (€)</th>
+                        <th class="py-2.5 px-3 font-bold text-right text-slate-900">Satış Fiyatı (€)</th>
+                        <th class="py-2.5 px-3 font-bold text-right text-emerald-600">Birim Kâr (€)</th>
+                        <th class="py-2.5 px-3 font-bold text-center">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody id="pkgModalTableBody" class="divide-y divide-slate-100">
+                    <!-- Dynamic Rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-500 shrink-0">
+            <span class="text-[11px] font-medium">Paketi kaldırdığınızda müşterinin ekranından anında silinir.</span>
+            <button type="button" onclick="document.getElementById('customerPackagesModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl">Kapat</button>
+        </div>
+    </div>
+</div>
+
 <script>
+    const USD_TO_EUR_RATE = {{ (float) ($usdToEurRate ?? 0.92) }};
+
+    function openCustomerPackagesModal(customerId, customerName, packages) {
+        document.getElementById('pkgModalCustomerName').innerText = customerName;
+        document.getElementById('pkgModalCount').innerText = (packages ? packages.length : 0) + ' Paket';
+        document.getElementById('pkgModalAddLink').href = '{{ route('admin.packages.index') }}?customer_id=' + customerId;
+        document.getElementById('pkgModalSearchInput').value = '';
+
+        const tbody = document.getElementById('pkgModalTableBody');
+        tbody.innerHTML = '';
+
+        if (packages && packages.length > 0) {
+            packages.forEach(pkg => {
+                const prod = pkg.product || {};
+                const netUsd = parseFloat(prod.net_price || 0);
+                const netEur = parseFloat(netUsd * USD_TO_EUR_RATE);
+                const salePrice = parseFloat(pkg.sale_price || 0);
+                const profit = salePrice - netEur;
+
+                const tr = document.createElement('tr');
+                tr.className = 'pkg-modal-row hover:bg-slate-50 transition';
+                tr.setAttribute('data-name', ((prod.product_name || '') + ' ' + (prod.product_code || '')).toLowerCase());
+                tr.innerHTML = `
+                    <td class="py-3 px-3">
+                        <div class="font-bold text-slate-900">${prod.product_name || 'Bilinmeyen Paket'}</div>
+                        <div class="text-[10px] font-mono text-blue-600 font-semibold">${prod.product_code || ''}</div>
+                    </td>
+                    <td class="py-3 px-3">
+                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">
+                            ${prod.data_total || ''} ${prod.data_unit || ''}
+                        </span>
+                    </td>
+                    <td class="py-3 px-3 text-right font-medium text-slate-500">
+                        <div>€${netEur.toFixed(2)}</div>
+                        <div class="text-[10px] font-mono text-slate-400">($${netUsd.toFixed(2)})</div>
+                    </td>
+                    <td class="py-3 px-3 text-right font-black text-slate-900 text-sm">
+                        €${salePrice.toFixed(2)}
+                    </td>
+                    <td class="py-3 px-3 text-right font-black text-emerald-600">
+                        +€${profit.toFixed(2)}
+                    </td>
+                    <td class="py-3 px-3 text-center">
+                        <form action="/admin/packages/assignment/${pkg.id}" method="POST" class="inline" onsubmit="return confirm('Bu paketi müşteriden kaldırmak istediğinize emin misiniz?');">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="p-1.5 text-rose-500 hover:text-rose-700 hover:bg-rose-50 rounded-lg transition" title="Paket Atamasını Kaldır">
+                                <i class="fa-solid fa-trash-can text-sm"></i>
+                            </button>
+                        </form>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        } else {
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="6" class="py-8 text-center text-slate-400 font-medium">
+                        Bu müşteriye henüz atanmış bir paket bulunmuyor.
+                    </td>
+                </tr>
+            `;
+        }
+
+        document.getElementById('customerPackagesModal').classList.remove('hidden');
+    }
+
+    function filterPkgModalTable() {
+        const query = (document.getElementById('pkgModalSearchInput').value || '').toLowerCase().trim();
+        const rows = document.querySelectorAll('.pkg-modal-row');
+        rows.forEach(r => {
+            const name = r.getAttribute('data-name') || '';
+            if (!query || name.includes(query)) {
+                r.style.display = '';
+            } else {
+                r.style.display = 'none';
+            }
+        });
+    }
+
     function openBalanceModal(customerId, customerName, currentBalance) {
         document.getElementById('balanceCustomerName').innerText = customerName;
         document.getElementById('balanceCurrentAmount').innerText = '€' + parseFloat(currentBalance).toFixed(2);
