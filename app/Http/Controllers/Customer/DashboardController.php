@@ -93,7 +93,7 @@ class DashboardController extends Controller
 
         // Check if effective customer has enough credit balance
         if (!$effectiveCustomer->hasBalance($salePrice)) {
-            return back()->with('error', 'Yetersiz Bakiye! Bu paket için ₺' . number_format($salePrice, 2) . ' bakiye gereklidir. Mevcut Bakiyeniz: ₺' . number_format($effectiveCustomer->balance, 2));
+            return back()->with('error', 'Yetersiz Bakiye! Bu paket için €' . number_format($salePrice, 2) . ' bakiye gereklidir. Mevcut Bakiyeniz: €' . number_format($effectiveCustomer->balance, 2));
         }
 
         $channelOrderNo = 'TGT-' . date('Ymd') . '-' . Str::random(6);
@@ -108,11 +108,11 @@ class DashboardController extends Controller
         );
 
         if (!$apiResult['success']) {
-            return back()->with('error', 'TGT API Sipariş oluşturulamadı: ' . ($apiResult['msg'] ?? 'Bilinmeyen Hata'));
+            return back()->with('error', 'TGT API Sipariş Hatası: ' . ($apiResult['msg'] ?? 'Bilinmeyen Hata'));
         }
 
         // Deduct balance from effective customer account
-        $user->deductBalance($salePrice);
+        $effectiveCustomer->deductBalance($salePrice);
 
         $netPriceUsd = (float) $product->net_price;
         $netPriceEur = \App\Services\CurrencyService::convertUsdToEur($netPriceUsd);
@@ -144,7 +144,7 @@ class DashboardController extends Controller
         }
 
         return redirect()->route('customer.dashboard')
-            ->with('success', "{$product->product_name} paketiniz ₺" . number_format($salePrice, 2) . " bakiyeniz düşülerek (" . ($branch?->name ?? 'Merkez') . " adına) başarıyla satın alındı ve QR kodunuz e-posta olarak gönderildi! Kalan Bakiyeniz: ₺" . number_format($effectiveCustomer->balance, 2));
+            ->with('success', "{$product->product_name} paketiniz €" . number_format($salePrice, 2) . " bakiyeniz düşülerek (" . ($branch?->name ?? 'Merkez') . " adına) başarıyla satın alındı ve QR kodunuz hazırlandı! Kalan Bakiyeniz: €" . number_format($effectiveCustomer->balance, 2));
     }
 
     public function getUsageInfo(Order $order, TgtEsimService $tgtService)

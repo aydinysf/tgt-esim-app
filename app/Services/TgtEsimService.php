@@ -193,6 +193,15 @@ class TgtEsimService
     {
         $token = $this->getAccessToken();
 
+        if (empty($token) || str_starts_with($token, 'mock_')) {
+            Log::error('TGT API Order Error: Invalid or missing access token');
+            return [
+                'success' => false,
+                'msg' => 'TGT API oturum anahtarı (Token) alınamadı. Lütfen API Ayarlarını kontrol edin.',
+                'raw' => [],
+            ];
+        }
+
         try {
             $payload = [
                 'productCode' => $productCode,
@@ -203,8 +212,10 @@ class TgtEsimService
                 $payload['email'] = $email;
             }
 
+            Log::info("TGT API Order Request Payload: ", $payload);
+
             $response = Http::withoutVerifying()
-                ->timeout(10)
+                ->timeout(20)
                 ->withHeaders([
                     'Content-Type' => 'application/json;charset=UTF-8',
                     'Accept' => 'application/json',
@@ -212,12 +223,22 @@ class TgtEsimService
                 ])
                 ->post($this->baseUrl . '/eSIMApi/v2/order/create', $payload);
 
-            if ($response->successful()) {
-                $json = $response->json();
+            $json = $response->json();
+            Log::info("TGT API Order Response: ", $json ?? []);
+
+            if ($response->successful() && is_array($json)) {
                 if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
-                    $orderNo = $json['data']['orderNo'] ?? ('TG' . date('YmdHis') . rand(1000, 9999));
-                    $iccid = $json['data']['iccid'] ?? ('89852' . rand(10000000000, 99999999999));
-                    $qrCode = $json['data']['qrCode'] ?? ('LPA:1$esiminfra.toprsp.com$' . strtoupper(md5($orderNo)));
+                    $orderNo = $json['data']['orderNo'] ?? null;
+                    $iccid = $json['data']['iccid'] ?? null;
+                    $qrCode = $json['data']['qrCode'] ?? $json['data']['acCode'] ?? null;
+
+                    if (!$orderNo || !$qrCode) {
+                        return [
+                            'success' => false,
+                            'msg' => 'TGT API siparişi onayladı ancak QR kod bilgisi eksik döndü.',
+                            'raw' => $json,
+                        ];
+                    }
 
                     return [
                         'success' => true,
@@ -227,19 +248,29 @@ class TgtEsimService
                         'raw' => $json,
                     ];
                 }
-            }
-        } catch (\Exception $e) {
-            Log::info('TGT API createOrder info: ' . $e->getMessage());
-        }
 
-        $mockOrderNo = 'TG' . date('YmdHis') . rand(1000, 9999);
-        return [
-            'success' => true,
-            'orderNo' => $mockOrderNo,
-            'iccid' => '89852' . rand(10000000000, 99999999999),
-            'qrCode' => 'LPA:1$esiminfra.toprsp.com$' . strtoupper(md5($mockOrderNo)),
-            'raw' => ['code' => '0000', 'msg' => 'success (TGT Datasheet Processed)'],
-        ];
+                // If TGT returned an error code
+                $errorMsg = $json['subMsg'] ?? $json['msg'] ?? 'TGT API Sipariş Hatası (Kod: ' . ($json['code'] ?? 'Bilinmeyen') . ')';
+                return [
+                    'success' => false,
+                    'msg' => $errorMsg,
+                    'raw' => $json,
+                ];
+            }
+
+            return [
+                'success' => false,
+                'msg' => 'TGT API sunucusu HTTP ' . $response->status() . ' hatası verdi.',
+                'raw' => $json ?? [],
+            ];
+        } catch (\Exception $e) {
+            Log::error('TGT API createOrder Exception: ' . $e->getMessage());
+            return [
+                'success' => false,
+                'msg' => 'TGT API bağlantı hatası: ' . $e->getMessage(),
+                'raw' => [],
+            ];
+        }
     }
 
     /**
@@ -354,14 +385,14 @@ class TgtEsimService
             return [
                 'currency' => 'USD',
                 'accountId' => $this->accountId,
-                'name' => 'TGT Channel Account',
+                'name' => $this->accountId,
                 'settlementType' => 'CASH',
                 'accountList' => [
                     [
-                        'id' => 'acc_12345',
+                        'id' => '',
                         'type' => 'BASIC',
-                        'status' => 'ENABLE',
-                        'balance' => '15480.00',
+                        'status' => 'OFFLINE',
+                        'balance' => '0.00',
                     ]
                 ],
             ];
