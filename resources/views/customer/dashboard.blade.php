@@ -21,23 +21,29 @@
         </div>
 
         <div class="flex items-center gap-3">
-            <!-- Balance Card -->
-            <div class="glass-panel px-5 py-3 rounded-2xl border-l-4 border-cyan-500 flex items-center gap-3 shadow-md bg-white">
-                <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg font-bold shrink-0 border border-cyan-200">
-                    <i class="fa-solid fa-wallet"></i>
+            @if(!Auth::user()->isBranchUser())
+                <!-- Balance Card (Only visible to Boss / Main Dealer Account) -->
+                <div class="glass-panel px-5 py-3 rounded-2xl border-l-4 border-cyan-500 flex items-center gap-3 shadow-md bg-white">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg font-bold shrink-0 border border-cyan-200">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Hesap Bakiyesi</span>
+                        <div class="text-xl font-black text-cyan-700 leading-tight">€{{ number_format($effectiveCustomer->balance, 2) }}</div>
+                    </div>
                 </div>
-                <div>
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Hesap Bakiyesi</span>
-                    <div class="text-xl font-black text-cyan-700 leading-tight">€{{ number_format($effectiveCustomer->balance, 2) }}</div>
-                </div>
-            </div>
+            @endif
 
             <!-- Branch / Company Badge -->
-            <div class="hidden sm:flex glass-card px-4 py-3 rounded-2xl text-xs text-slate-700 border border-slate-200 items-center gap-2 shadow-sm bg-white">
-                <i class="fa-solid {{ Auth::user()->isBranchUser() ? 'fa-store text-indigo-600' : 'fa-building text-blue-600' }}"></i>
+            <div class="glass-card px-4 py-3 rounded-2xl text-xs text-slate-700 border border-slate-200 items-center gap-2.5 shadow-sm bg-white flex">
+                <div class="w-8 h-8 rounded-xl {{ Auth::user()->isBranchUser() ? 'bg-indigo-50 text-indigo-600' : 'bg-blue-50 text-blue-600' }} flex items-center justify-center font-bold shrink-0 border border-slate-200">
+                    <i class="fa-solid {{ Auth::user()->isBranchUser() ? 'fa-store' : 'fa-building' }}"></i>
+                </div>
                 <div class="truncate">
-                    <span class="font-bold block text-slate-900">{{ Auth::user()->name }}</span>
-                    <span class="text-[10px] text-slate-400">{{ Auth::user()->isBranchUser() ? (Auth::user()->branch->name ?? 'Şube Personeli') : (Auth::user()->company_name ?? 'Bayi Ana Hesabı') }}</span>
+                    <span class="font-extrabold block text-slate-900 leading-tight">{{ Auth::user()->name }}</span>
+                    <span class="text-[10px] font-bold {{ Auth::user()->isBranchUser() ? 'text-indigo-600' : 'text-slate-400' }} block">
+                        {{ Auth::user()->isBranchUser() ? (Auth::user()->branch->name ?? 'Şube Personeli') : (Auth::user()->company_name ?? 'Bayi Ana Hesabı') }}
+                    </span>
                 </div>
             </div>
         </div>
@@ -110,12 +116,19 @@
                     </div>
                 </div>
 
-                <!-- Price & Purchase Action -->
+                <!-- Action Bar (Price hidden from Staff) -->
                 <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <div>
-                        <div class="text-[11px] text-slate-400 font-bold uppercase tracking-wider">Satış Fiyatı</div>
-                        <div class="text-2xl font-black text-slate-900">€{{ number_format($assignment->sale_price, 2) }}</div>
-                    </div>
+                    @if(!Auth::user()->isBranchUser())
+                        <div>
+                            <div class="text-[11px] text-slate-400 font-bold uppercase tracking-wider">Satış Fiyatı</div>
+                            <div class="text-2xl font-black text-slate-900">€{{ number_format($assignment->sale_price, 2) }}</div>
+                        </div>
+                    @else
+                        <div class="flex items-center gap-1.5 text-xs text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">
+                            <i class="fa-solid fa-circle-check text-[11px]"></i>
+                            <span>Kullanıma Hazır</span>
+                        </div>
+                    @endif
 
                     <button type="button" 
                         data-package-id="{{ $assignment->id }}"
@@ -152,28 +165,42 @@
             <button onclick="document.getElementById('checkoutModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-2xl font-bold p-1">&times;</button>
         </div>
 
-        <!-- Account Balance Summary -->
-        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5 text-xs">
-            <div class="flex items-center justify-between text-slate-500 font-medium">
-                <span>Mevcut Hesap Bakiyesi:</span>
-                <span class="font-black text-sm text-cyan-700">€{{ number_format($effectiveCustomer->balance, 2) }}</span>
-            </div>
-            
-            <div class="flex items-center justify-between text-slate-600 border-t border-slate-200/80 pt-2">
-                <span>Seçilen Paket:</span>
-                <span class="font-bold text-slate-900 text-right truncate max-w-[200px]" id="modalPackName">Paket Adı</span>
-            </div>
+        @if(!Auth::user()->isBranchUser())
+            <!-- Account Balance Summary (For Dealer Boss Only) -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5 text-xs">
+                <div class="flex items-center justify-between text-slate-500 font-medium">
+                    <span>Mevcut Hesap Bakiyesi:</span>
+                    <span class="font-black text-sm text-cyan-700">€{{ number_format($effectiveCustomer->balance, 2) }}</span>
+                </div>
+                
+                <div class="flex items-center justify-between text-slate-600 border-t border-slate-200/80 pt-2">
+                    <span>Seçilen Paket:</span>
+                    <span class="font-bold text-slate-900 text-right truncate max-w-[200px]" id="modalPackName">Paket Adı</span>
+                </div>
 
-            <div class="flex items-center justify-between text-slate-600">
-                <span>Paket Satış Bedeli:</span>
-                <span class="font-black text-rose-600 text-sm">-€<span id="modalPackPrice">0.00</span></span>
-            </div>
+                <div class="flex items-center justify-between text-slate-600">
+                    <span>Paket Satış Bedeli:</span>
+                    <span class="font-black text-rose-600 text-sm">-€<span id="modalPackPrice">0.00</span></span>
+                </div>
 
-            <div class="flex items-center justify-between text-slate-800 border-t border-slate-200/80 pt-2 font-bold">
-                <span>İşlem Sonrası Kalan Bakiye:</span>
-                <span class="font-black text-emerald-600 text-sm">€<span id="modalRemainingPrice">0.00</span></span>
+                <div class="flex items-center justify-between text-slate-800 border-t border-slate-200/80 pt-2 font-bold">
+                    <span>İşlem Sonrası Kalan Bakiye:</span>
+                    <span class="font-black text-emerald-600 text-sm">€<span id="modalRemainingPrice">0.00</span></span>
+                </div>
             </div>
-        </div>
+        @else
+            <!-- Clean Summary for Staff (No Price / No Balance) -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 text-xs">
+                <div class="flex items-center justify-between text-slate-600">
+                    <span class="text-slate-500 font-medium">Satılacak Paket:</span>
+                    <span class="font-bold text-slate-900 text-right truncate max-w-[220px]" id="modalPackName">Paket Adı</span>
+                </div>
+                <div class="flex items-center justify-between text-slate-600 border-t border-slate-200/80 pt-2">
+                    <span class="text-slate-500 font-medium">İşlem Yapan Şube:</span>
+                    <span class="font-bold text-indigo-700">{{ Auth::user()->branch->name ?? 'Şubeniz' }}</span>
+                </div>
+            </div>
+        @endif
 
         <!-- Purchase Confirmation Form -->
         <form action="{{ route('customer.buy') }}" method="POST" id="checkoutForm" class="space-y-4">
@@ -190,16 +217,11 @@
                         @endforeach
                     </select>
                 </div>
-            @elseif(Auth::user()->isBranchUser())
-                <div class="p-2.5 bg-indigo-50 border border-indigo-200 rounded-xl text-xs text-indigo-900 font-semibold flex items-center gap-2">
-                    <i class="fa-solid fa-store text-indigo-600"></i>
-                    <span>İşlem Şubesi: <strong>{{ Auth::user()->branch->name ?? 'Şubeniz' }}</strong></span>
-                </div>
             @endif
 
             <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl text-xs text-blue-800 flex items-start gap-2">
                 <i class="fa-solid fa-circle-info text-blue-600 text-sm shrink-0 mt-0.5"></i>
-                <span>Satış onaylandığı anda paket ücreti bakiyenizden tahsil edilecek ve müşterinize ait eSIM QR kodu anında hazır olarak açılacaktır.</span>
+                <span>Satışı onayladığınızda müşterinize ait eSIM QR kodu ve kurulum bilgileri anında oluşturulup ekrana açılacaktır.</span>
             </div>
 
             <div class="flex items-center justify-end gap-3 pt-2">
@@ -216,6 +238,8 @@
 
 @push('scripts')
 <script>
+    const IS_STAFF = {{ Auth::user()->isBranchUser() ? 'true' : 'false' }};
+
     function filterPackages() {
         const query = (document.getElementById('packageSearchInput').value || '').toLowerCase().trim();
         const cards = document.querySelectorAll('.package-card');
@@ -232,21 +256,26 @@
     function openPaymentModalFromBtn(btn) {
         const packageId = btn.getAttribute('data-package-id');
         const packName = btn.getAttribute('data-name');
-        const price = btn.getAttribute('data-price');
+        const price = btn.getAttribute('data-price') || '0';
         const userBalance = {{ (float) $effectiveCustomer->balance }};
         
         document.getElementById('modalCustomerPackageId').value = packageId;
-        document.getElementById('modalPackName').innerText = packName;
-        document.getElementById('modalPackPrice').innerText = parseFloat(price).toFixed(2);
+        const nameEl = document.getElementById('modalPackName');
+        if (nameEl) nameEl.innerText = packName;
 
-        const remaining = userBalance - parseFloat(price);
-        const remSpan = document.getElementById('modalRemainingPrice');
-        if (remSpan) {
-            remSpan.innerText = remaining.toFixed(2);
-            if (remaining < 0) {
-                remSpan.className = 'font-black text-rose-600 text-sm';
-            } else {
-                remSpan.className = 'font-black text-emerald-600 text-sm';
+        if (!IS_STAFF) {
+            const priceEl = document.getElementById('modalPackPrice');
+            if (priceEl) priceEl.innerText = parseFloat(price).toFixed(2);
+
+            const remaining = userBalance - parseFloat(price);
+            const remSpan = document.getElementById('modalRemainingPrice');
+            if (remSpan) {
+                remSpan.innerText = remaining.toFixed(2);
+                if (remaining < 0) {
+                    remSpan.className = 'font-black text-rose-600 text-sm';
+                } else {
+                    remSpan.className = 'font-black text-emerald-600 text-sm';
+                }
             }
         }
 

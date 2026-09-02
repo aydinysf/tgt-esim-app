@@ -119,14 +119,21 @@
                     </button>
                 </div>
 
-                <!-- Price & Quota Info -->
+                <!-- Price & Quota / Date Info (Price hidden from staff) -->
                 <div class="flex items-center justify-between text-xs py-2 px-3 bg-slate-50 rounded-xl border border-slate-100">
-                    <div>
-                        <span class="text-slate-400 text-[11px] block font-medium">Satış Tutarı</span>
-                        <span class="text-sm font-black text-slate-900">€{{ number_format($order->sale_price, 2) }}</span>
-                    </div>
+                    @if(!Auth::user()->isBranchUser())
+                        <div>
+                            <span class="text-slate-400 text-[11px] block font-medium">Satış Tutarı</span>
+                            <span class="text-sm font-black text-slate-900">€{{ number_format($order->sale_price, 2) }}</span>
+                        </div>
+                    @else
+                        <div class="flex items-center gap-1.5 text-blue-700 font-extrabold text-xs">
+                            <i class="fa-solid fa-wifi text-[11px]"></i>
+                            <span>{{ $product->data_total ?? '' }} {{ $product->data_unit ?? '' }}</span>
+                        </div>
+                    @endif
                     <div class="text-right">
-                        <span class="text-slate-400 text-[11px] block font-medium">Tarih</span>
+                        <span class="text-slate-400 text-[11px] block font-medium">Satış Tarihi</span>
                         <span class="text-xs font-semibold text-slate-700">{{ $order->created_at->format('d.m.Y H:i') }}</span>
                     </div>
                 </div>
