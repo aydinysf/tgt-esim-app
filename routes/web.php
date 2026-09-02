@@ -69,6 +69,7 @@ Route::middleware(['auth'])->prefix('customer')->name('customer.')->group(functi
     Route::get('/orders/{order}/usage', [CustomerDashboard::class, 'getUsageInfo'])->name('orders.usage');
     
     // Branches & Staff Management (Only for main Customer role)
+    Route::get('/reports', [\App\Http\Controllers\Customer\ReportController::class, 'index'])->name('reports.index');
     Route::get('/branches', [\App\Http\Controllers\Customer\BranchController::class, 'index'])->name('branches.index');
     Route::post('/branches', [\App\Http\Controllers\Customer\BranchController::class, 'store'])->name('branches.store');
     Route::post('/branches/{branch}/staff', [\App\Http\Controllers\Customer\BranchController::class, 'storeStaff'])->name('branches.staff.store');

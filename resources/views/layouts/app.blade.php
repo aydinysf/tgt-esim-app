@@ -171,6 +171,11 @@
                     </a>
 
                     @if(!Auth::user()->isBranchUser())
+                        <a href="{{ route('customer.reports.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.reports.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                            <i class="fa-solid fa-chart-pie w-5 text-center text-emerald-600"></i>
+                            <span>Satış Raporları</span>
+                        </a>
+
                         <a href="{{ route('customer.branches.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.branches.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
                             <i class="fa-solid fa-store w-5 text-center text-indigo-600"></i>
                             <span>Şube Yönetimi</span>
