@@ -18,49 +18,99 @@ class DashboardController extends Controller
         $user = Auth::user();
         $effectiveCustomer = $user->getEffectiveCustomer();
 
-        // Selected branch filter (for dealer admin)
-        $selectedBranchId = $request->query('branch_id');
+        // Search in assigned packages
+        $search = trim((string) $request->query('search', ''));
 
         // Packages assigned to effective customer by Admin
-        $assignedPackages = CustomerPackage::where('user_id', $effectiveCustomer->id)
+        $packagesQuery = CustomerPackage::where('user_id', $effectiveCustomer->id)
             ->where('is_active', true)
-            ->with('product')
-            ->get();
+            ->with('product');
 
-        // Branches defined by effective customer
+        if ($search) {
+            $packagesQuery->whereHas('product', function ($q) use ($search) {
+                $q->where('product_name', 'like', "%{$search}%")
+                  ->orWhere('product_code', 'like', "%{$search}%");
+            });
+        }
+
+        $assignedPackages = $packagesQuery->get();
+
+        // Branches defined by effective customer (for branch selection if owner)
+        $branches = $effectiveCustomer->branches()->where('is_active', true)->get();
+
+        // Total orders count for badge counter
+        $ordersCountQuery = Order::where('user_id', $effectiveCustomer->id);
+        if ($user->isBranchUser() && $user->branch_id) {
+            $ordersCountQuery->where('branch_id', $user->branch_id);
+        }
+        $totalOrdersCount = $ordersCountQuery->count();
+
+        return view('customer.dashboard', compact(
+            'assignedPackages',
+            'branches',
+            'effectiveCustomer',
+            'totalOrdersCount',
+            'search'
+        ));
+    }
+
+    public function orders(Request $request)
+    {
+        $user = Auth::user();
+        $effectiveCustomer = $user->getEffectiveCustomer();
+
+        $selectedBranchId = $request->query('branch_id');
+        $search = trim((string) $request->query('search', ''));
+
+        // Branches list (for dealer owner filter)
         $branches = $effectiveCustomer->branches()->where('is_active', true)->get();
 
         // Orders query
         $ordersQuery = Order::where('user_id', $effectiveCustomer->id)
             ->with(['product', 'branch']);
 
-        // If user is a branch staff, filter only their branch orders!
+        // If user is a branch staff, strictly lock to their branch orders
         if ($user->isBranchUser() && $user->branch_id) {
             $ordersQuery->where('branch_id', $user->branch_id);
         } elseif ($selectedBranchId) {
             $ordersQuery->where('branch_id', $selectedBranchId);
         }
 
-        $orders = $ordersQuery->latest()->get();
+        if ($search) {
+            $ordersQuery->where(function ($q) use ($search) {
+                $q->where('order_no', 'like', "%{$search}%")
+                  ->orWhere('channel_order_no', 'like', "%{$search}%")
+                  ->orWhere('iccid', 'like', "%{$search}%")
+                  ->orWhereHas('product', function ($pq) use ($search) {
+                      $pq->where('product_name', 'like', "%{$search}%")
+                         ->orWhere('product_code', 'like', "%{$search}%");
+                  });
+            });
+        }
 
-        // Calculate sales summary per branch for dealer admin
-        $branchStats = Order::select(
-            'branch_id',
-            'branch_name',
-            DB::raw('count(*) as total_orders'),
-            DB::raw('sum(sale_price) as total_spent')
-        )
-        ->where('user_id', $effectiveCustomer->id)
-        ->groupBy('branch_id', 'branch_name')
-        ->get();
+        $orders = $ordersQuery->latest()->paginate(18)->withQueryString();
 
-        return view('customer.dashboard', compact(
-            'assignedPackages',
+        // Calculate branch performance metrics ONLY for the dealer owner (not for staff)
+        $branchStats = [];
+        if (!$user->isBranchUser() && count($branches) > 0) {
+            $branchStats = Order::select(
+                'branch_id',
+                'branch_name',
+                DB::raw('count(*) as total_orders'),
+                DB::raw('sum(sale_price) as total_spent')
+            )
+            ->where('user_id', $effectiveCustomer->id)
+            ->groupBy('branch_id', 'branch_name')
+            ->get();
+        }
+
+        return view('customer.orders', compact(
             'orders',
             'branches',
             'effectiveCustomer',
             'selectedBranchId',
-            'branchStats'
+            'branchStats',
+            'search'
         ));
     }
 
@@ -143,8 +193,9 @@ class DashboardController extends Controller
             \Illuminate\Support\Facades\Log::warning('eSIM Email sending failed: ' . $e->getMessage());
         }
 
-        return redirect()->route('customer.dashboard')
-            ->with('success', "{$product->product_name} paketiniz €" . number_format($salePrice, 2) . " bakiyeniz düşülerek (" . ($branch?->name ?? 'Merkez') . " adına) başarıyla satın alındı ve QR kodunuz hazırlandı! Kalan Bakiyeniz: €" . number_format($effectiveCustomer->balance, 2));
+        return redirect()->route('customer.orders.index')
+            ->with('success', "{$product->display_name} paketi €" . number_format($salePrice, 2) . " bakiyenizden düşülerek (" . ($branch?->name ?? 'Merkez') . " adına) başarıyla satın alındı ve QR kodunuz hazırlandı! Kalan Bakiyeniz: €" . number_format($effectiveCustomer->balance, 2))
+            ->with('new_order_id', $order->id);
     }
 
     public function getUsageInfo(Order $order, TgtEsimService $tgtService)

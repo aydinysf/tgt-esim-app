@@ -158,17 +158,24 @@
                     </a>
 
                 @else
-                    <div class="px-3 py-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider">Müşteri Portalı</div>
+                    <div class="px-3 py-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider">Bayi / Şube Portalı</div>
 
                     <a href="{{ route('customer.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.dashboard') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
-                        <i class="fa-solid fa-qrcode w-5 text-center text-blue-600"></i>
-                        <span>Paketlerim & Mağaza</span>
+                        <i class="fa-solid fa-cart-shopping w-5 text-center text-blue-600"></i>
+                        <span>eSIM Satış Ekranı</span>
                     </a>
 
-                    <a href="{{ route('customer.branches.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.branches.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
-                        <i class="fa-solid fa-store w-5 text-center text-blue-600"></i>
-                        <span>Şubelerim</span>
+                    <a href="{{ route('customer.orders.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.orders.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-box-archive w-5 text-center text-purple-600"></i>
+                        <span>Satılan Paketler</span>
                     </a>
+
+                    @if(!Auth::user()->isBranchUser())
+                        <a href="{{ route('customer.branches.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.branches.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                            <i class="fa-solid fa-store w-5 text-center text-indigo-600"></i>
+                            <span>Şube Yönetimi</span>
+                        </a>
+                    @endif
                 @endif
 
                 <div class="pt-2">

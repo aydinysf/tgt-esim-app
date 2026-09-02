@@ -64,6 +64,7 @@ Route::middleware('auth')->group(function () {
 // Customer & Branch User Shared Routes
 Route::middleware(['auth'])->prefix('customer')->name('customer.')->group(function () {
     Route::get('/dashboard', [CustomerDashboard::class, 'index'])->name('dashboard');
+    Route::get('/orders', [CustomerDashboard::class, 'orders'])->name('orders.index');
     Route::post('/buy', [CustomerDashboard::class, 'buyPackage'])->name('buy');
     Route::get('/orders/{order}/usage', [CustomerDashboard::class, 'getUsageInfo'])->name('orders.usage');
     
