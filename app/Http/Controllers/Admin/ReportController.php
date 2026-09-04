@@ -15,6 +15,7 @@ class ReportController extends Controller
     {
         $selectedCustomerId = $request->query('customer_id');
         $selectedBranchId = $request->query('branch_id');
+        $search = trim((string) $request->query('search', ''));
 
         $query = Order::with(['customer', 'branch', 'product'])->latest();
 
@@ -26,7 +27,25 @@ class ReportController extends Controller
             $query->where('branch_id', $selectedBranchId);
         }
 
-        $orders = $query->paginate(20);
+        if ($search) {
+            $query->where(function ($q) use ($search) {
+                $q->where('order_no', 'like', "%{$search}%")
+                  ->orWhere('channel_order_no', 'like', "%{$search}%")
+                  ->orWhere('iccid', 'like', "%{$search}%")
+                  ->orWhere('branch_name', 'like', "%{$search}%")
+                  ->orWhereHas('customer', function ($cq) use ($search) {
+                      $cq->where('name', 'like', "%{$search}%")
+                         ->orWhere('company_name', 'like', "%{$search}%")
+                         ->orWhere('email', 'like', "%{$search}%");
+                  })
+                  ->orWhereHas('product', function ($pq) use ($search) {
+                      $pq->where('product_name', 'like', "%{$search}%")
+                         ->orWhere('product_code', 'like', "%{$search}%");
+                  });
+            });
+        }
+
+        $orders = $query->paginate(20)->withQueryString();
 
         // Overall Sales & Profit Breakdown by Package
         $productStatsQuery = Order::select(
@@ -86,7 +105,31 @@ class ReportController extends Controller
             'customers',
             'selectedCustomerId',
             'selectedBranchId',
-            'availableBranches'
+            'availableBranches',
+            'search'
         ));
+    }
+
+    public function liveStatus(Order $order, \App\Services\TgtEsimService $tgtService)
+    {
+        $usage = $order->order_no ? $tgtService->getOrderUsage($order->order_no) : [];
+        $profile = $order->iccid ? $tgtService->getProfileInfo($order->iccid) : [];
+
+        return response()->json([
+            'success' => true,
+            'order' => [
+                'id' => $order->id,
+                'order_no' => $order->order_no ?? $order->channel_order_no,
+                'customer' => $order->customer->name ?? 'Müşteri',
+                'branch' => $order->branch_name ?? 'Merkez / Genel',
+                'product' => $order->product->product_name ?? 'eSIM',
+                'iccid' => $order->iccid,
+                'qr_code' => $order->qr_code,
+                'apple_install_url' => $order->apple_install_url,
+                'created_at' => $order->created_at->format('d.m.Y H:i'),
+            ],
+            'usage' => $usage,
+            'profile' => $profile,
+        ]);
     }
 }

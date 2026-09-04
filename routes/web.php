@@ -44,6 +44,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 
     // Reports & Profit
     Route::get('/reports', [AdminReport::class, 'index'])->name('reports.index');
+    Route::get('/orders/{order}/live-status', [AdminReport::class, 'liveStatus'])->name('orders.live-status');
 
     // Settings & API Credentials
     Route::get('/settings', [AdminSetting::class, 'index'])->name('settings.index');

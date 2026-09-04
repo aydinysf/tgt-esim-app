@@ -352,12 +352,12 @@ class TgtEsimService
      */
     public function getOrderUsage(string $orderNo): array
     {
-        return Cache::remember('tgt_usage_' . md5($orderNo), 300, function () use ($orderNo) {
+        return Cache::remember('tgt_usage_' . md5($orderNo), 120, function () use ($orderNo) {
             $token = $this->getAccessToken();
 
             try {
                 $response = Http::withoutVerifying()
-                    ->timeout(5)
+                    ->timeout(10)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
                         'Accept' => 'application/json',
@@ -367,22 +367,35 @@ class TgtEsimService
                         'orderNo' => $orderNo,
                     ]);
 
-                if ($response->successful()) {
-                    $json = $response->json();
+                $json = $response->json();
+
+                if (($json['code'] ?? '') === '2003' || str_contains(strtolower($json['msg'] ?? ''), 'token')) {
+                    $token = $this->getAccessToken(true);
+                    if (!empty($token)) {
+                        $response = Http::withoutVerifying()
+                            ->timeout(10)
+                            ->withHeaders([
+                                'Content-Type' => 'application/json;charset=UTF-8',
+                                'Accept' => 'application/json',
+                                'Authorization' => 'Bearer ' . $token,
+                            ])
+                            ->post($this->baseUrl . '/eSIMApi/v2/order/usage', [
+                                'orderNo' => $orderNo,
+                            ]);
+                        $json = $response->json();
+                    }
+                }
+
+                if ($response->successful() && is_array($json)) {
                     if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
                         return $json['data'];
                     }
                 }
             } catch (\Exception $e) {
-                Log::info('TGT API getOrderUsage info: ' . $e->getMessage());
+                Log::warning('TGT API getOrderUsage error: ' . $e->getMessage());
             }
 
-            return [
-                'dataTotal' => '5000',
-                'dataUsage' => '450',
-                'dataResidual' => '4550',
-                'qtaconsumption' => '450',
-            ];
+            return [];
         });
     }
 
@@ -391,12 +404,12 @@ class TgtEsimService
      */
     public function getProfileInfo(string $iccid): array
     {
-        return Cache::remember('tgt_profile_' . md5($iccid), 300, function () use ($iccid) {
+        return Cache::remember('tgt_profile_' . md5($iccid), 120, function () use ($iccid) {
             $token = $this->getAccessToken();
 
             try {
                 $response = Http::withoutVerifying()
-                    ->timeout(5)
+                    ->timeout(10)
                     ->withHeaders([
                         'Content-Type' => 'application/json;charset=UTF-8',
                         'Accept' => 'application/json',
@@ -406,22 +419,35 @@ class TgtEsimService
                         'iccid' => $iccid,
                     ]);
 
-                if ($response->successful()) {
-                    $json = $response->json();
+                $json = $response->json();
+
+                if (($json['code'] ?? '') === '2003' || str_contains(strtolower($json['msg'] ?? ''), 'token')) {
+                    $token = $this->getAccessToken(true);
+                    if (!empty($token)) {
+                        $response = Http::withoutVerifying()
+                            ->timeout(10)
+                            ->withHeaders([
+                                'Content-Type' => 'application/json;charset=UTF-8',
+                                'Accept' => 'application/json',
+                                'Authorization' => 'Bearer ' . $token,
+                            ])
+                            ->post($this->baseUrl . '/eSIMApi/v2/iccid/profile', [
+                                'iccid' => $iccid,
+                            ]);
+                        $json = $response->json();
+                    }
+                }
+
+                if ($response->successful() && is_array($json)) {
                     if (($json['code'] ?? '') === '0000' && isset($json['data'])) {
                         return $json['data'];
                     }
                 }
             } catch (\Exception $e) {
-                Log::info('TGT API getProfileInfo info: ' . $e->getMessage());
+                Log::warning('TGT API getProfileInfo error: ' . $e->getMessage());
             }
 
-            return [
-                'iccid' => $iccid,
-                'state' => 'Enabled',
-                'installCount' => '1',
-                'updateTime' => date('Y-m-d\TH:i:s\Z'),
-            ];
+            return [];
         });
     }
 
