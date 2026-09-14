@@ -39,28 +39,31 @@ php artisan route:clear || true
 # Link storage
 php artisan storage:link --force || true
 
-# Wait for database connection (up to 20 seconds) before running migrations
+# Wait for database connection before running migrations
 echo "Checking database connection..."
 DB_READY=0
 for i in $(seq 1 10); do
-    if php -r "
+    DB_TEST_OUTPUT=$(php -r "
         try {
             require __DIR__ . '/vendor/autoload.php';
             \$app = require_once __DIR__ . '/bootstrap/app.php';
             \$kernel = \$app->make(Illuminate\Contracts\Console\Kernel::class);
             \$kernel->bootstrap();
             DB::connection()->getPdo();
-            exit(0);
+            echo 'SUCCESS';
         } catch (\Throwable \$e) {
-            exit(1);
+            echo \$e->getMessage();
         }
-    " 2>/dev/null; then
+    " 2>&1)
+
+    if [ "$DB_TEST_OUTPUT" = "SUCCESS" ]; then
         echo "Database connection ready!"
         DB_READY=1
         break
+    else
+        echo "Waiting for database to be ready (attempt $i/10): $DB_TEST_OUTPUT"
+        sleep 2
     fi
-    echo "Waiting for database to be ready (attempt $i/10)..."
-    sleep 2
 done
 
 # Run migrations if DB is accessible
