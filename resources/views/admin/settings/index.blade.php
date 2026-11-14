@@ -70,9 +70,60 @@
                 </div>
             </div>
 
+            <!-- IWC API Configuration -->
+            <div class="pt-6 border-t border-slate-200">
+                <div class="mb-4">
+                    <h2 class="text-base font-extrabold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-landmark text-amber-500"></i>
+                        <span>Istanbul Welcome Card (IWC) Partner API</span>
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-0.5">Turlar ve bilet rezervasyonları için IWC Partner API anahtarları.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">IWC Base URL</label>
+                        <input type="url" name="iwc_base_url" value="{{ old('iwc_base_url', $iwcBaseUrl) }}" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-mono text-xs focus:outline-none focus:border-amber-500">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">X-Profile-ID</label>
+                            <input type="text" name="iwc_profile_id" value="{{ old('iwc_profile_id', $iwcProfileId) }}" placeholder="Örn: 55C7TV" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-mono text-xs focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">X-Access-Key</label>
+                            <input type="password" name="iwc_access_key" value="{{ old('iwc_access_key', $iwcAccessKey) }}" placeholder="IWC API Anahtarı" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-mono text-xs focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stripe Payment Configuration -->
+            <div class="pt-6 border-t border-slate-200">
+                <div class="mb-4">
+                    <h2 class="text-base font-extrabold text-slate-900 flex items-center gap-2">
+                        <i class="fa-brands fa-stripe text-indigo-600 text-lg"></i>
+                        <span>Stripe Kredi Kartı Ödeme Ayarları</span>
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-0.5">Müşterilerden kredi kartı ile ödeme almak için Stripe API anahtarları.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Stripe Publishable Key (pk_...)</label>
+                        <input type="text" name="stripe_key" value="{{ old('stripe_key', $stripeKey) }}" placeholder="pk_live_... veya pk_test_..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-mono text-xs focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Stripe Secret Key (sk_...)</label>
+                        <input type="password" name="stripe_secret" value="{{ old('stripe_secret', $stripeSecret) }}" placeholder="sk_live_... veya sk_test_..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-mono text-xs focus:outline-none focus:border-indigo-500">
+                    </div>
+                </div>
+            </div>
+
             <div class="pt-4 border-t border-slate-100 flex justify-end">
                 <button type="submit" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition active:scale-95">
-                    Ayarları Kaydet ve Token Sıfırla
+                    Tüm Ayarları Kaydet
                 </button>
             </div>
         </form>

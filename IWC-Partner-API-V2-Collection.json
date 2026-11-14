@@ -1,0 +1,902 @@
+{
+  "info": {
+    "_postman_id": "4c55ca77-d8f6-4de5-a8c6-318535e295e6",
+    "name": "IWC - Partners - v2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45328218",
+    "_collection_link": "https://go.postman.co/collection/45328218-4c55ca77-d8f6-4de5-a8c6-318535e295e6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Product list",
+          "protocolProfileBehavior": {
+            "strictSSL": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}/v2/products?start_date=2026-06-02&per_page=1&end_date=2026-06-3",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "20",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "start_date",
+                  "value": "2026-06-02"
+                },
+                {
+                  "key": "per_page",
+                  "value": "1"
+                },
+                {
+                  "key": "end_date",
+                  "value": "2026-06-3"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Product list",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{url}}/v2/products?start_date=2026-06-02&per_page=1&end_date=2026-06-3",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "products"
+                  ],
+                  "query": [
+                    {
+                      "key": "per_page",
+                      "value": "20",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "1",
+                      "disabled": true
+                    },
+                    {
+                      "key": "start_date",
+                      "value": "2026-06-02"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "end_date",
+                      "value": "2026-06-3"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 12:02:02 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "18"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"products\": [\n            {\n                \"id\": 58,\n                \"type\": \"ticket\",\n                \"name\": {\n                    \"en\": \"360 Istanbul Restaurant\",\n                    \"ko\": null\n                },\n                \"slug\": {\n                    \"en\": \"360-istanbul-restaurant\",\n                    \"ko\": null\n                },\n                \"description\": {\n                    \"en\": \"<ul><li>Fine Dining Restaurants</li><li>International, Turkish Cuisine</li><li>Open 7 days a week</li><li>Requires a dress code</li><li>Reservation needed at least 3 days before</li></ul>\",\n                    \"ko\": null\n                },\n                \"short_description\": null,\n                \"price\": {\n                    \"amount\": 85,\n                    \"regular_amount\": 85,\n                    \"currency\": \"EUR\",\n                    \"source\": \"default_sale_price\"\n                },\n                \"status\": \"Available\",\n                \"required_order_data\": [],\n                \"variants\": [\n                    {\n                        \"id\": 115,\n                        \"label\": {\n                            \"en\": \"Pomegranate Champagne Array of Sushi \",\n                            \"ko\": \"\"\n                        },\n                        \"variant_type\": \"adult\",\n                        \"price\": {\n                            \"amount\": 85,\n                            \"regular_amount\": 85,\n                            \"currency\": \"EUR\"\n                        },\n                        \"validity\": {\n                            \"unit\": \"days\",\n                            \"duration\": 1\n                        },\n                        \"last_update\": \"2026-06-02 10:21:59\"\n                    }\n                ],\n                \"contents\": [\n                    {\n                        \"id\": 117,\n                        \"title\": {\n                            \"en\": \"Details\",\n                            \"ko\": \"\"\n                        },\n                        \"text\": {\n                            \"en\": \"<h3><strong>360 Istanbul Restaurant</strong></h3><p><strong>Dining Style:</strong> Fine Dining</p><p><strong>Cuisine: </strong>International, Turkish</p><p><strong>Service Hours: </strong>Dinner &amp; Late Night Bar</p><p><strong>Dress Code: S</strong>mart casual</p><p><strong>Location: </strong><a href=\\\"https://www.google.com/maps/place/RUBY+RESTAURANT/@41.0476109,29.0249553,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab7c85d58878d:0xfa4687227dedcd0!8m2!3d41.0476109!4d29.0249553!16s%2Fg%2F11fxzhmkpw?entry=ttu&amp;g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D\\\"><u>Yıldız, Ortaköy Salhanesi Sk. No:5, 34349 Beşiktaş/İstanbul</u></a></p><p><strong>Reservation Policy: </strong>Reservation needed<strong> at least 3 days before</strong></p>\",\n                            \"ko\": \"\"\n                        },\n                        \"last_update\": \"2026-06-02 10:21:59\"\n                    },\n                    {\n                        \"id\": 118,\n                        \"title\": {\n                            \"en\": \"About Restaurant\",\n                            \"ko\": \"\"\n                        },\n                        \"text\": {\n                            \"en\": \"<h3><strong>About 360 Istanbul Restaurant</strong></h3><p>360 Istanbul is a top restaurant and entertainment venue, widely considered one of the best restaurants in Istanbul. Located in the historic Misir Apartment, it offers:</p><p>• &nbsp;Breathtaking 360-degree views of Istanbul<br>• &nbsp;Delicious international and modern Turkish cuisine<br>• &nbsp;Exclusive wine selection and rich bar menu<br>• &nbsp;Lunch and dinner service<br>• &nbsp;Live shows and famous DJs from abroad<br>• &nbsp;Exciting night life in İstanbul with its club atmosphere</p><p>As one of the best restaurants in the city, 360 Istanbul perfectly combines food, atmosphere, entertainment and ambiance for an unforgettable experience. The expert team ensures the highest level of customer satisfaction, making it stand out among other top restaurants.<br>Come enjoy a memorable meal at one of Istanbul's best restaurants with panoramic Istanbul views at 360.&nbsp;<br>Savor creative dishes made from fresh, quality ingredients along with an innovative drink menu, all at 360 Restaurant.<br>360 Istanbul - where food, fun, comfort and amazing city scene come together!</p>\",\n                            \"ko\": \"\"\n                        },\n                        \"last_update\": \"2026-06-02 10:21:59\"\n                    },\n                    {\n                        \"id\": 121,\n                        \"title\": {\n                            \"en\": \"Menu\",\n                            \"ko\": \"\"\n                        },\n                        \"text\": {\n                            \"en\": \"<h3>Pomegranate Champagne Array of Sushi <strong>(Per 1 Person)</strong></h3><p style=\\\"margin-left:0px;\\\"><strong>Lobster &amp; Mango Tian</strong></p><p style=\\\"margin-left:0px;\\\">Beetroot spoom, Lobster \\\"aioli\\\", Pea sprouts</p><p style=\\\"margin-left:0px;\\\"><strong>Potato Truffle Raviolini</strong></p><p style=\\\"margin-left:0px;\\\">Foie gras sauce, Trumpet mushroom</p><p style=\\\"margin-left:0px;\\\"><strong>Vineleaf Roadsted Miso Glazed Salmon OR \\\"Olive Smoked\\\" Mignon of Beef Fillet Duo</strong></p><p style=\\\"margin-left:0px;\\\">Sesame french beans, Teriyaki, Sunchoke puree OR Bulgur Risotto verde, Olive tapenade, Smoked paprika</p><p style=\\\"margin-left:0px;\\\"><strong>Pomegranate</strong></p>\",\n                            \"ko\": \"\"\n                        },\n                        \"last_update\": \"2026-06-02 10:21:59\"\n                    },\n                    {\n                        \"id\": 119,\n                        \"title\": {\n                            \"en\": \"Cancellation Policy\",\n                            \"ko\": \"\"\n                        },\n                        \"text\": {\n                            \"en\": \"<p>You can cancel the reservation up to <strong>48 hours</strong> before your arrival free of charge.</p>\",\n                            \"ko\": \"\"\n                        },\n                        \"last_update\": \"2026-06-02 10:21:59\"\n                    }\n                ],\n                \"faqs\": [],\n                \"is_available_today\": false,\n                \"availability_type\": \"time_point\",\n                \"availabilities\": {\n                    \"2026-06-02\": [\n                        {\n                            \"start_time\": \"19:00\",\n                            \"end_time\": \"19:00\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"19:30\",\n                            \"end_time\": \"19:30\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"20:00\",\n                            \"end_time\": \"20:00\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"20:30\",\n                            \"end_time\": \"20:30\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"21:00\",\n                            \"end_time\": \"21:00\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        }\n                    ],\n                    \"2026-06-03\": [\n                        {\n                            \"start_time\": \"19:00\",\n                            \"end_time\": \"19:00\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"19:30\",\n                            \"end_time\": \"19:30\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"20:00\",\n                            \"end_time\": \"20:00\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"20:30\",\n                            \"end_time\": \"20:30\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        },\n                        {\n                            \"start_time\": \"21:00\",\n                            \"end_time\": \"21:00\",\n                            \"available\": 0,\n                            \"status\": \"full\",\n                            \"cutoff_passed\": true,\n                            \"type\": \"time_point\",\n                            \"has_passed\": false\n                        }\n                    ]\n                },\n                \"url\": {\n                    \"pattern\": \"https://istanbulwelcomecard.com/{lang_code_except_en}/shop/{slug}\"\n                },\n                \"last_update\": \"2026-06-02 10:22:25\"\n            }\n        ],\n        \"pagination\": {\n            \"current_page\": 1,\n            \"per_page\": 1,\n            \"total\": 52,\n            \"last_page\": 52,\n            \"from\": 1,\n            \"to\": 1\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}/v2/products/58?start_date=2026-06-2&end_date=2026-06-3",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "products",
+                "58"
+              ],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "2026-06-2"
+                },
+                {
+                  "key": "end_date",
+                  "value": "2026-06-3"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Product",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{url}}/v2/products/58?start_date=2026-06-2&end_date=2026-06-3",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "products",
+                    "58"
+                  ],
+                  "query": [
+                    {
+                      "key": "start_date",
+                      "value": "2026-06-2"
+                    },
+                    {
+                      "key": "end_date",
+                      "value": "2026-06-3"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 12:02:33 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "17"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 58,\n        \"type\": \"ticket\",\n        \"name\": {\n            \"en\": \"360 Istanbul Restaurant\",\n            \"ko\": null\n        },\n        \"slug\": {\n            \"en\": \"360-istanbul-restaurant\",\n            \"ko\": null\n        },\n        \"description\": {\n            \"en\": \"<ul><li>Fine Dining Restaurants</li><li>International, Turkish Cuisine</li><li>Open 7 days a week</li><li>Requires a dress code</li><li>Reservation needed at least 3 days before</li></ul>\",\n            \"ko\": null\n        },\n        \"short_description\": null,\n        \"price\": {\n            \"amount\": 85,\n            \"regular_amount\": 85,\n            \"currency\": \"EUR\",\n            \"source\": \"default_sale_price\"\n        },\n        \"status\": \"Available\",\n        \"required_order_data\": [],\n        \"variants\": [\n            {\n                \"id\": 115,\n                \"label\": {\n                    \"en\": \"Pomegranate Champagne Array of Sushi \",\n                    \"ko\": \"\"\n                },\n                \"variant_type\": \"adult\",\n                \"price\": {\n                    \"amount\": 85,\n                    \"regular_amount\": 85,\n                    \"currency\": \"EUR\"\n                },\n                \"validity\": {\n                    \"unit\": \"days\",\n                    \"duration\": 1\n                },\n                \"last_update\": \"2026-06-02 10:21:59\"\n            }\n        ],\n        \"contents\": [\n            {\n                \"id\": 117,\n                \"title\": {\n                    \"en\": \"Details\",\n                    \"ko\": \"\"\n                },\n                \"text\": {\n                    \"en\": \"<h3><strong>360 Istanbul Restaurant</strong></h3><p><strong>Dining Style:</strong> Fine Dining</p><p><strong>Cuisine: </strong>International, Turkish</p><p><strong>Service Hours: </strong>Dinner &amp; Late Night Bar</p><p><strong>Dress Code: S</strong>mart casual</p><p><strong>Location: </strong><a href=\\\"https://www.google.com/maps/place/RUBY+RESTAURANT/@41.0476109,29.0249553,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab7c85d58878d:0xfa4687227dedcd0!8m2!3d41.0476109!4d29.0249553!16s%2Fg%2F11fxzhmkpw?entry=ttu&amp;g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D\\\"><u>Yıldız, Ortaköy Salhanesi Sk. No:5, 34349 Beşiktaş/İstanbul</u></a></p><p><strong>Reservation Policy: </strong>Reservation needed<strong> at least 3 days before</strong></p>\",\n                    \"ko\": \"\"\n                },\n                \"last_update\": \"2026-06-02 10:21:59\"\n            },\n            {\n                \"id\": 118,\n                \"title\": {\n                    \"en\": \"About Restaurant\",\n                    \"ko\": \"\"\n                },\n                \"text\": {\n                    \"en\": \"<h3><strong>About 360 Istanbul Restaurant</strong></h3><p>360 Istanbul is a top restaurant and entertainment venue, widely considered one of the best restaurants in Istanbul. Located in the historic Misir Apartment, it offers:</p><p>• &nbsp;Breathtaking 360-degree views of Istanbul<br>• &nbsp;Delicious international and modern Turkish cuisine<br>• &nbsp;Exclusive wine selection and rich bar menu<br>• &nbsp;Lunch and dinner service<br>• &nbsp;Live shows and famous DJs from abroad<br>• &nbsp;Exciting night life in İstanbul with its club atmosphere</p><p>As one of the best restaurants in the city, 360 Istanbul perfectly combines food, atmosphere, entertainment and ambiance for an unforgettable experience. The expert team ensures the highest level of customer satisfaction, making it stand out among other top restaurants.<br>Come enjoy a memorable meal at one of Istanbul's best restaurants with panoramic Istanbul views at 360.&nbsp;<br>Savor creative dishes made from fresh, quality ingredients along with an innovative drink menu, all at 360 Restaurant.<br>360 Istanbul - where food, fun, comfort and amazing city scene come together!</p>\",\n                    \"ko\": \"\"\n                },\n                \"last_update\": \"2026-06-02 10:21:59\"\n            },\n            {\n                \"id\": 121,\n                \"title\": {\n                    \"en\": \"Menu\",\n                    \"ko\": \"\"\n                },\n                \"text\": {\n                    \"en\": \"<h3>Pomegranate Champagne Array of Sushi <strong>(Per 1 Person)</strong></h3><p style=\\\"margin-left:0px;\\\"><strong>Lobster &amp; Mango Tian</strong></p><p style=\\\"margin-left:0px;\\\">Beetroot spoom, Lobster \\\"aioli\\\", Pea sprouts</p><p style=\\\"margin-left:0px;\\\"><strong>Potato Truffle Raviolini</strong></p><p style=\\\"margin-left:0px;\\\">Foie gras sauce, Trumpet mushroom</p><p style=\\\"margin-left:0px;\\\"><strong>Vineleaf Roadsted Miso Glazed Salmon OR \\\"Olive Smoked\\\" Mignon of Beef Fillet Duo</strong></p><p style=\\\"margin-left:0px;\\\">Sesame french beans, Teriyaki, Sunchoke puree OR Bulgur Risotto verde, Olive tapenade, Smoked paprika</p><p style=\\\"margin-left:0px;\\\"><strong>Pomegranate</strong></p>\",\n                    \"ko\": \"\"\n                },\n                \"last_update\": \"2026-06-02 10:21:59\"\n            },\n            {\n                \"id\": 119,\n                \"title\": {\n                    \"en\": \"Cancellation Policy\",\n                    \"ko\": \"\"\n                },\n                \"text\": {\n                    \"en\": \"<p>You can cancel the reservation up to <strong>48 hours</strong> before your arrival free of charge.</p>\",\n                    \"ko\": \"\"\n                },\n                \"last_update\": \"2026-06-02 10:21:59\"\n            }\n        ],\n        \"faqs\": [],\n        \"is_available_today\": false,\n        \"availability_type\": \"time_point\",\n        \"availabilities\": {\n            \"2026-06-02\": [\n                {\n                    \"start_time\": \"19:00\",\n                    \"end_time\": \"19:00\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"19:30\",\n                    \"end_time\": \"19:30\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"20:00\",\n                    \"end_time\": \"20:00\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"20:30\",\n                    \"end_time\": \"20:30\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"21:00\",\n                    \"end_time\": \"21:00\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                }\n            ],\n            \"2026-06-03\": [\n                {\n                    \"start_time\": \"19:00\",\n                    \"end_time\": \"19:00\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"19:30\",\n                    \"end_time\": \"19:30\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"20:00\",\n                    \"end_time\": \"20:00\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"20:30\",\n                    \"end_time\": \"20:30\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                },\n                {\n                    \"start_time\": \"21:00\",\n                    \"end_time\": \"21:00\",\n                    \"available\": 0,\n                    \"status\": \"full\",\n                    \"cutoff_passed\": true,\n                    \"type\": \"time_point\",\n                    \"has_passed\": false\n                }\n            ]\n        },\n        \"url\": {\n            \"pattern\": \"https://istanbulwelcomecard.com/{lang_code_except_en}/shop/{slug}\"\n        },\n        \"last_update\": \"2026-06-02 10:22:25\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Order List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}/v2/orders?per_page=20&page=1&status=pending",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "20"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "status",
+                  "value": "pending"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Order List",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{url}}/v2/orders?per_page=20&page=1",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "orders"
+                  ],
+                  "query": [
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "page",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 12:05:39 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "19"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"orders\": [\n            {\n                \"id\": 146973,\n                \"status\": \"pending_review\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T12:04:20.000000Z\"\n            },\n            {\n                \"id\": 146972,\n                \"status\": \"cancelled\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T08:40:30.000000Z\"\n            },\n            {\n                \"id\": 146971,\n                \"status\": \"cancelled\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T08:40:29.000000Z\"\n            },\n            {\n                \"id\": 146970,\n                \"status\": \"cancelled\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T08:40:27.000000Z\"\n            },\n            {\n                \"id\": 146969,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T08:19:09.000000Z\"\n            },\n            {\n                \"id\": 146968,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T08:10:28.000000Z\"\n            },\n            {\n                \"id\": 146967,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T07:40:00.000000Z\"\n            },\n            {\n                \"id\": 146966,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 85,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 85\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 115,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-06-02T07:22:28.000000Z\"\n            },\n            {\n                \"id\": 146965,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 24,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 24\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T17:05:52.000000Z\"\n            },\n            {\n                \"id\": 146964,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 24,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 24\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T17:01:33.000000Z\"\n            },\n            {\n                \"id\": 146963,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 24,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 24\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T16:44:28.000000Z\"\n            },\n            {\n                \"id\": 146962,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 24,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 24\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T16:43:48.000000Z\"\n            },\n            {\n                \"id\": 146961,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 24,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 24\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T16:40:48.000000Z\"\n            },\n            {\n                \"id\": 146960,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 24,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 24\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 1\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T16:39:15.000000Z\"\n            },\n            {\n                \"id\": 146959,\n                \"status\": \"processing\",\n                \"pricing\": {\n                    \"total\": 240,\n                    \"currency\": \"EUR\",\n                    \"balance_charged\": 240\n                },\n                \"metadata\": {\n                    \"products\": [\n                        {\n                            \"product_variant_id\": 1,\n                            \"quantity\": 10\n                        }\n                    ],\n                    \"price_source\": \"partner_order_service\"\n                },\n                \"created_at\": \"2026-05-26T16:38:50.000000Z\"\n            }\n        ],\n        \"pagination\": {\n            \"current_page\": 1,\n            \"per_page\": 20,\n            \"total\": 15,\n            \"last_page\": 1,\n            \"from\": 1,\n            \"to\": 15\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_id\": 58,\n    \"first_name\": \"test\",\n    \"last_name\":\"test\",\n    \"phone_number\": \"+49123123123123123\",\n    \"email\":\"test@istanbulwelcomecard.com\",\n    \"service_date\": \"2026-06-05 19:00\",\n    \"language\":\"en\",\n    \"external_reference\":\"order-no-1000\",\n    \"required_data\": [\n        {\n        \"key\": \"hotel_name\",\n        \"value\": \"test hotel\"\n        }\n    ],\n    \"variants\": [\n        {\n        \"product_variant_id\": 115,\n        \"quantity\": 1\n        }\n    ],\n\n    \"send_email\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/v2/orders",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "orders"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Order",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"product_id\": 58,\n    \"first_name\": \"test\",\n    \"last_name\":\"test\",\n    \"phone_number\": \"+49123123123123123\",\n    \"email\":\"test@istanbulwelcomecard.com\",\n    \"service_date\": \"2026-06-05 19:00\",\n    \"language\":\"en\",\n    \"external_reference\":\"order-no-1000\",\n    \"required_data\": [\n        {\n        \"key\": \"hotel_name\",\n        \"value\": \"test hotel\"\n        }\n    ],\n    \"variants\": [\n        {\n        \"product_variant_id\": 115,\n        \"quantity\": 1\n        }\n    ],\n\n    \"send_email\":false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{url}}/v2/orders",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "orders"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 12:04:20 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "19"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 146973,\n        \"status\": \"pending_review\",\n        \"pricing\": {\n            \"total\": 85,\n            \"currency\": \"EUR\",\n            \"balance_charged\": 85\n        },\n        \"metadata\": {\n            \"products\": [\n                {\n                    \"product_variant_id\": 115,\n                    \"quantity\": 1\n                }\n            ],\n            \"price_source\": \"partner_order_service\"\n        },\n        \"created_at\": \"2026-06-02T12:04:20.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}/v2/orders/146961",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "orders",
+                "146961"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Order",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{url}}/v2/orders/146961",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "orders",
+                    "146961"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 12:06:27 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "17"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 146961,\n        \"status\": \"processing\",\n        \"pricing\": {\n            \"total\": 24,\n            \"currency\": \"EUR\",\n            \"balance_charged\": 24\n        },\n        \"metadata\": {\n            \"products\": [\n                {\n                    \"product_variant_id\": 1,\n                    \"quantity\": 1\n                }\n            ],\n            \"price_source\": \"partner_order_service\"\n        },\n        \"created_at\": \"2026-05-26T16:40:48.000000Z\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Partner",
+      "item": [
+        {
+          "name": "Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}/v2/profile",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "profile"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Profile",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{url}}/v2/profile",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "profile"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 12:08:51 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "19"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"55C7TV\",\n        \"type\": \"white_label\",\n        \"brand_name\": \"Okay bey\",\n        \"logo\": null,\n        \"colors\": {\n            \"primary\": null,\n            \"secondary\": null\n        },\n        \"domain\": null,\n        \"default_currency\": \"EUR\",\n        \"balance_currency\": \"EUR\",\n        \"billing\": {\n            \"type\": \"postpaid\",\n            \"cycle\": \"weekly\",\n            \"settlement_day\": 2\n        },\n        \"status\": \"active\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Balance",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Profile-ID",
+                "value": "{{profile_id}}",
+                "type": "text"
+              },
+              {
+                "key": "X-Access-Key",
+                "value": "{{access_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}/v2/balance",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "v2",
+                "balance"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Balance",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-Profile-ID",
+                    "value": "{{profile_id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-Access-Key",
+                    "value": "{{access_key}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{url}}/v2/balance",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "balance"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "server",
+                  "value": "nginx/1.29.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-powered-by",
+                  "value": "PHP/8.2.30"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 02 Jun 2026 11:16:52 GMT"
+                },
+                {
+                  "key": "x-ratelimit-limit",
+                  "value": "20"
+                },
+                {
+                  "key": "x-ratelimit-remaining",
+                  "value": "17"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"status\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"balance\": -336,\n        \"credit_limit\": 3000,\n        \"available_balance\": 2664,\n        \"currency\": \"EUR\",\n        \"billing\": {\n            \"type\": \"postpaid\",\n            \"cycle\": \"weekly\",\n            \"settlement_day\": 2\n        }\n    }\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

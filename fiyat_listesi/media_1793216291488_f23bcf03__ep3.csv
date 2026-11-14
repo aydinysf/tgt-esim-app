@@ -1,0 +1,247 @@
+﻿Global eSIM Quote Sheet,,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Operator,Wholesale Price USD,Country or region,remark,ACTION POLICY,API Product code （Auto Activate）
+1,Europe,Russian,Daypass,1,"500M high-speed data per day, down to 384kbps",tele2/beeline,0.54,,The standard activation steps after successful download are as follows: Receive the SMS from operator and click the activation link. Complete the image verification (to confirm you are not a robot).,Absolute 24 hours,E-016-SC-AU-ep3-D-1D/60D-500M
+2,Europe,Russian,Daypass,3,"500M high-speed data per day, down to 384kbps",tele2/beeline,1.36,,,Absolute 24 hours,E-016-SC-AU-ep3-D-3D/60D-500M
+3,Europe,Russian,Daypass,5,"500M high-speed data per day, down to 384kbps",tele2/beeline,2.26,,,Absolute 24 hours,E-016-SC-AU-ep3-D-5D/60D-500M
+4,Europe,Russian,Daypass,7,"500M high-speed data per day, down to 384kbps",tele2/beeline,3.04,,,Absolute 24 hours,E-016-SC-AU-ep3-D-7D/60D-500M
+5,Europe,Russian,Daypass,10,"500M high-speed data per day, down to 384kbps",tele2/beeline,4.35,,,Absolute 24 hours,E-016-SC-AU-ep3-D-10D/60D-500M
+6,Europe,Russian,Daypass,15,"500M high-speed data per day, down to 384kbps",tele2/beeline,6.38,,,Absolute 24 hours,E-016-SC-AU-ep3-D-15D/60D-500M
+7,Europe,Russian,Daypass,20,"500M high-speed data per day, down to 384kbps",tele2/beeline,8.33,,,Absolute 24 hours,E-016-SC-AU-ep3-D-20D/60D-500M
+8,Europe,Russian,Daypass,30,"500M high-speed data per day, down to 384kbps",tele2/beeline,12.49,,,Absolute 24 hours,E-016-SC-AU-ep3-D-30D/60D-500M
+9,Europe,Russian,Daypass,1,"1GB high-speed data per day, down to 384kbps",tele2/beeline,0.81,,,Absolute 24 hours,E-016-SC-AU-ep3-D-1D/60D-1GB
+10,Europe,Russian,Daypass,3,"1GB high-speed data per day, down to 384kbps",tele2/beeline,1.9,,,Absolute 24 hours,E-016-SC-AU-ep3-D-3D/60D-1GB
+11,Europe,Russian,Daypass,5,"1GB high-speed data per day, down to 384kbps",tele2/beeline,3.08,,,Absolute 24 hours,E-016-SC-AU-ep3-D-5D/60D-1GB
+12,Europe,Russian,Daypass,7,"1GB high-speed data per day, down to 384kbps",tele2/beeline,4.18,,,Absolute 24 hours,E-016-SC-AU-ep3-D-7D/60D-1GB
+13,Europe,Russian,Daypass,10,"1GB high-speed data per day, down to 384kbps",tele2/beeline,5.97,,,Absolute 24 hours,E-016-SC-AU-ep3-D-10D/60D-1GB
+14,Europe,Russian,Daypass,15,"1GB high-speed data per day, down to 384kbps",tele2/beeline,8.96,,,Absolute 24 hours,E-016-SC-AU-ep3-D-15D/60D-1GB
+15,Europe,Russian,Daypass,20,"1GB high-speed data per day, down to 384kbps",tele2/beeline,11.95,,,Absolute 24 hours,E-016-SC-AU-ep3-D-20D/60D-1GB
+16,Europe,Russian,Daypass,30,"1GB high-speed data per day, down to 384kbps",tele2/beeline,17.92,,,Absolute 24 hours,E-016-SC-AU-ep3-D-30D/60D-1GB
+17,Europe,Russian,Daypass,1,"2GB high-speed data per day, down to 384kbps",tele2/beeline,1.36,,,Absolute 24 hours,E-016-SC-AU-ep3-D-1D/60D-2GB
+18,Europe,Russian,Daypass,3,"2GB high-speed data per day, down to 384kbps",tele2/beeline,3.8,,,Absolute 24 hours,E-016-SC-AU-ep3-D-3D/60D-2GB
+19,Europe,Russian,Daypass,5,"2GB high-speed data per day, down to 384kbps",tele2/beeline,6.11,,,Absolute 24 hours,E-016-SC-AU-ep3-D-5D/60D-2GB
+20,Europe,Russian,Daypass,7,"2GB high-speed data per day, down to 384kbps",tele2/beeline,8.55,,,Absolute 24 hours,E-016-SC-AU-ep3-D-7D/60D-2GB
+21,Europe,Russian,Daypass,10,"2GB high-speed data per day, down to 384kbps",tele2/beeline,12.22,,,Absolute 24 hours,E-016-SC-AU-ep3-D-10D/60D-2GB
+22,Europe,Russian,Daypass,15,"2GB high-speed data per day, down to 384kbps",tele2/beeline,18.33,,,Absolute 24 hours,E-016-SC-AU-ep3-D-15D/60D-2GB
+23,Europe,Russian,Daypass,20,"2GB high-speed data per day, down to 384kbps",tele2/beeline,24.44,,,Absolute 24 hours,E-016-SC-AU-ep3-D-20D/60D-2GB
+24,Europe,Russian,Daypass,30,"2GB high-speed data per day, down to 384kbps",tele2/beeline,36.66,,,Absolute 24 hours,E-016-SC-AU-ep3-D-30D/60D-2GB
+25,Europe,Russian,Daypass,1,"3GB high-speed data per day, down to 384kbps",tele2/beeline,1.63,,,Absolute 24 hours,E-016-SC-AU-ep3-D-1D/60D-3GB
+26,Europe,Russian,Daypass,3,"3GB high-speed data per day, down to 384kbps",tele2/beeline,4.62,,,Absolute 24 hours,E-016-SC-AU-ep3-D-3D/60D-3GB
+27,Europe,Russian,Daypass,5,"3GB high-speed data per day, down to 384kbps",tele2/beeline,7.69,,,Absolute 24 hours,E-016-SC-AU-ep3-D-5D/60D-3GB
+28,Europe,Russian,Daypass,7,"3GB high-speed data per day, down to 384kbps",tele2/beeline,10.77,,,Absolute 24 hours,E-016-SC-AU-ep3-D-7D/60D-3GB
+29,Europe,Russian,Daypass,10,"3GB high-speed data per day, down to 384kbps",tele2/beeline,15.39,,,Absolute 24 hours,E-016-SC-AU-ep3-D-10D/60D-3GB
+30,Europe,Russian,Daypass,15,"3GB high-speed data per day, down to 384kbps",tele2/beeline,23.08,,,Absolute 24 hours,E-016-SC-AU-ep3-D-15D/60D-3GB
+31,Europe,Russian,Daypass,20,"3GB high-speed data per day, down to 384kbps",tele2/beeline,30.78,,,Absolute 24 hours,E-016-SC-AU-ep3-D-20D/60D-3GB
+32,Europe,Russian,Daypass,30,"3GB high-speed data per day, down to 384kbps",tele2/beeline,46.17,,,Absolute 24 hours,E-016-SC-AU-ep3-D-30D/60D-3GB
+33,Europe,Russian,Daypass,1,Unlimited,tele2/beeline,2.26,,,Absolute 24 hours,E-016-SC-AU-ep3-D-1D/60D-Unlimited
+34,Europe,Russian,Daypass,3,Unlimited,tele2/beeline,6.79,,,Absolute 24 hours,E-016-SC-AU-ep3-D-3D/60D-Unlimited
+35,Europe,Russian,Daypass,5,Unlimited,tele2/beeline,11.32,,,Absolute 24 hours,E-016-SC-AU-ep3-D-5D/60D-Unlimited
+36,Europe,Russian,Daypass,7,Unlimited,tele2/beeline,15.84,,,Absolute 24 hours,E-016-SC-AU-ep3-D-7D/60D-Unlimited
+37,Europe,Russian,Daypass,10,Unlimited,tele2/beeline,22.63,,,Absolute 24 hours,E-016-SC-AU-ep3-D-10D/60D-Unlimited
+38,Europe,Russian,Daypass,15,Unlimited,tele2/beeline,33.95,,,Absolute 24 hours,E-016-SC-AU-ep3-D-15D/60D-Unlimited
+39,Europe,Russian,Daypass,20,Unlimited,tele2/beeline,45.26,,,Absolute 24 hours,E-016-SC-AU-ep3-D-20D/60D-Unlimited
+40,Europe,Russian,Daypass,30,Unlimited,tele2/beeline,67.89,,,Absolute 24 hours,E-016-SC-AU-ep3-D-30D/60D-Unlimited
+41,Europe,Russian,Data Package,3,1GB  /3 Days,tele2/beeline,0.91,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-1GB
+42,Europe,Russian,Data Package,5,1GB  /5 Days,tele2/beeline,1,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-1GB
+43,Europe,Russian,Data Package,7,1GB  /7 Days,tele2/beeline,1.09,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-1GB
+44,Europe,Russian,Data Package,10,1GB  /10 Days,tele2/beeline,1.18,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-1GB
+45,Europe,Russian,Data Package,15,1GB  /15 Days,tele2/beeline,1.27,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-1GB
+46,Europe,Russian,Data Package,30,1GB  /30 Days,tele2/beeline,1.36,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-1GB
+47,Europe,Russian,Data Package,3,3GB  /3 Days,tele2/beeline,1.81,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-3GB
+48,Europe,Russian,Data Package,5,3GB  /5 Days,tele2/beeline,1.99,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-3GB
+49,Europe,Russian,Data Package,7,3GB  /7 Days,tele2/beeline,2.17,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-3GB
+50,Europe,Russian,Data Package,10,3GB  /10 Days,tele2/beeline,2.35,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-3GB
+51,Europe,Russian,Data Package,15,3GB  /15 Days,tele2/beeline,2.53,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-3GB
+52,Europe,Russian,Data Package,30,3GB  /30 Days,tele2/beeline,2.72,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-3GB
+53,Europe,Russian,Data Package,3,5GB  /3 Days,tele2/beeline,3.17,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-5GB
+54,Europe,Russian,Data Package,5,5GB  /5 Days,tele2/beeline,3.44,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-5GB
+55,Europe,Russian,Data Package,7,5GB  /7 Days,tele2/beeline,3.71,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-5GB
+56,Europe,Russian,Data Package,10,5GB  /10 Days,tele2/beeline,3.89,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-5GB
+57,Europe,Russian,Data Package,15,5GB  /15 Days,tele2/beeline,4.07,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-5GB
+58,Europe,Russian,Data Package,30,5GB  /30 Days,tele2/beeline,4.44,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-5GB
+59,Europe,Russian,Data Package,3,10GB  /3 Days,tele2/beeline,6.34,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-10GB
+60,Europe,Russian,Data Package,5,10GB  /5 Days,tele2/beeline,6.79,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-10GB
+61,Europe,Russian,Data Package,7,10GB  /7 Days,tele2/beeline,7.24,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-10GB
+62,Europe,Russian,Data Package,10,10GB  /10 Days,tele2/beeline,7.69,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-10GB
+63,Europe,Russian,Data Package,15,10GB  /15 Days,tele2/beeline,8.15,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-10GB
+64,Europe,Russian,Data Package,30,10GB  /30 Days,tele2/beeline,8.6,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-10GB
+65,Europe,Russian,Data Package,3,20GB  /3 Days,tele2/beeline,11.77,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-20GB
+66,Europe,Russian,Data Package,5,20GB  /5 Days,tele2/beeline,12.67,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-20GB
+67,Europe,Russian,Data Package,7,20GB  /7 Days,tele2/beeline,13.58,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-20GB
+68,Europe,Russian,Data Package,10,20GB  /10 Days,tele2/beeline,14.48,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-20GB
+69,Europe,Russian,Data Package,15,20GB  /15 Days,tele2/beeline,14.94,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-20GB
+70,Europe,Russian,Data Package,30,20GB  /30 Days,tele2/beeline,15.39,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-20GB
+71,Europe,Russian,Data Package,3,30GB  /3 Days,tele2/beeline,17.2,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-30GB
+72,Europe,Russian,Data Package,5,30GB  /5 Days,tele2/beeline,18.11,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-30GB
+73,Europe,Russian,Data Package,7,30GB  /7 Days,tele2/beeline,19.01,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-30GB
+74,Europe,Russian,Data Package,10,30GB  /10 Days,tele2/beeline,19.92,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-30GB
+75,Europe,Russian,Data Package,15,30GB  /15 Days,tele2/beeline,20.82,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-30GB
+76,Europe,Russian,Data Package,30,30GB  /30 Days,tele2/beeline,21.73,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-30GB
+77,Europe,Russian,Data Package,3,50GB  /3 Days,tele2/beeline,27.16,,,Absolute 24 hours,E-016-SC-AU-T-ep3-3D/60D-50GB
+78,Europe,Russian,Data Package,5,50GB  /5 Days,tele2/beeline,28.06,,,Absolute 24 hours,E-016-SC-AU-T-ep3-5D/60D-50GB
+79,Europe,Russian,Data Package,7,50GB  /7 Days,tele2/beeline,29.42,,,Absolute 24 hours,E-016-SC-AU-T-ep3-7D/60D-50GB
+80,Europe,Russian,Data Package,10,50GB  /10 Days,tele2/beeline,30.78,,,Absolute 24 hours,E-016-SC-AU-T-ep3-10D/60D-50GB
+81,Europe,Russian,Data Package,15,50GB  /15 Days,tele2/beeline,32.14,,,Absolute 24 hours,E-016-SC-AU-T-ep3-15D/60D-50GB
+82,Europe,Russian,Data Package,30,50GB  /30 Days,tele2/beeline,33.49,,,Absolute 24 hours,E-016-SC-AU-T-ep3-30D/60D-50GB
+83,Africa,Africa 17 countries,Daypass,1,"500M high-speed data per day, down to 384kbps",Algeria：Djezzy/Oreedo Chad：Airtel Congo Dem. Rep：Airtel Congo Republic：Airtel Egypt：Orange/Etisalat Gabon：Airtel Kenya：Airtel Madagascar：Airtel (Zain) Malawi：Airtel Mauritius：Chili/Cellplus Morocco：WANA/Orange Niger：Celtel Nigeria：Glo Mobile/Airtel Reunion：Orange/Telco OI Tanzania：Airtel Tunisia：Ooredoo/Tunisie Telecom Uganda：Airtel,2.34,,,Absolute 24 hours,D-105-SC-AU-ep3-D-1D/60D-500M
+84,Africa,Africa 17 countries,Daypass,3,"500M high-speed data per day, down to 384kbps",,5.28,,,Absolute 24 hours,D-105-SC-AU-ep3-D-3D/60D-500M
+85,Africa,Africa 17 countries,Daypass,5,"500M high-speed data per day, down to 384kbps",,8.65,,,Absolute 24 hours,D-105-SC-AU-ep3-D-5D/60D-500M
+86,Africa,Africa 17 countries,Daypass,7,"500M high-speed data per day, down to 384kbps",,12.02,,,Absolute 24 hours,D-105-SC-AU-ep3-D-7D/60D-500M
+87,Africa,Africa 17 countries,Daypass,10,"500M high-speed data per day, down to 384kbps",,17.07,,,Absolute 24 hours,D-105-SC-AU-ep3-D-10D/60D-500M
+88,Africa,Africa 17 countries,Daypass,15,"500M high-speed data per day, down to 384kbps",,25.49,,,Absolute 24 hours,D-105-SC-AU-ep3-D-15D/60D-500M
+89,Africa,Africa 17 countries,Daypass,20,"500M high-speed data per day, down to 384kbps",,33.92,,,Absolute 24 hours,D-105-SC-AU-ep3-D-20D/60D-500M
+90,Africa,Africa 17 countries,Daypass,30,"500M high-speed data per day, down to 384kbps",,50.76,,,Absolute 24 hours,D-105-SC-AU-ep3-D-30D/60D-500M
+91,Africa,Africa 17 countries,Daypass,1,"1GB high-speed data per day, down to 384kbps",,4.44,,,Absolute 24 hours,D-105-SC-AU-ep3-D-1D/60D-1GB
+92,Africa,Africa 17 countries,Daypass,3,"1GB high-speed data per day, down to 384kbps",,10.34,,,Absolute 24 hours,D-105-SC-AU-ep3-D-3D/60D-1GB
+93,Africa,Africa 17 countries,Daypass,5,"1GB high-speed data per day, down to 384kbps",,17.07,,,Absolute 24 hours,D-105-SC-AU-ep3-D-5D/60D-1GB
+94,Africa,Africa 17 countries,Daypass,7,"1GB high-speed data per day, down to 384kbps",,23.81,,,Absolute 24 hours,D-105-SC-AU-ep3-D-7D/60D-1GB
+95,Africa,Africa 17 countries,Daypass,10,"1GB high-speed data per day, down to 384kbps",,31.81,,,Absolute 24 hours,D-105-SC-AU-ep3-D-10D/60D-1GB
+96,Africa,Africa 17 countries,Daypass,15,"1GB high-speed data per day, down to 384kbps",,47.6,,,Absolute 24 hours,D-105-SC-AU-ep3-D-15D/60D-1GB
+97,Africa,Africa 17 countries,Daypass,20,"1GB high-speed data per day, down to 384kbps",,63.39,,,Absolute 24 hours,D-105-SC-AU-ep3-D-20D/60D-1GB
+98,Africa,Africa 17 countries,Daypass,30,"1GB high-speed data per day, down to 384kbps",,94.97,,,Absolute 24 hours,D-105-SC-AU-ep3-D-30D/60D-1GB
+99,Africa,Africa 17 countries,Daypass,1,"2GB high-speed data per day, down to 384kbps",,6.55,,,Absolute 24 hours,D-105-SC-AU-ep3-D-1D/60D-2GB
+100,Africa,Africa 17 countries,Daypass,3,"2GB high-speed data per day, down to 384kbps",,16.65,,,Absolute 24 hours,D-105-SC-AU-ep3-D-3D/60D-2GB
+101,Africa,Africa 17 countries,Daypass,5,"2GB high-speed data per day, down to 384kbps",,27.6,,,Absolute 24 hours,D-105-SC-AU-ep3-D-5D/60D-2GB
+102,Africa,Africa 17 countries,Daypass,7,"2GB high-speed data per day, down to 384kbps",,38.55,,,Absolute 24 hours,D-105-SC-AU-ep3-D-7D/60D-2GB
+103,Africa,Africa 17 countries,Daypass,10,"2GB high-speed data per day, down to 384kbps",,54.97,,,Absolute 24 hours,D-105-SC-AU-ep3-D-10D/60D-2GB
+104,Africa,Africa 17 countries,Daypass,15,"2GB high-speed data per day, down to 384kbps",,82.34,,,Absolute 24 hours,D-105-SC-AU-ep3-D-15D/60D-2GB
+105,Africa,Africa 17 countries,Daypass,20,"2GB high-speed data per day, down to 384kbps",,109.71,,,Absolute 24 hours,D-105-SC-AU-ep3-D-20D/60D-2GB
+106,Africa,Africa 17 countries,Daypass,30,"2GB high-speed data per day, down to 384kbps",,164.44,,,Absolute 24 hours,D-105-SC-AU-ep3-D-30D/60D-2GB
+107,Africa,Africa 17 countries,Daypass,1,Unlimited,,10.76,,,Absolute 24 hours,D-105-SC-AU-ep3-D-1D/60D-Unlimited
+108,Africa,Africa 17 countries,Daypass,3,Unlimited,,31.81,,,Absolute 24 hours,D-105-SC-AU-ep3-D-3D/60D-Unlimited
+109,Africa,Africa 17 countries,Daypass,5,Unlimited,,52.86,,,Absolute 24 hours,D-105-SC-AU-ep3-D-5D/60D-Unlimited
+110,Africa,Africa 17 countries,Daypass,7,Unlimited,,73.92,,,Absolute 24 hours,D-105-SC-AU-ep3-D-7D/60D-Unlimited
+111,Africa,Africa 17 countries,Daypass,10,Unlimited,,105.49,,,Absolute 24 hours,D-105-SC-AU-ep3-D-10D/60D-Unlimited
+112,Africa,Africa 17 countries,Daypass,15,Unlimited,,158.13,,,Absolute 24 hours,D-105-SC-AU-ep3-D-15D/60D-Unlimited
+113,Africa,Africa 17 countries,Daypass,20,Unlimited,,210.76,,,Absolute 24 hours,D-105-SC-AU-ep3-D-20D/60D-Unlimited
+114,Africa,Africa 17 countries,Daypass,30,Unlimited,,316.02,,,Absolute 24 hours,D-105-SC-AU-ep3-D-30D/60D-Unlimited
+115,Africa,Africa 17 countries,Data Package,3,1GB  /3 Days,,4.44,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-1GB
+116,Africa,Africa 17 countries,Data Package,5,1GB  /5 Days,,4.86,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-1GB
+117,Africa,Africa 17 countries,Data Package,7,1GB  /7 Days,,5.28,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-1GB
+118,Africa,Africa 17 countries,Data Package,10,1GB  /10 Days,,5.71,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-1GB
+119,Africa,Africa 17 countries,Data Package,15,1GB  /15 Days,,6.13,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-1GB
+120,Africa,Africa 17 countries,Data Package,30,1GB  /30 Days,,6.55,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-1GB
+121,Africa,Africa 17 countries,Data Package,3,3GB  /3 Days,,10.76,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-3GB
+122,Africa,Africa 17 countries,Data Package,5,3GB  /5 Days,,11.6,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-3GB
+123,Africa,Africa 17 countries,Data Package,7,3GB  /7 Days,,12.02,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-3GB
+124,Africa,Africa 17 countries,Data Package,10,3GB  /10 Days,,12.44,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-3GB
+125,Africa,Africa 17 countries,Data Package,15,3GB  /15 Days,,12.86,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-3GB
+126,Africa,Africa 17 countries,Data Package,30,3GB  /30 Days,,13.28,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-3GB
+127,Africa,Africa 17 countries,Data Package,3,5GB  /3 Days,,17.07,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-5GB
+128,Africa,Africa 17 countries,Data Package,5,5GB  /5 Days,,17.92,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-5GB
+129,Africa,Africa 17 countries,Data Package,7,5GB  /7 Days,,18.76,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-5GB
+130,Africa,Africa 17 countries,Data Package,10,5GB  /10 Days,,19.6,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-5GB
+131,Africa,Africa 17 countries,Data Package,15,5GB  /15 Days,,20.44,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-5GB
+132,Africa,Africa 17 countries,Data Package,30,5GB  /30 Days,,21.28,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-5GB
+133,Africa,Africa 17 countries,Data Package,3,10GB  /3 Days,,25.49,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-10GB
+134,Africa,Africa 17 countries,Data Package,5,10GB  /5 Days,,27.18,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-10GB
+135,Africa,Africa 17 countries,Data Package,7,10GB  /7 Days,,28.86,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-10GB
+136,Africa,Africa 17 countries,Data Package,10,10GB  /10 Days,,30.55,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-10GB
+137,Africa,Africa 17 countries,Data Package,15,10GB  /15 Days,,32.23,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-10GB
+138,Africa,Africa 17 countries,Data Package,30,10GB  /30 Days,,33.92,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-10GB
+139,Africa,Africa 17 countries,Data Package,3,20GB  /3 Days,,54.97,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-20GB
+140,Africa,Africa 17 countries,Data Package,5,20GB  /5 Days,,59.18,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-20GB
+141,Africa,Africa 17 countries,Data Package,7,20GB  /7 Days,,63.39,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-20GB
+142,Africa,Africa 17 countries,Data Package,10,20GB  /10 Days,,65.49,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-20GB
+143,Africa,Africa 17 countries,Data Package,15,20GB  /15 Days,,66.76,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-20GB
+144,Africa,Africa 17 countries,Data Package,30,20GB  /30 Days,,67.6,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-20GB
+145,Africa,Africa 17 countries,Data Package,3,30GB  /3 Days,,84.44,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-30GB
+146,Africa,Africa 17 countries,Data Package,5,30GB  /5 Days,,88.65,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-30GB
+147,Africa,Africa 17 countries,Data Package,7,30GB  /7 Days,,90.76,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-30GB
+148,Africa,Africa 17 countries,Data Package,10,30GB  /10 Days,,91.18,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-30GB
+149,Africa,Africa 17 countries,Data Package,15,30GB  /15 Days,,91.6,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-30GB
+150,Africa,Africa 17 countries,Data Package,30,30GB  /30 Days,,92.44,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-30GB
+151,Africa,Africa 17 countries,Data Package,3,50GB  /3 Days,,126.55,,,Absolute 24 hours,D-105-SC-AU-T-ep3-3D/60D-50GB
+152,Africa,Africa 17 countries,Data Package,5,50GB  /5 Days,,130.76,,,Absolute 24 hours,D-105-SC-AU-T-ep3-5D/60D-50GB
+153,Africa,Africa 17 countries,Data Package,7,50GB  /7 Days,,134.97,,,Absolute 24 hours,D-105-SC-AU-T-ep3-7D/60D-50GB
+154,Africa,Africa 17 countries,Data Package,10,50GB  /10 Days,,139.18,,,Absolute 24 hours,D-105-SC-AU-T-ep3-10D/60D-50GB
+155,Africa,Africa 17 countries,Data Package,15,50GB  /15 Days,,143.39,,,Absolute 24 hours,D-105-SC-AU-T-ep3-15D/60D-50GB
+156,Africa,Africa 17 countries,Data Package,30,50GB  /30 Days,,147.6,,,Absolute 24 hours,D-105-SC-AU-T-ep3-30D/60D-50GB
+157,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,1,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,0.71,,,Absolute 24 hours,A-206-SC-AU-ep3-D-1D/60D-500M
+158,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,3,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.35,,,Absolute 24 hours,A-206-SC-AU-ep3-D-3D/60D-500M
+159,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,5,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.08,,,Absolute 24 hours,A-206-SC-AU-ep3-D-5D/60D-500M
+160,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,7,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.81,,,Absolute 24 hours,A-206-SC-AU-ep3-D-7D/60D-500M
+161,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,10,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.91,,,Absolute 24 hours,A-206-SC-AU-ep3-D-10D/60D-500M
+162,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,15,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,5.73,,,Absolute 24 hours,A-206-SC-AU-ep3-D-15D/60D-500M
+163,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,20,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,7.56,,,Absolute 24 hours,A-206-SC-AU-ep3-D-20D/60D-500M
+164,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,30,"500M high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,11.2,,,Absolute 24 hours,A-206-SC-AU-ep3-D-30D/60D-500M
+165,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,1,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,0.99,,,Absolute 24 hours,A-206-SC-AU-ep3-D-1D/60D-1GB
+166,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,3,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.17,,,Absolute 24 hours,A-206-SC-AU-ep3-D-3D/60D-1GB
+167,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,5,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.45,,,Absolute 24 hours,A-206-SC-AU-ep3-D-5D/60D-1GB
+168,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,7,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,4.73,,,Absolute 24 hours,A-206-SC-AU-ep3-D-7D/60D-1GB
+169,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,10,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,6.64,,,Absolute 24 hours,A-206-SC-AU-ep3-D-10D/60D-1GB
+170,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,15,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,9.84,,,Absolute 24 hours,A-206-SC-AU-ep3-D-15D/60D-1GB
+171,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,20,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,13.03,,,Absolute 24 hours,A-206-SC-AU-ep3-D-20D/60D-1GB
+172,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,30,"1GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,19.42,,,Absolute 24 hours,A-206-SC-AU-ep3-D-30D/60D-1GB
+173,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,1,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.44,,,Absolute 24 hours,A-206-SC-AU-ep3-D-1D/60D-2GB
+174,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,3,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.99,,,Absolute 24 hours,A-206-SC-AU-ep3-D-3D/60D-2GB
+175,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,5,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,4.82,,,Absolute 24 hours,A-206-SC-AU-ep3-D-5D/60D-2GB
+176,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,7,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,6.64,,,Absolute 24 hours,A-206-SC-AU-ep3-D-7D/60D-2GB
+177,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,10,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,9.38,,,Absolute 24 hours,A-206-SC-AU-ep3-D-10D/60D-2GB
+178,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,15,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,13.94,,,Absolute 24 hours,A-206-SC-AU-ep3-D-15D/60D-2GB
+179,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,20,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,18.5,,,Absolute 24 hours,A-206-SC-AU-ep3-D-20D/60D-2GB
+180,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,30,"2GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,27.63,,,Absolute 24 hours,A-206-SC-AU-ep3-D-30D/60D-2GB
+181,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,1,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.63,,,Absolute 24 hours,A-206-SC-AU-ep3-D-1D/60D-3GB
+182,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,3,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.82,,,Absolute 24 hours,A-206-SC-AU-ep3-D-3D/60D-3GB
+183,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,5,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,6.19,,,Absolute 24 hours,A-206-SC-AU-ep3-D-5D/60D-3GB
+184,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,7,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,8.56,,,Absolute 24 hours,A-206-SC-AU-ep3-D-7D/60D-3GB
+185,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,10,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,12.12,,,Absolute 24 hours,A-206-SC-AU-ep3-D-10D/60D-3GB
+186,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,15,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,18.05,,,Absolute 24 hours,A-206-SC-AU-ep3-D-15D/60D-3GB
+187,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,20,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,23.98,,,Absolute 24 hours,A-206-SC-AU-ep3-D-20D/60D-3GB
+188,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,30,"3GB high-speed data per day, down to 384kbps",Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,35.84,,,Absolute 24 hours,A-206-SC-AU-ep3-D-30D/60D-3GB
+189,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,1,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.36,,,Absolute 24 hours,A-206-SC-AU-ep3-D-1D/60D-Unlimited
+190,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,3,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,6.28,,,Absolute 24 hours,A-206-SC-AU-ep3-D-3D/60D-Unlimited
+191,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,5,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,9.84,,,Absolute 24 hours,A-206-SC-AU-ep3-D-5D/60D-Unlimited
+192,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,7,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,13.67,,,Absolute 24 hours,A-206-SC-AU-ep3-D-7D/60D-Unlimited
+193,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,10,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,19.42,,,Absolute 24 hours,A-206-SC-AU-ep3-D-10D/60D-Unlimited
+194,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,15,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,27.63,,,Absolute 24 hours,A-206-SC-AU-ep3-D-15D/60D-Unlimited
+195,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,20,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,36.75,,,Absolute 24 hours,A-206-SC-AU-ep3-D-20D/60D-Unlimited
+196,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Daypass,30,Unlimited,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,54.99,,,Absolute 24 hours,A-206-SC-AU-ep3-D-30D/60D-Unlimited
+197,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,1GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,0.91,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-1GB
+198,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,1GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.26,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-1GB
+199,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,1GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.35,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-1GB
+200,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,1GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.44,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-1GB
+201,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,1GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.53,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-1GB
+202,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,1GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,1.63,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-1GB
+203,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,3GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.08,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-3GB
+204,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,3GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.22,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-3GB
+205,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,3GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.4,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-3GB
+206,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,3GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.49,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-3GB
+207,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,3GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.63,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-3GB
+208,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,3GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,2.77,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-3GB
+209,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,5GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.27,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-5GB
+210,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,5GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.36,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-5GB
+211,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,5GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.54,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-5GB
+212,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,5GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.72,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-5GB
+213,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,5GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,3.82,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-5GB
+214,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,5GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,4,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-5GB
+215,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,10GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,5,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-10GB
+216,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,10GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,5.18,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-10GB
+217,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,10GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,5.55,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-10GB
+218,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,10GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,5.73,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-10GB
+219,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,10GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,5.91,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-10GB
+220,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,10GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,6.1,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-10GB
+221,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,20GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,9.38,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-20GB
+222,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,20GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,9.65,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-20GB
+223,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,20GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,10.11,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-20GB
+224,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,20GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,10.57,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-20GB
+225,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,20GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,10.84,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-20GB
+226,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,20GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,11.2,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-20GB
+227,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,30GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,12.39,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-30GB
+228,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,30GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,12.85,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-30GB
+229,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,30GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,13.49,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-30GB
+230,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,30GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,14.22,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-30GB
+231,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,30GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,14.85,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-30GB
+232,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,30GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,15.31,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-30GB
+233,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,3,50GB  /3 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,17.13,,,Absolute 24 hours,A-206-SC-AU-T-ep3-3D/60D-50GB
+234,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,5,50GB  /5 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,18.05,,,Absolute 24 hours,A-206-SC-AU-T-ep3-5D/60D-50GB
+235,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,7,50GB  /7 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,18.96,,,Absolute 24 hours,A-206-SC-AU-T-ep3-7D/60D-50GB
+236,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,10,50GB  /10 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,20.15,,,Absolute 24 hours,A-206-SC-AU-T-ep3-10D/60D-50GB
+237,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,15,50GB  /15 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,21.24,,,Absolute 24 hours,A-206-SC-AU-T-ep3-15D/60D-50GB
+238,Asia,Kazakhstan/Kyrgyzstan/Pakistan/Uzbekistan,Data Package,30,50GB  /30 Days,Kazakhstan：Beeline/Tele2 Kyrgyzstan：Beeline Pakistan：Mobilink-Jazz Uzbekistan：Beeline/Ucell,22.33,,,Absolute 24 hours,A-206-SC-AU-T-ep3-30D/60D-50GB
+,Remark:,,"1. According to the latest policy of Hong Kong, starting from March 1, 2022, SIM cards used in Hong Kong must complete real-name registration.",,,,,,,,
+,,,2. Tuge Technology will dynamically adjust the operators and network types according to the cooperation situation of local suppliers.,,,,,,,,
+,,,"3. This quotation sheet is only applicable to mobile phones, not MIFI and CPE.",,,,,,,,
+,,,4. The quotation is in USD and the settlement currency is USD.,,,,,,,,
+,,,"5. The price will fluctuate and change according to the price policy of the operators. Our company will notify 15 days in advance, the time of the placing order is the criterion.",,,,,,,,
+,,,6. The product is valid within 60 days of spontaneous delivery.,,,,,,,,
+,,,"7. This quotation is published on November 1, 2022 and shall be valid until the new quotation is published. (Finally, prices in the cloud communication platform are the criteria)",,,,,,,,

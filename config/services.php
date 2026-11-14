@@ -35,4 +35,16 @@ return [
         ],
     ],
 
+    'iwc' => [
+        'base_url' => env('IWC_BASE_URL', 'https://partners-api.istanbulwelcomecard.com'),
+        'profile_id' => env('IWC_PROFILE_ID', ''),
+        'access_key' => env('IWC_ACCESS_KEY', ''),
+    ],
+
+    'stripe' => [
+        'key' => env('STRIPE_KEY', ''),
+        'secret' => env('STRIPE_SECRET', ''),
+        'webhook_secret' => env('STRIPE_WEBHOOK_SECRET', ''),
+    ],
+
 ];

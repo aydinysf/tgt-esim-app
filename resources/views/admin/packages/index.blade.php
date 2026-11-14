@@ -38,6 +38,14 @@
                 </button>
             </form>
 
+            <form action="{{ route('admin.packages.import-price-list') }}" method="POST" onsubmit="this.querySelector('button').disabled = true; this.querySelector('button').innerHTML = '<i class=\'fa-solid fa-spinner fa-spin\'></i> <span>Yükleniyor (10-20 sn)...</span>';">
+                @csrf
+                <button type="submit" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95" title="fiyat_listesi klasöründeki tüm CSV'leri veritabanına aktar">
+                    <i class="fa-solid fa-file-excel"></i>
+                    <span>Fiyat Listesini Yükle (Excel/CSV)</span>
+                </button>
+            </form>
+
             <button onclick="document.getElementById('filteredSyncModal').classList.remove('hidden')" 
                 class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
                 <i class="fa-solid fa-sliders"></i>

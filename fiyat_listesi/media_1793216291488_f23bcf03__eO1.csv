@@ -1,0 +1,377 @@
+﻿Global SIMCARD Quote Sheet,,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Operator,Wholesale Price USD,Country or region,remark,ACTION POLICY,API Product code （Auto Activate）
+1,Europe,Europe（33）,Daypass,1,"500M high-speed data per day, down to 512kbps",Austria:H3G/T-Mobile/A1 Belgium:Telenet/ORANGE Bulgaria:Mobiltel/Telenor/Vivacom Switzerland:Swisscom/Sunrise/Salt Cyprus:CYTA/Primetel/Epic Czech Republic:Vodafone/O2/T-Mobile Germany:Vodafone Denmark:Telenor/HI3G/Telia/TDC/nuuday Spain:Vodafone/Orange/Yoigo(Xfera Moviles) Estonia:Telia/Tele2/Elisa Finland:DNA/Elisa/Telia France:Orange/Bouygues/Free Mobile United Kingdom:H3G/EE/Vodafone Greece:Cosmote/Vodafone/Wind(Nova) Croatia:Hrvatski/Tele2/VIPnet Hungary:Telenor/T-Mobile/Vodafone Ireland:H3G/Vodafone Iceland:Landssiminn - ISLPS Italy:ILIAD/Vodafone/Telecom/Wind Liechtenstein:Telecom AG Lithuania:Tele2/Bite/Omnitel Luxembourg:Orange Latvia:Tele2/Bite/Mobilais Moldova:Orange Malta:GO/Vodafone Netherlands:Vodafone/Odido/KPN Norway:Telia/Telenor Portugal:Optimus/Vodafone Romania:DIGI/Telekom/Vodafone/Orange Slovakia:Slovak Telekom (DT)/Orange/O2 Slovenia:Telekom/A1/Telemach Sweden:Telenor (Vodafone)/H3G/Tele2/Telia Ukraine:lifecell/KyivStar/KyivStar-RS/MTS,0.43,,,UTC+0,E-184-SC-AU-eO1-D-1D/60D-500M
+2,Europe,Europe（33）,Daypass,3,"500M high-speed data per day, down to 512kbps",,0.83,,,UTC+0,E-184-SC-AU-eO1-D-3D/60D-500M
+3,Europe,Europe（33）,Daypass,5,"500M high-speed data per day, down to 512kbps",,1.23,,,UTC+0,E-184-SC-AU-eO1-D-5D/60D-500M
+4,Europe,Europe（33）,Daypass,7,"500M high-speed data per day, down to 512kbps",,1.63,,,UTC+0,E-184-SC-AU-eO1-D-7D/60D-500M
+5,Europe,Europe（33）,Daypass,10,"500M high-speed data per day, down to 512kbps",,2.23,,,UTC+0,E-184-SC-AU-eO1-D-10D/60D-500M
+6,Europe,Europe（33）,Daypass,15,"500M high-speed data per day, down to 512kbps",,3.23,,,UTC+0,E-184-SC-AU-eO1-D-15D/60D-500M
+7,Europe,Europe（33）,Daypass,20,"500M high-speed data per day, down to 512kbps",,4.23,,,UTC+0,E-184-SC-AU-eO1-D-20D/60D-500M
+8,Europe,Europe（33）,Daypass,30,"500M high-speed data per day, down to 512kbps",,6.23,,,UTC+0,E-184-SC-AU-eO1-D-30D/60D-500M
+9,Europe,Europe（33）,Daypass,60,"500M high-speed data per day, down to 512kbps",,15.39,,,UTC+0,E-184-SC-AU-eO1-D-60D/60D-500M
+10,Europe,Europe（33）,Daypass,90,"500M high-speed data per day, down to 512kbps",,22.97,,,UTC+0,E-184-SC-AU-eO1-D-90D/60D-500M
+11,Europe,Europe（33）,Daypass,1,"1GB high-speed data per day, down to 512kbps",,0.52,,,UTC+0,E-184-SC-AU-eO1-D-1D/60D-1GB
+12,Europe,Europe（33）,Daypass,3,"1GB high-speed data per day, down to 512kbps",,1.07,,,UTC+0,E-184-SC-AU-eO1-D-3D/60D-1GB
+13,Europe,Europe（33）,Daypass,5,"1GB high-speed data per day, down to 512kbps",,1.63,,,UTC+0,E-184-SC-AU-eO1-D-5D/60D-1GB
+14,Europe,Europe（33）,Daypass,7,"1GB high-speed data per day, down to 512kbps",,2.19,,,UTC+0,E-184-SC-AU-eO1-D-7D/60D-1GB
+15,Europe,Europe（33）,Daypass,10,"1GB high-speed data per day, down to 512kbps",,3.03,,,UTC+0,E-184-SC-AU-eO1-D-10D/60D-1GB
+16,Europe,Europe（33）,Daypass,15,"1GB high-speed data per day, down to 512kbps",,4.43,,,UTC+0,E-184-SC-AU-eO1-D-15D/60D-1GB
+17,Europe,Europe（33）,Daypass,20,"1GB high-speed data per day, down to 512kbps",,5.83,,,UTC+0,E-184-SC-AU-eO1-D-20D/60D-1GB
+18,Europe,Europe（33）,Daypass,30,"1GB high-speed data per day, down to 512kbps",,8.63,,,UTC+0,E-184-SC-AU-eO1-D-30D/60D-1GB
+19,Europe,Europe（33）,Daypass,60,"1GB high-speed data per day, down to 512kbps",,19.94,,,UTC+0,E-184-SC-AU-eO1-D-60D/60D-1GB
+20,Europe,Europe（33）,Daypass,90,"1GB high-speed data per day, down to 512kbps",,29.79,,,UTC+0,E-184-SC-AU-eO1-D-90D/60D-1GB
+21,Europe,Europe（33）,Daypass,1,"2GB high-speed data per day, down to 512kbps",,0.79,,,UTC+0,E-184-SC-AU-eO1-D-1D/60D-2GB
+22,Europe,Europe（33）,Daypass,3,"2GB high-speed data per day, down to 512kbps",,1.67,,,UTC+0,E-184-SC-AU-eO1-D-3D/60D-2GB
+23,Europe,Europe（33）,Daypass,5,"2GB high-speed data per day, down to 512kbps",,2.63,,,UTC+0,E-184-SC-AU-eO1-D-5D/60D-2GB
+24,Europe,Europe（33）,Daypass,7,"2GB high-speed data per day, down to 512kbps",,3.59,,,UTC+0,E-184-SC-AU-eO1-D-7D/60D-2GB
+25,Europe,Europe（33）,Daypass,10,"2GB high-speed data per day, down to 512kbps",,5.03,,,UTC+0,E-184-SC-AU-eO1-D-10D/60D-2GB
+26,Europe,Europe（33）,Daypass,15,"2GB high-speed data per day, down to 512kbps",,7.43,,,UTC+0,E-184-SC-AU-eO1-D-15D/60D-2GB
+27,Europe,Europe（33）,Daypass,20,"2GB high-speed data per day, down to 512kbps",,9.83,,,UTC+0,E-184-SC-AU-eO1-D-20D/60D-2GB
+28,Europe,Europe（33）,Daypass,30,"2GB high-speed data per day, down to 512kbps",,14.63,,,UTC+0,E-184-SC-AU-eO1-D-30D/60D-2GB
+29,Europe,Europe（33）,Daypass,60,"2GB high-speed data per day, down to 512kbps",,39.64,,,UTC+0,E-184-SC-AU-eO1-D-60D/60D-2GB
+30,Europe,Europe（33）,Daypass,90,"2GB high-speed data per day, down to 512kbps",,59.35,,,UTC+0,E-184-SC-AU-eO1-D-90D/60D-2GB
+31,Europe,Europe（33）,Daypass,1,"3GB high-speed data per day, down to 512kbps",,0.95,,,UTC+0,E-184-SC-AU-eO1-D-1D/60D-3GB
+32,Europe,Europe（33）,Daypass,3,"3GB high-speed data per day, down to 512kbps",,2.27,,,UTC+0,E-184-SC-AU-eO1-D-3D/60D-3GB
+33,Europe,Europe（33）,Daypass,5,"3GB high-speed data per day, down to 512kbps",,3.63,,,UTC+0,E-184-SC-AU-eO1-D-5D/60D-3GB
+34,Europe,Europe（33）,Daypass,7,"3GB high-speed data per day, down to 512kbps",,4.99,,,UTC+0,E-184-SC-AU-eO1-D-7D/60D-3GB
+35,Europe,Europe（33）,Daypass,10,"3GB high-speed data per day, down to 512kbps",,7.03,,,UTC+0,E-184-SC-AU-eO1-D-10D/60D-3GB
+36,Europe,Europe（33）,Daypass,15,"3GB high-speed data per day, down to 512kbps",,10.43,,,UTC+0,E-184-SC-AU-eO1-D-15D/60D-3GB
+37,Europe,Europe（33）,Daypass,20,"3GB high-speed data per day, down to 512kbps",,13.83,,,UTC+0,E-184-SC-AU-eO1-D-20D/60D-3GB
+38,Europe,Europe（33）,Daypass,30,"3GB high-speed data per day, down to 512kbps",,20.63,,,UTC+0,E-184-SC-AU-eO1-D-30D/60D-3GB
+39,Europe,Europe（33）,Daypass,60,"3GB high-speed data per day, down to 512kbps",,51.77,,,UTC+0,E-184-SC-AU-eO1-D-60D/60D-3GB
+40,Europe,Europe（33）,Daypass,90,"3GB high-speed data per day, down to 512kbps",,77.54,,,UTC+0,E-184-SC-AU-eO1-D-90D/60D-3GB
+41,Europe,Europe（33）,Daypass,1,Unlimited,,1.52,,,UTC+0,E-184-SC-AU-eO1-D-1D/60D-Unlimited
+42,Europe,Europe（33）,Daypass,3,Unlimited,,4.32,,,UTC+0,E-184-SC-AU-eO1-D-3D/60D-Unlimited
+43,Europe,Europe（33）,Daypass,5,Unlimited,,7.03,,,UTC+0,E-184-SC-AU-eO1-D-5D/60D-Unlimited
+44,Europe,Europe（33）,Daypass,7,Unlimited,,9.75,,,UTC+0,E-184-SC-AU-eO1-D-7D/60D-Unlimited
+45,Europe,Europe（33）,Daypass,10,Unlimited,,13.83,,,UTC+0,E-184-SC-AU-eO1-D-10D/60D-Unlimited
+46,Europe,Europe（33）,Daypass,15,Unlimited,,20.63,,,UTC+0,E-184-SC-AU-eO1-D-15D/60D-Unlimited
+47,Europe,Europe（33）,Daypass,20,Unlimited,,27.43,,,UTC+0,E-184-SC-AU-eO1-D-20D/60D-Unlimited
+48,Europe,Europe（33）,Daypass,30,Unlimited,,41.03,,,UTC+0,E-184-SC-AU-eO1-D-30D/60D-Unlimited
+49,Europe,Europe（33）,Daypass,60,Unlimited,,91.18,,,UTC+0,E-184-SC-AU-eO1-D-60D/60D-Unlimited
+50,Europe,Europe（33）,Daypass,90,Unlimited,,136.65,,,UTC+0,E-184-SC-AU-eO1-D-90D/60D-Unlimited
+51,Europe,Europe（33）,Data Package,3,1GB  /3 Days,,0.63,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-1GB
+52,Europe,Europe（33）,Data Package,5,1GB  /5 Days,,0.67,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-1GB
+53,Europe,Europe（33）,Data Package,7,1GB  /7 Days,,0.72,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-1GB
+54,Europe,Europe（33）,Data Package,10,1GB  /10 Days,,0.75,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-1GB
+55,Europe,Europe（33）,Data Package,15,1GB  /15 Days,,0.79,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-1GB
+56,Europe,Europe（33）,Data Package,30,1GB  /30 Days,,0.83,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-1GB
+57,Europe,Europe（33）,Data Package,3,3GB  /3 Days,,1.15,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-3GB
+58,Europe,Europe（33）,Data Package,5,3GB  /5 Days,,1.23,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-3GB
+59,Europe,Europe（33）,Data Package,7,3GB  /7 Days,,1.32,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-3GB
+60,Europe,Europe（33）,Data Package,10,3GB  /10 Days,,1.39,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-3GB
+61,Europe,Europe（33）,Data Package,15,3GB  /15 Days,,1.47,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-3GB
+62,Europe,Europe（33）,Data Package,30,3GB  /30 Days,,1.55,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-3GB
+63,Europe,Europe（33）,Data Package,3,5GB  /3 Days,,1.75,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-5GB
+64,Europe,Europe（33）,Data Package,5,5GB  /5 Days,,1.83,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-5GB
+65,Europe,Europe（33）,Data Package,7,5GB  /7 Days,,1.95,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-5GB
+66,Europe,Europe（33）,Data Package,10,5GB  /10 Days,,2.12,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-5GB
+67,Europe,Europe（33）,Data Package,15,5GB  /15 Days,,2.23,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-5GB
+68,Europe,Europe（33）,Data Package,30,5GB  /30 Days,,2.32,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-5GB
+69,Europe,Europe（33）,Data Package,3,10GB  /3 Days,,2.87,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-10GB
+70,Europe,Europe（33）,Data Package,5,10GB  /5 Days,,3.03,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-10GB
+71,Europe,Europe（33）,Data Package,7,10GB  /7 Days,,3.23,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-10GB
+72,Europe,Europe（33）,Data Package,10,10GB  /10 Days,,3.52,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-10GB
+73,Europe,Europe（33）,Data Package,15,10GB  /15 Days,,3.67,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-10GB
+74,Europe,Europe（33）,Data Package,30,10GB  /30 Days,,3.83,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-10GB
+75,Europe,Europe（33）,Data Package,3,20GB  /3 Days,,5.23,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-20GB
+76,Europe,Europe（33）,Data Package,5,20GB  /5 Days,,5.43,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-20GB
+77,Europe,Europe（33）,Data Package,7,20GB  /7 Days,,5.83,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-20GB
+78,Europe,Europe（33）,Data Package,10,20GB  /10 Days,,6.03,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-20GB
+79,Europe,Europe（33）,Data Package,15,20GB  /15 Days,,6.43,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-20GB
+80,Europe,Europe（33）,Data Package,30,20GB  /30 Days,,6.63,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-20GB
+81,Europe,Europe（33）,Data Package,3,30GB  /3 Days,,7.81,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-30GB
+82,Europe,Europe（33）,Data Package,5,30GB  /5 Days,,8.21,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-30GB
+83,Europe,Europe（33）,Data Package,7,30GB  /7 Days,,8.72,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-30GB
+84,Europe,Europe（33）,Data Package,10,30GB  /10 Days,,9.23,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-30GB
+85,Europe,Europe（33）,Data Package,15,30GB  /15 Days,,9.63,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-30GB
+86,Europe,Europe（33）,Data Package,30,30GB  /30 Days,,10.13,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-30GB
+87,Europe,Europe（33）,Data Package,3,50GB  /3 Days,,11.85,,,UTC+0,E-184-SC-AU-eO1-T-3D/60D-50GB
+88,Europe,Europe（33）,Data Package,5,50GB  /5 Days,,12.36,,,UTC+0,E-184-SC-AU-eO1-T-5D/60D-50GB
+89,Europe,Europe（33）,Data Package,7,50GB  /7 Days,,13.12,,,UTC+0,E-184-SC-AU-eO1-T-7D/60D-50GB
+90,Europe,Europe（33）,Data Package,10,50GB  /10 Days,,13.62,,,UTC+0,E-184-SC-AU-eO1-T-10D/60D-50GB
+91,Europe,Europe（33）,Data Package,15,50GB  /15 Days,,14.38,,,UTC+0,E-184-SC-AU-eO1-T-15D/60D-50GB
+92,Europe,Europe（33）,Data Package,30,50GB  /30 Days,,14.88,,,UTC+0,E-184-SC-AU-eO1-T-30D/60D-50GB
+93,Europe,Europe（41）,Daypass,1,"500M high-speed data per day, down to 512kbps",Austria:H3G/T-Mobile/A1 Belgium:Telenet/ORANGE Bulgaria:Mobiltel/Telenor/Vivacom Switzerland:Swisscom/Sunrise/Salt Cyprus:CYTA/Primetel/Epic Czech Republic:Vodafone/O2/T-Mobile Germany:Vodafone Denmark:Telenor/HI3G/Telia/TDC/nuuday Spain:Vodafone/Orange/Yoigo(Xfera Moviles) Estonia:Telia/Tele2/Elisa Finland:DNA/Elisa/Telia France:Orange/Bouygues/Free Mobile United Kingdom:H3G/EE/Vodafone Greece:Cosmote/Vodafone/Wind(Nova) Croatia:Hrvatski/Tele2/VIPnet Hungary:Telenor/T-Mobile/Vodafone Ireland:H3G/Vodafone Iceland:Landssiminn - ISLPS Italy:ILIAD/Vodafone/Telecom/Wind Liechtenstein:Telecom AG Lithuania:Tele2/Bite/Omnitel Luxembourg:Orange Latvia:Tele2/Bite/Mobilais Moldova:Orange Malta:GO/Vodafone Netherlands:Vodafone/Odido/KPN Norway:Telia/Telenor Portugal:Optimus/Vodafone Romania:DIGI/Telekom/Vodafone/Orange Slovakia:Slovak Telekom (DT)/Orange/O2 Slovenia:Telekom/A1/Telemach Sweden:Telenor (Vodafone)/H3G/Tele2/Telia Ukraine:lifecell/KyivStar/KyivStar-RS/MTS Albania:TELEKOM Bosnia and Herzegovina:Public Enterprise Belarus:BEST Faroe Islands:Faroese Telecom Macedonia:Makedonski Telekom AD Skopje/VIP Mobile Montenegro:Crnogorski Telekom/Telenor d o o Podgorica Serbia:Vip mobile/Telekom/Telenor Turkey:Turkcell/AVEA,0.61,,,UTC+0,E-185-SC-AU-eO1-D-1D/60D-500M
+94,Europe,Europe（41）,Daypass,3,"500M high-speed data per day, down to 512kbps",,1.24,,,UTC+0,E-185-SC-AU-eO1-D-3D/60D-500M
+95,Europe,Europe（41）,Daypass,5,"500M high-speed data per day, down to 512kbps",,1.87,,,UTC+0,E-185-SC-AU-eO1-D-5D/60D-500M
+96,Europe,Europe（41）,Daypass,7,"500M high-speed data per day, down to 512kbps",,2.5,,,UTC+0,E-185-SC-AU-eO1-D-7D/60D-500M
+97,Europe,Europe（41）,Daypass,10,"500M high-speed data per day, down to 512kbps",,3.45,,,UTC+0,E-185-SC-AU-eO1-D-10D/60D-500M
+98,Europe,Europe（41）,Daypass,15,"500M high-speed data per day, down to 512kbps",,5.03,,,UTC+0,E-185-SC-AU-eO1-D-15D/60D-500M
+99,Europe,Europe（41）,Daypass,20,"500M high-speed data per day, down to 512kbps",,6.61,,,UTC+0,E-185-SC-AU-eO1-D-20D/60D-500M
+100,Europe,Europe（41）,Daypass,30,"500M high-speed data per day, down to 512kbps",,9.76,,,UTC+0,E-185-SC-AU-eO1-D-30D/60D-500M
+101,Europe,Europe（41）,Daypass,60,"500M high-speed data per day, down to 512kbps",,19.24,,,UTC+0,E-185-SC-AU-eO1-D-60D/60D-500M
+102,Europe,Europe（41）,Daypass,90,"500M high-speed data per day, down to 512kbps",,28.71,,,UTC+0,E-185-SC-AU-eO1-D-90D/60D-500M
+103,Europe,Europe（41）,Daypass,1,"1GB high-speed data per day, down to 512kbps",,0.7,,,UTC+0,E-185-SC-AU-eO1-D-1D/60D-1GB
+104,Europe,Europe（41）,Daypass,3,"1GB high-speed data per day, down to 512kbps",,1.52,,,UTC+0,E-185-SC-AU-eO1-D-3D/60D-1GB
+105,Europe,Europe（41）,Daypass,5,"1GB high-speed data per day, down to 512kbps",,2.34,,,UTC+0,E-185-SC-AU-eO1-D-5D/60D-1GB
+106,Europe,Europe（41）,Daypass,7,"1GB high-speed data per day, down to 512kbps",,3.16,,,UTC+0,E-185-SC-AU-eO1-D-7D/60D-1GB
+107,Europe,Europe（41）,Daypass,10,"1GB high-speed data per day, down to 512kbps",,4.39,,,UTC+0,E-185-SC-AU-eO1-D-10D/60D-1GB
+108,Europe,Europe（41）,Daypass,15,"1GB high-speed data per day, down to 512kbps",,6.45,,,UTC+0,E-185-SC-AU-eO1-D-15D/60D-1GB
+109,Europe,Europe（41）,Daypass,20,"1GB high-speed data per day, down to 512kbps",,8.5,,,UTC+0,E-185-SC-AU-eO1-D-20D/60D-1GB
+110,Europe,Europe（41）,Daypass,30,"1GB high-speed data per day, down to 512kbps",,12.61,,,UTC+0,E-185-SC-AU-eO1-D-30D/60D-1GB
+111,Europe,Europe（41）,Daypass,60,"1GB high-speed data per day, down to 512kbps",,24.92,,,UTC+0,E-185-SC-AU-eO1-D-60D/60D-1GB
+112,Europe,Europe（41）,Daypass,90,"1GB high-speed data per day, down to 512kbps",,37.24,,,UTC+0,E-185-SC-AU-eO1-D-90D/60D-1GB
+113,Europe,Europe（41）,Daypass,1,"2GB high-speed data per day, down to 512kbps",,1.17,,,UTC+0,E-185-SC-AU-eO1-D-1D/60D-2GB
+114,Europe,Europe（41）,Daypass,3,"2GB high-speed data per day, down to 512kbps",,2.75,,,UTC+0,E-185-SC-AU-eO1-D-3D/60D-2GB
+115,Europe,Europe（41）,Daypass,5,"2GB high-speed data per day, down to 512kbps",,4.39,,,UTC+0,E-185-SC-AU-eO1-D-5D/60D-2GB
+116,Europe,Europe（41）,Daypass,7,"2GB high-speed data per day, down to 512kbps",,6.04,,,UTC+0,E-185-SC-AU-eO1-D-7D/60D-2GB
+117,Europe,Europe（41）,Daypass,10,"2GB high-speed data per day, down to 512kbps",,8.5,,,UTC+0,E-185-SC-AU-eO1-D-10D/60D-2GB
+118,Europe,Europe（41）,Daypass,15,"2GB high-speed data per day, down to 512kbps",,12.61,,,UTC+0,E-185-SC-AU-eO1-D-15D/60D-2GB
+119,Europe,Europe（41）,Daypass,20,"2GB high-speed data per day, down to 512kbps",,16.71,,,UTC+0,E-185-SC-AU-eO1-D-20D/60D-2GB
+120,Europe,Europe（41）,Daypass,30,"2GB high-speed data per day, down to 512kbps",,24.92,,,UTC+0,E-185-SC-AU-eO1-D-30D/60D-2GB
+121,Europe,Europe（41）,Daypass,60,"2GB high-speed data per day, down to 512kbps",,49.55,,,UTC+0,E-185-SC-AU-eO1-D-60D/60D-2GB
+122,Europe,Europe（41）,Daypass,90,"2GB high-speed data per day, down to 512kbps",,74.18,,,UTC+0,E-185-SC-AU-eO1-D-90D/60D-2GB
+123,Europe,Europe（41）,Daypass,1,"3GB high-speed data per day, down to 512kbps",,1.43,,,UTC+0,E-185-SC-AU-eO1-D-1D/60D-3GB
+124,Europe,Europe（41）,Daypass,3,"3GB high-speed data per day, down to 512kbps",,3.51,,,UTC+0,E-185-SC-AU-eO1-D-3D/60D-3GB
+125,Europe,Europe（41）,Daypass,5,"3GB high-speed data per day, down to 512kbps",,5.66,,,UTC+0,E-185-SC-AU-eO1-D-5D/60D-3GB
+126,Europe,Europe（41）,Daypass,7,"3GB high-speed data per day, down to 512kbps",,7.81,,,UTC+0,E-185-SC-AU-eO1-D-7D/60D-3GB
+127,Europe,Europe（41）,Daypass,10,"3GB high-speed data per day, down to 512kbps",,11.03,,,UTC+0,E-185-SC-AU-eO1-D-10D/60D-3GB
+128,Europe,Europe（41）,Daypass,15,"3GB high-speed data per day, down to 512kbps",,16.39,,,UTC+0,E-185-SC-AU-eO1-D-15D/60D-3GB
+129,Europe,Europe（41）,Daypass,20,"3GB high-speed data per day, down to 512kbps",,21.76,,,UTC+0,E-185-SC-AU-eO1-D-20D/60D-3GB
+130,Europe,Europe（41）,Daypass,30,"3GB high-speed data per day, down to 512kbps",,32.5,,,UTC+0,E-185-SC-AU-eO1-D-30D/60D-3GB
+131,Europe,Europe（41）,Daypass,60,"3GB high-speed data per day, down to 512kbps",,64.71,,,UTC+0,E-185-SC-AU-eO1-D-60D/60D-3GB
+132,Europe,Europe（41）,Daypass,90,"3GB high-speed data per day, down to 512kbps",,96.92,,,UTC+0,E-185-SC-AU-eO1-D-90D/60D-3GB
+133,Europe,Europe（41）,Daypass,1,Unlimited,,2.18,,,UTC+0,E-185-SC-AU-eO1-D-1D/60D-Unlimited
+134,Europe,Europe（41）,Daypass,3,Unlimited,,5.97,,,UTC+0,E-185-SC-AU-eO1-D-3D/60D-Unlimited
+135,Europe,Europe（41）,Daypass,5,Unlimited,,9.76,,,UTC+0,E-185-SC-AU-eO1-D-5D/60D-Unlimited
+136,Europe,Europe（41）,Daypass,7,Unlimited,,13.55,,,UTC+0,E-185-SC-AU-eO1-D-7D/60D-Unlimited
+137,Europe,Europe（41）,Daypass,10,Unlimited,,19.24,,,UTC+0,E-185-SC-AU-eO1-D-10D/60D-Unlimited
+138,Europe,Europe（41）,Daypass,15,Unlimited,,28.71,,,UTC+0,E-185-SC-AU-eO1-D-15D/60D-Unlimited
+139,Europe,Europe（41）,Daypass,20,Unlimited,,38.18,,,UTC+0,E-185-SC-AU-eO1-D-20D/60D-Unlimited
+140,Europe,Europe（41）,Daypass,30,Unlimited,,57.13,,,UTC+0,E-185-SC-AU-eO1-D-30D/60D-Unlimited
+141,Europe,Europe（41）,Daypass,60,Unlimited,,113.97,,,UTC+0,E-185-SC-AU-eO1-D-60D/60D-Unlimited
+142,Europe,Europe（41）,Daypass,90,Unlimited,,170.82,,,UTC+0,E-185-SC-AU-eO1-D-90D/60D-Unlimited
+143,Europe,Europe（41）,Data Package,3,1GB  /3 Days,,0.92,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-1GB
+144,Europe,Europe（41）,Data Package,5,1GB  /5 Days,,0.98,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-1GB
+145,Europe,Europe（41）,Data Package,7,1GB  /7 Days,,1.05,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-1GB
+146,Europe,Europe（41）,Data Package,10,1GB  /10 Days,,1.11,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-1GB
+147,Europe,Europe（41）,Data Package,15,1GB  /15 Days,,1.17,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-1GB
+148,Europe,Europe（41）,Data Package,30,1GB  /30 Days,,1.24,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-1GB
+149,Europe,Europe（41）,Data Package,3,3GB  /3 Days,,1.62,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-3GB
+150,Europe,Europe（41）,Data Package,5,3GB  /5 Days,,1.74,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-3GB
+151,Europe,Europe（41）,Data Package,7,3GB  /7 Days,,1.93,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-3GB
+152,Europe,Europe（41）,Data Package,10,3GB  /10 Days,,1.99,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-3GB
+153,Europe,Europe（41）,Data Package,15,3GB  /15 Days,,2.06,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-3GB
+154,Europe,Europe（41）,Data Package,30,3GB  /30 Days,,2.18,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-3GB
+155,Europe,Europe（41）,Data Package,3,5GB  /3 Days,,2.37,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-5GB
+156,Europe,Europe（41）,Data Package,5,5GB  /5 Days,,2.5,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-5GB
+157,Europe,Europe（41）,Data Package,7,5GB  /7 Days,,2.69,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-5GB
+158,Europe,Europe（41）,Data Package,10,5GB  /10 Days,,2.82,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-5GB
+159,Europe,Europe（41）,Data Package,15,5GB  /15 Days,,3.01,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-5GB
+160,Europe,Europe（41）,Data Package,30,5GB  /30 Days,,3.26,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-5GB
+161,Europe,Europe（41）,Data Package,3,10GB  /3 Days,,3.95,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-10GB
+162,Europe,Europe（41）,Data Package,5,10GB  /5 Days,,4.08,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-10GB
+163,Europe,Europe（41）,Data Package,7,10GB  /7 Days,,4.27,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-10GB
+164,Europe,Europe（41）,Data Package,10,10GB  /10 Days,,4.58,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-10GB
+165,Europe,Europe（41）,Data Package,15,10GB  /15 Days,,4.84,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-10GB
+166,Europe,Europe（41）,Data Package,30,10GB  /30 Days,,5.03,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-10GB
+167,Europe,Europe（41）,Data Package,3,20GB  /3 Days,,7.24,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-20GB
+168,Europe,Europe（41）,Data Package,5,20GB  /5 Days,,7.55,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-20GB
+169,Europe,Europe（41）,Data Package,7,20GB  /7 Days,,7.87,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-20GB
+170,Europe,Europe（41）,Data Package,10,20GB  /10 Days,,8.5,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-20GB
+171,Europe,Europe（41）,Data Package,15,20GB  /15 Days,,8.82,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-20GB
+172,Europe,Europe（41）,Data Package,30,20GB  /30 Days,,9.13,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-20GB
+173,Europe,Europe（41）,Data Package,3,30GB  /3 Days,,9.76,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-30GB
+174,Europe,Europe（41）,Data Package,5,30GB  /5 Days,,10.27,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-30GB
+175,Europe,Europe（41）,Data Package,7,30GB  /7 Days,,10.9,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-30GB
+176,Europe,Europe（41）,Data Package,10,30GB  /10 Days,,11.53,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-30GB
+177,Europe,Europe（41）,Data Package,15,30GB  /15 Days,,12.04,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-30GB
+178,Europe,Europe（41）,Data Package,30,30GB  /30 Days,,12.67,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-30GB
+179,Europe,Europe（41）,Data Package,3,50GB  /3 Days,,14.82,,,UTC+0,E-185-SC-AU-eO1-T-3D/60D-50GB
+180,Europe,Europe（41）,Data Package,5,50GB  /5 Days,,15.45,,,UTC+0,E-185-SC-AU-eO1-T-5D/60D-50GB
+181,Europe,Europe（41）,Data Package,7,50GB  /7 Days,,16.39,,,UTC+0,E-185-SC-AU-eO1-T-7D/60D-50GB
+182,Europe,Europe（41）,Data Package,10,50GB  /10 Days,,17.03,,,UTC+0,E-185-SC-AU-eO1-T-10D/60D-50GB
+183,Europe,Europe（41）,Data Package,15,50GB  /15 Days,,17.97,,,UTC+0,E-185-SC-AU-eO1-T-15D/60D-50GB
+184,Europe,Europe（41）,Data Package,30,50GB  /30 Days,,18.61,,,UTC+0,E-185-SC-AU-eO1-T-30D/60D-50GB
+185,North America,USA/Canada,Daypass,1,"500M high-speed data per day, down to 512kbps",USA:Verizon/AT&T/T-Mobile Canada:Rogers/FIDO (Rogers AT&T/ Microcell)/Bell/SaskTel/Telus/Videotron General Partnership,0.69,,,UTC+0,B-101-SC-AU-eO1-D-1D/60D-500M
+186,North America,USA/Canada,Daypass,3,"500M high-speed data per day, down to 512kbps",,1.86,,,UTC+0,B-101-SC-AU-eO1-D-3D/60D-500M
+187,North America,USA/Canada,Daypass,5,"500M high-speed data per day, down to 512kbps",,2.75,,,UTC+0,B-101-SC-AU-eO1-D-5D/60D-500M
+188,North America,USA/Canada,Daypass,7,"500M high-speed data per day, down to 512kbps",,3.85,,,UTC+0,B-101-SC-AU-eO1-D-7D/60D-500M
+189,North America,USA/Canada,Daypass,10,"500M high-speed data per day, down to 512kbps",,5.51,,,UTC+0,B-101-SC-AU-eO1-D-10D/60D-500M
+190,North America,USA/Canada,Daypass,15,"500M high-speed data per day, down to 512kbps",,8.26,,,UTC+0,B-101-SC-AU-eO1-D-15D/60D-500M
+191,North America,USA/Canada,Daypass,20,"500M high-speed data per day, down to 512kbps",,11.01,,,UTC+0,B-101-SC-AU-eO1-D-20D/60D-500M
+192,North America,USA/Canada,Daypass,30,"500M high-speed data per day, down to 512kbps",,16.52,,,UTC+0,B-101-SC-AU-eO1-D-30D/60D-500M
+193,North America,USA/Canada,Daypass,60,"500M high-speed data per day, down to 512kbps",,33.03,,,UTC+0,B-101-SC-AU-eO1-D-60D/60D-500M
+194,North America,USA/Canada,Daypass,90,"500M high-speed data per day, down to 512kbps",,49.55,,,UTC+0,B-101-SC-AU-eO1-D-90D/60D-500M
+195,North America,USA/Canada,Daypass,1,"1GB high-speed data per day, down to 512kbps",,0.83,,,UTC+0,B-101-SC-AU-eO1-D-1D/60D-1GB
+196,North America,USA/Canada,Daypass,3,"1GB high-speed data per day, down to 512kbps",,2.48,,,UTC+0,B-101-SC-AU-eO1-D-3D/60D-1GB
+197,North America,USA/Canada,Daypass,5,"1GB high-speed data per day, down to 512kbps",,3.99,,,UTC+0,B-101-SC-AU-eO1-D-5D/60D-1GB
+198,North America,USA/Canada,Daypass,7,"1GB high-speed data per day, down to 512kbps",,5.49,,,UTC+0,B-101-SC-AU-eO1-D-7D/60D-1GB
+199,North America,USA/Canada,Daypass,10,"1GB high-speed data per day, down to 512kbps",,7.85,,,UTC+0,B-101-SC-AU-eO1-D-10D/60D-1GB
+200,North America,USA/Canada,Daypass,15,"1GB high-speed data per day, down to 512kbps",,11.77,,,UTC+0,B-101-SC-AU-eO1-D-15D/60D-1GB
+201,North America,USA/Canada,Daypass,20,"1GB high-speed data per day, down to 512kbps",,15.69,,,UTC+0,B-101-SC-AU-eO1-D-20D/60D-1GB
+202,North America,USA/Canada,Daypass,30,"1GB high-speed data per day, down to 512kbps",,23.54,,,UTC+0,B-101-SC-AU-eO1-D-30D/60D-1GB
+203,North America,USA/Canada,Daypass,60,"1GB high-speed data per day, down to 512kbps",,47.07,,,UTC+0,B-101-SC-AU-eO1-D-60D/60D-1GB
+204,North America,USA/Canada,Daypass,90,"1GB high-speed data per day, down to 512kbps",,70.61,,,UTC+0,B-101-SC-AU-eO1-D-90D/60D-1GB
+205,North America,USA/Canada,Daypass,1,"2GB high-speed data per day, down to 512kbps",,1.51,,,UTC+0,B-101-SC-AU-eO1-D-1D/60D-2GB
+206,North America,USA/Canada,Daypass,3,"2GB high-speed data per day, down to 512kbps",,4.13,,,UTC+0,B-101-SC-AU-eO1-D-3D/60D-2GB
+207,North America,USA/Canada,Daypass,5,"2GB high-speed data per day, down to 512kbps",,6.88,,,UTC+0,B-101-SC-AU-eO1-D-5D/60D-2GB
+208,North America,USA/Canada,Daypass,7,"2GB high-speed data per day, down to 512kbps",,9.63,,,UTC+0,B-101-SC-AU-eO1-D-7D/60D-2GB
+209,North America,USA/Canada,Daypass,10,"2GB high-speed data per day, down to 512kbps",,13.76,,,UTC+0,B-101-SC-AU-eO1-D-10D/60D-2GB
+210,North America,USA/Canada,Daypass,15,"2GB high-speed data per day, down to 512kbps",,20.64,,,UTC+0,B-101-SC-AU-eO1-D-15D/60D-2GB
+211,North America,USA/Canada,Daypass,20,"2GB high-speed data per day, down to 512kbps",,27.53,,,UTC+0,B-101-SC-AU-eO1-D-20D/60D-2GB
+212,North America,USA/Canada,Daypass,30,"2GB high-speed data per day, down to 512kbps",,41.29,,,UTC+0,B-101-SC-AU-eO1-D-30D/60D-2GB
+213,North America,USA/Canada,Daypass,60,"2GB high-speed data per day, down to 512kbps",,82.58,,,UTC+0,B-101-SC-AU-eO1-D-60D/60D-2GB
+214,North America,USA/Canada,Daypass,90,"2GB high-speed data per day, down to 512kbps",,123.87,,,UTC+0,B-101-SC-AU-eO1-D-90D/60D-2GB
+215,North America,USA/Canada,Daypass,1,"3GB high-speed data per day, down to 512kbps",,2.2,,,UTC+0,B-101-SC-AU-eO1-D-1D/60D-3GB
+216,North America,USA/Canada,Daypass,3,"3GB high-speed data per day, down to 512kbps",,5.78,,,UTC+0,B-101-SC-AU-eO1-D-3D/60D-3GB
+217,North America,USA/Canada,Daypass,5,"3GB high-speed data per day, down to 512kbps",,9.63,,,UTC+0,B-101-SC-AU-eO1-D-5D/60D-3GB
+218,North America,USA/Canada,Daypass,7,"3GB high-speed data per day, down to 512kbps",,13.49,,,UTC+0,B-101-SC-AU-eO1-D-7D/60D-3GB
+219,North America,USA/Canada,Daypass,10,"3GB high-speed data per day, down to 512kbps",,19.27,,,UTC+0,B-101-SC-AU-eO1-D-10D/60D-3GB
+220,North America,USA/Canada,Daypass,15,"3GB high-speed data per day, down to 512kbps",,28.9,,,UTC+0,B-101-SC-AU-eO1-D-15D/60D-3GB
+221,North America,USA/Canada,Daypass,20,"3GB high-speed data per day, down to 512kbps",,38.54,,,UTC+0,B-101-SC-AU-eO1-D-20D/60D-3GB
+222,North America,USA/Canada,Daypass,30,"3GB high-speed data per day, down to 512kbps",,57.81,,,UTC+0,B-101-SC-AU-eO1-D-30D/60D-3GB
+223,North America,USA/Canada,Daypass,60,"3GB high-speed data per day, down to 512kbps",,115.61,,,UTC+0,B-101-SC-AU-eO1-D-60D/60D-3GB
+224,North America,USA/Canada,Daypass,90,"3GB high-speed data per day, down to 512kbps",,173.42,,,UTC+0,B-101-SC-AU-eO1-D-90D/60D-3GB
+225,North America,USA/Canada,Daypass,1,Unlimited,,2.89,,,UTC+0,B-101-SC-AU-eO1-D-1D/60D-Unlimited
+226,North America,USA/Canada,Daypass,3,Unlimited,,8.26,,,UTC+0,B-101-SC-AU-eO1-D-3D/60D-Unlimited
+227,North America,USA/Canada,Daypass,5,Unlimited,,13.76,,,UTC+0,B-101-SC-AU-eO1-D-5D/60D-Unlimited
+228,North America,USA/Canada,Daypass,7,Unlimited,,19.27,,,UTC+0,B-101-SC-AU-eO1-D-7D/60D-Unlimited
+229,North America,USA/Canada,Daypass,10,Unlimited,,27.53,,,UTC+0,B-101-SC-AU-eO1-D-10D/60D-Unlimited
+230,North America,USA/Canada,Daypass,15,Unlimited,,41.29,,,UTC+0,B-101-SC-AU-eO1-D-15D/60D-Unlimited
+231,North America,USA/Canada,Daypass,20,Unlimited,,55.05,,,UTC+0,B-101-SC-AU-eO1-D-20D/60D-Unlimited
+232,North America,USA/Canada,Daypass,30,Unlimited,,82.58,,,UTC+0,B-101-SC-AU-eO1-D-30D/60D-Unlimited
+233,North America,USA/Canada,Daypass,60,Unlimited,,165.16,,,UTC+0,B-101-SC-AU-eO1-D-60D/60D-Unlimited
+234,North America,USA/Canada,Daypass,90,Unlimited,,247.74,,,UTC+0,B-101-SC-AU-eO1-D-90D/60D-Unlimited
+235,North America,USA/Canada,Data Package,3,1GB  /3 Days,,1.38,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-1GB
+236,North America,USA/Canada,Data Package,5,1GB  /5 Days,,1.51,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-1GB
+237,North America,USA/Canada,Data Package,7,1GB  /7 Days,,1.65,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-1GB
+238,North America,USA/Canada,Data Package,10,1GB  /10 Days,,1.79,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-1GB
+239,North America,USA/Canada,Data Package,15,1GB  /15 Days,,1.93,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-1GB
+240,North America,USA/Canada,Data Package,30,1GB  /30 Days,,2.06,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-1GB
+241,North America,USA/Canada,Data Package,3,3GB  /3 Days,,2.48,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-3GB
+242,North America,USA/Canada,Data Package,5,3GB  /5 Days,,2.75,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-3GB
+243,North America,USA/Canada,Data Package,7,3GB  /7 Days,,3.03,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-3GB
+244,North America,USA/Canada,Data Package,10,3GB  /10 Days,,3.3,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-3GB
+245,North America,USA/Canada,Data Package,15,3GB  /15 Days,,3.72,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-3GB
+246,North America,USA/Canada,Data Package,30,3GB  /30 Days,,4.13,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-3GB
+247,North America,USA/Canada,Data Package,3,5GB  /3 Days,,4.13,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-5GB
+248,North America,USA/Canada,Data Package,5,5GB  /5 Days,,4.4,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-5GB
+249,North America,USA/Canada,Data Package,7,5GB  /7 Days,,4.82,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-5GB
+250,North America,USA/Canada,Data Package,10,5GB  /10 Days,,5.23,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-5GB
+251,North America,USA/Canada,Data Package,15,5GB  /15 Days,,5.64,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-5GB
+252,North America,USA/Canada,Data Package,30,5GB  /30 Days,,5.92,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-5GB
+253,North America,USA/Canada,Data Package,3,10GB  /3 Days,,6.88,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-10GB
+254,North America,USA/Canada,Data Package,5,10GB  /5 Days,,7.57,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-10GB
+255,North America,USA/Canada,Data Package,7,10GB  /7 Days,,8.26,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-10GB
+256,North America,USA/Canada,Data Package,10,10GB  /10 Days,,8.95,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-10GB
+257,North America,USA/Canada,Data Package,15,10GB  /15 Days,,9.63,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-10GB
+258,North America,USA/Canada,Data Package,30,10GB  /30 Days,,10.32,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-10GB
+259,North America,USA/Canada,Data Package,3,20GB  /3 Days,,13.76,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-20GB
+260,North America,USA/Canada,Data Package,5,20GB  /5 Days,,15.14,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-20GB
+261,North America,USA/Canada,Data Package,7,20GB  /7 Days,,16.52,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-20GB
+262,North America,USA/Canada,Data Package,10,20GB  /10 Days,,17.2,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-20GB
+263,North America,USA/Canada,Data Package,15,20GB  /15 Days,,18.58,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-20GB
+264,North America,USA/Canada,Data Package,30,20GB  /30 Days,,19.27,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-20GB
+265,North America,USA/Canada,Data Package,3,30GB  /3 Days,,20.64,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-30GB
+266,North America,USA/Canada,Data Package,5,30GB  /5 Days,,22.02,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-30GB
+267,North America,USA/Canada,Data Package,7,30GB  /7 Days,,23.4,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-30GB
+268,North America,USA/Canada,Data Package,10,30GB  /10 Days,,24.77,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-30GB
+269,North America,USA/Canada,Data Package,15,30GB  /15 Days,,26.15,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-30GB
+270,North America,USA/Canada,Data Package,30,30GB  /30 Days,,27.53,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-30GB
+271,North America,USA/Canada,Data Package,3,50GB  /3 Days,,31.66,,,UTC+0,B-101-SC-AU-eO1-T-3D/60D-50GB
+272,North America,USA/Canada,Data Package,5,50GB  /5 Days,,33.72,,,UTC+0,B-101-SC-AU-eO1-T-5D/60D-50GB
+273,North America,USA/Canada,Data Package,7,50GB  /7 Days,,35.78,,,UTC+0,B-101-SC-AU-eO1-T-7D/60D-50GB
+274,North America,USA/Canada,Data Package,10,50GB  /10 Days,,37.85,,,UTC+0,B-101-SC-AU-eO1-T-10D/60D-50GB
+275,North America,USA/Canada,Data Package,15,50GB  /15 Days,,39.91,,,UTC+0,B-101-SC-AU-eO1-T-15D/60D-50GB
+276,North America,USA/Canada,Data Package,30,50GB  /30 Days,,41.98,,,UTC+0,B-101-SC-AU-eO1-T-30D/60D-50GB
+277,North America,USA/Canada/Mexico,Daypass,1,"500M high-speed data per day, down to 512kbps",USA:Verizon/AT&T/T-Mobile Canada:Rogers/FIDO (Rogers AT&T/ Microcell)/Bell/SaskTel/Telus/Videotron General Partnership Mexico:AT&T,0.85,,,UTC+0,B-119-SC-AU-eO1-D-1D/60D-500M
+278,North America,USA/Canada/Mexico,Daypass,3,"500M high-speed data per day, down to 512kbps",,2.28,,,UTC+0,B-119-SC-AU-eO1-D-3D/60D-500M
+279,North America,USA/Canada/Mexico,Daypass,5,"500M high-speed data per day, down to 512kbps",,3.8,,,UTC+0,B-119-SC-AU-eO1-D-5D/60D-500M
+280,North America,USA/Canada/Mexico,Daypass,7,"500M high-speed data per day, down to 512kbps",,5.32,,,UTC+0,B-119-SC-AU-eO1-D-7D/60D-500M
+281,North America,USA/Canada/Mexico,Daypass,10,"500M high-speed data per day, down to 512kbps",,7.61,,,UTC+0,B-119-SC-AU-eO1-D-10D/60D-500M
+282,North America,USA/Canada/Mexico,Daypass,15,"500M high-speed data per day, down to 512kbps",,10.65,,,UTC+0,B-119-SC-AU-eO1-D-15D/60D-500M
+283,North America,USA/Canada/Mexico,Daypass,20,"500M high-speed data per day, down to 512kbps",,14.2,,,UTC+0,B-119-SC-AU-eO1-D-20D/60D-500M
+284,North America,USA/Canada/Mexico,Daypass,30,"500M high-speed data per day, down to 512kbps",,21.29,,,UTC+0,B-119-SC-AU-eO1-D-30D/60D-500M
+285,North America,USA/Canada/Mexico,Daypass,60,"500M high-speed data per day, down to 512kbps",,42.59,,,UTC+0,B-119-SC-AU-eO1-D-60D/60D-500M
+286,North America,USA/Canada/Mexico,Daypass,90,"500M high-speed data per day, down to 512kbps",,63.88,,,UTC+0,B-119-SC-AU-eO1-D-90D/60D-500M
+287,North America,USA/Canada/Mexico,Daypass,1,"1GB high-speed data per day, down to 512kbps",,1.18,,,UTC+0,B-119-SC-AU-eO1-D-1D/60D-1GB
+288,North America,USA/Canada/Mexico,Daypass,3,"1GB high-speed data per day, down to 512kbps",,3.04,,,UTC+0,B-119-SC-AU-eO1-D-3D/60D-1GB
+289,North America,USA/Canada/Mexico,Daypass,5,"1GB high-speed data per day, down to 512kbps",,5.07,,,UTC+0,B-119-SC-AU-eO1-D-5D/60D-1GB
+290,North America,USA/Canada/Mexico,Daypass,7,"1GB high-speed data per day, down to 512kbps",,6.86,,,UTC+0,B-119-SC-AU-eO1-D-7D/60D-1GB
+291,North America,USA/Canada/Mexico,Daypass,10,"1GB high-speed data per day, down to 512kbps",,9.8,,,UTC+0,B-119-SC-AU-eO1-D-10D/60D-1GB
+292,North America,USA/Canada/Mexico,Daypass,15,"1GB high-speed data per day, down to 512kbps",,14.7,,,UTC+0,B-119-SC-AU-eO1-D-15D/60D-1GB
+293,North America,USA/Canada/Mexico,Daypass,20,"1GB high-speed data per day, down to 512kbps",,19.6,,,UTC+0,B-119-SC-AU-eO1-D-20D/60D-1GB
+294,North America,USA/Canada/Mexico,Daypass,30,"1GB high-speed data per day, down to 512kbps",,28.9,,,UTC+0,B-119-SC-AU-eO1-D-30D/60D-1GB
+295,North America,USA/Canada/Mexico,Daypass,60,"1GB high-speed data per day, down to 512kbps",,57.8,,,UTC+0,B-119-SC-AU-eO1-D-60D/60D-1GB
+296,North America,USA/Canada/Mexico,Daypass,90,"1GB high-speed data per day, down to 512kbps",,86.7,,,UTC+0,B-119-SC-AU-eO1-D-90D/60D-1GB
+297,North America,USA/Canada/Mexico,Daypass,1,"2GB high-speed data per day, down to 512kbps",,2.03,,,UTC+0,B-119-SC-AU-eO1-D-1D/60D-2GB
+298,North America,USA/Canada/Mexico,Daypass,3,"2GB high-speed data per day, down to 512kbps",,5.58,,,UTC+0,B-119-SC-AU-eO1-D-3D/60D-2GB
+299,North America,USA/Canada/Mexico,Daypass,5,"2GB high-speed data per day, down to 512kbps",,8.87,,,UTC+0,B-119-SC-AU-eO1-D-5D/60D-2GB
+300,North America,USA/Canada/Mexico,Daypass,7,"2GB high-speed data per day, down to 512kbps",,12.42,,,UTC+0,B-119-SC-AU-eO1-D-7D/60D-2GB
+301,North America,USA/Canada/Mexico,Daypass,10,"2GB high-speed data per day, down to 512kbps",,17.75,,,UTC+0,B-119-SC-AU-eO1-D-10D/60D-2GB
+302,North America,USA/Canada/Mexico,Daypass,15,"2GB high-speed data per day, down to 512kbps",,26.62,,,UTC+0,B-119-SC-AU-eO1-D-15D/60D-2GB
+303,North America,USA/Canada/Mexico,Daypass,20,"2GB high-speed data per day, down to 512kbps",,35.49,,,UTC+0,B-119-SC-AU-eO1-D-20D/60D-2GB
+304,North America,USA/Canada/Mexico,Daypass,30,"2GB high-speed data per day, down to 512kbps",,53.24,,,UTC+0,B-119-SC-AU-eO1-D-30D/60D-2GB
+305,North America,USA/Canada/Mexico,Daypass,60,"2GB high-speed data per day, down to 512kbps",,106.47,,,UTC+0,B-119-SC-AU-eO1-D-60D/60D-2GB
+306,North America,USA/Canada/Mexico,Daypass,90,"2GB high-speed data per day, down to 512kbps",,159.71,,,UTC+0,B-119-SC-AU-eO1-D-90D/60D-2GB
+307,North America,USA/Canada/Mexico,Daypass,1,"3GB high-speed data per day, down to 512kbps",,2.7,,,UTC+0,B-119-SC-AU-eO1-D-1D/60D-3GB
+308,North America,USA/Canada/Mexico,Daypass,3,"3GB high-speed data per day, down to 512kbps",,7.61,,,UTC+0,B-119-SC-AU-eO1-D-3D/60D-3GB
+309,North America,USA/Canada/Mexico,Daypass,5,"3GB high-speed data per day, down to 512kbps",,12.25,,,UTC+0,B-119-SC-AU-eO1-D-5D/60D-3GB
+310,North America,USA/Canada/Mexico,Daypass,7,"3GB high-speed data per day, down to 512kbps",,17.15,,,UTC+0,B-119-SC-AU-eO1-D-7D/60D-3GB
+311,North America,USA/Canada/Mexico,Daypass,10,"3GB high-speed data per day, down to 512kbps",,24.51,,,UTC+0,B-119-SC-AU-eO1-D-10D/60D-3GB
+312,North America,USA/Canada/Mexico,Daypass,15,"3GB high-speed data per day, down to 512kbps",,36.5,,,UTC+0,B-119-SC-AU-eO1-D-15D/60D-3GB
+313,North America,USA/Canada/Mexico,Daypass,20,"3GB high-speed data per day, down to 512kbps",,48.67,,,UTC+0,B-119-SC-AU-eO1-D-20D/60D-3GB
+314,North America,USA/Canada/Mexico,Daypass,30,"3GB high-speed data per day, down to 512kbps",,72.5,,,UTC+0,B-119-SC-AU-eO1-D-30D/60D-3GB
+315,North America,USA/Canada/Mexico,Daypass,60,"3GB high-speed data per day, down to 512kbps",,146.02,,,UTC+0,B-119-SC-AU-eO1-D-60D/60D-3GB
+316,North America,USA/Canada/Mexico,Daypass,90,"3GB high-speed data per day, down to 512kbps",,219.02,,,UTC+0,B-119-SC-AU-eO1-D-90D/60D-3GB
+317,North America,USA/Canada/Mexico,Daypass,1,Unlimited,,5.07,,,UTC+0,B-119-SC-AU-eO1-D-1D/60D-Unlimited
+318,North America,USA/Canada/Mexico,Daypass,3,Unlimited,,14.7,,,UTC+0,B-119-SC-AU-eO1-D-3D/60D-Unlimited
+319,North America,USA/Canada/Mexico,Daypass,5,Unlimited,,23.66,,,UTC+0,B-119-SC-AU-eO1-D-5D/60D-Unlimited
+320,North America,USA/Canada/Mexico,Daypass,7,Unlimited,,33.12,,,UTC+0,B-119-SC-AU-eO1-D-7D/60D-Unlimited
+321,North America,USA/Canada/Mexico,Daypass,10,Unlimited,,47.32,,,UTC+0,B-119-SC-AU-eO1-D-10D/60D-Unlimited
+322,North America,USA/Canada/Mexico,Daypass,15,Unlimited,,70.98,,,UTC+0,B-119-SC-AU-eO1-D-15D/60D-Unlimited
+323,North America,USA/Canada/Mexico,Daypass,20,Unlimited,,94.64,,,UTC+0,B-119-SC-AU-eO1-D-20D/60D-Unlimited
+324,North America,USA/Canada/Mexico,Daypass,30,Unlimited,,141.96,,,UTC+0,B-119-SC-AU-eO1-D-30D/60D-Unlimited
+325,North America,USA/Canada/Mexico,Daypass,60,Unlimited,,283.92,,,UTC+0,B-119-SC-AU-eO1-D-60D/60D-Unlimited
+326,North America,USA/Canada/Mexico,Daypass,90,Unlimited,,425.88,,,UTC+0,B-119-SC-AU-eO1-D-90D/60D-Unlimited
+327,North America,USA/Canada/Mexico,Data Package,3,1GB  /3 Days,,1.69,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-1GB
+328,North America,USA/Canada/Mexico,Data Package,5,1GB  /5 Days,,1.86,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-1GB
+329,North America,USA/Canada/Mexico,Data Package,7,1GB  /7 Days,,2.03,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-1GB
+330,North America,USA/Canada/Mexico,Data Package,10,1GB  /10 Days,,2.2,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-1GB
+331,North America,USA/Canada/Mexico,Data Package,15,1GB  /15 Days,,2.37,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-1GB
+332,North America,USA/Canada/Mexico,Data Package,30,1GB  /30 Days,,2.54,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-1GB
+333,North America,USA/Canada/Mexico,Data Package,3,3GB  /3 Days,,3.55,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-3GB
+334,North America,USA/Canada/Mexico,Data Package,5,3GB  /5 Days,,3.89,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-3GB
+335,North America,USA/Canada/Mexico,Data Package,7,3GB  /7 Days,,4.23,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-3GB
+336,North America,USA/Canada/Mexico,Data Package,10,3GB  /10 Days,,4.39,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-3GB
+337,North America,USA/Canada/Mexico,Data Package,15,3GB  /15 Days,,4.73,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-3GB
+338,North America,USA/Canada/Mexico,Data Package,30,3GB  /30 Days,,5.07,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-3GB
+339,North America,USA/Canada/Mexico,Data Package,3,5GB  /3 Days,,5.41,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-5GB
+340,North America,USA/Canada/Mexico,Data Package,5,5GB  /5 Days,,5.75,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-5GB
+341,North America,USA/Canada/Mexico,Data Package,7,5GB  /7 Days,,6.25,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-5GB
+342,North America,USA/Canada/Mexico,Data Package,10,5GB  /10 Days,,6.59,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-5GB
+343,North America,USA/Canada/Mexico,Data Package,15,5GB  /15 Days,,7.1,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-5GB
+344,North America,USA/Canada/Mexico,Data Package,30,5GB  /30 Days,,7.61,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-5GB
+345,North America,USA/Canada/Mexico,Data Package,3,10GB  /3 Days,,10.14,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-10GB
+346,North America,USA/Canada/Mexico,Data Package,5,10GB  /5 Days,,10.82,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-10GB
+347,North America,USA/Canada/Mexico,Data Package,7,10GB  /7 Days,,11.32,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-10GB
+348,North America,USA/Canada/Mexico,Data Package,10,10GB  /10 Days,,11.83,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-10GB
+349,North America,USA/Canada/Mexico,Data Package,15,10GB  /15 Days,,12.34,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-10GB
+350,North America,USA/Canada/Mexico,Data Package,30,10GB  /30 Days,,13.01,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-10GB
+351,North America,USA/Canada/Mexico,Data Package,3,20GB  /3 Days,,18.59,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-20GB
+352,North America,USA/Canada/Mexico,Data Package,5,20GB  /5 Days,,19.44,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-20GB
+353,North America,USA/Canada/Mexico,Data Package,7,20GB  /7 Days,,20.28,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-20GB
+354,North America,USA/Canada/Mexico,Data Package,10,20GB  /10 Days,,21.97,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-20GB
+355,North America,USA/Canada/Mexico,Data Package,15,20GB  /15 Days,,22.82,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-20GB
+356,North America,USA/Canada/Mexico,Data Package,30,20GB  /30 Days,,23.66,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-20GB
+357,North America,USA/Canada/Mexico,Data Package,3,30GB  /3 Days,,25.35,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-30GB
+358,North America,USA/Canada/Mexico,Data Package,5,30GB  /5 Days,,26.7,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-30GB
+359,North America,USA/Canada/Mexico,Data Package,7,30GB  /7 Days,,28.39,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-30GB
+360,North America,USA/Canada/Mexico,Data Package,10,30GB  /10 Days,,30.08,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-30GB
+361,North America,USA/Canada/Mexico,Data Package,15,30GB  /15 Days,,31.43,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-30GB
+362,North America,USA/Canada/Mexico,Data Package,30,30GB  /30 Days,,33.12,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-30GB
+363,North America,USA/Canada/Mexico,Data Package,3,50GB  /3 Days,,38.87,,,UTC+0,B-119-SC-AU-eO1-T-3D/60D-50GB
+364,North America,USA/Canada/Mexico,Data Package,5,50GB  /5 Days,,41.41,,,UTC+0,B-119-SC-AU-eO1-T-5D/60D-50GB
+365,North America,USA/Canada/Mexico,Data Package,7,50GB  /7 Days,,43.94,,,UTC+0,B-119-SC-AU-eO1-T-7D/60D-50GB
+366,North America,USA/Canada/Mexico,Data Package,10,50GB  /10 Days,,46.48,,,UTC+0,B-119-SC-AU-eO1-T-10D/60D-50GB
+367,North America,USA/Canada/Mexico,Data Package,15,50GB  /15 Days,,49.01,,,UTC+0,B-119-SC-AU-eO1-T-15D/60D-50GB
+368,North America,USA/Canada/Mexico,Data Package,30,50GB  /30 Days,,51.55,,,UTC+0,B-119-SC-AU-eO1-T-30D/60D-50GB
+,Remark:,,"1. According to the latest policy of Hong Kong, starting from March 1, 2022, SIM cards used in Hong Kong must complete real-name registration.",,,,,,,,
+,,,2. Tuge Technology will dynamically adjust the operators and network types according to the cooperation situation of local suppliers.,,,,,,,,
+,,,"3. This quotation sheet is only applicable to mobile phones, not MIFI and CPE.",,,,,,,,
+,,,4. The quotation is in USD and the settlement currency is USD.,,,,,,,,
+,,,"5. The price will fluctuate and change according to the price policy of the operators. Our company will notify 15 days in advance, the time of the placing order is the criterion.",,,,,,,,
+,,,6. The product is valid within 60 days of spontaneous delivery.,,,,,,,,
+,,,"7. This quotation is published on November 1, 2022 and shall be valid until the new quotation is published. (Finally, prices in the cloud communication platform are the criteria)",,,,,,,,

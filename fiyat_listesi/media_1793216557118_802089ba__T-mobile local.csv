@@ -1,0 +1,40 @@
+﻿Global eSIM Quote Sheet,,,,,,,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Operator,Wholesale Price USD,Activate Mode,Country or region,remark,Type,Recharge,Roaming/Local,ACTION POLICY,API Product code （Auto Activate）,API Product code （designated Date Activate）
+1,North America,USA,Daypass,7,Unlimited,T-mobile,6.19,designated Date Activate,,"Activation time: 12:00 noon in New York End time: 24:00 PM in New York Support local wireless calling and SMS Booking date: T+5 Unsubscribe is not supported after activation Please provide the following information in the system when placing an order: IMEI2 EID2 Support IOS,    Supports some Android phone models：Pixel 9 Pro Fold Google Pixel 9 Google Pixel 9 Pro Google Pixel 9 Pro XL Google Pixel 8a Google Pixel 8 Google Pixel 8 Pro Google Pixel Fold Google Pixel 7a Google Pixel 7 Pro Google Pixel 7 Google Pixel 6a Google Pixel 6 Pro 5G Google Pixel 6 5G Google Pixel 4a 5G Google Pixel 4 Google Pixel 4 XL Google moto g power - 2025Motorola Moto moto g - 2025Motorola Moto razr 2024Motorola Moto razr+ 2024Motorola Moto edge - 2024Motorola Moto moto g stylus 5G - 2024Motorola Moto moto g power 5G - 2024Motorola Moto moto g 5G - 2024Motorola Moto razr - 2023Motorola Moto moto g STYLUS 5G - 2023Motorola Moto razr+ 2023Motorola Moto razr 5GMotorola Moto Galaxy S25 Samsung Galaxy S25+ Samsung Galaxy S25 Ultra Samsung Galaxy A16 5G Samsung Galaxy Tab 10+ 5G Samsung Galaxy S24 FE Samsung Galaxy Z Fold6 Samsung Galaxy Z Flip6 Samsung Galaxy A35 5G Samsung Galaxy S24 Samsung Galaxy S24+ Samsung Galaxy S24 Ultra Samsung Galaxy S23 FE Samsung Galaxy Tab S9 FE 5G Samsung Galaxy Z Fold5 Samsung Galaxy Z Flip5 Samsung Galaxy A54 5G Samsung Galaxy S23 Ultra Samsung Galaxy S23+ Samsung Galaxy S23 Samsung Galaxy Z Fold4 Samsung Galaxy Z Flip4 Samsung Galaxy S22 Ultra Samsung Galaxy S22+ Samsung Galaxy S22 Samsung Galaxy S21 5G Samsung Galaxy S21+ 5G Samsung Galaxy S21 Ultra 5G Samsung Galaxy Note20 5G Samsung Galaxy Note20 Ultra 5G Samsung ﻿",US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-7D/60D-3GB
+2,North America,USA,Daypass,8,Unlimited,T-mobile,7.07,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-8D/60D-3GB
+3,North America,USA,Daypass,9,Unlimited,T-mobile,7.96,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-9D/60D-3GB
+4,North America,USA,Daypass,10,Unlimited,T-mobile,8.84,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-10D/60D-3GB
+5,North America,USA,Daypass,11,Unlimited,T-mobile,9.73,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-11D/60D-3GB
+6,North America,USA,Daypass,12,Unlimited,T-mobile,10.61,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-12D/60D-3GB
+7,North America,USA,Daypass,13,Unlimited,T-mobile,11.49,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-13D/60D-3GB
+8,North America,USA,Daypass,14,Unlimited,T-mobile,12.38,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-14D/60D-3GB
+9,North America,USA,Daypass,15,Unlimited,T-mobile,13.26,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-15D/60D-3GB
+10,North America,USA,Daypass,16,Unlimited,T-mobile,14.15,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-16D/60D-3GB
+11,North America,USA,Daypass,17,Unlimited,T-mobile,15.03,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-17D/60D-3GB
+12,North America,USA,Daypass,18,Unlimited,T-mobile,15.92,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-18D/60D-3GB
+13,North America,USA,Daypass,19,Unlimited,T-mobile,16.8,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-19D/60D-3GB
+14,North America,USA,Daypass,20,Unlimited,T-mobile,17.68,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-20D/60D-3GB
+15,North America,USA,Daypass,21,Unlimited,T-mobile,18.57,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-21D/60D-3GB
+16,North America,USA,Daypass,22,Unlimited,T-mobile,19.45,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-22D/60D-3GB
+17,North America,USA,Daypass,23,Unlimited,T-mobile,20.34,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-23D/60D-3GB
+18,North America,USA,Daypass,24,Unlimited,T-mobile,21.22,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-24D/60D-3GB
+19,North America,USA,Daypass,25,Unlimited,T-mobile,22.11,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-25D/60D-3GB
+20,North America,USA,Daypass,26,Unlimited,T-mobile,22.99,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-26D/60D-3GB
+21,North America,USA,Daypass,27,Unlimited,T-mobile,23.87,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-27D/60D-3GB
+22,North America,USA,Daypass,28,Unlimited,T-mobile,24.76,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-28D/60D-3GB
+23,North America,USA,Daypass,29,Unlimited,T-mobile,25.64,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-29D/60D-3GB
+24,North America,USA,Daypass,30,Unlimited,T-mobile,26.53,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-30D/60D-3GB
+25,North America,USA,Daypass,35,Unlimited,T-mobile,30.95,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-35D/60D-3GB
+26,North America,USA,Daypass,40,Unlimited,T-mobile,35.37,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-40D/60D-3GB
+27,North America,USA,Daypass,45,Unlimited,T-mobile,39.79,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-45D/60D-3GB
+28,North America,USA,Daypass,50,Unlimited,T-mobile,44.21,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-50D/60D-3GB
+29,North America,USA,Daypass,55,Unlimited,T-mobile,48.63,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-55D/60D-3GB
+30,North America,USA,Daypass,60,Unlimited,T-mobile,53.05,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-60D/60D-3GB
+31,North America,USA,Daypass,90,Unlimited,T-mobile,79.58,designated Date Activate,,,US-TMOBILE,,Local,UTC-4,,B-001-ES-ZD-TMO-D-90D/60D-3GB
+,Remark:,,"1. According to the latest policy of Hong Kong, starting from March 1, 2022, SIM cards used in Hong Kong must complete real-name registration.",,,,,,,,,,,,,
+,,,2. Tuge Technology will dynamically adjust the operators and network types according to the cooperation situation of local suppliers.,,,,,,,,,,,,,
+,,,"3. This quotation sheet is only applicable to mobile phones, not MIFI and CPE.",,,,,,,,,,,,,
+,,,4. The quotation is in USD and the settlement currency is USD.,,,,,,,,,,,,,
+,,,"5. The price will fluctuate and change according to the price policy of the operators. Our company will notify 15 days in advance, the time of the placing order is the criterion.",,,,,,,,,,,,,
+,,,6. The product is valid within 60 days of spontaneous delivery.,,,,,,,,,,,,,
+,,,"7. This quotation is published on November 1, 2022 and shall be valid until the new quotation is published. (Finally, prices in the cloud communication platform are the criteria)",,,,,,,,,,,,,

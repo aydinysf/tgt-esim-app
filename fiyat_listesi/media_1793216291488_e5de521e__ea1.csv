@@ -1,0 +1,518 @@
+﻿Global eSIM Quote Sheet,,,,,,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Operator,Wholesale Price USD,Activate Mode,Country or region,remark,Type,Recharge,Roaming/Local,ACTION POLICY,API Product code （Auto Activate）
+1,North America,Panama,Daypass,1,"500M high-speed data per day, down to 384kbps",C&W,1.73,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-1D/60D-500M
+2,North America,Panama,Daypass,2,"500M high-speed data per day, down to 384kbps",C&W,2.48,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-2D/60D-500M
+3,North America,Panama,Daypass,3,"500M high-speed data per day, down to 384kbps",C&W,3.6,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-3D/60D-500M
+4,North America,Panama,Daypass,4,"500M high-speed data per day, down to 384kbps",C&W,4.72,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-4D/60D-500M
+5,North America,Panama,Daypass,5,"500M high-speed data per day, down to 384kbps",C&W,5.84,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-5D/60D-500M
+6,North America,Panama,Daypass,6,"500M high-speed data per day, down to 384kbps",C&W,6.97,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-6D/60D-500M
+7,North America,Panama,Daypass,7,"500M high-speed data per day, down to 384kbps",C&W,8.09,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-7D/60D-500M
+8,North America,Panama,Daypass,8,"500M high-speed data per day, down to 384kbps",C&W,9.21,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-8D/60D-500M
+9,North America,Panama,Daypass,9,"500M high-speed data per day, down to 384kbps",C&W,10.34,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-9D/60D-500M
+10,North America,Panama,Daypass,10,"500M high-speed data per day, down to 384kbps",C&W,11.46,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-10D/60D-500M
+11,North America,Panama,Daypass,11,"500M high-speed data per day, down to 384kbps",C&W,12.58,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-11D/60D-500M
+12,North America,Panama,Daypass,12,"500M high-speed data per day, down to 384kbps",C&W,13.7,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-12D/60D-500M
+13,North America,Panama,Daypass,13,"500M high-speed data per day, down to 384kbps",C&W,14.83,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-13D/60D-500M
+14,North America,Panama,Daypass,14,"500M high-speed data per day, down to 384kbps",C&W,15.95,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-14D/60D-500M
+15,North America,Panama,Daypass,15,"500M high-speed data per day, down to 384kbps",C&W,17.07,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-15D/60D-500M
+16,North America,Panama,Daypass,16,"500M high-speed data per day, down to 384kbps",C&W,18.19,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-16D/60D-500M
+17,North America,Panama,Daypass,17,"500M high-speed data per day, down to 384kbps",C&W,19.32,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-17D/60D-500M
+18,North America,Panama,Daypass,18,"500M high-speed data per day, down to 384kbps",C&W,20.44,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-18D/60D-500M
+19,North America,Panama,Daypass,19,"500M high-speed data per day, down to 384kbps",C&W,21.56,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-19D/60D-500M
+20,North America,Panama,Daypass,20,"500M high-speed data per day, down to 384kbps",C&W,22.68,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-20D/60D-500M
+21,North America,Panama,Daypass,21,"500M high-speed data per day, down to 384kbps",C&W,23.81,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-21D/60D-500M
+22,North America,Panama,Daypass,22,"500M high-speed data per day, down to 384kbps",C&W,24.93,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-22D/60D-500M
+23,North America,Panama,Daypass,23,"500M high-speed data per day, down to 384kbps",C&W,26.05,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-23D/60D-500M
+24,North America,Panama,Daypass,24,"500M high-speed data per day, down to 384kbps",C&W,27.17,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-24D/60D-500M
+25,North America,Panama,Daypass,25,"500M high-speed data per day, down to 384kbps",C&W,28.3,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-25D/60D-500M
+26,North America,Panama,Daypass,26,"500M high-speed data per day, down to 384kbps",C&W,29.42,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-26D/60D-500M
+27,North America,Panama,Daypass,27,"500M high-speed data per day, down to 384kbps",C&W,30.54,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-27D/60D-500M
+28,North America,Panama,Daypass,28,"500M high-speed data per day, down to 384kbps",C&W,31.67,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-28D/60D-500M
+29,North America,Panama,Daypass,29,"500M high-speed data per day, down to 384kbps",C&W,32.79,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-29D/60D-500M
+30,North America,Panama,Daypass,30,"500M high-speed data per day, down to 384kbps",C&W,33.91,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-30D/60D-500M
+31,North America,Panama,Daypass,1,"1GB high-speed data per day, down to 384kbps",C&W,2.48,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-1D/60D-1GB
+32,North America,Panama,Daypass,2,"1GB high-speed data per day, down to 384kbps",C&W,3.72,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-2D/60D-1GB
+33,North America,Panama,Daypass,3,"1GB high-speed data per day, down to 384kbps",C&W,5.47,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-3D/60D-1GB
+34,North America,Panama,Daypass,4,"1GB high-speed data per day, down to 384kbps",C&W,7.22,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-4D/60D-1GB
+35,North America,Panama,Daypass,5,"1GB high-speed data per day, down to 384kbps",C&W,8.96,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-5D/60D-1GB
+36,North America,Panama,Daypass,6,"1GB high-speed data per day, down to 384kbps",C&W,10.71,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-6D/60D-1GB
+37,North America,Panama,Daypass,7,"1GB high-speed data per day, down to 384kbps",C&W,12.46,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-7D/60D-1GB
+38,North America,Panama,Daypass,8,"1GB high-speed data per day, down to 384kbps",C&W,14.2,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-8D/60D-1GB
+39,North America,Panama,Daypass,9,"1GB high-speed data per day, down to 384kbps",C&W,15.95,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-9D/60D-1GB
+40,North America,Panama,Daypass,10,"1GB high-speed data per day, down to 384kbps",C&W,17.69,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-10D/60D-1GB
+41,North America,Panama,Daypass,11,"1GB high-speed data per day, down to 384kbps",C&W,19.44,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-11D/60D-1GB
+42,North America,Panama,Daypass,12,"1GB high-speed data per day, down to 384kbps",C&W,21.19,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-12D/60D-1GB
+43,North America,Panama,Daypass,13,"1GB high-speed data per day, down to 384kbps",C&W,22.93,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-13D/60D-1GB
+44,North America,Panama,Daypass,14,"1GB high-speed data per day, down to 384kbps",C&W,24.68,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-14D/60D-1GB
+45,North America,Panama,Daypass,15,"1GB high-speed data per day, down to 384kbps",C&W,26.43,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-15D/60D-1GB
+46,North America,Panama,Daypass,16,"1GB high-speed data per day, down to 384kbps",C&W,28.17,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-16D/60D-1GB
+47,North America,Panama,Daypass,17,"1GB high-speed data per day, down to 384kbps",C&W,29.92,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-17D/60D-1GB
+48,North America,Panama,Daypass,18,"1GB high-speed data per day, down to 384kbps",C&W,31.67,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-18D/60D-1GB
+49,North America,Panama,Daypass,19,"1GB high-speed data per day, down to 384kbps",C&W,33.41,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-19D/60D-1GB
+50,North America,Panama,Daypass,20,"1GB high-speed data per day, down to 384kbps",C&W,35.16,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-20D/60D-1GB
+51,North America,Panama,Daypass,21,"1GB high-speed data per day, down to 384kbps",C&W,36.9,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-21D/60D-1GB
+52,North America,Panama,Daypass,22,"1GB high-speed data per day, down to 384kbps",C&W,38.65,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-22D/60D-1GB
+53,North America,Panama,Daypass,23,"1GB high-speed data per day, down to 384kbps",C&W,40.4,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-23D/60D-1GB
+54,North America,Panama,Daypass,24,"1GB high-speed data per day, down to 384kbps",C&W,42.14,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-24D/60D-1GB
+55,North America,Panama,Daypass,25,"1GB high-speed data per day, down to 384kbps",C&W,43.89,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-25D/60D-1GB
+56,North America,Panama,Daypass,26,"1GB high-speed data per day, down to 384kbps",C&W,45.64,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-26D/60D-1GB
+57,North America,Panama,Daypass,27,"1GB high-speed data per day, down to 384kbps",C&W,47.38,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-27D/60D-1GB
+58,North America,Panama,Daypass,28,"1GB high-speed data per day, down to 384kbps",C&W,49.13,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-28D/60D-1GB
+59,North America,Panama,Daypass,29,"1GB high-speed data per day, down to 384kbps",C&W,50.87,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-29D/60D-1GB
+60,North America,Panama,Daypass,30,"1GB high-speed data per day, down to 384kbps",C&W,52.62,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-30D/60D-1GB
+61,North America,Panama,Daypass,1,"2GB high-speed data per day, down to 384kbps",C&W,4.47,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-1D/60D-2GB
+62,North America,Panama,Daypass,2,"2GB high-speed data per day, down to 384kbps",C&W,7.72,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-2D/60D-2GB
+63,North America,Panama,Daypass,3,"2GB high-speed data per day, down to 384kbps",C&W,11.46,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-3D/60D-2GB
+64,North America,Panama,Daypass,4,"2GB high-speed data per day, down to 384kbps",C&W,15.2,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-4D/60D-2GB
+65,North America,Panama,Daypass,5,"2GB high-speed data per day, down to 384kbps",C&W,18.94,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-5D/60D-2GB
+66,North America,Panama,Daypass,6,"2GB high-speed data per day, down to 384kbps",C&W,22.68,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-6D/60D-2GB
+67,North America,Panama,Daypass,7,"2GB high-speed data per day, down to 384kbps",C&W,26.43,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-7D/60D-2GB
+68,North America,Panama,Daypass,8,"2GB high-speed data per day, down to 384kbps",C&W,30.17,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-8D/60D-2GB
+69,North America,Panama,Daypass,9,"2GB high-speed data per day, down to 384kbps",C&W,33.91,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-9D/60D-2GB
+70,North America,Panama,Daypass,10,"2GB high-speed data per day, down to 384kbps",C&W,37.65,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-10D/60D-2GB
+71,North America,Panama,Daypass,11,"2GB high-speed data per day, down to 384kbps",C&W,41.39,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-11D/60D-2GB
+72,North America,Panama,Daypass,12,"2GB high-speed data per day, down to 384kbps",C&W,45.14,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-12D/60D-2GB
+73,North America,Panama,Daypass,13,"2GB high-speed data per day, down to 384kbps",C&W,48.88,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-13D/60D-2GB
+74,North America,Panama,Daypass,14,"2GB high-speed data per day, down to 384kbps",C&W,52.62,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-14D/60D-2GB
+75,North America,Panama,Daypass,15,"2GB high-speed data per day, down to 384kbps",C&W,56.36,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-15D/60D-2GB
+76,North America,Panama,Daypass,16,"2GB high-speed data per day, down to 384kbps",C&W,60.11,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-16D/60D-2GB
+77,North America,Panama,Daypass,17,"2GB high-speed data per day, down to 384kbps",C&W,63.85,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-17D/60D-2GB
+78,North America,Panama,Daypass,18,"2GB high-speed data per day, down to 384kbps",C&W,67.59,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-18D/60D-2GB
+79,North America,Panama,Daypass,19,"2GB high-speed data per day, down to 384kbps",C&W,71.33,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-19D/60D-2GB
+80,North America,Panama,Daypass,20,"2GB high-speed data per day, down to 384kbps",C&W,75.07,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-20D/60D-2GB
+81,North America,Panama,Daypass,21,"2GB high-speed data per day, down to 384kbps",C&W,78.82,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-21D/60D-2GB
+82,North America,Panama,Daypass,22,"2GB high-speed data per day, down to 384kbps",C&W,82.56,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-22D/60D-2GB
+83,North America,Panama,Daypass,23,"2GB high-speed data per day, down to 384kbps",C&W,86.3,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-23D/60D-2GB
+84,North America,Panama,Daypass,24,"2GB high-speed data per day, down to 384kbps",C&W,90.04,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-24D/60D-2GB
+85,North America,Panama,Daypass,25,"2GB high-speed data per day, down to 384kbps",C&W,93.78,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-25D/60D-2GB
+86,North America,Panama,Daypass,26,"2GB high-speed data per day, down to 384kbps",C&W,97.53,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-26D/60D-2GB
+87,North America,Panama,Daypass,27,"2GB high-speed data per day, down to 384kbps",C&W,101.27,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-27D/60D-2GB
+88,North America,Panama,Daypass,28,"2GB high-speed data per day, down to 384kbps",C&W,105.01,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-28D/60D-2GB
+89,North America,Panama,Daypass,29,"2GB high-speed data per day, down to 384kbps",C&W,108.75,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-29D/60D-2GB
+90,North America,Panama,Daypass,30,"2GB high-speed data per day, down to 384kbps",C&W,112.49,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-30D/60D-2GB
+91,North America,Panama,Daypass,1,"3GB high-speed data per day, down to 384kbps",C&W,5.72,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-1D/60D-3GB
+92,North America,Panama,Daypass,2,"3GB high-speed data per day, down to 384kbps",C&W,10.21,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-2D/60D-3GB
+93,North America,Panama,Daypass,3,"3GB high-speed data per day, down to 384kbps",C&W,15.2,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-3D/60D-3GB
+94,North America,Panama,Daypass,4,"3GB high-speed data per day, down to 384kbps",C&W,20.19,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-4D/60D-3GB
+95,North America,Panama,Daypass,5,"3GB high-speed data per day, down to 384kbps",C&W,25.18,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-5D/60D-3GB
+96,North America,Panama,Daypass,6,"3GB high-speed data per day, down to 384kbps",C&W,30.17,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-6D/60D-3GB
+97,North America,Panama,Daypass,7,"3GB high-speed data per day, down to 384kbps",C&W,35.16,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-7D/60D-3GB
+98,North America,Panama,Daypass,8,"3GB high-speed data per day, down to 384kbps",C&W,40.15,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-8D/60D-3GB
+99,North America,Panama,Daypass,9,"3GB high-speed data per day, down to 384kbps",C&W,45.14,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-9D/60D-3GB
+100,North America,Panama,Daypass,10,"3GB high-speed data per day, down to 384kbps",C&W,50.13,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-10D/60D-3GB
+101,North America,Panama,Daypass,11,"3GB high-speed data per day, down to 384kbps",C&W,55.12,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-11D/60D-3GB
+102,North America,Panama,Daypass,12,"3GB high-speed data per day, down to 384kbps",C&W,60.11,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-12D/60D-3GB
+103,North America,Panama,Daypass,13,"3GB high-speed data per day, down to 384kbps",C&W,65.09,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-13D/60D-3GB
+104,North America,Panama,Daypass,14,"3GB high-speed data per day, down to 384kbps",C&W,70.08,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-14D/60D-3GB
+105,North America,Panama,Daypass,15,"3GB high-speed data per day, down to 384kbps",C&W,75.07,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-15D/60D-3GB
+106,North America,Panama,Daypass,16,"3GB high-speed data per day, down to 384kbps",C&W,80.06,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-16D/60D-3GB
+107,North America,Panama,Daypass,17,"3GB high-speed data per day, down to 384kbps",C&W,85.05,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-17D/60D-3GB
+108,North America,Panama,Daypass,18,"3GB high-speed data per day, down to 384kbps",C&W,90.04,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-18D/60D-3GB
+109,North America,Panama,Daypass,19,"3GB high-speed data per day, down to 384kbps",C&W,95.03,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-19D/60D-3GB
+110,North America,Panama,Daypass,20,"3GB high-speed data per day, down to 384kbps",C&W,100.02,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-20D/60D-3GB
+111,North America,Panama,Daypass,21,"3GB high-speed data per day, down to 384kbps",C&W,105.01,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-21D/60D-3GB
+112,North America,Panama,Daypass,22,"3GB high-speed data per day, down to 384kbps",C&W,110,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-22D/60D-3GB
+113,North America,Panama,Daypass,23,"3GB high-speed data per day, down to 384kbps",C&W,114.99,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-23D/60D-3GB
+114,North America,Panama,Daypass,24,"3GB high-speed data per day, down to 384kbps",C&W,119.98,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-24D/60D-3GB
+115,North America,Panama,Daypass,25,"3GB high-speed data per day, down to 384kbps",C&W,124.97,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-25D/60D-3GB
+116,North America,Panama,Daypass,26,"3GB high-speed data per day, down to 384kbps",C&W,129.96,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-26D/60D-3GB
+117,North America,Panama,Daypass,27,"3GB high-speed data per day, down to 384kbps",C&W,134.95,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-27D/60D-3GB
+118,North America,Panama,Daypass,28,"3GB high-speed data per day, down to 384kbps",C&W,139.94,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-28D/60D-3GB
+119,North America,Panama,Daypass,29,"3GB high-speed data per day, down to 384kbps",C&W,144.93,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-29D/60D-3GB
+120,North America,Panama,Daypass,30,"3GB high-speed data per day, down to 384kbps",C&W,149.92,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-ea1-D-30D/60D-3GB
+121,North America,Panama,Data Package,3,1GB /3 Days,C&W,2.73,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-1GB
+122,North America,Panama,Data Package,5,1GB /5 Days,C&W,2.98,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-1GB
+123,North America,Panama,Data Package,7,1GB /7 Days,C&W,3.23,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-1GB
+124,North America,Panama,Data Package,10,1GB /10 Days,C&W,3.47,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-1GB
+125,North America,Panama,Data Package,15,1GB /15 Days,C&W,3.72,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-1GB
+126,North America,Panama,Data Package,30,1GB /30 Days,C&W,3.97,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-1GB
+127,North America,Panama,Data Package,3,3GB /3 Days,C&W,6.47,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-3GB
+128,North America,Panama,Data Package,5,3GB /5 Days,C&W,6.97,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-3GB
+129,North America,Panama,Data Package,7,3GB /7 Days,C&W,7.22,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-3GB
+130,North America,Panama,Data Package,10,3GB /10 Days,C&W,7.47,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-3GB
+131,North America,Panama,Data Package,15,3GB /15 Days,C&W,7.72,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-3GB
+132,North America,Panama,Data Package,30,3GB /30 Days,C&W,7.97,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-3GB
+133,North America,Panama,Data Package,3,5GB /3 Days,C&W,10.21,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-5GB
+134,North America,Panama,Data Package,5,5GB /5 Days,C&W,10.71,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-5GB
+135,North America,Panama,Data Package,7,5GB /7 Days,C&W,11.21,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-5GB
+136,North America,Panama,Data Package,10,5GB /10 Days,C&W,11.71,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-5GB
+137,North America,Panama,Data Package,15,5GB /15 Days,C&W,12.21,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-5GB
+138,North America,Panama,Data Package,30,5GB /30 Days,C&W,12.71,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-5GB
+139,North America,Panama,Data Package,3,10GB /3 Days,C&W,15.2,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-10GB
+140,North America,Panama,Data Package,5,10GB /5 Days,C&W,16.2,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-10GB
+141,North America,Panama,Data Package,7,10GB /7 Days,C&W,17.2,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-10GB
+142,North America,Panama,Data Package,10,10GB /10 Days,C&W,18.19,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-10GB
+143,North America,Panama,Data Package,15,10GB /15 Days,C&W,19.19,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-10GB
+144,North America,Panama,Data Package,30,10GB /30 Days,C&W,20.19,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-10GB
+145,North America,Panama,Data Package,3,20GB /3 Days,C&W,32.66,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-20GB
+146,North America,Panama,Data Package,5,20GB /5 Days,C&W,35.16,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-20GB
+147,North America,Panama,Data Package,7,20GB /7 Days,C&W,37.65,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-20GB
+148,North America,Panama,Data Package,10,20GB /10 Days,C&W,40.15,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-20GB
+149,North America,Panama,Data Package,15,20GB /15 Days,C&W,42.64,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-20GB
+150,North America,Panama,Data Package,30,20GB /30 Days,C&W,45.14,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-20GB
+151,North America,Panama,Data Package,3,30GB /3 Days,C&W,50.13,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-30GB
+152,North America,Panama,Data Package,5,30GB /5 Days,C&W,52.62,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-30GB
+153,North America,Panama,Data Package,7,30GB /7 Days,C&W,55.12,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-30GB
+154,North America,Panama,Data Package,10,30GB /10 Days,C&W,57.61,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-30GB
+155,North America,Panama,Data Package,15,30GB /15 Days,C&W,60.11,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-30GB
+156,North America,Panama,Data Package,30,30GB /30 Days,C&W,62.6,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-30GB
+157,North America,Panama,Data Package,3,50GB /3 Days,C&W,75.07,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-3D/60D-50GB
+158,North America,Panama,Data Package,5,50GB /5 Days,C&W,80.06,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-5D/60D-50GB
+159,North America,Panama,Data Package,7,50GB /7 Days,C&W,85.05,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-7D/60D-50GB
+160,North America,Panama,Data Package,10,50GB /10 Days,C&W,90.04,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-10D/60D-50GB
+161,North America,Panama,Data Package,15,50GB /15 Days,C&W,95.03,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-15D/60D-50GB
+162,North America,Panama,Data Package,30,50GB /30 Days,C&W,100.02,Auto Activate,,,ea1,Y,,UTC+0,F-007-ES-AU-T-ea1-30D/60D-50GB
+163,North America,Dominican Republic,Daypass,1,"500M high-speed data per day, down to 384kbps",Claro,1.27,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-1D/60D-500M
+164,North America,Dominican Republic,Daypass,2,"500M high-speed data per day, down to 384kbps",Claro,1.79,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-2D/60D-500M
+165,North America,Dominican Republic,Daypass,3,"500M high-speed data per day, down to 384kbps",Claro,2.58,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-3D/60D-500M
+166,North America,Dominican Republic,Daypass,4,"500M high-speed data per day, down to 384kbps",Claro,3.36,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-4D/60D-500M
+167,North America,Dominican Republic,Daypass,5,"500M high-speed data per day, down to 384kbps",Claro,4.14,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-5D/60D-500M
+168,North America,Dominican Republic,Daypass,6,"500M high-speed data per day, down to 384kbps",Claro,4.92,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-6D/60D-500M
+169,North America,Dominican Republic,Daypass,7,"500M high-speed data per day, down to 384kbps",Claro,5.7,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-7D/60D-500M
+170,North America,Dominican Republic,Daypass,8,"500M high-speed data per day, down to 384kbps",Claro,6.48,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-8D/60D-500M
+171,North America,Dominican Republic,Daypass,9,"500M high-speed data per day, down to 384kbps",Claro,7.27,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-9D/60D-500M
+172,North America,Dominican Republic,Daypass,10,"500M high-speed data per day, down to 384kbps",Claro,8.05,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-10D/60D-500M
+173,North America,Dominican Republic,Daypass,11,"500M high-speed data per day, down to 384kbps",Claro,8.83,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-11D/60D-500M
+174,North America,Dominican Republic,Daypass,12,"500M high-speed data per day, down to 384kbps",Claro,9.61,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-12D/60D-500M
+175,North America,Dominican Republic,Daypass,13,"500M high-speed data per day, down to 384kbps",Claro,10.39,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-13D/60D-500M
+176,North America,Dominican Republic,Daypass,14,"500M high-speed data per day, down to 384kbps",Claro,11.17,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-14D/60D-500M
+177,North America,Dominican Republic,Daypass,15,"500M high-speed data per day, down to 384kbps",Claro,11.96,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-15D/60D-500M
+178,North America,Dominican Republic,Daypass,16,"500M high-speed data per day, down to 384kbps",Claro,12.74,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-16D/60D-500M
+179,North America,Dominican Republic,Daypass,17,"500M high-speed data per day, down to 384kbps",Claro,13.52,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-17D/60D-500M
+180,North America,Dominican Republic,Daypass,18,"500M high-speed data per day, down to 384kbps",Claro,14.3,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-18D/60D-500M
+181,North America,Dominican Republic,Daypass,19,"500M high-speed data per day, down to 384kbps",Claro,15.08,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-19D/60D-500M
+182,North America,Dominican Republic,Daypass,20,"500M high-speed data per day, down to 384kbps",Claro,15.86,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-20D/60D-500M
+183,North America,Dominican Republic,Daypass,21,"500M high-speed data per day, down to 384kbps",Claro,16.64,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-21D/60D-500M
+184,North America,Dominican Republic,Daypass,22,"500M high-speed data per day, down to 384kbps",Claro,17.43,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-22D/60D-500M
+185,North America,Dominican Republic,Daypass,23,"500M high-speed data per day, down to 384kbps",Claro,18.21,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-23D/60D-500M
+186,North America,Dominican Republic,Daypass,24,"500M high-speed data per day, down to 384kbps",Claro,18.99,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-24D/60D-500M
+187,North America,Dominican Republic,Daypass,25,"500M high-speed data per day, down to 384kbps",Claro,19.77,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-25D/60D-500M
+188,North America,Dominican Republic,Daypass,26,"500M high-speed data per day, down to 384kbps",Claro,20.55,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-26D/60D-500M
+189,North America,Dominican Republic,Daypass,27,"500M high-speed data per day, down to 384kbps",Claro,21.33,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-27D/60D-500M
+190,North America,Dominican Republic,Daypass,28,"500M high-speed data per day, down to 384kbps",Claro,22.12,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-28D/60D-500M
+191,North America,Dominican Republic,Daypass,29,"500M high-speed data per day, down to 384kbps",Claro,22.9,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-29D/60D-500M
+192,North America,Dominican Republic,Daypass,30,"500M high-speed data per day, down to 384kbps",Claro,23.68,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-30D/60D-500M
+193,North America,Dominican Republic,Daypass,1,"1GB high-speed data per day, down to 384kbps",Claro,1.79,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-1D/60D-1GB
+194,North America,Dominican Republic,Daypass,2,"1GB high-speed data per day, down to 384kbps",Claro,2.66,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-2D/60D-1GB
+195,North America,Dominican Republic,Daypass,3,"1GB high-speed data per day, down to 384kbps",Claro,3.88,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-3D/60D-1GB
+196,North America,Dominican Republic,Daypass,4,"1GB high-speed data per day, down to 384kbps",Claro,5.09,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-4D/60D-1GB
+197,North America,Dominican Republic,Daypass,5,"1GB high-speed data per day, down to 384kbps",Claro,6.31,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-5D/60D-1GB
+198,North America,Dominican Republic,Daypass,6,"1GB high-speed data per day, down to 384kbps",Claro,7.53,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-6D/60D-1GB
+199,North America,Dominican Republic,Daypass,7,"1GB high-speed data per day, down to 384kbps",Claro,8.74,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-7D/60D-1GB
+200,North America,Dominican Republic,Daypass,8,"1GB high-speed data per day, down to 384kbps",Claro,9.96,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-8D/60D-1GB
+201,North America,Dominican Republic,Daypass,9,"1GB high-speed data per day, down to 384kbps",Claro,11.17,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-9D/60D-1GB
+202,North America,Dominican Republic,Daypass,10,"1GB high-speed data per day, down to 384kbps",Claro,12.39,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-10D/60D-1GB
+203,North America,Dominican Republic,Daypass,11,"1GB high-speed data per day, down to 384kbps",Claro,13.61,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-11D/60D-1GB
+204,North America,Dominican Republic,Daypass,12,"1GB high-speed data per day, down to 384kbps",Claro,14.82,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-12D/60D-1GB
+205,North America,Dominican Republic,Daypass,13,"1GB high-speed data per day, down to 384kbps",Claro,16.04,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-13D/60D-1GB
+206,North America,Dominican Republic,Daypass,14,"1GB high-speed data per day, down to 384kbps",Claro,17.25,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-14D/60D-1GB
+207,North America,Dominican Republic,Daypass,15,"1GB high-speed data per day, down to 384kbps",Claro,18.47,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-15D/60D-1GB
+208,North America,Dominican Republic,Daypass,16,"1GB high-speed data per day, down to 384kbps",Claro,19.68,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-16D/60D-1GB
+209,North America,Dominican Republic,Daypass,17,"1GB high-speed data per day, down to 384kbps",Claro,20.9,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-17D/60D-1GB
+210,North America,Dominican Republic,Daypass,18,"1GB high-speed data per day, down to 384kbps",Claro,22.12,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-18D/60D-1GB
+211,North America,Dominican Republic,Daypass,19,"1GB high-speed data per day, down to 384kbps",Claro,23.33,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-19D/60D-1GB
+212,North America,Dominican Republic,Daypass,20,"1GB high-speed data per day, down to 384kbps",Claro,24.55,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-20D/60D-1GB
+213,North America,Dominican Republic,Daypass,21,"1GB high-speed data per day, down to 384kbps",Claro,25.76,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-21D/60D-1GB
+214,North America,Dominican Republic,Daypass,22,"1GB high-speed data per day, down to 384kbps",Claro,26.98,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-22D/60D-1GB
+215,North America,Dominican Republic,Daypass,23,"1GB high-speed data per day, down to 384kbps",Claro,28.19,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-23D/60D-1GB
+216,North America,Dominican Republic,Daypass,24,"1GB high-speed data per day, down to 384kbps",Claro,29.41,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-24D/60D-1GB
+217,North America,Dominican Republic,Daypass,25,"1GB high-speed data per day, down to 384kbps",Claro,30.63,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-25D/60D-1GB
+218,North America,Dominican Republic,Daypass,26,"1GB high-speed data per day, down to 384kbps",Claro,31.84,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-26D/60D-1GB
+219,North America,Dominican Republic,Daypass,27,"1GB high-speed data per day, down to 384kbps",Claro,33.06,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-27D/60D-1GB
+220,North America,Dominican Republic,Daypass,28,"1GB high-speed data per day, down to 384kbps",Claro,34.27,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-28D/60D-1GB
+221,North America,Dominican Republic,Daypass,29,"1GB high-speed data per day, down to 384kbps",Claro,35.49,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-29D/60D-1GB
+222,North America,Dominican Republic,Daypass,30,"1GB high-speed data per day, down to 384kbps",Claro,36.71,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-30D/60D-1GB
+223,North America,Dominican Republic,Daypass,1,"2GB high-speed data per day, down to 384kbps",Claro,3.18,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-1D/60D-2GB
+224,North America,Dominican Republic,Daypass,2,"2GB high-speed data per day, down to 384kbps",Claro,5.44,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-2D/60D-2GB
+225,North America,Dominican Republic,Daypass,3,"2GB high-speed data per day, down to 384kbps",Claro,8.05,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-3D/60D-2GB
+226,North America,Dominican Republic,Daypass,4,"2GB high-speed data per day, down to 384kbps",Claro,10.65,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-4D/60D-2GB
+227,North America,Dominican Republic,Daypass,5,"2GB high-speed data per day, down to 384kbps",Claro,13.26,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-5D/60D-2GB
+228,North America,Dominican Republic,Daypass,6,"2GB high-speed data per day, down to 384kbps",Claro,15.86,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-6D/60D-2GB
+229,North America,Dominican Republic,Daypass,7,"2GB high-speed data per day, down to 384kbps",Claro,18.47,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-7D/60D-2GB
+230,North America,Dominican Republic,Daypass,8,"2GB high-speed data per day, down to 384kbps",Claro,21.07,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-8D/60D-2GB
+231,North America,Dominican Republic,Daypass,9,"2GB high-speed data per day, down to 384kbps",Claro,23.68,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-9D/60D-2GB
+232,North America,Dominican Republic,Daypass,10,"2GB high-speed data per day, down to 384kbps",Claro,26.28,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-10D/60D-2GB
+233,North America,Dominican Republic,Daypass,11,"2GB high-speed data per day, down to 384kbps",Claro,28.89,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-11D/60D-2GB
+234,North America,Dominican Republic,Daypass,12,"2GB high-speed data per day, down to 384kbps",Claro,31.49,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-12D/60D-2GB
+235,North America,Dominican Republic,Daypass,13,"2GB high-speed data per day, down to 384kbps",Claro,34.1,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-13D/60D-2GB
+236,North America,Dominican Republic,Daypass,14,"2GB high-speed data per day, down to 384kbps",Claro,36.71,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-14D/60D-2GB
+237,North America,Dominican Republic,Daypass,15,"2GB high-speed data per day, down to 384kbps",Claro,39.31,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-15D/60D-2GB
+238,North America,Dominican Republic,Daypass,16,"2GB high-speed data per day, down to 384kbps",Claro,41.92,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-16D/60D-2GB
+239,North America,Dominican Republic,Daypass,17,"2GB high-speed data per day, down to 384kbps",Claro,44.52,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-17D/60D-2GB
+240,North America,Dominican Republic,Daypass,18,"2GB high-speed data per day, down to 384kbps",Claro,47.13,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-18D/60D-2GB
+241,North America,Dominican Republic,Daypass,19,"2GB high-speed data per day, down to 384kbps",Claro,49.73,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-19D/60D-2GB
+242,North America,Dominican Republic,Daypass,20,"2GB high-speed data per day, down to 384kbps",Claro,52.34,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-20D/60D-2GB
+243,North America,Dominican Republic,Daypass,21,"2GB high-speed data per day, down to 384kbps",Claro,54.94,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-21D/60D-2GB
+244,North America,Dominican Republic,Daypass,22,"2GB high-speed data per day, down to 384kbps",Claro,57.55,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-22D/60D-2GB
+245,North America,Dominican Republic,Daypass,23,"2GB high-speed data per day, down to 384kbps",Claro,60.15,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-23D/60D-2GB
+246,North America,Dominican Republic,Daypass,24,"2GB high-speed data per day, down to 384kbps",Claro,62.76,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-24D/60D-2GB
+247,North America,Dominican Republic,Daypass,25,"2GB high-speed data per day, down to 384kbps",Claro,65.36,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-25D/60D-2GB
+248,North America,Dominican Republic,Daypass,26,"2GB high-speed data per day, down to 384kbps",Claro,67.97,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-26D/60D-2GB
+249,North America,Dominican Republic,Daypass,27,"2GB high-speed data per day, down to 384kbps",Claro,70.57,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-27D/60D-2GB
+250,North America,Dominican Republic,Daypass,28,"2GB high-speed data per day, down to 384kbps",Claro,73.18,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-28D/60D-2GB
+251,North America,Dominican Republic,Daypass,29,"2GB high-speed data per day, down to 384kbps",Claro,75.78,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-29D/60D-2GB
+252,North America,Dominican Republic,Daypass,30,"2GB high-speed data per day, down to 384kbps",Claro,78.39,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-30D/60D-2GB
+253,North America,Dominican Republic,Daypass,1,"3GB high-speed data per day, down to 384kbps",Claro,4.05,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-1D/60D-3GB
+254,North America,Dominican Republic,Daypass,2,"3GB high-speed data per day, down to 384kbps",Claro,7.18,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-2D/60D-3GB
+255,North America,Dominican Republic,Daypass,3,"3GB high-speed data per day, down to 384kbps",Claro,10.65,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-3D/60D-3GB
+256,North America,Dominican Republic,Daypass,4,"3GB high-speed data per day, down to 384kbps",Claro,14.13,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-4D/60D-3GB
+257,North America,Dominican Republic,Daypass,5,"3GB high-speed data per day, down to 384kbps",Claro,17.6,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-5D/60D-3GB
+258,North America,Dominican Republic,Daypass,6,"3GB high-speed data per day, down to 384kbps",Claro,21.07,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-6D/60D-3GB
+259,North America,Dominican Republic,Daypass,7,"3GB high-speed data per day, down to 384kbps",Claro,24.55,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-7D/60D-3GB
+260,North America,Dominican Republic,Daypass,8,"3GB high-speed data per day, down to 384kbps",Claro,28.02,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-8D/60D-3GB
+261,North America,Dominican Republic,Daypass,9,"3GB high-speed data per day, down to 384kbps",Claro,31.49,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-9D/60D-3GB
+262,North America,Dominican Republic,Daypass,10,"3GB high-speed data per day, down to 384kbps",Claro,34.97,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-10D/60D-3GB
+263,North America,Dominican Republic,Daypass,11,"3GB high-speed data per day, down to 384kbps",Claro,38.44,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-11D/60D-3GB
+264,North America,Dominican Republic,Daypass,12,"3GB high-speed data per day, down to 384kbps",Claro,41.92,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-12D/60D-3GB
+265,North America,Dominican Republic,Daypass,13,"3GB high-speed data per day, down to 384kbps",Claro,45.39,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-13D/60D-3GB
+266,North America,Dominican Republic,Daypass,14,"3GB high-speed data per day, down to 384kbps",Claro,48.86,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-14D/60D-3GB
+267,North America,Dominican Republic,Daypass,15,"3GB high-speed data per day, down to 384kbps",Claro,52.34,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-15D/60D-3GB
+268,North America,Dominican Republic,Daypass,16,"3GB high-speed data per day, down to 384kbps",Claro,55.81,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-16D/60D-3GB
+269,North America,Dominican Republic,Daypass,17,"3GB high-speed data per day, down to 384kbps",Claro,59.28,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-17D/60D-3GB
+270,North America,Dominican Republic,Daypass,18,"3GB high-speed data per day, down to 384kbps",Claro,62.76,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-18D/60D-3GB
+271,North America,Dominican Republic,Daypass,19,"3GB high-speed data per day, down to 384kbps",Claro,66.23,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-19D/60D-3GB
+272,North America,Dominican Republic,Daypass,20,"3GB high-speed data per day, down to 384kbps",Claro,69.71,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-20D/60D-3GB
+273,North America,Dominican Republic,Daypass,21,"3GB high-speed data per day, down to 384kbps",Claro,73.18,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-21D/60D-3GB
+274,North America,Dominican Republic,Daypass,22,"3GB high-speed data per day, down to 384kbps",Claro,76.65,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-22D/60D-3GB
+275,North America,Dominican Republic,Daypass,23,"3GB high-speed data per day, down to 384kbps",Claro,80.13,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-23D/60D-3GB
+276,North America,Dominican Republic,Daypass,24,"3GB high-speed data per day, down to 384kbps",Claro,83.6,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-24D/60D-3GB
+277,North America,Dominican Republic,Daypass,25,"3GB high-speed data per day, down to 384kbps",Claro,87.07,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-25D/60D-3GB
+278,North America,Dominican Republic,Daypass,26,"3GB high-speed data per day, down to 384kbps",Claro,90.55,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-26D/60D-3GB
+279,North America,Dominican Republic,Daypass,27,"3GB high-speed data per day, down to 384kbps",Claro,94.02,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-27D/60D-3GB
+280,North America,Dominican Republic,Daypass,28,"3GB high-speed data per day, down to 384kbps",Claro,97.49,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-28D/60D-3GB
+281,North America,Dominican Republic,Daypass,29,"3GB high-speed data per day, down to 384kbps",Claro,100.97,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-29D/60D-3GB
+282,North America,Dominican Republic,Daypass,30,"3GB high-speed data per day, down to 384kbps",Claro,104.44,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-ea1-D-30D/60D-3GB
+283,North America,Dominican Republic,Data Package,3,1GB /3 Days,Claro,1.97,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-1GB
+284,North America,Dominican Republic,Data Package,5,1GB /5 Days,Claro,2.14,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-1GB
+285,North America,Dominican Republic,Data Package,7,1GB /7 Days,Claro,2.32,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-1GB
+286,North America,Dominican Republic,Data Package,10,1GB /10 Days,Claro,2.49,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-1GB
+287,North America,Dominican Republic,Data Package,15,1GB /15 Days,Claro,2.66,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-1GB
+288,North America,Dominican Republic,Data Package,30,1GB /30 Days,Claro,2.84,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-1GB
+289,North America,Dominican Republic,Data Package,3,3GB /3 Days,Claro,4.4,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-3GB
+290,North America,Dominican Republic,Data Package,5,3GB /5 Days,Claro,4.57,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-3GB
+291,North America,Dominican Republic,Data Package,7,3GB /7 Days,Claro,4.75,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-3GB
+292,North America,Dominican Republic,Data Package,10,3GB /10 Days,Claro,4.92,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-3GB
+293,North America,Dominican Republic,Data Package,15,3GB /15 Days,Claro,5.09,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-3GB
+294,North America,Dominican Republic,Data Package,30,3GB /30 Days,Claro,5.62,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-3GB
+295,North America,Dominican Republic,Data Package,3,5GB /3 Days,Claro,4.57,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-5GB
+296,North America,Dominican Republic,Data Package,5,5GB /5 Days,Claro,5.09,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-5GB
+297,North America,Dominican Republic,Data Package,7,5GB /7 Days,Claro,5.44,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-5GB
+298,North America,Dominican Republic,Data Package,10,5GB /10 Days,Claro,5.79,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-5GB
+299,North America,Dominican Republic,Data Package,15,5GB /15 Days,Claro,6.14,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-5GB
+300,North America,Dominican Republic,Data Package,30,5GB /30 Days,Claro,7.35,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-5GB
+301,North America,Dominican Republic,Data Package,3,10GB /3 Days,Claro,8.57,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-10GB
+302,North America,Dominican Republic,Data Package,5,10GB /5 Days,Claro,8.92,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-10GB
+303,North America,Dominican Republic,Data Package,7,10GB /7 Days,Claro,9.26,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-10GB
+304,North America,Dominican Republic,Data Package,10,10GB /10 Days,Claro,9.44,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-10GB
+305,North America,Dominican Republic,Data Package,15,10GB /15 Days,Claro,9.61,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-10GB
+306,North America,Dominican Republic,Data Package,30,10GB /30 Days,Claro,11.35,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-10GB
+307,North America,Dominican Republic,Data Package,3,20GB /3 Days,Claro,18.47,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-20GB
+308,North America,Dominican Republic,Data Package,5,20GB /5 Days,Claro,18.99,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-20GB
+309,North America,Dominican Republic,Data Package,7,20GB /7 Days,Claro,19.51,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-20GB
+310,North America,Dominican Republic,Data Package,10,20GB /10 Days,Claro,19.86,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-20GB
+311,North America,Dominican Republic,Data Package,15,20GB /15 Days,Claro,20.21,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-20GB
+312,North America,Dominican Republic,Data Package,30,20GB /30 Days,Claro,21.94,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-20GB
+313,North America,Dominican Republic,Data Package,3,30GB /3 Days,Claro,28.02,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-30GB
+314,North America,Dominican Republic,Data Package,5,30GB /5 Days,Claro,28.37,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-30GB
+315,North America,Dominican Republic,Data Package,7,30GB /7 Days,Claro,28.72,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-30GB
+316,North America,Dominican Republic,Data Package,10,30GB /10 Days,Claro,29.41,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-30GB
+317,North America,Dominican Republic,Data Package,15,30GB /15 Days,Claro,30.11,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-30GB
+318,North America,Dominican Republic,Data Package,30,30GB /30 Days,Claro,32.36,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-30GB
+319,North America,Dominican Republic,Data Package,3,50GB /3 Days,Claro,45.39,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-3D/60D-50GB
+320,North America,Dominican Republic,Data Package,5,50GB /5 Days,Claro,46.26,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-5D/60D-50GB
+321,North America,Dominican Republic,Data Package,7,50GB /7 Days,Claro,47.13,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-7D/60D-50GB
+322,North America,Dominican Republic,Data Package,10,50GB /10 Days,Claro,47.99,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-10D/60D-50GB
+323,North America,Dominican Republic,Data Package,15,50GB /15 Days,Claro,48.86,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-15D/60D-50GB
+324,North America,Dominican Republic,Data Package,30,50GB /30 Days,Claro,52.34,Auto Activate,,,ea1,Y,,UTC+0,F-014-ES-AU-T-ea1-30D/60D-50GB
+325,South America,South America 8 countries,Daypass,1,"500M high-speed data per day, down to 384kbps",Argentina：Claro/Movistar Paraguay：Claro Brazil：Vivo/Claro Ecuador：Claro/Movistar Colombia：Claro/Movistar Peru：Claro/Movistar Uruguay：Movistar/Claro Chile：Movistar/Claro,1.22,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-1D/60D-500M
+326,South America,South America 8 countries,Daypass,2,"500M high-speed data per day, down to 384kbps",,1.56,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-2D/60D-500M
+327,South America,South America 8 countries,Daypass,3,"500M high-speed data per day, down to 384kbps",,2.34,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-3D/60D-500M
+328,South America,South America 8 countries,Daypass,4,"500M high-speed data per day, down to 384kbps",,3.13,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-4D/60D-500M
+329,South America,South America 8 countries,Daypass,5,"500M high-speed data per day, down to 384kbps",,3.91,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-5D/60D-500M
+330,South America,South America 8 countries,Daypass,6,"500M high-speed data per day, down to 384kbps",,4.69,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-6D/60D-500M
+331,South America,South America 8 countries,Daypass,7,"500M high-speed data per day, down to 384kbps",,5.47,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-7D/60D-500M
+332,South America,South America 8 countries,Daypass,8,"500M high-speed data per day, down to 384kbps",,6.25,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-8D/60D-500M
+333,South America,South America 8 countries,Daypass,9,"500M high-speed data per day, down to 384kbps",,7.03,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-9D/60D-500M
+334,South America,South America 8 countries,Daypass,10,"500M high-speed data per day, down to 384kbps",,7.82,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-10D/60D-500M
+335,South America,South America 8 countries,Daypass,11,"500M high-speed data per day, down to 384kbps",,8.6,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-11D/60D-500M
+336,South America,South America 8 countries,Daypass,12,"500M high-speed data per day, down to 384kbps",,9.38,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-12D/60D-500M
+337,South America,South America 8 countries,Daypass,13,"500M high-speed data per day, down to 384kbps",,10.16,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-13D/60D-500M
+338,South America,South America 8 countries,Daypass,14,"500M high-speed data per day, down to 384kbps",,10.94,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-14D/60D-500M
+339,South America,South America 8 countries,Daypass,15,"500M high-speed data per day, down to 384kbps",,11.72,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-15D/60D-500M
+340,South America,South America 8 countries,Daypass,16,"500M high-speed data per day, down to 384kbps",,12.51,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-16D/60D-500M
+341,South America,South America 8 countries,Daypass,17,"500M high-speed data per day, down to 384kbps",,13.29,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-17D/60D-500M
+342,South America,South America 8 countries,Daypass,18,"500M high-speed data per day, down to 384kbps",,14.07,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-18D/60D-500M
+343,South America,South America 8 countries,Daypass,19,"500M high-speed data per day, down to 384kbps",,14.85,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-19D/60D-500M
+344,South America,South America 8 countries,Daypass,20,"500M high-speed data per day, down to 384kbps",,15.63,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-20D/60D-500M
+345,South America,South America 8 countries,Daypass,21,"500M high-speed data per day, down to 384kbps",,16.41,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-21D/60D-500M
+346,South America,South America 8 countries,Daypass,22,"500M high-speed data per day, down to 384kbps",,17.19,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-22D/60D-500M
+347,South America,South America 8 countries,Daypass,23,"500M high-speed data per day, down to 384kbps",,17.98,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-23D/60D-500M
+348,South America,South America 8 countries,Daypass,24,"500M high-speed data per day, down to 384kbps",,18.76,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-24D/60D-500M
+349,South America,South America 8 countries,Daypass,25,"500M high-speed data per day, down to 384kbps",,19.54,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-25D/60D-500M
+350,South America,South America 8 countries,Daypass,26,"500M high-speed data per day, down to 384kbps",,20.32,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-26D/60D-500M
+351,South America,South America 8 countries,Daypass,27,"500M high-speed data per day, down to 384kbps",,21.1,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-27D/60D-500M
+352,South America,South America 8 countries,Daypass,28,"500M high-speed data per day, down to 384kbps",,21.88,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-28D/60D-500M
+353,South America,South America 8 countries,Daypass,29,"500M high-speed data per day, down to 384kbps",,22.67,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-29D/60D-500M
+354,South America,South America 8 countries,Daypass,30,"500M high-speed data per day, down to 384kbps",,23.45,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-30D/60D-500M
+355,South America,South America 8 countries,Daypass,1,"1GB high-speed data per day, down to 384kbps",,1.39,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-1D/60D-1GB
+356,South America,South America 8 countries,Daypass,2,"1GB high-speed data per day, down to 384kbps",,2.43,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-2D/60D-1GB
+357,South America,South America 8 countries,Daypass,3,"1GB high-speed data per day, down to 384kbps",,3.65,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-3D/60D-1GB
+358,South America,South America 8 countries,Daypass,4,"1GB high-speed data per day, down to 384kbps",,4.86,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-4D/60D-1GB
+359,South America,South America 8 countries,Daypass,5,"1GB high-speed data per day, down to 384kbps",,6.08,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-5D/60D-1GB
+360,South America,South America 8 countries,Daypass,6,"1GB high-speed data per day, down to 384kbps",,7.29,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-6D/60D-1GB
+361,South America,South America 8 countries,Daypass,7,"1GB high-speed data per day, down to 384kbps",,8.51,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-7D/60D-1GB
+362,South America,South America 8 countries,Daypass,8,"1GB high-speed data per day, down to 384kbps",,9.73,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-8D/60D-1GB
+363,South America,South America 8 countries,Daypass,9,"1GB high-speed data per day, down to 384kbps",,10.94,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-9D/60D-1GB
+364,South America,South America 8 countries,Daypass,10,"1GB high-speed data per day, down to 384kbps",,12.16,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-10D/60D-1GB
+365,South America,South America 8 countries,Daypass,11,"1GB high-speed data per day, down to 384kbps",,13.37,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-11D/60D-1GB
+366,South America,South America 8 countries,Daypass,12,"1GB high-speed data per day, down to 384kbps",,14.59,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-12D/60D-1GB
+367,South America,South America 8 countries,Daypass,13,"1GB high-speed data per day, down to 384kbps",,15.81,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-13D/60D-1GB
+368,South America,South America 8 countries,Daypass,14,"1GB high-speed data per day, down to 384kbps",,17.02,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-14D/60D-1GB
+369,South America,South America 8 countries,Daypass,15,"1GB high-speed data per day, down to 384kbps",,18.24,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-15D/60D-1GB
+370,South America,South America 8 countries,Daypass,16,"1GB high-speed data per day, down to 384kbps",,19.45,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-16D/60D-1GB
+371,South America,South America 8 countries,Daypass,17,"1GB high-speed data per day, down to 384kbps",,20.67,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-17D/60D-1GB
+372,South America,South America 8 countries,Daypass,18,"1GB high-speed data per day, down to 384kbps",,21.88,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-18D/60D-1GB
+373,South America,South America 8 countries,Daypass,19,"1GB high-speed data per day, down to 384kbps",,23.1,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-19D/60D-1GB
+374,South America,South America 8 countries,Daypass,20,"1GB high-speed data per day, down to 384kbps",,24.32,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-20D/60D-1GB
+375,South America,South America 8 countries,Daypass,21,"1GB high-speed data per day, down to 384kbps",,25.53,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-21D/60D-1GB
+376,South America,South America 8 countries,Daypass,22,"1GB high-speed data per day, down to 384kbps",,26.75,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-22D/60D-1GB
+377,South America,South America 8 countries,Daypass,23,"1GB high-speed data per day, down to 384kbps",,27.96,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-23D/60D-1GB
+378,South America,South America 8 countries,Daypass,24,"1GB high-speed data per day, down to 384kbps",,29.18,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-24D/60D-1GB
+379,South America,South America 8 countries,Daypass,25,"1GB high-speed data per day, down to 384kbps",,30.39,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-25D/60D-1GB
+380,South America,South America 8 countries,Daypass,26,"1GB high-speed data per day, down to 384kbps",,31.61,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-26D/60D-1GB
+381,South America,South America 8 countries,Daypass,27,"1GB high-speed data per day, down to 384kbps",,32.83,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-27D/60D-1GB
+382,South America,South America 8 countries,Daypass,28,"1GB high-speed data per day, down to 384kbps",,34.04,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-28D/60D-1GB
+383,South America,South America 8 countries,Daypass,29,"1GB high-speed data per day, down to 384kbps",,35.26,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-29D/60D-1GB
+384,South America,South America 8 countries,Daypass,30,"1GB high-speed data per day, down to 384kbps",,36.47,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-30D/60D-1GB
+385,South America,South America 8 countries,Daypass,1,"2GB high-speed data per day, down to 384kbps",,2.78,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-1D/60D-2GB
+386,South America,South America 8 countries,Daypass,2,"2GB high-speed data per day, down to 384kbps",,4.86,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-2D/60D-2GB
+387,South America,South America 8 countries,Daypass,3,"2GB high-speed data per day, down to 384kbps",,6.77,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-3D/60D-2GB
+388,South America,South America 8 countries,Daypass,4,"2GB high-speed data per day, down to 384kbps",,9.03,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-4D/60D-2GB
+389,South America,South America 8 countries,Daypass,5,"2GB high-speed data per day, down to 384kbps",,11.29,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-5D/60D-2GB
+390,South America,South America 8 countries,Daypass,6,"2GB high-speed data per day, down to 384kbps",,13.55,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-6D/60D-2GB
+391,South America,South America 8 countries,Daypass,7,"2GB high-speed data per day, down to 384kbps",,15.81,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-7D/60D-2GB
+392,South America,South America 8 countries,Daypass,8,"2GB high-speed data per day, down to 384kbps",,18.06,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-8D/60D-2GB
+393,South America,South America 8 countries,Daypass,9,"2GB high-speed data per day, down to 384kbps",,20.32,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-9D/60D-2GB
+394,South America,South America 8 countries,Daypass,10,"2GB high-speed data per day, down to 384kbps",,22.58,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-10D/60D-2GB
+395,South America,South America 8 countries,Daypass,11,"2GB high-speed data per day, down to 384kbps",,24.84,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-11D/60D-2GB
+396,South America,South America 8 countries,Daypass,12,"2GB high-speed data per day, down to 384kbps",,27.09,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-12D/60D-2GB
+397,South America,South America 8 countries,Daypass,13,"2GB high-speed data per day, down to 384kbps",,29.35,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-13D/60D-2GB
+398,South America,South America 8 countries,Daypass,14,"2GB high-speed data per day, down to 384kbps",,31.61,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-14D/60D-2GB
+399,South America,South America 8 countries,Daypass,15,"2GB high-speed data per day, down to 384kbps",,33.87,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-15D/60D-2GB
+400,South America,South America 8 countries,Daypass,16,"2GB high-speed data per day, down to 384kbps",,36.13,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-16D/60D-2GB
+401,South America,South America 8 countries,Daypass,17,"2GB high-speed data per day, down to 384kbps",,38.38,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-17D/60D-2GB
+402,South America,South America 8 countries,Daypass,18,"2GB high-speed data per day, down to 384kbps",,40.64,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-18D/60D-2GB
+403,South America,South America 8 countries,Daypass,19,"2GB high-speed data per day, down to 384kbps",,42.9,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-19D/60D-2GB
+404,South America,South America 8 countries,Daypass,20,"2GB high-speed data per day, down to 384kbps",,45.16,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-20D/60D-2GB
+405,South America,South America 8 countries,Daypass,21,"2GB high-speed data per day, down to 384kbps",,47.42,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-21D/60D-2GB
+406,South America,South America 8 countries,Daypass,22,"2GB high-speed data per day, down to 384kbps",,49.67,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-22D/60D-2GB
+407,South America,South America 8 countries,Daypass,23,"2GB high-speed data per day, down to 384kbps",,51.93,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-23D/60D-2GB
+408,South America,South America 8 countries,Daypass,24,"2GB high-speed data per day, down to 384kbps",,54.19,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-24D/60D-2GB
+409,South America,South America 8 countries,Daypass,25,"2GB high-speed data per day, down to 384kbps",,56.45,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-25D/60D-2GB
+410,South America,South America 8 countries,Daypass,26,"2GB high-speed data per day, down to 384kbps",,58.71,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-26D/60D-2GB
+411,South America,South America 8 countries,Daypass,27,"2GB high-speed data per day, down to 384kbps",,60.96,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-27D/60D-2GB
+412,South America,South America 8 countries,Daypass,28,"2GB high-speed data per day, down to 384kbps",,63.22,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-28D/60D-2GB
+413,South America,South America 8 countries,Daypass,29,"2GB high-speed data per day, down to 384kbps",,65.48,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-29D/60D-2GB
+414,South America,South America 8 countries,Daypass,30,"2GB high-speed data per day, down to 384kbps",,67.74,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-30D/60D-2GB
+415,South America,South America 8 countries,Daypass,1,"3GB high-speed data per day, down to 384kbps",,3.65,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-1D/60D-3GB
+416,South America,South America 8 countries,Daypass,2,"3GB high-speed data per day, down to 384kbps",,6.6,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-2D/60D-3GB
+417,South America,South America 8 countries,Daypass,3,"3GB high-speed data per day, down to 384kbps",,9.38,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-3D/60D-3GB
+418,South America,South America 8 countries,Daypass,4,"3GB high-speed data per day, down to 384kbps",,12.51,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-4D/60D-3GB
+419,South America,South America 8 countries,Daypass,5,"3GB high-speed data per day, down to 384kbps",,14.76,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-5D/60D-3GB
+420,South America,South America 8 countries,Daypass,6,"3GB high-speed data per day, down to 384kbps",,17.72,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-6D/60D-3GB
+421,South America,South America 8 countries,Daypass,7,"3GB high-speed data per day, down to 384kbps",,20.67,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-7D/60D-3GB
+422,South America,South America 8 countries,Daypass,8,"3GB high-speed data per day, down to 384kbps",,23.62,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-8D/60D-3GB
+423,South America,South America 8 countries,Daypass,9,"3GB high-speed data per day, down to 384kbps",,26.57,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-9D/60D-3GB
+424,South America,South America 8 countries,Daypass,10,"3GB high-speed data per day, down to 384kbps",,29.53,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-10D/60D-3GB
+425,South America,South America 8 countries,Daypass,11,"3GB high-speed data per day, down to 384kbps",,32.48,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-11D/60D-3GB
+426,South America,South America 8 countries,Daypass,12,"3GB high-speed data per day, down to 384kbps",,35.43,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-12D/60D-3GB
+427,South America,South America 8 countries,Daypass,13,"3GB high-speed data per day, down to 384kbps",,38.38,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-13D/60D-3GB
+428,South America,South America 8 countries,Daypass,14,"3GB high-speed data per day, down to 384kbps",,41.34,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-14D/60D-3GB
+429,South America,South America 8 countries,Daypass,15,"3GB high-speed data per day, down to 384kbps",,44.29,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-15D/60D-3GB
+430,South America,South America 8 countries,Daypass,16,"3GB high-speed data per day, down to 384kbps",,47.24,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-16D/60D-3GB
+431,South America,South America 8 countries,Daypass,17,"3GB high-speed data per day, down to 384kbps",,50.19,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-17D/60D-3GB
+432,South America,South America 8 countries,Daypass,18,"3GB high-speed data per day, down to 384kbps",,53.15,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-18D/60D-3GB
+433,South America,South America 8 countries,Daypass,19,"3GB high-speed data per day, down to 384kbps",,56.1,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-19D/60D-3GB
+434,South America,South America 8 countries,Daypass,20,"3GB high-speed data per day, down to 384kbps",,59.05,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-20D/60D-3GB
+435,South America,South America 8 countries,Daypass,21,"3GB high-speed data per day, down to 384kbps",,62.01,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-21D/60D-3GB
+436,South America,South America 8 countries,Daypass,22,"3GB high-speed data per day, down to 384kbps",,64.96,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-22D/60D-3GB
+437,South America,South America 8 countries,Daypass,23,"3GB high-speed data per day, down to 384kbps",,67.91,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-23D/60D-3GB
+438,South America,South America 8 countries,Daypass,24,"3GB high-speed data per day, down to 384kbps",,70.86,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-24D/60D-3GB
+439,South America,South America 8 countries,Daypass,25,"3GB high-speed data per day, down to 384kbps",,73.82,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-25D/60D-3GB
+440,South America,South America 8 countries,Daypass,26,"3GB high-speed data per day, down to 384kbps",,76.77,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-26D/60D-3GB
+441,South America,South America 8 countries,Daypass,27,"3GB high-speed data per day, down to 384kbps",,79.72,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-27D/60D-3GB
+442,South America,South America 8 countries,Daypass,28,"3GB high-speed data per day, down to 384kbps",,82.67,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-28D/60D-3GB
+443,South America,South America 8 countries,Daypass,29,"3GB high-speed data per day, down to 384kbps",,85.63,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-29D/60D-3GB
+444,South America,South America 8 countries,Daypass,30,"3GB high-speed data per day, down to 384kbps",,88.58,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-30D/60D-3GB
+445,South America,South America 8 countries,Daypass,1,"5GB high-speed data per day, down to 384kbps",,4.86,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-1D/60D-5GB
+446,South America,South America 8 countries,Daypass,2,"5GB high-speed data per day, down to 384kbps",,9.38,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-2D/60D-5GB
+447,South America,South America 8 countries,Daypass,3,"5GB high-speed data per day, down to 384kbps",,14.07,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-3D/60D-5GB
+448,South America,South America 8 countries,Daypass,4,"5GB high-speed data per day, down to 384kbps",,17.37,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-4D/60D-5GB
+449,South America,South America 8 countries,Daypass,5,"5GB high-speed data per day, down to 384kbps",,21.71,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-5D/60D-5GB
+450,South America,South America 8 countries,Daypass,6,"5GB high-speed data per day, down to 384kbps",,26.05,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-6D/60D-5GB
+451,South America,South America 8 countries,Daypass,7,"5GB high-speed data per day, down to 384kbps",,30.39,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-7D/60D-5GB
+452,South America,South America 8 countries,Daypass,8,"5GB high-speed data per day, down to 384kbps",,34.74,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-8D/60D-5GB
+453,South America,South America 8 countries,Daypass,9,"5GB high-speed data per day, down to 384kbps",,39.08,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-9D/60D-5GB
+454,South America,South America 8 countries,Daypass,10,"5GB high-speed data per day, down to 384kbps",,43.42,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-10D/60D-5GB
+455,South America,South America 8 countries,Daypass,11,"5GB high-speed data per day, down to 384kbps",,47.76,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-11D/60D-5GB
+456,South America,South America 8 countries,Daypass,12,"5GB high-speed data per day, down to 384kbps",,52.11,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-12D/60D-5GB
+457,South America,South America 8 countries,Daypass,13,"5GB high-speed data per day, down to 384kbps",,56.45,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-13D/60D-5GB
+458,South America,South America 8 countries,Daypass,14,"5GB high-speed data per day, down to 384kbps",,60.79,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-14D/60D-5GB
+459,South America,South America 8 countries,Daypass,15,"5GB high-speed data per day, down to 384kbps",,65.13,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-15D/60D-5GB
+460,South America,South America 8 countries,Daypass,16,"5GB high-speed data per day, down to 384kbps",,69.47,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-16D/60D-5GB
+461,South America,South America 8 countries,Daypass,17,"5GB high-speed data per day, down to 384kbps",,73.82,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-17D/60D-5GB
+462,South America,South America 8 countries,Daypass,18,"5GB high-speed data per day, down to 384kbps",,78.16,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-18D/60D-5GB
+463,South America,South America 8 countries,Daypass,19,"5GB high-speed data per day, down to 384kbps",,82.5,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-19D/60D-5GB
+464,South America,South America 8 countries,Daypass,20,"5GB high-speed data per day, down to 384kbps",,86.84,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-20D/60D-5GB
+465,South America,South America 8 countries,Daypass,21,"5GB high-speed data per day, down to 384kbps",,91.18,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-21D/60D-5GB
+466,South America,South America 8 countries,Daypass,22,"5GB high-speed data per day, down to 384kbps",,95.53,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-22D/60D-5GB
+467,South America,South America 8 countries,Daypass,23,"5GB high-speed data per day, down to 384kbps",,99.87,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-23D/60D-5GB
+468,South America,South America 8 countries,Daypass,24,"5GB high-speed data per day, down to 384kbps",,104.21,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-24D/60D-5GB
+469,South America,South America 8 countries,Daypass,25,"5GB high-speed data per day, down to 384kbps",,108.55,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-25D/60D-5GB
+470,South America,South America 8 countries,Daypass,26,"5GB high-speed data per day, down to 384kbps",,112.89,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-26D/60D-5GB
+471,South America,South America 8 countries,Daypass,27,"5GB high-speed data per day, down to 384kbps",,117.24,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-27D/60D-5GB
+472,South America,South America 8 countries,Daypass,28,"5GB high-speed data per day, down to 384kbps",,121.58,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-28D/60D-5GB
+473,South America,South America 8 countries,Daypass,29,"5GB high-speed data per day, down to 384kbps",,125.92,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-29D/60D-5GB
+474,South America,South America 8 countries,Daypass,30,"5GB high-speed data per day, down to 384kbps",,130.26,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-ea1-D-30D/60D-5GB
+475,South America,South America 8 countries,Data Package,3,1GB /3 Days,,1.74,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-1GB
+476,South America,South America 8 countries,Data Package,5,1GB /5 Days,,1.91,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-1GB
+477,South America,South America 8 countries,Data Package,7,1GB /7 Days,,2.08,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-1GB
+478,South America,South America 8 countries,Data Package,10,1GB /10 Days,,2.26,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-1GB
+479,South America,South America 8 countries,Data Package,15,1GB /15 Days,,2.43,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-1GB
+480,South America,South America 8 countries,Data Package,30,1GB /30 Days,,2.61,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-1GB
+481,South America,South America 8 countries,Data Package,3,3GB /3 Days,,4.34,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-3GB
+482,South America,South America 8 countries,Data Package,5,3GB /5 Days,,4.69,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-3GB
+483,South America,South America 8 countries,Data Package,7,3GB /7 Days,,4.86,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-3GB
+484,South America,South America 8 countries,Data Package,10,3GB /10 Days,,5.04,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-3GB
+485,South America,South America 8 countries,Data Package,15,3GB /15 Days,,5.21,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-3GB
+486,South America,South America 8 countries,Data Package,30,3GB /30 Days,,5.38,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-3GB
+487,South America,South America 8 countries,Data Package,3,5GB /3 Days,,6.95,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-5GB
+488,South America,South America 8 countries,Data Package,5,5GB /5 Days,,7.29,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-5GB
+489,South America,South America 8 countries,Data Package,7,5GB /7 Days,,7.64,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-5GB
+490,South America,South America 8 countries,Data Package,10,5GB /10 Days,,7.99,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-5GB
+491,South America,South America 8 countries,Data Package,15,5GB /15 Days,,8.34,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-5GB
+492,South America,South America 8 countries,Data Package,30,5GB /30 Days,,8.68,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-5GB
+493,South America,South America 8 countries,Data Package,3,10GB /3 Days,,10.42,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-10GB
+494,South America,South America 8 countries,Data Package,5,10GB /5 Days,,11.12,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-10GB
+495,South America,South America 8 countries,Data Package,7,10GB /7 Days,,11.81,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-10GB
+496,South America,South America 8 countries,Data Package,10,10GB /10 Days,,12.51,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-10GB
+497,South America,South America 8 countries,Data Package,15,10GB /15 Days,,13.2,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-10GB
+498,South America,South America 8 countries,Data Package,30,10GB /30 Days,,13.89,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-10GB
+499,South America,South America 8 countries,Data Package,3,20GB /3 Days,,22.58,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-20GB
+500,South America,South America 8 countries,Data Package,5,20GB /5 Days,,24.32,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-20GB
+501,South America,South America 8 countries,Data Package,7,20GB /7 Days,,26.05,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-20GB
+502,South America,South America 8 countries,Data Package,10,20GB /10 Days,,27.79,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-20GB
+503,South America,South America 8 countries,Data Package,15,20GB /15 Days,,29.53,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-20GB
+504,South America,South America 8 countries,Data Package,30,20GB /30 Days,,31.26,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-20GB
+505,South America,South America 8 countries,Data Package,3,30GB /3 Days,,34.74,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-30GB
+506,South America,South America 8 countries,Data Package,5,30GB /5 Days,,36.47,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-30GB
+507,South America,South America 8 countries,Data Package,7,30GB /7 Days,,38.21,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-30GB
+508,South America,South America 8 countries,Data Package,10,30GB /10 Days,,39.95,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-30GB
+509,South America,South America 8 countries,Data Package,15,30GB /15 Days,,41.68,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-30GB
+510,South America,South America 8 countries,Data Package,30,30GB /30 Days,,43.42,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-30GB
+511,South America,South America 8 countries,Data Package,3,50GB /3 Days,,52.11,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-3D/60D-50GB
+512,South America,South America 8 countries,Data Package,5,50GB /5 Days,,55.58,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-5D/60D-50GB
+513,South America,South America 8 countries,Data Package,7,50GB /7 Days,,59.05,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-7D/60D-50GB
+514,South America,South America 8 countries,Data Package,10,50GB /10 Days,,62.53,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-10D/60D-50GB
+515,South America,South America 8 countries,Data Package,15,50GB /15 Days,,66,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-15D/60D-50GB
+516,South America,South America 8 countries,Data Package,30,50GB /30 Days,,69.47,Auto Activate,,,ea1,Y,,UTC+0,F-107-ES-AU-T-ea1-30D/60D-50GB

@@ -45,12 +45,21 @@ class DashboardController extends Controller
         }
         $totalOrdersCount = $ordersCountQuery->count();
 
+        // IWC Tour & Experience Packages (Credit Card)
+        $iwcProducts = \App\Models\IwcProduct::where('status', 'Available')->orderBy('id', 'asc')->get();
+        $iwcOrdersCount = \App\Models\IwcOrder::where('user_id', $effectiveCustomer->id)->count();
+
+        $activeTab = $request->query('tab', count($assignedPackages) > 0 ? 'esim' : 'iwc');
+
         return view('customer.dashboard', compact(
             'assignedPackages',
             'branches',
             'effectiveCustomer',
             'totalOrdersCount',
-            'search'
+            'search',
+            'iwcProducts',
+            'iwcOrdersCount',
+            'activeTab'
         ));
     }
 

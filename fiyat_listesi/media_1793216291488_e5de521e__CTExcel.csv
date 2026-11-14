@@ -1,0 +1,398 @@
+﻿Global eSIM Quote Sheet,,,,,,,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Operator,Wholesale Price USD,Activate Mode,Country or region,remark,Type,Recharge,Roaming/Local,ACTION POLICY,API Product code （Auto Activate）,API Product code （designated Date Activate）
+1,Asia,China&Hong Kong&Macau,Daypass,1,"500M high-speed data per day, down to 384kbps",China:China Telecom Hong Kong:CSL Macau:China Telecom(Macao),0.56,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-1D/60D-500MB,A-136-ES-ZD-T1-D-1D/60D-500MB
+2,Asia,China&Hong Kong&Macau,Daypass,2,"500M high-speed data per day, down to 384kbps",,0.69,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-2D/60D-500MB,A-136-ES-ZD-T1-D-2D/60D-500MB
+3,Asia,China&Hong Kong&Macau,Daypass,3,"500M high-speed data per day, down to 384kbps",,0.89,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-3D/60D-500MB,A-136-ES-ZD-T1-D-3D/60D-500MB
+4,Asia,China&Hong Kong&Macau,Daypass,4,"500M high-speed data per day, down to 384kbps",,0.99,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-4D/60D-500MB,A-136-ES-ZD-T1-D-4D/60D-500MB
+5,Asia,China&Hong Kong&Macau,Daypass,5,"500M high-speed data per day, down to 384kbps",,1.24,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-5D/60D-500MB,A-136-ES-ZD-T1-D-5D/60D-500MB
+6,Asia,China&Hong Kong&Macau,Daypass,6,"500M high-speed data per day, down to 384kbps",,1.49,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-6D/60D-500MB,A-136-ES-ZD-T1-D-6D/60D-500MB
+7,Asia,China&Hong Kong&Macau,Daypass,7,"500M high-speed data per day, down to 384kbps",,1.74,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-7D/60D-500MB,A-136-ES-ZD-T1-D-7D/60D-500MB
+8,Asia,China&Hong Kong&Macau,Daypass,8,"500M high-speed data per day, down to 384kbps",,1.99,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-8D/60D-500MB,A-136-ES-ZD-T1-D-8D/60D-500MB
+9,Asia,China&Hong Kong&Macau,Daypass,9,"500M high-speed data per day, down to 384kbps",,2.23,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-9D/60D-500MB,A-136-ES-ZD-T1-D-9D/60D-500MB
+10,Asia,China&Hong Kong&Macau,Daypass,10,"500M high-speed data per day, down to 384kbps",,2.48,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-10D/60D-500MB,A-136-ES-ZD-T1-D-10D/60D-500MB
+11,Asia,China&Hong Kong&Macau,Daypass,11,"500M high-speed data per day, down to 384kbps",,2.73,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-11D/60D-500MB,A-136-ES-ZD-T1-D-11D/60D-500MB
+12,Asia,China&Hong Kong&Macau,Daypass,12,"500M high-speed data per day, down to 384kbps",,2.97,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-12D/60D-500MB,A-136-ES-ZD-T1-D-12D/60D-500MB
+13,Asia,China&Hong Kong&Macau,Daypass,13,"500M high-speed data per day, down to 384kbps",,3.22,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-13D/60D-500MB,A-136-ES-ZD-T1-D-13D/60D-500MB
+14,Asia,China&Hong Kong&Macau,Daypass,14,"500M high-speed data per day, down to 384kbps",,3.47,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-14D/60D-500MB,A-136-ES-ZD-T1-D-14D/60D-500MB
+15,Asia,China&Hong Kong&Macau,Daypass,15,"500M high-speed data per day, down to 384kbps",,3.73,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-15D/60D-500MB,A-136-ES-ZD-T1-D-15D/60D-500MB
+16,Asia,China&Hong Kong&Macau,Daypass,20,"500M high-speed data per day, down to 384kbps",,4.96,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-20D/60D-500MB,A-136-ES-ZD-T1-D-20D/60D-500MB
+17,Asia,China&Hong Kong&Macau,Daypass,25,"500M high-speed data per day, down to 384kbps",,6.2,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-25D/60D-500MB,A-136-ES-ZD-T1-D-25D/60D-500MB
+18,Asia,China&Hong Kong&Macau,Daypass,30,"500M high-speed data per day, down to 384kbps",,7.44,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-30D/60D-500MB,A-136-ES-ZD-T1-D-30D/60D-500MB
+19,Asia,China&Hong Kong&Macau,Daypass,1,"1GB high-speed data per day, down to 384kbps",,0.62,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-1D/60D-1GB,A-136-ES-ZD-T1-D-1D/60D-1GB
+20,Asia,China&Hong Kong&Macau,Daypass,2,"1GB high-speed data per day, down to 384kbps",,0.79,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-2D/60D-1GB,A-136-ES-ZD-T1-D-2D/60D-1GB
+21,Asia,China&Hong Kong&Macau,Daypass,3,"1GB high-speed data per day, down to 384kbps",,1.08,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-3D/60D-1GB,A-136-ES-ZD-T1-D-3D/60D-1GB
+22,Asia,China&Hong Kong&Macau,Daypass,4,"1GB high-speed data per day, down to 384kbps",,1.48,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-4D/60D-1GB,A-136-ES-ZD-T1-D-4D/60D-1GB
+23,Asia,China&Hong Kong&Macau,Daypass,5,"1GB high-speed data per day, down to 384kbps",,1.78,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-5D/60D-1GB,A-136-ES-ZD-T1-D-5D/60D-1GB
+24,Asia,China&Hong Kong&Macau,Daypass,6,"1GB high-speed data per day, down to 384kbps",,2.07,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-6D/60D-1GB,A-136-ES-ZD-T1-D-6D/60D-1GB
+25,Asia,China&Hong Kong&Macau,Daypass,7,"1GB high-speed data per day, down to 384kbps",,2.38,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-7D/60D-1GB,A-136-ES-ZD-T1-D-7D/60D-1GB
+26,Asia,China&Hong Kong&Macau,Daypass,8,"1GB high-speed data per day, down to 384kbps",,2.67,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-8D/60D-1GB,A-136-ES-ZD-T1-D-8D/60D-1GB
+27,Asia,China&Hong Kong&Macau,Daypass,9,"1GB high-speed data per day, down to 384kbps",,2.97,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-9D/60D-1GB,A-136-ES-ZD-T1-D-9D/60D-1GB
+28,Asia,China&Hong Kong&Macau,Daypass,10,"1GB high-speed data per day, down to 384kbps",,3.17,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-10D/60D-1GB,A-136-ES-ZD-T1-D-10D/60D-1GB
+29,Asia,China&Hong Kong&Macau,Daypass,11,"1GB high-speed data per day, down to 384kbps",,3.46,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-11D/60D-1GB,A-136-ES-ZD-T1-D-11D/60D-1GB
+30,Asia,China&Hong Kong&Macau,Daypass,12,"1GB high-speed data per day, down to 384kbps",,3.76,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-12D/60D-1GB,A-136-ES-ZD-T1-D-12D/60D-1GB
+31,Asia,China&Hong Kong&Macau,Daypass,13,"1GB high-speed data per day, down to 384kbps",,4.05,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-13D/60D-1GB,A-136-ES-ZD-T1-D-13D/60D-1GB
+32,Asia,China&Hong Kong&Macau,Daypass,14,"1GB high-speed data per day, down to 384kbps",,4.36,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-14D/60D-1GB,A-136-ES-ZD-T1-D-14D/60D-1GB
+33,Asia,China&Hong Kong&Macau,Daypass,15,"1GB high-speed data per day, down to 384kbps",,4.75,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-15D/60D-1GB,A-136-ES-ZD-T1-D-15D/60D-1GB
+34,Asia,China&Hong Kong&Macau,Daypass,20,"1GB high-speed data per day, down to 384kbps",,6.14,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-20D/60D-1GB,A-136-ES-ZD-T1-D-20D/60D-1GB
+35,Asia,China&Hong Kong&Macau,Daypass,25,"1GB high-speed data per day, down to 384kbps",,7.52,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-25D/60D-1GB,A-136-ES-ZD-T1-D-25D/60D-1GB
+36,Asia,China&Hong Kong&Macau,Daypass,30,"1GB high-speed data per day, down to 384kbps",,9.11,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-30D/60D-1GB,A-136-ES-ZD-T1-D-30D/60D-1GB
+37,Asia,China&Hong Kong&Macau,Daypass,1,"2GB high-speed data per day, down to 384kbps",,0.93,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-1D/60D-2GB,A-136-ES-ZD-T1-D-1D/60D-2GB
+38,Asia,China&Hong Kong&Macau,Daypass,2,"2GB high-speed data per day, down to 384kbps",,1.39,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-2D/60D-2GB,A-136-ES-ZD-T1-D-2D/60D-2GB
+39,Asia,China&Hong Kong&Macau,Daypass,3,"2GB high-speed data per day, down to 384kbps",,1.98,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-3D/60D-2GB,A-136-ES-ZD-T1-D-3D/60D-2GB
+40,Asia,China&Hong Kong&Macau,Daypass,4,"2GB high-speed data per day, down to 384kbps",,2.47,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-4D/60D-2GB,A-136-ES-ZD-T1-D-4D/60D-2GB
+41,Asia,China&Hong Kong&Macau,Daypass,5,"2GB high-speed data per day, down to 384kbps",,2.97,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-5D/60D-2GB,A-136-ES-ZD-T1-D-5D/60D-2GB
+42,Asia,China&Hong Kong&Macau,Daypass,6,"2GB high-speed data per day, down to 384kbps",,3.46,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-6D/60D-2GB,A-136-ES-ZD-T1-D-6D/60D-2GB
+43,Asia,China&Hong Kong&Macau,Daypass,7,"2GB high-speed data per day, down to 384kbps",,4.05,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-7D/60D-2GB,A-136-ES-ZD-T1-D-7D/60D-2GB
+44,Asia,China&Hong Kong&Macau,Daypass,8,"2GB high-speed data per day, down to 384kbps",,4.55,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-8D/60D-2GB,A-136-ES-ZD-T1-D-8D/60D-2GB
+45,Asia,China&Hong Kong&Macau,Daypass,9,"2GB high-speed data per day, down to 384kbps",,5.04,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-9D/60D-2GB,A-136-ES-ZD-T1-D-9D/60D-2GB
+46,Asia,China&Hong Kong&Macau,Daypass,10,"2GB high-speed data per day, down to 384kbps",,5.74,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-10D/60D-2GB,A-136-ES-ZD-T1-D-10D/60D-2GB
+47,Asia,China&Hong Kong&Macau,Daypass,11,"2GB high-speed data per day, down to 384kbps",,6.23,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-11D/60D-2GB,A-136-ES-ZD-T1-D-11D/60D-2GB
+48,Asia,China&Hong Kong&Macau,Daypass,12,"2GB high-speed data per day, down to 384kbps",,6.83,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-12D/60D-2GB,A-136-ES-ZD-T1-D-12D/60D-2GB
+49,Asia,China&Hong Kong&Macau,Daypass,13,"2GB high-speed data per day, down to 384kbps",,7.42,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-13D/60D-2GB,A-136-ES-ZD-T1-D-13D/60D-2GB
+50,Asia,China&Hong Kong&Macau,Daypass,14,"2GB high-speed data per day, down to 384kbps",,7.92,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-14D/60D-2GB,A-136-ES-ZD-T1-D-14D/60D-2GB
+51,Asia,China&Hong Kong&Macau,Daypass,15,"2GB high-speed data per day, down to 384kbps",,8.41,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-15D/60D-2GB,A-136-ES-ZD-T1-D-15D/60D-2GB
+52,Asia,China&Hong Kong&Macau,Daypass,20,"2GB high-speed data per day, down to 384kbps",,10.98,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-20D/60D-2GB,A-136-ES-ZD-T1-D-20D/60D-2GB
+53,Asia,China&Hong Kong&Macau,Daypass,25,"2GB high-speed data per day, down to 384kbps",,13.76,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-25D/60D-2GB,A-136-ES-ZD-T1-D-25D/60D-2GB
+54,Asia,China&Hong Kong&Macau,Daypass,30,"2GB high-speed data per day, down to 384kbps",,16.42,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-30D/60D-2GB,A-136-ES-ZD-T1-D-30D/60D-2GB
+55,Asia,China&Hong Kong&Macau,Daypass,1,"3GB high-speed data per day, down to 384kbps",,0.99,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-1D/60D-3GB,
+56,Asia,China&Hong Kong&Macau,Daypass,2,"3GB high-speed data per day, down to 384kbps",,1.78,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-2D/60D-3GB,
+57,Asia,China&Hong Kong&Macau,Daypass,3,"3GB high-speed data per day, down to 384kbps",,2.47,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-3D/60D-3GB,
+58,Asia,China&Hong Kong&Macau,Daypass,4,"3GB high-speed data per day, down to 384kbps",,2.97,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-4D/60D-3GB,
+59,Asia,China&Hong Kong&Macau,Daypass,5,"3GB high-speed data per day, down to 384kbps",,3.46,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-5D/60D-3GB,
+60,Asia,China&Hong Kong&Macau,Daypass,6,"3GB high-speed data per day, down to 384kbps",,4.45,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-6D/60D-3GB,
+61,Asia,China&Hong Kong&Macau,Daypass,7,"3GB high-speed data per day, down to 384kbps",,5.44,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-7D/60D-3GB,
+62,Asia,China&Hong Kong&Macau,Daypass,8,"3GB high-speed data per day, down to 384kbps",,6.14,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-8D/60D-3GB,
+63,Asia,China&Hong Kong&Macau,Daypass,9,"3GB high-speed data per day, down to 384kbps",,6.83,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-9D/60D-3GB,
+64,Asia,China&Hong Kong&Macau,Daypass,10,"3GB high-speed data per day, down to 384kbps",,7.62,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-10D/60D-3GB,
+65,Asia,China&Hong Kong&Macau,Daypass,11,"3GB high-speed data per day, down to 384kbps",,8.41,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-11D/60D-3GB,
+66,Asia,China&Hong Kong&Macau,Daypass,12,"3GB high-speed data per day, down to 384kbps",,9.11,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-12D/60D-3GB,
+67,Asia,China&Hong Kong&Macau,Daypass,13,"3GB high-speed data per day, down to 384kbps",,9.8,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-13D/60D-3GB,
+68,Asia,China&Hong Kong&Macau,Daypass,14,"3GB high-speed data per day, down to 384kbps",,10.48,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-14D/60D-3GB,
+69,Asia,China&Hong Kong&Macau,Daypass,15,"3GB high-speed data per day, down to 384kbps",,11.28,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-15D/60D-3GB,
+70,Asia,China&Hong Kong&Macau,Daypass,20,"3GB high-speed data per day, down to 384kbps",,14.94,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-20D/60D-3GB,
+71,Asia,China&Hong Kong&Macau,Daypass,25,"3GB high-speed data per day, down to 384kbps",,18.71,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-25D/60D-3GB,
+72,Asia,China&Hong Kong&Macau,Daypass,30,"3GB high-speed data per day, down to 384kbps",,22.26,Auto Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-30D/60D-3GB,
+73,Asia,China&Hong Kong&Macau,Daypass,1,Unlimited,,1.74,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-1D/60D-U,A-136-ES-ZD-T1-D-1D/60D-U
+74,Asia,China&Hong Kong&Macau,Daypass,2,Unlimited,,2.47,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-2D/60D-U,A-136-ES-ZD-T1-D-2D/60D-U
+75,Asia,China&Hong Kong&Macau,Daypass,3,Unlimited,,3.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-3D/60D-U,A-136-ES-ZD-T1-D-3D/60D-U
+76,Asia,China&Hong Kong&Macau,Daypass,4,Unlimited,,5.04,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-4D/60D-U,A-136-ES-ZD-T1-D-4D/60D-U
+77,Asia,China&Hong Kong&Macau,Daypass,5,Unlimited,,6.23,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-5D/60D-U,A-136-ES-ZD-T1-D-5D/60D-U
+78,Asia,China&Hong Kong&Macau,Daypass,6,Unlimited,,7.52,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-6D/60D-U,A-136-ES-ZD-T1-D-6D/60D-U
+79,Asia,China&Hong Kong&Macau,Daypass,7,Unlimited,,8.81,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-7D/60D-U,A-136-ES-ZD-T1-D-7D/60D-U
+80,Asia,China&Hong Kong&Macau,Daypass,8,Unlimited,,9.99,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-8D/60D-U,A-136-ES-ZD-T1-D-8D/60D-U
+81,Asia,China&Hong Kong&Macau,Daypass,9,Unlimited,,11.18,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-9D/60D-U,A-136-ES-ZD-T1-D-9D/60D-U
+82,Asia,China&Hong Kong&Macau,Daypass,10,Unlimited,,12.37,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-10D/60D-U,A-136-ES-ZD-T1-D-10D/60D-U
+83,Asia,China&Hong Kong&Macau,Daypass,11,Unlimited,,13.56,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-11D/60D-U,A-136-ES-ZD-T1-D-11D/60D-U
+84,Asia,China&Hong Kong&Macau,Daypass,12,Unlimited,,14.75,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-12D/60D-U,A-136-ES-ZD-T1-D-12D/60D-U
+85,Asia,China&Hong Kong&Macau,Daypass,13,Unlimited,,15.93,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-13D/60D-U,A-136-ES-ZD-T1-D-13D/60D-U
+86,Asia,China&Hong Kong&Macau,Daypass,14,Unlimited,,17.12,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-14D/60D-U,A-136-ES-ZD-T1-D-14D/60D-U
+87,Asia,China&Hong Kong&Macau,Daypass,15,Unlimited,,18.51,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-15D/60D-U,A-136-ES-ZD-T1-D-15D/60D-U
+88,Asia,China&Hong Kong&Macau,Daypass,20,Unlimited,,24.64,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-20D/60D-U,A-136-ES-ZD-T1-D-20D/60D-U
+89,Asia,China&Hong Kong&Macau,Daypass,25,Unlimited,,30.67,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-25D/60D-U,A-136-ES-ZD-T1-D-25D/60D-U
+90,Asia,China&Hong Kong&Macau,Daypass,30,Unlimited,,36.81,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-D-30D/60D-U,A-136-ES-ZD-T1-D-30D/60D-U
+91,Asia,China&Hong Kong&Macau,Data Package,3,1GB  /3 Days,,0.71,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-1GB,A-136-ES-ZD-T1-T-3D/60D-1GB
+92,Asia,China&Hong Kong&Macau,Data Package,5,1GB  /5 Days,,0.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-1GB,A-136-ES-ZD-T1-T-5D/60D-1GB
+93,Asia,China&Hong Kong&Macau,Data Package,7,1GB  /7 Days,,0.99,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-1GB,A-136-ES-ZD-T1-T-7D/60D-1GB
+94,Asia,China&Hong Kong&Macau,Data Package,10,1GB  /10 Days,,1.05,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-1GB,A-136-ES-ZD-T1-T-10D/60D-1GB
+95,Asia,China&Hong Kong&Macau,Data Package,15,1GB  /15 Days,,1.12,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-1GB,A-136-ES-ZD-T1-T-15D/60D-1GB
+96,Asia,China&Hong Kong&Macau,Data Package,30,1GB  /30 Days,,1.24,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-1GB,A-136-ES-ZD-T1-T-30D/60D-1GB
+97,Asia,China&Hong Kong&Macau,Data Package,3,3GB  /3 Days,,1.08,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-3GB,A-136-ES-ZD-T1-T-3D/60D-3GB
+98,Asia,China&Hong Kong&Macau,Data Package,5,3GB  /5 Days,,1.28,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-3GB,A-136-ES-ZD-T1-T-5D/60D-3GB
+99,Asia,China&Hong Kong&Macau,Data Package,7,3GB  /7 Days,,1.39,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-3GB,A-136-ES-ZD-T1-T-7D/60D-3GB
+100,Asia,China&Hong Kong&Macau,Data Package,10,3GB  /10 Days,,1.48,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-3GB,A-136-ES-ZD-T1-T-10D/60D-3GB
+101,Asia,China&Hong Kong&Macau,Data Package,15,3GB  /15 Days,,1.68,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-3GB,A-136-ES-ZD-T1-T-15D/60D-3GB
+102,Asia,China&Hong Kong&Macau,Data Package,30,3GB  /30 Days,,1.78,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-3GB,A-136-ES-ZD-T1-T-30D/60D-3GB
+103,Asia,China&Hong Kong&Macau,Data Package,3,5GB  /3 Days,,1.78,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-5GB,A-136-ES-ZD-T1-T-3D/60D-5GB
+104,Asia,China&Hong Kong&Macau,Data Package,5,5GB  /5 Days,,1.98,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-5GB,A-136-ES-ZD-T1-T-5D/60D-5GB
+105,Asia,China&Hong Kong&Macau,Data Package,7,5GB  /7 Days,,2.07,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-5GB,A-136-ES-ZD-T1-T-7D/60D-5GB
+106,Asia,China&Hong Kong&Macau,Data Package,10,5GB  /10 Days,,2.27,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-5GB,A-136-ES-ZD-T1-T-10D/60D-5GB
+107,Asia,China&Hong Kong&Macau,Data Package,15,5GB  /15 Days,,2.38,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-5GB,A-136-ES-ZD-T1-T-15D/60D-5GB
+108,Asia,China&Hong Kong&Macau,Data Package,30,5GB  /30 Days,,2.57,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-5GB,A-136-ES-ZD-T1-T-30D/60D-5GB
+109,Asia,China&Hong Kong&Macau,Data Package,3,10GB  /3 Days,,3.46,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-10GB,A-136-ES-ZD-T1-T-3D/60D-10GB
+110,Asia,China&Hong Kong&Macau,Data Package,5,10GB  /5 Days,,3.66,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-10GB,A-136-ES-ZD-T1-T-5D/60D-10GB
+111,Asia,China&Hong Kong&Macau,Data Package,7,10GB  /7 Days,,3.66,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-10GB,A-136-ES-ZD-T1-T-7D/60D-10GB
+112,Asia,China&Hong Kong&Macau,Data Package,10,10GB  /10 Days,,3.96,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-10GB,A-136-ES-ZD-T1-T-10D/60D-10GB
+113,Asia,China&Hong Kong&Macau,Data Package,15,10GB  /15 Days,,4.25,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-10GB,A-136-ES-ZD-T1-T-15D/60D-10GB
+114,Asia,China&Hong Kong&Macau,Data Package,30,10GB  /30 Days,,4.65,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-10GB,A-136-ES-ZD-T1-T-30D/60D-10GB
+115,Asia,China&Hong Kong&Macau,Data Package,3,20GB  /3 Days,,5.54,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-20GB,A-136-ES-ZD-T1-T-3D/60D-20GB
+116,Asia,China&Hong Kong&Macau,Data Package,5,20GB  /5 Days,,6.03,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-20GB,A-136-ES-ZD-T1-T-5D/60D-20GB
+117,Asia,China&Hong Kong&Macau,Data Package,7,20GB  /7 Days,,6.43,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-20GB,A-136-ES-ZD-T1-T-7D/60D-20GB
+118,Asia,China&Hong Kong&Macau,Data Package,10,20GB  /10 Days,,6.83,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-20GB,A-136-ES-ZD-T1-T-10D/60D-20GB
+119,Asia,China&Hong Kong&Macau,Data Package,15,20GB  /15 Days,,7.22,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-20GB,A-136-ES-ZD-T1-T-15D/60D-20GB
+120,Asia,China&Hong Kong&Macau,Data Package,30,20GB  /30 Days,,7.62,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-20GB,A-136-ES-ZD-T1-T-30D/60D-20GB
+121,Asia,China&Hong Kong&Macau,Data Package,3,30GB  /3 Days,,7.82,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-30GB,A-136-ES-ZD-T1-T-3D/60D-30GB
+122,Asia,China&Hong Kong&Macau,Data Package,5,30GB  /5 Days,,8.41,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-30GB,A-136-ES-ZD-T1-T-5D/60D-30GB
+123,Asia,China&Hong Kong&Macau,Data Package,7,30GB  /7 Days,,8.91,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-30GB,A-136-ES-ZD-T1-T-7D/60D-30GB
+124,Asia,China&Hong Kong&Macau,Data Package,10,30GB  /10 Days,,9.49,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-30GB,A-136-ES-ZD-T1-T-10D/60D-30GB
+125,Asia,China&Hong Kong&Macau,Data Package,15,30GB  /15 Days,,9.99,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-30GB,A-136-ES-ZD-T1-T-15D/60D-30GB
+126,Asia,China&Hong Kong&Macau,Data Package,30,30GB  /30 Days,,10.59,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-30GB,A-136-ES-ZD-T1-T-30D/60D-30GB
+127,Asia,China&Hong Kong&Macau,Data Package,3,50GB  /3 Days,,16.12,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-3D/60D-50GB,A-136-ES-ZD-T1-T-3D/60D-50GB
+128,Asia,China&Hong Kong&Macau,Data Package,5,50GB  /5 Days,,17.36,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-5D/60D-50GB,A-136-ES-ZD-T1-T-5D/60D-50GB
+129,Asia,China&Hong Kong&Macau,Data Package,7,50GB  /7 Days,,18.6,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-7D/60D-50GB,A-136-ES-ZD-T1-T-7D/60D-50GB
+130,Asia,China&Hong Kong&Macau,Data Package,10,50GB  /10 Days,,20.46,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-10D/60D-50GB,A-136-ES-ZD-T1-T-10D/60D-50GB
+131,Asia,China&Hong Kong&Macau,Data Package,15,50GB  /15 Days,,21.08,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-15D/60D-50GB,A-136-ES-ZD-T1-T-15D/60D-50GB
+132,Asia,China&Hong Kong&Macau,Data Package,30,50GB  /30 Days,,22.32,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-136-ES-AU-T1-T-30D/60D-50GB,A-136-ES-ZD-T1-T-30D/60D-50GB
+133,Asia,Hong Kong&Macao,Daypass,1,"500M high-speed data per day, down to 384kbps",Hong Kong:China Telecom  HK Macau:China Telecom(Macao),0.56,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-1D/60D-500MB,A-102-ES-ZD-T1-D-1D/60D-500MB
+134,Asia,Hong Kong&Macao,Daypass,2,"500M high-speed data per day, down to 384kbps",,0.87,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-2D/60D-500MB,A-102-ES-ZD-T1-D-2D/60D-500MB
+135,Asia,Hong Kong&Macao,Daypass,3,"500M high-speed data per day, down to 384kbps",,1.12,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-3D/60D-500MB,A-102-ES-ZD-T1-D-3D/60D-500MB
+136,Asia,Hong Kong&Macao,Daypass,4,"500M high-speed data per day, down to 384kbps",,1.24,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-4D/60D-500MB,A-102-ES-ZD-T1-D-4D/60D-500MB
+137,Asia,Hong Kong&Macao,Daypass,5,"500M high-speed data per day, down to 384kbps",,1.55,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-5D/60D-500MB,A-102-ES-ZD-T1-D-5D/60D-500MB
+138,Asia,Hong Kong&Macao,Daypass,6,"500M high-speed data per day, down to 384kbps",,1.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-6D/60D-500MB,A-102-ES-ZD-T1-D-6D/60D-500MB
+139,Asia,Hong Kong&Macao,Daypass,7,"500M high-speed data per day, down to 384kbps",,2.17,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-7D/60D-500MB,A-102-ES-ZD-T1-D-7D/60D-500MB
+140,Asia,Hong Kong&Macao,Daypass,8,"500M high-speed data per day, down to 384kbps",,2.48,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-8D/60D-500MB,A-102-ES-ZD-T1-D-8D/60D-500MB
+141,Asia,Hong Kong&Macao,Daypass,9,"500M high-speed data per day, down to 384kbps",,2.79,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-9D/60D-500MB,A-102-ES-ZD-T1-D-9D/60D-500MB
+142,Asia,Hong Kong&Macao,Daypass,10,"500M high-speed data per day, down to 384kbps",,2.91,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-10D/60D-500MB,A-102-ES-ZD-T1-D-10D/60D-500MB
+143,Asia,Hong Kong&Macao,Daypass,11,"500M high-speed data per day, down to 384kbps",,3.21,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-11D/60D-500MB,A-102-ES-ZD-T1-D-11D/60D-500MB
+144,Asia,Hong Kong&Macao,Daypass,12,"500M high-speed data per day, down to 384kbps",,3.5,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-12D/60D-500MB,A-102-ES-ZD-T1-D-12D/60D-500MB
+145,Asia,Hong Kong&Macao,Daypass,13,"500M high-speed data per day, down to 384kbps",,3.79,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-13D/60D-500MB,A-102-ES-ZD-T1-D-13D/60D-500MB
+146,Asia,Hong Kong&Macao,Daypass,14,"500M high-speed data per day, down to 384kbps",,4.08,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-14D/60D-500MB,A-102-ES-ZD-T1-D-14D/60D-500MB
+147,Asia,Hong Kong&Macao,Daypass,15,"500M high-speed data per day, down to 384kbps",,4.19,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-15D/60D-500MB,A-102-ES-ZD-T1-D-15D/60D-500MB
+148,Asia,Hong Kong&Macao,Daypass,20,"500M high-speed data per day, down to 384kbps",,5.58,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-20D/60D-500MB,A-102-ES-ZD-T1-D-20D/60D-500MB
+149,Asia,Hong Kong&Macao,Daypass,25,"500M high-speed data per day, down to 384kbps",,6.98,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-25D/60D-500MB,A-102-ES-ZD-T1-D-25D/60D-500MB
+150,Asia,Hong Kong&Macao,Daypass,30,"500M high-speed data per day, down to 384kbps",,8.37,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-30D/60D-500MB,A-102-ES-ZD-T1-D-30D/60D-500MB
+151,Asia,Hong Kong&Macao,Daypass,1,"1GB high-speed data per day, down to 384kbps",,0.56,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-1D/60D-1GB,A-102-ES-ZD-T1-D-1D/60D-1GB
+152,Asia,Hong Kong&Macao,Daypass,2,"1GB high-speed data per day, down to 384kbps",,1.05,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-2D/60D-1GB,A-102-ES-ZD-T1-D-2D/60D-1GB
+153,Asia,Hong Kong&Macao,Daypass,3,"1GB high-speed data per day, down to 384kbps",,1.3,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-3D/60D-1GB,A-102-ES-ZD-T1-D-3D/60D-1GB
+154,Asia,Hong Kong&Macao,Daypass,4,"1GB high-speed data per day, down to 384kbps",,1.61,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-4D/60D-1GB,A-102-ES-ZD-T1-D-4D/60D-1GB
+155,Asia,Hong Kong&Macao,Daypass,5,"1GB high-speed data per day, down to 384kbps",,2.02,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-5D/60D-1GB,A-102-ES-ZD-T1-D-5D/60D-1GB
+156,Asia,Hong Kong&Macao,Daypass,6,"1GB high-speed data per day, down to 384kbps",,2.42,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-6D/60D-1GB,A-102-ES-ZD-T1-D-6D/60D-1GB
+157,Asia,Hong Kong&Macao,Daypass,7,"1GB high-speed data per day, down to 384kbps",,2.69,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-7D/60D-1GB,A-102-ES-ZD-T1-D-7D/60D-1GB
+158,Asia,Hong Kong&Macao,Daypass,8,"1GB high-speed data per day, down to 384kbps",,3.08,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-8D/60D-1GB,A-102-ES-ZD-T1-D-8D/60D-1GB
+159,Asia,Hong Kong&Macao,Daypass,9,"1GB high-speed data per day, down to 384kbps",,3.46,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-9D/60D-1GB,A-102-ES-ZD-T1-D-9D/60D-1GB
+160,Asia,Hong Kong&Macao,Daypass,10,"1GB high-speed data per day, down to 384kbps",,3.84,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-10D/60D-1GB,A-102-ES-ZD-T1-D-10D/60D-1GB
+161,Asia,Hong Kong&Macao,Daypass,11,"1GB high-speed data per day, down to 384kbps",,4.23,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-11D/60D-1GB,A-102-ES-ZD-T1-D-11D/60D-1GB
+162,Asia,Hong Kong&Macao,Daypass,12,"1GB high-speed data per day, down to 384kbps",,4.61,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-12D/60D-1GB,A-102-ES-ZD-T1-D-12D/60D-1GB
+163,Asia,Hong Kong&Macao,Daypass,13,"1GB high-speed data per day, down to 384kbps",,5,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-13D/60D-1GB,A-102-ES-ZD-T1-D-13D/60D-1GB
+164,Asia,Hong Kong&Macao,Daypass,14,"1GB high-speed data per day, down to 384kbps",,5.38,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-14D/60D-1GB,A-102-ES-ZD-T1-D-14D/60D-1GB
+165,Asia,Hong Kong&Macao,Daypass,15,"1GB high-speed data per day, down to 384kbps",,5.58,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-15D/60D-1GB,A-102-ES-ZD-T1-D-15D/60D-1GB
+166,Asia,Hong Kong&Macao,Daypass,20,"1GB high-speed data per day, down to 384kbps",,7.44,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-20D/60D-1GB,A-102-ES-ZD-T1-D-20D/60D-1GB
+167,Asia,Hong Kong&Macao,Daypass,25,"1GB high-speed data per day, down to 384kbps",,9.3,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-25D/60D-1GB,A-102-ES-ZD-T1-D-25D/60D-1GB
+168,Asia,Hong Kong&Macao,Daypass,30,"1GB high-speed data per day, down to 384kbps",,11.16,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-30D/60D-1GB,A-102-ES-ZD-T1-D-30D/60D-1GB
+169,Asia,Hong Kong&Macao,Daypass,1,"2GB high-speed data per day, down to 384kbps",,0.87,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-1D/60D-2GB,A-102-ES-ZD-T1-D-1D/60D-2GB
+170,Asia,Hong Kong&Macao,Daypass,2,"2GB high-speed data per day, down to 384kbps",,1.74,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-2D/60D-2GB,A-102-ES-ZD-T1-D-2D/60D-2GB
+171,Asia,Hong Kong&Macao,Daypass,3,"2GB high-speed data per day, down to 384kbps",,2.33,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-3D/60D-2GB,A-102-ES-ZD-T1-D-3D/60D-2GB
+172,Asia,Hong Kong&Macao,Daypass,4,"2GB high-speed data per day, down to 384kbps",,3.1,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-4D/60D-2GB,A-102-ES-ZD-T1-D-4D/60D-2GB
+173,Asia,Hong Kong&Macao,Daypass,5,"2GB high-speed data per day, down to 384kbps",,3.57,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-5D/60D-2GB,A-102-ES-ZD-T1-D-5D/60D-2GB
+174,Asia,Hong Kong&Macao,Daypass,6,"2GB high-speed data per day, down to 384kbps",,4.28,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-6D/60D-2GB,A-102-ES-ZD-T1-D-6D/60D-2GB
+175,Asia,Hong Kong&Macao,Daypass,7,"2GB high-speed data per day, down to 384kbps",,4.56,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-7D/60D-2GB,A-102-ES-ZD-T1-D-7D/60D-2GB
+176,Asia,Hong Kong&Macao,Daypass,8,"2GB high-speed data per day, down to 384kbps",,5.21,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-8D/60D-2GB,A-102-ES-ZD-T1-D-8D/60D-2GB
+177,Asia,Hong Kong&Macao,Daypass,9,"2GB high-speed data per day, down to 384kbps",,5.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-9D/60D-2GB,A-102-ES-ZD-T1-D-9D/60D-2GB
+178,Asia,Hong Kong&Macao,Daypass,10,"2GB high-speed data per day, down to 384kbps",,6.51,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-10D/60D-2GB,A-102-ES-ZD-T1-D-10D/60D-2GB
+179,Asia,Hong Kong&Macao,Daypass,11,"2GB high-speed data per day, down to 384kbps",,7.16,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-11D/60D-2GB,A-102-ES-ZD-T1-D-11D/60D-2GB
+180,Asia,Hong Kong&Macao,Daypass,12,"2GB high-speed data per day, down to 384kbps",,7.81,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-12D/60D-2GB,A-102-ES-ZD-T1-D-12D/60D-2GB
+181,Asia,Hong Kong&Macao,Daypass,13,"2GB high-speed data per day, down to 384kbps",,8.46,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-13D/60D-2GB,A-102-ES-ZD-T1-D-13D/60D-2GB
+182,Asia,Hong Kong&Macao,Daypass,14,"2GB high-speed data per day, down to 384kbps",,9.11,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-14D/60D-2GB,A-102-ES-ZD-T1-D-14D/60D-2GB
+183,Asia,Hong Kong&Macao,Daypass,15,"2GB high-speed data per day, down to 384kbps",,10.04,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-15D/60D-2GB,A-102-ES-ZD-T1-D-15D/60D-2GB
+184,Asia,Hong Kong&Macao,Daypass,20,"2GB high-speed data per day, down to 384kbps",,13.39,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-20D/60D-2GB,A-102-ES-ZD-T1-D-20D/60D-2GB
+185,Asia,Hong Kong&Macao,Daypass,25,"2GB high-speed data per day, down to 384kbps",,16.28,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-25D/60D-2GB,A-102-ES-ZD-T1-D-25D/60D-2GB
+186,Asia,Hong Kong&Macao,Daypass,30,"2GB high-speed data per day, down to 384kbps",,19.53,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-30D/60D-2GB,A-102-ES-ZD-T1-D-30D/60D-2GB
+187,Asia,Hong Kong&Macao,Daypass,1,Unlimited,,1.74,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-1D/60D-U,A-102-ES-ZD-T1-D-1D/60D-U
+188,Asia,Hong Kong&Macao,Daypass,2,Unlimited,,3.22,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-2D/60D-U,A-102-ES-ZD-T1-D-2D/60D-U
+189,Asia,Hong Kong&Macao,Daypass,3,Unlimited,,4.65,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-3D/60D-U,A-102-ES-ZD-T1-D-3D/60D-U
+190,Asia,Hong Kong&Macao,Daypass,4,Unlimited,,6.2,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-4D/60D-U,A-102-ES-ZD-T1-D-4D/60D-U
+191,Asia,Hong Kong&Macao,Daypass,5,Unlimited,,7.75,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-5D/60D-U,A-102-ES-ZD-T1-D-5D/60D-U
+192,Asia,Hong Kong&Macao,Daypass,6,Unlimited,,9.3,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-6D/60D-U,A-102-ES-ZD-T1-D-6D/60D-U
+193,Asia,Hong Kong&Macao,Daypass,7,Unlimited,,10.42,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-7D/60D-U,A-102-ES-ZD-T1-D-7D/60D-U
+194,Asia,Hong Kong&Macao,Daypass,8,Unlimited,,11.9,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-8D/60D-U,A-102-ES-ZD-T1-D-8D/60D-U
+195,Asia,Hong Kong&Macao,Daypass,9,Unlimited,,13.39,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-9D/60D-U,A-102-ES-ZD-T1-D-9D/60D-U
+196,Asia,Hong Kong&Macao,Daypass,10,Unlimited,,14.88,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-10D/60D-U,A-102-ES-ZD-T1-D-10D/60D-U
+197,Asia,Hong Kong&Macao,Daypass,11,Unlimited,,16.37,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-11D/60D-U,A-102-ES-ZD-T1-D-11D/60D-U
+198,Asia,Hong Kong&Macao,Daypass,12,Unlimited,,17.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-12D/60D-U,A-102-ES-ZD-T1-D-12D/60D-U
+199,Asia,Hong Kong&Macao,Daypass,13,Unlimited,,19.34,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-13D/60D-U,A-102-ES-ZD-T1-D-13D/60D-U
+200,Asia,Hong Kong&Macao,Daypass,14,Unlimited,,20.83,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-14D/60D-U,A-102-ES-ZD-T1-D-14D/60D-U
+201,Asia,Hong Kong&Macao,Daypass,15,Unlimited,,22.32,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-15D/60D-U,A-102-ES-ZD-T1-D-15D/60D-U
+202,Asia,Hong Kong&Macao,Daypass,20,Unlimited,,29.76,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-20D/60D-U,A-102-ES-ZD-T1-D-20D/60D-U
+203,Asia,Hong Kong&Macao,Daypass,25,Unlimited,,37.2,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-25D/60D-U,A-102-ES-ZD-T1-D-25D/60D-U
+204,Asia,Hong Kong&Macao,Daypass,30,Unlimited,,44.64,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-D-30D/60D-U,A-102-ES-ZD-T1-D-30D/60D-U
+205,Asia,Hong Kong&Macao,Data Package,3,1GB  /3 Days,,0.71,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-1GB,A-102-ES-ZD-T1-T-3D/60D-1GB
+206,Asia,Hong Kong&Macao,Data Package,5,1GB  /5 Days,,0.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-1GB,A-102-ES-ZD-T1-T-5D/60D-1GB
+207,Asia,Hong Kong&Macao,Data Package,7,1GB  /7 Days,,0.99,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-1GB,A-102-ES-ZD-T1-T-7D/60D-1GB
+208,Asia,Hong Kong&Macao,Data Package,10,1GB  /10 Days,,1.05,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-1GB,A-102-ES-ZD-T1-T-10D/60D-1GB
+209,Asia,Hong Kong&Macao,Data Package,15,1GB  /15 Days,,1.12,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-1GB,A-102-ES-ZD-T1-T-15D/60D-1GB
+210,Asia,Hong Kong&Macao,Data Package,30,1GB  /30 Days,,1.24,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-1GB,A-102-ES-ZD-T1-T-30D/60D-1GB
+211,Asia,Hong Kong&Macao,Data Package,3,3GB  /3 Days,,1.24,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-3GB,A-102-ES-ZD-T1-T-3D/60D-3GB
+212,Asia,Hong Kong&Macao,Data Package,5,3GB  /5 Days,,1.3,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-3GB,A-102-ES-ZD-T1-T-5D/60D-3GB
+213,Asia,Hong Kong&Macao,Data Package,7,3GB  /7 Days,,1.49,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-3GB,A-102-ES-ZD-T1-T-7D/60D-3GB
+214,Asia,Hong Kong&Macao,Data Package,10,3GB  /10 Days,,1.55,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-3GB,A-102-ES-ZD-T1-T-10D/60D-3GB
+215,Asia,Hong Kong&Macao,Data Package,15,3GB  /15 Days,,1.61,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-3GB,A-102-ES-ZD-T1-T-15D/60D-3GB
+216,Asia,Hong Kong&Macao,Data Package,30,3GB  /30 Days,,1.67,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-3GB,A-102-ES-ZD-T1-T-30D/60D-3GB
+217,Asia,Hong Kong&Macao,Data Package,3,5GB  /3 Days,,1.86,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-5GB,A-102-ES-ZD-T1-T-3D/60D-5GB
+218,Asia,Hong Kong&Macao,Data Package,5,5GB  /5 Days,,2.05,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-5GB,A-102-ES-ZD-T1-T-5D/60D-5GB
+219,Asia,Hong Kong&Macao,Data Package,7,5GB  /7 Days,,2.17,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-5GB,A-102-ES-ZD-T1-T-7D/60D-5GB
+220,Asia,Hong Kong&Macao,Data Package,10,5GB  /10 Days,,2.29,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-5GB,A-102-ES-ZD-T1-T-10D/60D-5GB
+221,Asia,Hong Kong&Macao,Data Package,15,5GB  /15 Days,,2.42,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-5GB,A-102-ES-ZD-T1-T-15D/60D-5GB
+222,Asia,Hong Kong&Macao,Data Package,30,5GB  /30 Days,,2.54,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-5GB,A-102-ES-ZD-T1-T-30D/60D-5GB
+223,Asia,Hong Kong&Macao,Data Package,3,10GB  /3 Days,,2.98,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-10GB,A-102-ES-ZD-T1-T-3D/60D-10GB
+224,Asia,Hong Kong&Macao,Data Package,5,10GB  /5 Days,,3.22,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-10GB,A-102-ES-ZD-T1-T-5D/60D-10GB
+225,Asia,Hong Kong&Macao,Data Package,7,10GB  /7 Days,,3.35,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-10GB,A-102-ES-ZD-T1-T-7D/60D-10GB
+226,Asia,Hong Kong&Macao,Data Package,10,10GB  /10 Days,,3.72,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-10GB,A-102-ES-ZD-T1-T-10D/60D-10GB
+227,Asia,Hong Kong&Macao,Data Package,15,10GB  /15 Days,,3.97,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-10GB,A-102-ES-ZD-T1-T-15D/60D-10GB
+228,Asia,Hong Kong&Macao,Data Package,30,10GB  /30 Days,,4.28,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-10GB,A-102-ES-ZD-T1-T-30D/60D-10GB
+229,Asia,Hong Kong&Macao,Data Package,3,20GB  /3 Days,,5.58,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-20GB,A-102-ES-ZD-T1-T-3D/60D-20GB
+230,Asia,Hong Kong&Macao,Data Package,5,20GB  /5 Days,,6.2,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-20GB,A-102-ES-ZD-T1-T-5D/60D-20GB
+231,Asia,Hong Kong&Macao,Data Package,7,20GB  /7 Days,,6.82,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-20GB,A-102-ES-ZD-T1-T-7D/60D-20GB
+232,Asia,Hong Kong&Macao,Data Package,10,20GB  /10 Days,,7.01,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-20GB,A-102-ES-ZD-T1-T-10D/60D-20GB
+233,Asia,Hong Kong&Macao,Data Package,15,20GB  /15 Days,,7.32,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-20GB,A-102-ES-ZD-T1-T-15D/60D-20GB
+234,Asia,Hong Kong&Macao,Data Package,30,20GB  /30 Days,,7.94,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-20GB,A-102-ES-ZD-T1-T-30D/60D-20GB
+235,Asia,Hong Kong&Macao,Data Package,3,30GB  /3 Days,,8.06,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-30GB,A-102-ES-ZD-T1-T-3D/60D-30GB
+236,Asia,Hong Kong&Macao,Data Package,5,30GB  /5 Days,,8.68,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-30GB,A-102-ES-ZD-T1-T-5D/60D-30GB
+237,Asia,Hong Kong&Macao,Data Package,7,30GB  /7 Days,,8.87,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-30GB,A-102-ES-ZD-T1-T-7D/60D-30GB
+238,Asia,Hong Kong&Macao,Data Package,10,30GB  /10 Days,,9.49,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-30GB,A-102-ES-ZD-T1-T-10D/60D-30GB
+239,Asia,Hong Kong&Macao,Data Package,15,30GB  /15 Days,,10.11,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-30GB,A-102-ES-ZD-T1-T-15D/60D-30GB
+240,Asia,Hong Kong&Macao,Data Package,30,30GB  /30 Days,,10.73,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-30GB,A-102-ES-ZD-T1-T-30D/60D-30GB
+241,Asia,Hong Kong&Macao,Data Package,3,50GB  /3 Days,,13.52,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-3D/60D-50GB,A-102-ES-ZD-T1-T-3D/60D-50GB
+242,Asia,Hong Kong&Macao,Data Package,5,50GB  /5 Days,,14.45,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-5D/60D-50GB,A-102-ES-ZD-T1-T-5D/60D-50GB
+243,Asia,Hong Kong&Macao,Data Package,7,50GB  /7 Days,,15.38,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-7D/60D-50GB,A-102-ES-ZD-T1-T-7D/60D-50GB
+244,Asia,Hong Kong&Macao,Data Package,10,50GB  /10 Days,,16.62,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-10D/60D-50GB,A-102-ES-ZD-T1-T-10D/60D-50GB
+245,Asia,Hong Kong&Macao,Data Package,15,50GB  /15 Days,,17.55,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-15D/60D-50GB,A-102-ES-ZD-T1-T-15D/60D-50GB
+246,Asia,Hong Kong&Macao,Data Package,30,50GB  /30 Days,,18.48,Auto Activate/ designated Date Activate,,ALL NO KYC,at1,Y,,UTC+8,A-102-ES-AU-T1-T-30D/60D-50GB,A-102-ES-ZD-T1-T-30D/60D-50GB
+247,Oceania,Australia,Daypass,1,"500M high-speed data per day, down to 384kbps",Optus,0.52,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-1D/60D-500MB,C-001-ES-ZD-T1-D-1D/60D-500MB
+248,Oceania,Australia,Daypass,3,"500M high-speed data per day, down to 384kbps",,0.98,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-3D/60D-500MB,C-001-ES-ZD-T1-D-3D/60D-500MB
+249,Oceania,Australia,Daypass,5,"500M high-speed data per day, down to 384kbps",,1.63,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-5D/60D-500MB,C-001-ES-ZD-T1-D-5D/60D-500MB
+250,Oceania,Australia,Daypass,7,"500M high-speed data per day, down to 384kbps",,2.28,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-7D/60D-500MB,C-001-ES-ZD-T1-D-7D/60D-500MB
+251,Oceania,Australia,Daypass,10,"500M high-speed data per day, down to 384kbps",,3.26,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-10D/60D-500MB,C-001-ES-ZD-T1-D-10D/60D-500MB
+252,Oceania,Australia,Daypass,15,"500M high-speed data per day, down to 384kbps",,4.89,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-15D/60D-500MB,C-001-ES-ZD-T1-D-15D/60D-500MB
+253,Oceania,Australia,Daypass,20,"500M high-speed data per day, down to 384kbps",,6.53,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-20D/60D-500MB,C-001-ES-ZD-T1-D-20D/60D-500MB
+254,Oceania,Australia,Daypass,30,"500M high-speed data per day, down to 384kbps",,9.79,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-30D/60D-500MB,C-001-ES-ZD-T1-D-30D/60D-500MB
+255,Oceania,Australia,Daypass,1,"1GB high-speed data per day, down to 384kbps",,0.59,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-1D/60D-1GB,C-001-ES-ZD-T1-D-1D/60D-1GB
+256,Oceania,Australia,Daypass,3,"1GB high-speed data per day, down to 384kbps",,1.57,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-3D/60D-1GB,C-001-ES-ZD-T1-D-3D/60D-1GB
+257,Oceania,Australia,Daypass,5,"1GB high-speed data per day, down to 384kbps",,2.28,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-5D/60D-1GB,C-001-ES-ZD-T1-D-5D/60D-1GB
+258,Oceania,Australia,Daypass,7,"1GB high-speed data per day, down to 384kbps",,3.2,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-7D/60D-1GB,C-001-ES-ZD-T1-D-7D/60D-1GB
+259,Oceania,Australia,Daypass,10,"1GB high-speed data per day, down to 384kbps",,4.24,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-10D/60D-1GB,C-001-ES-ZD-T1-D-10D/60D-1GB
+260,Oceania,Australia,Daypass,15,"1GB high-speed data per day, down to 384kbps",,6.36,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-15D/60D-1GB,C-001-ES-ZD-T1-D-15D/60D-1GB
+261,Oceania,Australia,Daypass,20,"1GB high-speed data per day, down to 384kbps",,8.48,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-20D/60D-1GB,C-001-ES-ZD-T1-D-20D/60D-1GB
+262,Oceania,Australia,Daypass,30,"1GB high-speed data per day, down to 384kbps",,12.73,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-30D/60D-1GB,C-001-ES-ZD-T1-D-30D/60D-1GB
+263,Oceania,Australia,Daypass,1,"2GB high-speed data per day, down to 384kbps",,0.91,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-1D/60D-2GB,C-001-ES-ZD-T1-D-1D/60D-2GB
+264,Oceania,Australia,Daypass,3,"2GB high-speed data per day, down to 384kbps",,2.45,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-3D/60D-2GB,C-001-ES-ZD-T1-D-3D/60D-2GB
+265,Oceania,Australia,Daypass,5,"2GB high-speed data per day, down to 384kbps",,3.75,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-5D/60D-2GB,C-001-ES-ZD-T1-D-5D/60D-2GB
+266,Oceania,Australia,Daypass,7,"2GB high-speed data per day, down to 384kbps",,5.25,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-7D/60D-2GB,C-001-ES-ZD-T1-D-7D/60D-2GB
+267,Oceania,Australia,Daypass,10,"2GB high-speed data per day, down to 384kbps",,7.51,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-10D/60D-2GB,C-001-ES-ZD-T1-D-10D/60D-2GB
+268,Oceania,Australia,Daypass,15,"2GB high-speed data per day, down to 384kbps",,11.26,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-15D/60D-2GB,C-001-ES-ZD-T1-D-15D/60D-2GB
+269,Oceania,Australia,Daypass,20,"2GB high-speed data per day, down to 384kbps",,15.01,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-20D/60D-2GB,C-001-ES-ZD-T1-D-20D/60D-2GB
+270,Oceania,Australia,Daypass,30,"2GB high-speed data per day, down to 384kbps",,22.52,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-30D/60D-2GB,C-001-ES-ZD-T1-D-30D/60D-2GB
+271,Oceania,Australia,Daypass,1,"3GB high-speed data per day, down to 384kbps",,1.11,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-1D/60D-3GB,C-001-ES-ZD-T1-D-1D/60D-3GB
+272,Oceania,Australia,Daypass,3,"3GB high-speed data per day, down to 384kbps",,3.13,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-3D/60D-3GB,C-001-ES-ZD-T1-D-3D/60D-3GB
+273,Oceania,Australia,Daypass,5,"3GB high-speed data per day, down to 384kbps",,5.22,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-5D/60D-3GB,C-001-ES-ZD-T1-D-5D/60D-3GB
+274,Oceania,Australia,Daypass,7,"3GB high-speed data per day, down to 384kbps",,7.31,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-7D/60D-3GB,C-001-ES-ZD-T1-D-7D/60D-3GB
+275,Oceania,Australia,Daypass,10,"3GB high-speed data per day, down to 384kbps",,10.44,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-10D/60D-3GB,C-001-ES-ZD-T1-D-10D/60D-3GB
+276,Oceania,Australia,Daypass,15,"3GB high-speed data per day, down to 384kbps",,15.66,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-15D/60D-3GB,C-001-ES-ZD-T1-D-15D/60D-3GB
+277,Oceania,Australia,Daypass,20,"3GB high-speed data per day, down to 384kbps",,20.88,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-20D/60D-3GB,C-001-ES-ZD-T1-D-20D/60D-3GB
+278,Oceania,Australia,Daypass,30,"3GB high-speed data per day, down to 384kbps",,31.33,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-30D/60D-3GB,C-001-ES-ZD-T1-D-30D/60D-3GB
+279,Oceania,Australia,Daypass,1,Unlimited,,1.83,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-1D/60D-U,C-001-ES-ZD-T1-D-1D/60D-U
+280,Oceania,Australia,Daypass,3,Unlimited,,4.89,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-3D/60D-U,C-001-ES-ZD-T1-D-3D/60D-U
+281,Oceania,Australia,Daypass,5,Unlimited,,8.16,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-5D/60D-U,C-001-ES-ZD-T1-D-5D/60D-U
+282,Oceania,Australia,Daypass,7,Unlimited,,10.96,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-7D/60D-U,C-001-ES-ZD-T1-D-7D/60D-U
+283,Oceania,Australia,Daypass,10,Unlimited,,15.66,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-10D/60D-U,C-001-ES-ZD-T1-D-10D/60D-U
+284,Oceania,Australia,Daypass,15,Unlimited,,23.49,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-15D/60D-U,C-001-ES-ZD-T1-D-15D/60D-U
+285,Oceania,Australia,Daypass,20,Unlimited,,31.33,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-20D/60D-U,C-001-ES-ZD-T1-D-20D/60D-U
+286,Oceania,Australia,Daypass,30,Unlimited,,46.99,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-D-30D/60D-U,C-001-ES-ZD-T1-D-30D/60D-U
+287,Oceania,Australia,Data Package,3,1GB  /3 Days,,0.75,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-1GB,C-001-ES-ZD-T1-T-3D/60D-1GB
+288,Oceania,Australia,Data Package,5,1GB  /5 Days,,0.9,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-1GB,C-001-ES-ZD-T1-T-5D/60D-1GB
+289,Oceania,Australia,Data Package,7,1GB  /7 Days,,1.04,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-1GB,C-001-ES-ZD-T1-T-7D/60D-1GB
+290,Oceania,Australia,Data Package,10,1GB  /10 Days,,1.11,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-1GB,C-001-ES-ZD-T1-T-10D/60D-1GB
+291,Oceania,Australia,Data Package,15,1GB  /15 Days,,1.17,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-1GB,C-001-ES-ZD-T1-T-15D/60D-1GB
+292,Oceania,Australia,Data Package,30,1GB  /30 Days,,1.31,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-1GB,C-001-ES-ZD-T1-T-30D/60D-1GB
+293,Oceania,Australia,Data Package,3,3GB  /3 Days,,1.5,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-3GB,C-001-ES-ZD-T1-T-3D/60D-3GB
+294,Oceania,Australia,Data Package,5,3GB  /5 Days,,1.57,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-3GB,C-001-ES-ZD-T1-T-5D/60D-3GB
+295,Oceania,Australia,Data Package,7,3GB  /7 Days,,1.76,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-3GB,C-001-ES-ZD-T1-T-7D/60D-3GB
+296,Oceania,Australia,Data Package,10,3GB  /10 Days,,1.83,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-3GB,C-001-ES-ZD-T1-T-10D/60D-3GB
+297,Oceania,Australia,Data Package,15,3GB  /15 Days,,1.89,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-3GB,C-001-ES-ZD-T1-T-15D/60D-3GB
+298,Oceania,Australia,Data Package,30,3GB  /30 Days,,1.96,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-3GB,C-001-ES-ZD-T1-T-30D/60D-3GB
+299,Oceania,Australia,Data Package,3,5GB  /3 Days,,2.41,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-5GB,C-001-ES-ZD-T1-T-3D/60D-5GB
+300,Oceania,Australia,Data Package,5,5GB  /5 Days,,2.48,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-5GB,C-001-ES-ZD-T1-T-5D/60D-5GB
+301,Oceania,Australia,Data Package,7,5GB  /7 Days,,2.61,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-5GB,C-001-ES-ZD-T1-T-7D/60D-5GB
+302,Oceania,Australia,Data Package,10,5GB  /10 Days,,2.68,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-5GB,C-001-ES-ZD-T1-T-10D/60D-5GB
+303,Oceania,Australia,Data Package,15,5GB  /15 Days,,2.81,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-5GB,C-001-ES-ZD-T1-T-15D/60D-5GB
+304,Oceania,Australia,Data Package,30,5GB  /30 Days,,2.94,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-5GB,C-001-ES-ZD-T1-T-30D/60D-5GB
+305,Oceania,Australia,Data Package,3,10GB  /3 Days,,3.79,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-10GB,C-001-ES-ZD-T1-T-3D/60D-10GB
+306,Oceania,Australia,Data Package,5,10GB  /5 Days,,4.05,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-10GB,C-001-ES-ZD-T1-T-5D/60D-10GB
+307,Oceania,Australia,Data Package,7,10GB  /7 Days,,4.24,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-10GB,C-001-ES-ZD-T1-T-7D/60D-10GB
+308,Oceania,Australia,Data Package,10,10GB  /10 Days,,4.63,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-10GB,C-001-ES-ZD-T1-T-10D/60D-10GB
+309,Oceania,Australia,Data Package,15,10GB  /15 Days,,4.89,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-10GB,C-001-ES-ZD-T1-T-15D/60D-10GB
+310,Oceania,Australia,Data Package,30,10GB  /30 Days,,5.22,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-10GB,C-001-ES-ZD-T1-T-30D/60D-10GB
+311,Oceania,Australia,Data Package,3,20GB  /3 Days,,7.18,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-20GB,C-001-ES-ZD-T1-T-3D/60D-20GB
+312,Oceania,Australia,Data Package,5,20GB  /5 Days,,7.83,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-20GB,C-001-ES-ZD-T1-T-5D/60D-20GB
+313,Oceania,Australia,Data Package,7,20GB  /7 Days,,8.48,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-20GB,C-001-ES-ZD-T1-T-7D/60D-20GB
+314,Oceania,Australia,Data Package,10,20GB  /10 Days,,8.81,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-20GB,C-001-ES-ZD-T1-T-10D/60D-20GB
+315,Oceania,Australia,Data Package,15,20GB  /15 Days,,9.14,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-20GB,C-001-ES-ZD-T1-T-15D/60D-20GB
+316,Oceania,Australia,Data Package,30,20GB  /30 Days,,9.79,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-20GB,C-001-ES-ZD-T1-T-30D/60D-20GB
+317,Oceania,Australia,Data Package,3,30GB  /3 Days,,10.44,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-30GB,C-001-ES-ZD-T1-T-3D/60D-30GB
+318,Oceania,Australia,Data Package,5,30GB  /5 Days,,11.75,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-30GB,C-001-ES-ZD-T1-T-5D/60D-30GB
+319,Oceania,Australia,Data Package,7,30GB  /7 Days,,12.4,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-30GB,C-001-ES-ZD-T1-T-7D/60D-30GB
+320,Oceania,Australia,Data Package,10,30GB  /10 Days,,13.05,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-30GB,C-001-ES-ZD-T1-T-10D/60D-30GB
+321,Oceania,Australia,Data Package,15,30GB  /15 Days,,13.71,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-30GB,C-001-ES-ZD-T1-T-15D/60D-30GB
+322,Oceania,Australia,Data Package,30,30GB  /30 Days,,14.36,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-30GB,C-001-ES-ZD-T1-T-30D/60D-30GB
+323,Oceania,Australia,Data Package,3,50GB  /3 Days,,16.97,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-3D/60D-50GB,C-001-ES-ZD-T1-T-3D/60D-50GB
+324,Oceania,Australia,Data Package,5,50GB  /5 Days,,17.62,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-5D/60D-50GB,C-001-ES-ZD-T1-T-5D/60D-50GB
+325,Oceania,Australia,Data Package,7,50GB  /7 Days,,18.93,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-7D/60D-50GB,C-001-ES-ZD-T1-T-7D/60D-50GB
+326,Oceania,Australia,Data Package,10,50GB  /10 Days,,20.23,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-10D/60D-50GB,C-001-ES-ZD-T1-T-10D/60D-50GB
+327,Oceania,Australia,Data Package,15,50GB  /15 Days,,21.54,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-15D/60D-50GB,C-001-ES-ZD-T1-T-15D/60D-50GB
+328,Oceania,Australia,Data Package,30,50GB  /30 Days,,22.84,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,C-001-ES-AU-T1-T-30D/60D-50GB,C-001-ES-ZD-T1-T-30D/60D-50GB
+329,Asia,India,Daypass,1,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,1.02,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-1D/60D-500MB,A-016-ES-ZD-at1-D-1D/60D-500MB
+330,Asia,India,Daypass,3,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,2.22,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-3D/60D-500MB,A-016-ES-ZD-at1-D-3D/60D-500MB
+331,Asia,India,Daypass,5,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,3.37,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-5D/60D-500MB,A-016-ES-ZD-at1-D-5D/60D-500MB
+332,Asia,India,Daypass,7,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,4.51,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-7D/60D-500MB,A-016-ES-ZD-at1-D-7D/60D-500MB
+333,Asia,India,Daypass,10,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,6.34,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-10D/60D-500MB,A-016-ES-ZD-at1-D-10D/60D-500MB
+334,Asia,India,Daypass,15,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,9.38,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-15D/60D-500MB,A-016-ES-ZD-at1-D-15D/60D-500MB
+335,Asia,India,Daypass,20,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,12.42,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-20D/60D-500MB,A-016-ES-ZD-at1-D-20D/60D-500MB
+336,Asia,India,Daypass,30,"500M high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,18.5,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-30D/60D-500MB,A-016-ES-ZD-at1-D-30D/60D-500MB
+337,Asia,India,Daypass,1,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,1.63,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-1D/60D-1GB,A-016-ES-ZD-at1-D-1D/60D-1GB
+338,Asia,India,Daypass,3,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,3.91,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-3D/60D-1GB,A-016-ES-ZD-at1-D-3D/60D-1GB
+339,Asia,India,Daypass,5,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,6.34,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-5D/60D-1GB,A-016-ES-ZD-at1-D-5D/60D-1GB
+340,Asia,India,Daypass,7,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,8.77,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-7D/60D-1GB,A-016-ES-ZD-at1-D-7D/60D-1GB
+341,Asia,India,Daypass,10,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,12.42,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-10D/60D-1GB,A-016-ES-ZD-at1-D-10D/60D-1GB
+342,Asia,India,Daypass,15,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,18.5,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-15D/60D-1GB,A-016-ES-ZD-at1-D-15D/60D-1GB
+343,Asia,India,Daypass,20,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,24.58,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-20D/60D-1GB,A-016-ES-ZD-at1-D-20D/60D-1GB
+344,Asia,India,Daypass,30,"1GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,36.75,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-30D/60D-1GB,A-016-ES-ZD-at1-D-30D/60D-1GB
+345,Asia,India,Daypass,1,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,2.54,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-1D/60D-2GB,A-016-ES-ZD-at1-D-1D/60D-2GB
+346,Asia,India,Daypass,3,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,6.64,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-3D/60D-2GB,A-016-ES-ZD-at1-D-3D/60D-2GB
+347,Asia,India,Daypass,5,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,10.9,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-5D/60D-2GB,A-016-ES-ZD-at1-D-5D/60D-2GB
+348,Asia,India,Daypass,7,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,15.16,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-7D/60D-2GB,A-016-ES-ZD-at1-D-7D/60D-2GB
+349,Asia,India,Daypass,10,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,21.54,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-10D/60D-2GB,A-016-ES-ZD-at1-D-10D/60D-2GB
+350,Asia,India,Daypass,15,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,32.19,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-15D/60D-2GB,A-016-ES-ZD-at1-D-15D/60D-2GB
+351,Asia,India,Daypass,20,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,42.83,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-20D/60D-2GB,A-016-ES-ZD-at1-D-20D/60D-2GB
+352,Asia,India,Daypass,30,"2GB high-speed data per day, down to 384kbps",Reliance Jio/Bharti Airtel,64.12,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-30D/60D-2GB,A-016-ES-ZD-at1-D-30D/60D-2GB
+353,Asia,India,Daypass,1,Unlimited,Reliance Jio/Bharti Airtel,4.06,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-1D/60D-Unlimited,A-016-ES-ZD-at1-D-1D/60D-Unlimited
+354,Asia,India,Daypass,3,Unlimited,Reliance Jio/Bharti Airtel,11.2,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-3D/60D-Unlimited,A-016-ES-ZD-at1-D-3D/60D-Unlimited
+355,Asia,India,Daypass,5,Unlimited,Reliance Jio/Bharti Airtel,17.74,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-5D/60D-Unlimited,A-016-ES-ZD-at1-D-5D/60D-Unlimited
+356,Asia,India,Daypass,7,Unlimited,Reliance Jio/Bharti Airtel,22.61,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-7D/60D-Unlimited,A-016-ES-ZD-at1-D-7D/60D-Unlimited
+357,Asia,India,Daypass,10,Unlimited,Reliance Jio/Bharti Airtel,32.19,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-10D/60D-Unlimited,A-016-ES-ZD-at1-D-10D/60D-Unlimited
+358,Asia,India,Daypass,15,Unlimited,Reliance Jio/Bharti Airtel,48.15,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-15D/60D-Unlimited,A-016-ES-ZD-at1-D-15D/60D-Unlimited
+359,Asia,India,Daypass,20,Unlimited,Reliance Jio/Bharti Airtel,64.12,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-20D/60D-Unlimited,A-016-ES-ZD-at1-D-20D/60D-Unlimited
+360,Asia,India,Daypass,30,Unlimited,Reliance Jio/Bharti Airtel,96.05,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-at1-D-30D/60D-Unlimited,A-016-ES-ZD-at1-D-30D/60D-Unlimited
+361,Asia,India,Data Package,3,1GB  /3 Days,Reliance Jio/Bharti Airtel,1.78,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-3D/60D-1GB,A-016-ES-ZD-T-at1-3D/60D-1GB
+362,Asia,India,Data Package,5,1GB  /5 Days,Reliance Jio/Bharti Airtel,1.93,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-5D/60D-1GB,A-016-ES-ZD-T-at1-5D/60D-1GB
+363,Asia,India,Data Package,7,1GB  /7 Days,Reliance Jio/Bharti Airtel,2.08,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-7D/60D-1GB,A-016-ES-ZD-T-at1-7D/60D-1GB
+364,Asia,India,Data Package,10,1GB  /10 Days,Reliance Jio/Bharti Airtel,2.23,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-10D/60D-1GB,A-016-ES-ZD-T-at1-10D/60D-1GB
+365,Asia,India,Data Package,15,1GB  /15 Days,Reliance Jio/Bharti Airtel,2.39,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-15D/60D-1GB,A-016-ES-ZD-T-at1-15D/60D-1GB
+366,Asia,India,Data Package,30,1GB  /30 Days,Reliance Jio/Bharti Airtel,2.54,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-30D/60D-1GB,A-016-ES-ZD-T-at1-30D/60D-1GB
+367,Asia,India,Data Package,3,3GB  /3 Days,Reliance Jio/Bharti Airtel,3.68,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-3D/60D-3GB,A-016-ES-ZD-T-at1-3D/60D-3GB
+368,Asia,India,Data Package,5,3GB  /5 Days,Reliance Jio/Bharti Airtel,3.95,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-5D/60D-3GB,A-016-ES-ZD-T-at1-5D/60D-3GB
+369,Asia,India,Data Package,7,3GB  /7 Days,Reliance Jio/Bharti Airtel,4.13,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-7D/60D-3GB,A-016-ES-ZD-T-at1-7D/60D-3GB
+370,Asia,India,Data Package,10,3GB  /10 Days,Reliance Jio/Bharti Airtel,4.36,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-10D/60D-3GB,A-016-ES-ZD-T-at1-10D/60D-3GB
+371,Asia,India,Data Package,15,3GB  /15 Days,Reliance Jio/Bharti Airtel,4.59,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-15D/60D-3GB,A-016-ES-ZD-T-at1-15D/60D-3GB
+372,Asia,India,Data Package,30,3GB  /30 Days,Reliance Jio/Bharti Airtel,4.82,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-30D/60D-3GB,A-016-ES-ZD-T-at1-30D/60D-3GB
+373,Asia,India,Data Package,3,5GB  /3 Days,Reliance Jio/Bharti Airtel,6.26,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-3D/60D-5GB,A-016-ES-ZD-T-at1-3D/60D-5GB
+374,Asia,India,Data Package,5,5GB  /5 Days,Reliance Jio/Bharti Airtel,6.49,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-5D/60D-5GB,A-016-ES-ZD-T-at1-5D/60D-5GB
+375,Asia,India,Data Package,7,5GB  /7 Days,Reliance Jio/Bharti Airtel,6.57,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-7D/60D-5GB,A-016-ES-ZD-T-at1-7D/60D-5GB
+376,Asia,India,Data Package,10,5GB  /10 Days,Reliance Jio/Bharti Airtel,6.95,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-10D/60D-5GB,A-016-ES-ZD-T-at1-10D/60D-5GB
+377,Asia,India,Data Package,15,5GB  /15 Days,Reliance Jio/Bharti Airtel,7.02,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-15D/60D-5GB,A-016-ES-ZD-T-at1-15D/60D-5GB
+378,Asia,India,Data Package,30,5GB  /30 Days,Reliance Jio/Bharti Airtel,7.1,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-30D/60D-5GB,A-016-ES-ZD-T-at1-30D/60D-5GB
+379,Asia,India,Data Package,3,10GB  /3 Days,Reliance Jio/Bharti Airtel,11.51,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-3D/60D-10GB,A-016-ES-ZD-T-at1-3D/60D-10GB
+380,Asia,India,Data Package,5,10GB  /5 Days,Reliance Jio/Bharti Airtel,11.96,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-5D/60D-10GB,A-016-ES-ZD-T-at1-5D/60D-10GB
+381,Asia,India,Data Package,7,10GB  /7 Days,Reliance Jio/Bharti Airtel,12.42,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-7D/60D-10GB,A-016-ES-ZD-T-at1-7D/60D-10GB
+382,Asia,India,Data Package,10,10GB  /10 Days,Reliance Jio/Bharti Airtel,12.88,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-10D/60D-10GB,A-016-ES-ZD-T-at1-10D/60D-10GB
+383,Asia,India,Data Package,15,10GB  /15 Days,Reliance Jio/Bharti Airtel,13.33,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-15D/60D-10GB,A-016-ES-ZD-T-at1-15D/60D-10GB
+384,Asia,India,Data Package,30,10GB  /30 Days,Reliance Jio/Bharti Airtel,13.64,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-30D/60D-10GB,A-016-ES-ZD-T-at1-30D/60D-10GB
+385,Asia,India,Data Package,3,20GB  /3 Days,Reliance Jio/Bharti Airtel,20.33,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-3D/60D-20GB,A-016-ES-ZD-T-at1-3D/60D-20GB
+386,Asia,India,Data Package,5,20GB  /5 Days,Reliance Jio/Bharti Airtel,21.09,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-5D/60D-20GB,A-016-ES-ZD-T-at1-5D/60D-20GB
+387,Asia,India,Data Package,7,20GB  /7 Days,Reliance Jio/Bharti Airtel,21.85,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-7D/60D-20GB,A-016-ES-ZD-T-at1-7D/60D-20GB
+388,Asia,India,Data Package,10,20GB  /10 Days,Reliance Jio/Bharti Airtel,22.61,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-10D/60D-20GB,A-016-ES-ZD-T-at1-10D/60D-20GB
+389,Asia,India,Data Package,15,20GB  /15 Days,Reliance Jio/Bharti Airtel,23.37,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-15D/60D-20GB,A-016-ES-ZD-T-at1-15D/60D-20GB
+390,Asia,India,Data Package,30,20GB  /30 Days,Reliance Jio/Bharti Airtel,24.58,Auto Activate/ designated Date Activate,,,ac1,Y,,UTC+8,A-016-ES-AU-T-at1-30D/60D-20GB,A-016-ES-ZD-T-at1-30D/60D-20GB
+,Remark:,,1. Tuge Technology will dynamically adjust the operators and network types according to the cooperation situation of local suppliers.,,,,,,,,,,,,,
+,,,"2. This quotation sheet is only applicable to mobile phones, not MIFI and CPE.",,,,,,,,,,,,,
+,,,3. The quotation is in USD and the settlement currency is USD.,,,,,,,,,,,,,
+,,,"4. The price will fluctuate and change according to the price policy of the operators. Our company will notify 15 days in advance, the time of the placing order is the criterion.",,,,,,,,,,,,,
+,,,5. The product is valid within 60 days of spontaneous delivery.,,,,,,,,,,,,,
+,,,"6. This quotation is published on November 1, 2022 and shall be valid until the new quotation is published. (Finally, prices in the cloud communication platform are the criteria)",,,,,,,,,,,,,

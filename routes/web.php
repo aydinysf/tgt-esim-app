@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\PackageController as AdminPackage;
 use App\Http\Controllers\Admin\ReportController as AdminReport;
 use App\Http\Controllers\Admin\SettingController as AdminSetting;
 use App\Http\Controllers\Customer\DashboardController as CustomerDashboard;
+use App\Http\Controllers\Customer\IwcController;
 
 Route::get('/', function () {
     return redirect()->route('login');
@@ -33,9 +34,12 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 
     // Packages & Assignment
     Route::get('/packages', [AdminPackage::class, 'index'])->name('packages.index');
+    Route::get('/packages/import', [AdminPackage::class, 'showImportPage'])->name('packages.import');
     Route::get('/packages/products-json', [AdminPackage::class, 'productsJson'])->name('packages.products-json');
     Route::post('/packages/sync', [AdminPackage::class, 'sync'])->name('packages.sync');
     Route::post('/packages/sync-chunked', [AdminPackage::class, 'syncChunked'])->name('packages.sync-chunked');
+    Route::post('/packages/import-price-list', [AdminPackage::class, 'importPriceList'])->name('packages.import-price-list');
+    Route::post('/packages/import-upload', [AdminPackage::class, 'importUpload'])->name('packages.import-upload');
     Route::post('/packages/assign', [AdminPackage::class, 'assign'])->name('packages.assign');
     Route::post('/packages/assignment/bulk-delete', [AdminPackage::class, 'bulkRemoveAssignments'])->name('packages.assignment.bulk-delete');
     Route::post('/packages/truncate-all', [AdminPackage::class, 'truncateAll'])->name('packages.truncate-all');
@@ -68,6 +72,18 @@ Route::middleware(['auth'])->prefix('customer')->name('customer.')->group(functi
     Route::get('/orders', [CustomerDashboard::class, 'orders'])->name('orders.index');
     Route::post('/buy', [CustomerDashboard::class, 'buyPackage'])->name('buy');
     Route::get('/orders/{order}/usage', [CustomerDashboard::class, 'getUsageInfo'])->name('orders.usage');
+    
+    // IWC Tours & Experiences (Credit Card / Stripe)
+    Route::prefix('tours')->name('iwc.')->group(function () {
+        Route::get('/', [IwcController::class, 'index'])->name('index');
+        Route::get('/orders', [IwcController::class, 'orders'])->name('orders');
+        Route::get('/orders/{id}/detail', [IwcController::class, 'orderDetail'])->name('orders.detail');
+        Route::get('/{id}', [IwcController::class, 'show'])->name('show');
+        Route::get('/{id}/availability', [IwcController::class, 'getAvailability'])->name('availability');
+        Route::post('/checkout', [IwcController::class, 'checkout'])->name('checkout');
+        Route::get('/stripe/{orderNo}/success', [IwcController::class, 'stripeSuccess'])->name('stripe.success');
+        Route::get('/stripe/{orderNo}/cancel', [IwcController::class, 'stripeCancel'])->name('stripe.cancel');
+    });
     
     // Branches & Staff Management (Only for main Customer role)
     Route::get('/reports', [\App\Http\Controllers\Customer\ReportController::class, 'index'])->name('reports.index');

@@ -142,9 +142,14 @@
                         <span>Müşteri Yönetimi</span>
                     </a>
 
-                    <a href="{{ route('admin.packages.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.packages.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                    <a href="{{ route('admin.packages.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.packages.index') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
                         <i class="fa-solid fa-box-open w-5 text-center text-blue-600"></i>
                         <span>Paketler & Fiyatlama</span>
+                    </a>
+
+                    <a href="{{ route('admin.packages.import') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.packages.import') ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-file-excel w-5 text-center text-emerald-600"></i>
+                        <span>Fiyat Listesi Yükle</span>
                     </a>
 
                     <a href="{{ route('admin.reports.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('admin.reports.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
@@ -167,7 +172,7 @@
 
                     <a href="{{ route('customer.orders.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.orders.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
                         <i class="fa-solid fa-box-archive w-5 text-center text-purple-600"></i>
-                        <span>Satılan Paketler</span>
+                        <span>Satılan Paketler (eSIM)</span>
                     </a>
 
                     @if(!Auth::user()->isBranchUser())
@@ -182,6 +187,24 @@
                         </a>
                     @endif
                 @endif
+
+                <!-- IWC Tours & Experiences (Credit Card) - Visible to BOTH Admin and Customer -->
+                <div class="pt-3 border-t border-slate-100">
+                    <div class="px-3 py-1.5 text-[11px] font-extrabold text-amber-600 uppercase tracking-wider flex items-center gap-1.5">
+                        <i class="fa-solid fa-landmark text-amber-500"></i>
+                        <span>IWC Deneyim & Bilet</span>
+                    </div>
+
+                    <a href="{{ route('customer.iwc.index') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.iwc.index') || request()->routeIs('customer.iwc.show') ? 'bg-amber-50 text-amber-800 border border-amber-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-compass w-5 text-center text-amber-500"></i>
+                        <span>Turlar & Paketler</span>
+                    </a>
+
+                    <a href="{{ route('customer.iwc.orders') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('customer.iwc.orders') ? 'bg-amber-50 text-amber-800 border border-amber-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        <i class="fa-solid fa-ticket w-5 text-center text-amber-600"></i>
+                        <span>Satın Alınan Paketler</span>
+                    </a>
+                </div>
 
                 <div class="pt-2">
                     <a href="{{ route('profile.show') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition duration-200 {{ request()->routeIs('profile.*') ? 'bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">

@@ -1,0 +1,40 @@
+﻿Global eSIM Quote Sheet,,,,,,,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Mobile Hotspot(GB),Operator,Wholesale Price USD,Activate Mode,Country or region,remark,Type,Recharge,Roaming/Local,ACTION POLICY,API Product code （Auto Activate）
+1,Asia,Japan,Daypass,3,Unlimited,2,KDDI,5.16,Auto Activate,,"1. QR is only 1 time product. Once deleted, it cannot be re-scanned  2. KDDI eSIM cannot be refunded. No cancel policy once issued. <5G NET>  APN: uad5gn.au-net.ne.jp  USER: au@uad5gn.au-net.ne.jp  PW: au <4G NET>  APN：uno.au-net.ne.jp USER：685840734641020@uno.au-net.ne.jp  PW：KpyrR6BP",ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-3D/60D-Unlimited
+2,Asia,Japan,Daypass,4,Unlimited,3,KDDI,6.63,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-4D/60D-Unlimited
+3,Asia,Japan,Daypass,5,Unlimited,4,KDDI,8,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-5D/60D-Unlimited
+4,Asia,Japan,Daypass,6,Unlimited,5,KDDI,9.68,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-6D/60D-Unlimited
+5,Asia,Japan,Daypass,7,Unlimited,6,KDDI,10.95,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-7D/60D-Unlimited
+6,Asia,Japan,Daypass,8,Unlimited,7,KDDI,11.89,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-8D/60D-Unlimited
+7,Asia,Japan,Daypass,9,Unlimited,8,KDDI,13.89,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-9D/60D-Unlimited
+8,Asia,Japan,Daypass,10,Unlimited,9,KDDI,14.42,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-10D/60D-Unlimited
+9,Asia,Japan,Daypass,11,Unlimited,10,KDDI,16,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-11D/60D-Unlimited
+10,Asia,Japan,Daypass,12,Unlimited,11,KDDI,17.89,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-12D/60D-Unlimited
+11,Asia,Japan,Daypass,13,Unlimited,12,KDDI,18.63,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-13D/60D-Unlimited
+12,Asia,Japan,Daypass,14,Unlimited,13,KDDI,19.89,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-14D/60D-Unlimited
+13,Asia,Japan,Daypass,15,Unlimited,14,KDDI,21.05,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-15D/60D-Unlimited
+14,Asia,Japan,Daypass,16,Unlimited,15,KDDI,22.63,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-16D/60D-Unlimited
+15,Asia,Japan,Daypass,17,Unlimited,16,KDDI,24.32,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-17D/60D-Unlimited
+16,Asia,Japan,Daypass,18,Unlimited,17,KDDI,25.79,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-18D/60D-Unlimited
+17,Asia,Japan,Daypass,19,Unlimited,18,KDDI,27.26,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-19D/60D-Unlimited
+18,Asia,Japan,Daypass,20,Unlimited,19,KDDI,28.95,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-20D/60D-Unlimited
+19,Asia,Japan,Daypass,21,Unlimited,20,KDDI,30.42,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-21D/60D-Unlimited
+20,Asia,Japan,Daypass,26,Unlimited,25,KDDI,36.63,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-26D/60D-Unlimited
+21,Asia,Japan,Daypass,31,Unlimited,30,KDDI,44.32,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-31D/60D-Unlimited
+22,Asia,Japan,Daypass,3,Unlimited（10Mbps）,2,KDDI,3.26,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-3D/60D-U/10MB
+23,Asia,Japan,Daypass,4,Unlimited（10Mbps）,3,KDDI,4.74,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-4D/60D-U/10MB
+24,Asia,Japan,Daypass,5,Unlimited（10Mbps）,4,KDDI,5.47,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-5D/60D-U/10MB
+25,Asia,Japan,Daypass,6,Unlimited（10Mbps）,5,KDDI,6.63,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-6D/60D-U/10MB
+26,Asia,Japan,Daypass,7,Unlimited（10Mbps）,6,KDDI,7.68,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-7D/60D-U/10MB
+27,Asia,Japan,Daypass,8,Unlimited（10Mbps）,7,KDDI,8.32,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-8D/60D-U/10MB
+28,Asia,Japan,Daypass,9,Unlimited（10Mbps）,8,KDDI,9.68,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-9D/60D-U/10MB
+29,Asia,Japan,Daypass,10,Unlimited（10Mbps）,9,KDDI,10.21,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-ak1-D-10D/60D-U/10MB
+30,Asia,Japan,Data Package,,12GB  /4 Days，down to 128kbps,shared by mobile data volume,KDDI,4.44,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-T-ak1-4D/60D-12GB
+31,Asia,Japan,Data Package,,21GB  /7 Days，down to 128kbps,shared by mobile data volume,KDDI,7.64,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-T-ak1-7D/60D-21GB
+32,Asia,Japan,Data Package,,30GB  /10 Days，down to 128kbps,shared by mobile data volume,KDDI,10.54,Auto Activate,,,ak1,,Local,UTC+9,A-006-ES-AU-T-ak1-10D/60D-30GB
+,Remark:,,1. Tuge Technology will dynamically adjust the operators and network types according to the cooperation situation of local suppliers.,,,,,,,,,,,,,
+,,,"2. This quotation sheet is only applicable to mobile phones, not MIFI and CPE.",,,,,,,,,,,,,
+,,,3. The quotation is in USD and the settlement currency is USD.,,,,,,,,,,,,,
+,,,"4. The price will fluctuate and change according to the price policy of the operators. Our company will notify 15 days in advance, the time of the placing order is the criterion.",,,,,,,,,,,,,
+,,,5. The product is valid within 60 days of spontaneous delivery.,,,,,,,,,,,,,
+,,,"6. This quotation is published on November 1, 2022 and shall be valid until the new quotation is published. (Finally, prices in the cloud communication platform are the criteria)",,,,,,,,,,,,,

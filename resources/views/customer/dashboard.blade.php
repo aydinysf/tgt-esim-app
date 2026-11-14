@@ -49,6 +49,120 @@
         </div>
     </div>
 
+    <!-- Product Category Tabs (eSIM vs IWC) -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-2">
+            <button type="button" onclick="switchProductTab('iwc')" id="tabBtnIwc"
+                class="px-4 py-2.5 rounded-xl font-extrabold text-xs transition flex items-center gap-2 shadow-sm {{ $activeTab === 'iwc' ? 'bg-amber-500 text-white shadow-amber-200' : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-50' }}">
+                <i class="fa-solid fa-landmark text-xs"></i>
+                <span>IWC Tur & Deneyim Paketleri (Kredi Kartı ile)</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] font-black {{ $activeTab === 'iwc' ? 'bg-amber-700 text-white' : 'bg-amber-100 text-amber-800' }}">
+                    {{ count($iwcProducts) }}
+                </span>
+            </button>
+
+            <button type="button" onclick="switchProductTab('esim')" id="tabBtnEsim"
+                class="px-4 py-2.5 rounded-xl font-extrabold text-xs transition flex items-center gap-2 shadow-sm {{ $activeTab === 'esim' ? 'bg-blue-600 text-white shadow-blue-200' : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-50' }}">
+                <i class="fa-solid fa-cart-shopping text-xs"></i>
+                <span>eSIM Veri Paketleri (Bakiye ile)</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] font-black {{ $activeTab === 'esim' ? 'bg-blue-800 text-white' : 'bg-slate-100 text-slate-600' }}">
+                    {{ count($assignedPackages) }}
+                </span>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <a href="{{ route('customer.iwc.orders') }}" class="px-3.5 py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 font-bold text-xs rounded-xl border border-amber-200 transition inline-flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-ticket text-amber-600 text-xs"></i>
+                <span>Satın Alınan Turlar ({{ $iwcOrdersCount }})</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== IWC PACKAGES TAB CONTENT ==================== -->
+    <div id="iwcTabContent" class="{{ $activeTab === 'iwc' ? '' : 'hidden' }} space-y-6">
+        <!-- IWC Search & Filter Toolbar -->
+        <div class="glass-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="relative w-full md:w-96">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                <input type="text" id="iwcSearchInput" onkeyup="filterIwcPackages()" placeholder="IWC tur veya deneyim adı ara..." 
+                    class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition">
+            </div>
+
+            <div class="flex items-center gap-3">
+                <span class="text-xs font-bold text-slate-500">
+                    Ödeme Modeli: <span class="text-emerald-700 font-extrabold"><i class="fa-brands fa-stripe text-indigo-600 mr-1 text-sm"></i>Kredi Kartı / 3D Secure</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- IWC Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="iwcGrid">
+            @forelse($iwcProducts as $iwc)
+                @php
+                    $iVariants = $iwc->variants_data ?? [];
+                @endphp
+                <div class="iwc-card glass-card rounded-2xl p-6 flex flex-col justify-between space-y-5 hover:border-amber-400 hover:shadow-md transition duration-200 relative group bg-white border border-slate-200"
+                     data-search="{{ strtolower($iwc->name . ' ' . $iwc->type . ' ' . strip_tags($iwc->description)) }}">
+                    <div class="space-y-3.5">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1.5">
+                                <i class="fa-solid fa-landmark text-[10px]"></i>
+                                <span>{{ ucfirst($iwc->type ?: 'Deneyim') }}</span>
+                            </span>
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200 flex items-center gap-1">
+                                <i class="fa-solid fa-credit-card text-[9px]"></i>
+                                <span>Kredi Kartı</span>
+                            </span>
+                        </div>
+
+                        <h3 class="text-base font-extrabold text-slate-900 leading-snug group-hover:text-amber-600 transition">
+                            {{ $iwc->name }}
+                        </h3>
+
+                        <div class="text-xs text-slate-500 line-clamp-3 leading-relaxed">
+                            {!! strip_tags($iwc->description ?: 'Detaylı rezervasyon ve tarih seçenekleri.') !!}
+                        </div>
+
+                        @if(!empty($iVariants))
+                            <div class="pt-2 border-t border-slate-100 flex flex-wrap gap-1.5">
+                                @foreach(array_slice($iVariants, 0, 2) as $iv)
+                                    @php
+                                        $ivLabel = is_array($iv['label'] ?? null) ? ($iv['label']['tr'] ?? $iv['label']['en'] ?? reset($iv['label'])) : ($iv['label'] ?? 'Standart');
+                                    @endphp
+                                    <span class="px-2 py-0.5 bg-slate-100 rounded text-[10px] font-semibold text-slate-700 border border-slate-200 truncate max-w-[200px]">
+                                        <i class="fa-solid fa-check text-[9px] text-emerald-600 mr-1"></i>{{ $ivLabel }}
+                                    </span>
+                                @endforeach
+                            </div>
+                        @endif
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Başlangıç Fiyatı</span>
+                            <div class="text-xl font-black text-slate-900 leading-tight">
+                                €{{ number_format($iwc->price, 2) }}
+                            </div>
+                        </div>
+
+                        <a href="{{ route('customer.iwc.show', $iwc->id) }}"
+                           class="px-4 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-extrabold text-xs rounded-xl transition flex items-center gap-2 shadow-md active:scale-95">
+                            <i class="fa-solid fa-credit-card text-xs"></i>
+                            <span>Kredi Kartı ile Satın Al</span>
+                        </a>
+                    </div>
+                </div>
+            @empty
+                <div class="col-span-full py-12 text-center glass-card rounded-2xl bg-white border border-slate-200">
+                    <p class="text-xs text-slate-500">Kayıtlı IWC paketi bulunamadı.</p>
+                </div>
+            @endforelse
+        </div>
+    </div>
+
+    <!-- ==================== ESIM PACKAGES TAB CONTENT ==================== -->
+    <div id="esimTabContent" class="{{ $activeTab === 'esim' ? '' : 'hidden' }} space-y-6">
     <!-- Quick Navigation & Search / Filter Toolbar -->
     <div class="glass-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
         <!-- Search Input -->
@@ -239,6 +353,38 @@
 @push('scripts')
 <script>
     const IS_STAFF = {{ Auth::user()->isBranchUser() ? 'true' : 'false' }};
+
+    function switchProductTab(tab) {
+        const iwcContent = document.getElementById('iwcTabContent');
+        const esimContent = document.getElementById('esimTabContent');
+        const iwcBtn = document.getElementById('tabBtnIwc');
+        const esimBtn = document.getElementById('tabBtnEsim');
+
+        if (tab === 'iwc') {
+            iwcContent.classList.remove('hidden');
+            esimContent.classList.add('hidden');
+            iwcBtn.className = 'px-4 py-2.5 rounded-xl font-extrabold text-xs transition flex items-center gap-2 shadow-sm bg-amber-500 text-white shadow-amber-200';
+            esimBtn.className = 'px-4 py-2.5 rounded-xl font-extrabold text-xs transition flex items-center gap-2 shadow-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50';
+        } else {
+            iwcContent.classList.add('hidden');
+            esimContent.classList.remove('hidden');
+            esimBtn.className = 'px-4 py-2.5 rounded-xl font-extrabold text-xs transition flex items-center gap-2 shadow-sm bg-blue-600 text-white shadow-blue-200';
+            iwcBtn.className = 'px-4 py-2.5 rounded-xl font-extrabold text-xs transition flex items-center gap-2 shadow-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50';
+        }
+    }
+
+    function filterIwcPackages() {
+        const query = (document.getElementById('iwcSearchInput').value || '').toLowerCase().trim();
+        const cards = document.querySelectorAll('.iwc-card');
+        cards.forEach(card => {
+            const keywords = card.getAttribute('data-search') || '';
+            if (!query || keywords.includes(query)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
 
     function filterPackages() {
         const query = (document.getElementById('packageSearchInput').value || '').toLowerCase().trim();

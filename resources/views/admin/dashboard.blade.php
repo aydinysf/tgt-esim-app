@@ -11,9 +11,13 @@
             <p class="text-slate-500 text-sm mt-1">Global eSIM altyapısı ve müşteri satış özetleri</p>
         </div>
         <div class="flex items-center gap-3">
+            <a href="{{ route('customer.iwc.index') }}" class="px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
+                <i class="fa-solid fa-landmark"></i>
+                <span>IWC Tur Paketleri (Kartla Satış)</span>
+            </a>
             <a href="{{ route('admin.packages.index') }}" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
                 <i class="fa-solid fa-sync"></i>
-                <span>Paket Senkronizasyonu</span>
+                <span>eSIM Senkronizasyonu</span>
             </a>
         </div>
     </div>

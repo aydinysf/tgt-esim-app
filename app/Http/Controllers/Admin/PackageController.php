@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\CustomerPackage;
 use App\Services\TgtEsimService;
 use App\Services\CurrencyService;
+use App\Services\TgtPriceListImportService;
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -330,5 +331,46 @@ class PackageController extends Controller
         TgtProduct::query()->delete();
 
         return back()->with('success', 'Mevcut tüm paket kataloğu ve müşteri paket atamaları tamamen sıfırlandı. Şimdi TGT API üzerinden temiz bir senkronizasyon yapabilirsiniz.');
+    }
+
+    public function showImportPage()
+    {
+        $dir = base_path('fiyat_listesi');
+        $availableFiles = [];
+        if (is_dir($dir)) {
+            $files = glob($dir . DIRECTORY_SEPARATOR . '*.csv');
+            $availableFiles = array_map('basename', $files);
+        }
+
+        return view('admin.packages.import', compact('availableFiles'));
+    }
+
+    public function importUpload(Request $request, TgtPriceListImportService $importService)
+    {
+        $request->validate([
+            'csv_file' => 'required|file',
+        ]);
+
+        $file = $request->file('csv_file');
+        $path = $file->getRealPath();
+
+        $seen = [];
+        $res = $importService->importSingleCsv($path, $seen);
+
+        $totalInDb = TgtProduct::count();
+
+        return redirect()->route('admin.packages.import')
+            ->with('success', "Dosya başarıyla yüklendi! ({$res['new']} yeni paket eklendi, {$res['updated']} paket güncellendi. Toplam Aktif Paket: {$totalInDb})");
+    }
+
+    public function importPriceList(TgtPriceListImportService $importService)
+    {
+        $result = $importService->importDirectory();
+
+        if (!$result['success']) {
+            return back()->with('error', $result['message']);
+        }
+
+        return back()->with('success', "🚀 Excel/CSV Fiyat Listesi yüklemesi tamamlandı! Toplam {$result['files_processed']} dosya tarandı. ({$result['total_new']} yeni paket eklendi, {$result['total_updated']} paket güncellendi. Kataloğunuzda Toplam: {$result['total_in_db']} aktif paket)");
     }
 }

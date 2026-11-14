@@ -1,0 +1,717 @@
+
+===== DOSYA: media_1793216291488_e5de521e | SAYFA: Global | 222 sarı satır =====
+BASLIK	Global eSIM Quote Sheet																
+SATIR 2670	2667	Asia	China Mainland（TT&GPT)	Daypass	1	500M high-speed data per day, down to 384kbps	CMCC	0.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-500M
+SATIR 2671	2668	Asia	China Mainland（TT&GPT)	Daypass	2	500M high-speed data per day, down to 384kbps	CMCC	0.71	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-500M
+SATIR 2672	2669	Asia	China Mainland（TT&GPT)	Daypass	3	500M high-speed data per day, down to 384kbps	CMCC	0.82	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-500M
+SATIR 2673	2670	Asia	China Mainland（TT&GPT)	Daypass	4	500M high-speed data per day, down to 384kbps	CMCC	1.01	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-500M
+SATIR 2674	2671	Asia	China Mainland（TT&GPT)	Daypass	5	500M high-speed data per day, down to 384kbps	CMCC	1.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-500M
+SATIR 2675	2672	Asia	China Mainland（TT&GPT)	Daypass	6	500M high-speed data per day, down to 384kbps	CMCC	1.39	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-500M
+SATIR 2676	2673	Asia	China Mainland（TT&GPT)	Daypass	7	500M high-speed data per day, down to 384kbps	CMCC	1.62	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-500M
+SATIR 2677	2674	Asia	China Mainland（TT&GPT)	Daypass	8	500M high-speed data per day, down to 384kbps	CMCC	1.85	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-500M
+SATIR 2678	2675	Asia	China Mainland（TT&GPT)	Daypass	9	500M high-speed data per day, down to 384kbps	CMCC	2.08	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-500M
+SATIR 2679	2676	Asia	China Mainland（TT&GPT)	Daypass	10	500M high-speed data per day, down to 384kbps	CMCC	2.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-500M
+SATIR 2680	2677	Asia	China Mainland（TT&GPT)	Daypass	11	500M high-speed data per day, down to 384kbps	CMCC	2.55	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-500M
+SATIR 2681	2678	Asia	China Mainland（TT&GPT)	Daypass	12	500M high-speed data per day, down to 384kbps	CMCC	2.78	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-500M
+SATIR 2682	2679	Asia	China Mainland（TT&GPT)	Daypass	13	500M high-speed data per day, down to 384kbps	CMCC	3.01	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-500M
+SATIR 2683	2680	Asia	China Mainland（TT&GPT)	Daypass	14	500M high-speed data per day, down to 384kbps	CMCC	3.24	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-500M
+SATIR 2684	2681	Asia	China Mainland（TT&GPT)	Daypass	15	500M high-speed data per day, down to 384kbps	CMCC	3.28	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-500M
+SATIR 2685	2682	Asia	China Mainland（TT&GPT)	Daypass	16	500M high-speed data per day, down to 384kbps	CMCC	3.51	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-500M
+SATIR 2686	2683	Asia	China Mainland（TT&GPT)	Daypass	17	500M high-speed data per day, down to 384kbps	CMCC	3.73	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-500M
+SATIR 2687	2684	Asia	China Mainland（TT&GPT)	Daypass	18	500M high-speed data per day, down to 384kbps	CMCC	3.94	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-500M
+SATIR 2688	2685	Asia	China Mainland（TT&GPT)	Daypass	19	500M high-speed data per day, down to 384kbps	CMCC	4.16	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-500M
+SATIR 2689	2686	Asia	China Mainland（TT&GPT)	Daypass	20	500M high-speed data per day, down to 384kbps	CMCC	4.38	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-500M
+SATIR 2690	2687	Asia	China Mainland（TT&GPT)	Daypass	21	500M high-speed data per day, down to 384kbps	CMCC	4.6	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-500M
+SATIR 2691	2688	Asia	China Mainland（TT&GPT)	Daypass	22	500M high-speed data per day, down to 384kbps	CMCC	4.82	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-500M
+SATIR 2692	2689	Asia	China Mainland（TT&GPT)	Daypass	23	500M high-speed data per day, down to 384kbps	CMCC	5.03	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-500M
+SATIR 2693	2690	Asia	China Mainland（TT&GPT)	Daypass	24	500M high-speed data per day, down to 384kbps	CMCC	5.25	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-500M
+SATIR 2694	2691	Asia	China Mainland（TT&GPT)	Daypass	25	500M high-speed data per day, down to 384kbps	CMCC	5.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-500M
+SATIR 2695	2692	Asia	China Mainland（TT&GPT)	Daypass	26	500M high-speed data per day, down to 384kbps	CMCC	5.69	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-500M
+SATIR 2696	2693	Asia	China Mainland（TT&GPT)	Daypass	27	500M high-speed data per day, down to 384kbps	CMCC	5.92	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-500M
+SATIR 2697	2694	Asia	China Mainland（TT&GPT)	Daypass	28	500M high-speed data per day, down to 384kbps	CMCC	6.13	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-500M
+SATIR 2698	2695	Asia	China Mainland（TT&GPT)	Daypass	29	500M high-speed data per day, down to 384kbps	CMCC	6.35	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-500M
+SATIR 2699	2696	Asia	China Mainland（TT&GPT)	Daypass	30	500M high-speed data per day, down to 384kbps	CMCC	6.57	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-500M
+SATIR 2700	2697	Asia	China Mainland（TT&GPT)	Daypass	1	1GB high-speed data per day, down to 384kbps	CMCC	0.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-1GB
+SATIR 2701	2698	Asia	China Mainland（TT&GPT)	Daypass	2	1GB high-speed data per day, down to 384kbps	CMCC	0.71	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-1GB
+SATIR 2702	2699	Asia	China Mainland（TT&GPT)	Daypass	3	1GB high-speed data per day, down to 384kbps	CMCC	1.02	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-1GB
+SATIR 2703	2700	Asia	China Mainland（TT&GPT)	Daypass	4	1GB high-speed data per day, down to 384kbps	CMCC	1.33	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-1GB
+SATIR 2704	2701	Asia	China Mainland（TT&GPT)	Daypass	5	1GB high-speed data per day, down to 384kbps	CMCC	1.62	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-1GB
+SATIR 2705	2702	Asia	China Mainland（TT&GPT)	Daypass	6	1GB high-speed data per day, down to 384kbps	CMCC	1.92	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-1GB
+SATIR 2706	2703	Asia	China Mainland（TT&GPT)	Daypass	7	1GB high-speed data per day, down to 384kbps	CMCC	2.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-1GB
+SATIR 2707	2704	Asia	China Mainland（TT&GPT)	Daypass	8	1GB high-speed data per day, down to 384kbps	CMCC	2.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-1GB
+SATIR 2708	2705	Asia	China Mainland（TT&GPT)	Daypass	9	1GB high-speed data per day, down to 384kbps	CMCC	2.8	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-1GB
+SATIR 2709	2706	Asia	China Mainland（TT&GPT)	Daypass	10	1GB high-speed data per day, down to 384kbps	CMCC	3.12	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-1GB
+SATIR 2710	2707	Asia	China Mainland（TT&GPT)	Daypass	11	1GB high-speed data per day, down to 384kbps	CMCC	3.43	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-1GB
+SATIR 2711	2708	Asia	China Mainland（TT&GPT)	Daypass	12	1GB high-speed data per day, down to 384kbps	CMCC	3.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-1GB
+SATIR 2712	2709	Asia	China Mainland（TT&GPT)	Daypass	13	1GB high-speed data per day, down to 384kbps	CMCC	4	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-1GB
+SATIR 2713	2710	Asia	China Mainland（TT&GPT)	Daypass	14	1GB high-speed data per day, down to 384kbps	CMCC	4.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-1GB
+SATIR 2714	2711	Asia	China Mainland（TT&GPT)	Daypass	15	1GB high-speed data per day, down to 384kbps	CMCC	4.61	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-1GB
+SATIR 2715	2712	Asia	China Mainland（TT&GPT)	Daypass	16	1GB high-speed data per day, down to 384kbps	CMCC	4.92	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-1GB
+SATIR 2716	2713	Asia	China Mainland（TT&GPT)	Daypass	17	1GB high-speed data per day, down to 384kbps	CMCC	5.22	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-1GB
+SATIR 2717	2714	Asia	China Mainland（TT&GPT)	Daypass	18	1GB high-speed data per day, down to 384kbps	CMCC	5.54	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-1GB
+SATIR 2718	2715	Asia	China Mainland（TT&GPT)	Daypass	19	1GB high-speed data per day, down to 384kbps	CMCC	5.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-1GB
+SATIR 2719	2716	Asia	China Mainland（TT&GPT)	Daypass	20	1GB high-speed data per day, down to 384kbps	CMCC	5.98	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-1GB
+SATIR 2720	2717	Asia	China Mainland（TT&GPT)	Daypass	21	1GB high-speed data per day, down to 384kbps	CMCC	6.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-1GB
+SATIR 2721	2718	Asia	China Mainland（TT&GPT)	Daypass	22	1GB high-speed data per day, down to 384kbps	CMCC	6.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-1GB
+SATIR 2722	2719	Asia	China Mainland（TT&GPT)	Daypass	23	1GB high-speed data per day, down to 384kbps	CMCC	6.87	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-1GB
+SATIR 2723	2720	Asia	China Mainland（TT&GPT)	Daypass	24	1GB high-speed data per day, down to 384kbps	CMCC	7.18	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-1GB
+SATIR 2724	2721	Asia	China Mainland（TT&GPT)	Daypass	25	1GB high-speed data per day, down to 384kbps	CMCC	7.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-1GB
+SATIR 2725	2722	Asia	China Mainland（TT&GPT)	Daypass	26	1GB high-speed data per day, down to 384kbps	CMCC	7.77	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-1GB
+SATIR 2726	2723	Asia	China Mainland（TT&GPT)	Daypass	27	1GB high-speed data per day, down to 384kbps	CMCC	8.07	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-1GB
+SATIR 2727	2724	Asia	China Mainland（TT&GPT)	Daypass	28	1GB high-speed data per day, down to 384kbps	CMCC	8.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-1GB
+SATIR 2728	2725	Asia	China Mainland（TT&GPT)	Daypass	29	1GB high-speed data per day, down to 384kbps	CMCC	8.67	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-1GB
+SATIR 2729	2726	Asia	China Mainland（TT&GPT)	Daypass	30	1GB high-speed data per day, down to 384kbps	CMCC	8.97	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-1GB
+SATIR 2730	2727	Asia	China Mainland（TT&GPT)	Daypass	1	2GB high-speed data per day, down to 384kbps	CMCC	0.72	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-2GB
+SATIR 2731	2728	Asia	China Mainland（TT&GPT)	Daypass	2	2GB high-speed data per day, down to 384kbps	CMCC	1.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-2GB
+SATIR 2732	2729	Asia	China Mainland（TT&GPT)	Daypass	3	2GB high-speed data per day, down to 384kbps	CMCC	1.77	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-2GB
+SATIR 2733	2730	Asia	China Mainland（TT&GPT)	Daypass	4	2GB high-speed data per day, down to 384kbps	CMCC	2.36	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-2GB
+SATIR 2734	2731	Asia	China Mainland（TT&GPT)	Daypass	5	2GB high-speed data per day, down to 384kbps	CMCC	2.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-2GB
+SATIR 2735	2732	Asia	China Mainland（TT&GPT)	Daypass	6	2GB high-speed data per day, down to 384kbps	CMCC	3.28	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-2GB
+SATIR 2736	2733	Asia	China Mainland（TT&GPT)	Daypass	7	2GB high-speed data per day, down to 384kbps	CMCC	3.83	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-2GB
+SATIR 2737	2734	Asia	China Mainland（TT&GPT)	Daypass	8	2GB high-speed data per day, down to 384kbps	CMCC	4.38	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-2GB
+SATIR 2738	2735	Asia	China Mainland（TT&GPT)	Daypass	9	2GB high-speed data per day, down to 384kbps	CMCC	4.93	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-2GB
+SATIR 2739	2736	Asia	China Mainland（TT&GPT)	Daypass	10	2GB high-speed data per day, down to 384kbps	CMCC	5.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-2GB
+SATIR 2740	2737	Asia	China Mainland（TT&GPT)	Daypass	11	2GB high-speed data per day, down to 384kbps	CMCC	6.02	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-2GB
+SATIR 2741	2738	Asia	China Mainland（TT&GPT)	Daypass	12	2GB high-speed data per day, down to 384kbps	CMCC	6.57	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-2GB
+SATIR 2742	2739	Asia	China Mainland（TT&GPT)	Daypass	13	2GB high-speed data per day, down to 384kbps	CMCC	7.12	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-2GB
+SATIR 2743	2740	Asia	China Mainland（TT&GPT)	Daypass	14	2GB high-speed data per day, down to 384kbps	CMCC	7.66	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-2GB
+SATIR 2744	2741	Asia	China Mainland（TT&GPT)	Daypass	15	2GB high-speed data per day, down to 384kbps	CMCC	8.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-2GB
+SATIR 2745	2742	Asia	China Mainland（TT&GPT)	Daypass	16	2GB high-speed data per day, down to 384kbps	CMCC	8.76	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-2GB
+SATIR 2746	2743	Asia	China Mainland（TT&GPT)	Daypass	17	2GB high-speed data per day, down to 384kbps	CMCC	9.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-2GB
+SATIR 2747	2744	Asia	China Mainland（TT&GPT)	Daypass	18	2GB high-speed data per day, down to 384kbps	CMCC	9.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-2GB
+SATIR 2748	2745	Asia	China Mainland（TT&GPT)	Daypass	19	2GB high-speed data per day, down to 384kbps	CMCC	10	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-2GB
+SATIR 2749	2746	Asia	China Mainland（TT&GPT)	Daypass	20	2GB high-speed data per day, down to 384kbps	CMCC	10.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-2GB
+SATIR 2750	2747	Asia	China Mainland（TT&GPT)	Daypass	21	2GB high-speed data per day, down to 384kbps	CMCC	11.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-2GB
+SATIR 2751	2748	Asia	China Mainland（TT&GPT)	Daypass	22	2GB high-speed data per day, down to 384kbps	CMCC	11.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-2GB
+SATIR 2752	2749	Asia	China Mainland（TT&GPT)	Daypass	23	2GB high-speed data per day, down to 384kbps	CMCC	12.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-2GB
+SATIR 2753	2750	Asia	China Mainland（TT&GPT)	Daypass	24	2GB high-speed data per day, down to 384kbps	CMCC	12.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-2GB
+SATIR 2754	2751	Asia	China Mainland（TT&GPT)	Daypass	25	2GB high-speed data per day, down to 384kbps	CMCC	13.16	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-2GB
+SATIR 2755	2752	Asia	China Mainland（TT&GPT)	Daypass	26	2GB high-speed data per day, down to 384kbps	CMCC	13.68	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-2GB
+SATIR 2756	2753	Asia	China Mainland（TT&GPT)	Daypass	27	2GB high-speed data per day, down to 384kbps	CMCC	14.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-2GB
+SATIR 2757	2754	Asia	China Mainland（TT&GPT)	Daypass	28	2GB high-speed data per day, down to 384kbps	CMCC	14.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-2GB
+SATIR 2758	2755	Asia	China Mainland（TT&GPT)	Daypass	29	2GB high-speed data per day, down to 384kbps	CMCC	15.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-2GB
+SATIR 2759	2756	Asia	China Mainland（TT&GPT)	Daypass	30	2GB high-speed data per day, down to 384kbps	CMCC	15.79	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-2GB
+SATIR 2760	2757	Asia	China Mainland（TT&GPT)	Daypass	1	3GB high-speed data per day, down to 384kbps	CMCC	0.88	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-3GB
+SATIR 2761	2758	Asia	China Mainland（TT&GPT)	Daypass	2	3GB high-speed data per day, down to 384kbps	CMCC	1.6	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-3GB
+SATIR 2762	2759	Asia	China Mainland（TT&GPT)	Daypass	3	3GB high-speed data per day, down to 384kbps	CMCC	2.34	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-3GB
+SATIR 2763	2760	Asia	China Mainland（TT&GPT)	Daypass	4	3GB high-speed data per day, down to 384kbps	CMCC	3.03	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-3GB
+SATIR 2764	2761	Asia	China Mainland（TT&GPT)	Daypass	5	3GB high-speed data per day, down to 384kbps	CMCC	3.79	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-3GB
+SATIR 2765	2762	Asia	China Mainland（TT&GPT)	Daypass	6	3GB high-speed data per day, down to 384kbps	CMCC	4.55	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-3GB
+SATIR 2766	2763	Asia	China Mainland（TT&GPT)	Daypass	7	3GB high-speed data per day, down to 384kbps	CMCC	5.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-3GB
+SATIR 2767	2764	Asia	China Mainland（TT&GPT)	Daypass	8	3GB high-speed data per day, down to 384kbps	CMCC	5.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-3GB
+SATIR 2768	2765	Asia	China Mainland（TT&GPT)	Daypass	9	3GB high-speed data per day, down to 384kbps	CMCC	6.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-3GB
+SATIR 2769	2766	Asia	China Mainland（TT&GPT)	Daypass	10	3GB high-speed data per day, down to 384kbps	CMCC	7.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-3GB
+SATIR 2770	2767	Asia	China Mainland（TT&GPT)	Daypass	11	3GB high-speed data per day, down to 384kbps	CMCC	8.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-3GB
+SATIR 2771	2768	Asia	China Mainland（TT&GPT)	Daypass	12	3GB high-speed data per day, down to 384kbps	CMCC	8.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-3GB
+SATIR 2772	2769	Asia	China Mainland（TT&GPT)	Daypass	13	3GB high-speed data per day, down to 384kbps	CMCC	9.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-3GB
+SATIR 2773	2770	Asia	China Mainland（TT&GPT)	Daypass	14	3GB high-speed data per day, down to 384kbps	CMCC	10.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-3GB
+SATIR 2774	2771	Asia	China Mainland（TT&GPT)	Daypass	15	3GB high-speed data per day, down to 384kbps	CMCC	10.86	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-3GB
+SATIR 2775	2772	Asia	China Mainland（TT&GPT)	Daypass	16	3GB high-speed data per day, down to 384kbps	CMCC	11.59	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-3GB
+SATIR 2776	2773	Asia	China Mainland（TT&GPT)	Daypass	17	3GB high-speed data per day, down to 384kbps	CMCC	12.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-3GB
+SATIR 2777	2774	Asia	China Mainland（TT&GPT)	Daypass	18	3GB high-speed data per day, down to 384kbps	CMCC	13.03	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-3GB
+SATIR 2778	2775	Asia	China Mainland（TT&GPT)	Daypass	19	3GB high-speed data per day, down to 384kbps	CMCC	13.76	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-3GB
+SATIR 2779	2776	Asia	China Mainland（TT&GPT)	Daypass	20	3GB high-speed data per day, down to 384kbps	CMCC	14.48	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-3GB
+SATIR 2780	2777	Asia	China Mainland（TT&GPT)	Daypass	21	3GB high-speed data per day, down to 384kbps	CMCC	15.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-3GB
+SATIR 2781	2778	Asia	China Mainland（TT&GPT)	Daypass	22	3GB high-speed data per day, down to 384kbps	CMCC	15.94	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-3GB
+SATIR 2782	2779	Asia	China Mainland（TT&GPT)	Daypass	23	3GB high-speed data per day, down to 384kbps	CMCC	16.65	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-3GB
+SATIR 2783	2780	Asia	China Mainland（TT&GPT)	Daypass	24	3GB high-speed data per day, down to 384kbps	CMCC	17.38	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-3GB
+SATIR 2784	2781	Asia	China Mainland（TT&GPT)	Daypass	25	3GB high-speed data per day, down to 384kbps	CMCC	18.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-3GB
+SATIR 2785	2782	Asia	China Mainland（TT&GPT)	Daypass	26	3GB high-speed data per day, down to 384kbps	CMCC	18.83	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-3GB
+SATIR 2786	2783	Asia	China Mainland（TT&GPT)	Daypass	27	3GB high-speed data per day, down to 384kbps	CMCC	19.56	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-3GB
+SATIR 2787	2784	Asia	China Mainland（TT&GPT)	Daypass	28	3GB high-speed data per day, down to 384kbps	CMCC	20.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-3GB
+SATIR 2788	2785	Asia	China Mainland（TT&GPT)	Daypass	29	3GB high-speed data per day, down to 384kbps	CMCC	21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-3GB
+SATIR 2789	2786	Asia	China Mainland（TT&GPT)	Daypass	30	3GB high-speed data per day, down to 384kbps	CMCC	21.73	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-3GB
+SATIR 2790	2787	Asia	China Mainland（TT&GPT)	Daypass	1	5GB high-speed data per day, down to 384kbps	CMCC	1.09	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-5GB
+SATIR 2791	2788	Asia	China Mainland（TT&GPT)	Daypass	2	5GB high-speed data per day, down to 384kbps	CMCC	1.94	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-5GB
+SATIR 2792	2789	Asia	China Mainland（TT&GPT)	Daypass	3	5GB high-speed data per day, down to 384kbps	CMCC	2.91	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-5GB
+SATIR 2793	2790	Asia	China Mainland（TT&GPT)	Daypass	4	5GB high-speed data per day, down to 384kbps	CMCC	3.87	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-5GB
+SATIR 2794	2791	Asia	China Mainland（TT&GPT)	Daypass	5	5GB high-speed data per day, down to 384kbps	CMCC	4.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-5GB
+SATIR 2795	2792	Asia	China Mainland（TT&GPT)	Daypass	6	5GB high-speed data per day, down to 384kbps	CMCC	5.81	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-5GB
+SATIR 2796	2793	Asia	China Mainland（TT&GPT)	Daypass	7	5GB high-speed data per day, down to 384kbps	CMCC	6.78	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-5GB
+SATIR 2797	2794	Asia	China Mainland（TT&GPT)	Daypass	8	5GB high-speed data per day, down to 384kbps	CMCC	7.75	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-5GB
+SATIR 2798	2795	Asia	China Mainland（TT&GPT)	Daypass	9	5GB high-speed data per day, down to 384kbps	CMCC	8.72	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-5GB
+SATIR 2799	2796	Asia	China Mainland（TT&GPT)	Daypass	10	5GB high-speed data per day, down to 384kbps	CMCC	9.68	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-5GB
+SATIR 2800	2797	Asia	China Mainland（TT&GPT)	Daypass	11	5GB high-speed data per day, down to 384kbps	CMCC	10.65	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-5GB
+SATIR 2801	2798	Asia	China Mainland（TT&GPT)	Daypass	12	5GB high-speed data per day, down to 384kbps	CMCC	11.62	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-5GB
+SATIR 2802	2799	Asia	China Mainland（TT&GPT)	Daypass	13	5GB high-speed data per day, down to 384kbps	CMCC	12.59	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-5GB
+SATIR 2803	2800	Asia	China Mainland（TT&GPT)	Daypass	14	5GB high-speed data per day, down to 384kbps	CMCC	13.56	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-5GB
+SATIR 2804	2801	Asia	China Mainland（TT&GPT)	Daypass	15	5GB high-speed data per day, down to 384kbps	CMCC	14.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-5GB
+SATIR 2805	2802	Asia	China Mainland（TT&GPT)	Daypass	16	5GB high-speed data per day, down to 384kbps	CMCC	15.49	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-5GB
+SATIR 2806	2803	Asia	China Mainland（TT&GPT)	Daypass	17	5GB high-speed data per day, down to 384kbps	CMCC	16.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-5GB
+SATIR 2807	2804	Asia	China Mainland（TT&GPT)	Daypass	18	5GB high-speed data per day, down to 384kbps	CMCC	17.43	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-5GB
+SATIR 2808	2805	Asia	China Mainland（TT&GPT)	Daypass	19	5GB high-speed data per day, down to 384kbps	CMCC	18.4	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-5GB
+SATIR 2809	2806	Asia	China Mainland（TT&GPT)	Daypass	20	5GB high-speed data per day, down to 384kbps	CMCC	19.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-5GB
+SATIR 2810	2807	Asia	China Mainland（TT&GPT)	Daypass	21	5GB high-speed data per day, down to 384kbps	CMCC	20.34	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-5GB
+SATIR 2811	2808	Asia	China Mainland（TT&GPT)	Daypass	22	5GB high-speed data per day, down to 384kbps	CMCC	21.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-5GB
+SATIR 2812	2809	Asia	China Mainland（TT&GPT)	Daypass	23	5GB high-speed data per day, down to 384kbps	CMCC	22.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-5GB
+SATIR 2813	2810	Asia	China Mainland（TT&GPT)	Daypass	24	5GB high-speed data per day, down to 384kbps	CMCC	23.24	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-5GB
+SATIR 2814	2811	Asia	China Mainland（TT&GPT)	Daypass	25	5GB high-speed data per day, down to 384kbps	CMCC	24.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-5GB
+SATIR 2815	2812	Asia	China Mainland（TT&GPT)	Daypass	26	5GB high-speed data per day, down to 384kbps	CMCC	25.18	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-5GB
+SATIR 2816	2813	Asia	China Mainland（TT&GPT)	Daypass	27	5GB high-speed data per day, down to 384kbps	CMCC	26.15	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-5GB
+SATIR 2817	2814	Asia	China Mainland（TT&GPT)	Daypass	28	5GB high-speed data per day, down to 384kbps	CMCC	27.12	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-5GB
+SATIR 2818	2815	Asia	China Mainland（TT&GPT)	Daypass	29	5GB high-speed data per day, down to 384kbps	CMCC	28.08	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-5GB
+SATIR 2819	2816	Asia	China Mainland（TT&GPT)	Daypass	30	5GB high-speed data per day, down to 384kbps	CMCC	29.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-5GB
+SATIR 2820	2817	Asia	China Mainland（TT&GPT)	Daypass	1	Unlimited	CMCC	1.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-100GB/10MB
+SATIR 2821	2818	Asia	China Mainland（TT&GPT)	Daypass	2	Unlimited	CMCC	2.69	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-100GB/10MB
+SATIR 2822	2819	Asia	China Mainland（TT&GPT)	Daypass	3	Unlimited	CMCC	4.04	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-100GB/10MB
+SATIR 2823	2820	Asia	China Mainland（TT&GPT)	Daypass	4	Unlimited	CMCC	5.39	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-100GB/10MB
+SATIR 2824	2821	Asia	China Mainland（TT&GPT)	Daypass	5	Unlimited	CMCC	6.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-100GB/10MB
+SATIR 2825	2822	Asia	China Mainland（TT&GPT)	Daypass	6	Unlimited	CMCC	7.83	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-100GB/10MB
+SATIR 2826	2823	Asia	China Mainland（TT&GPT)	Daypass	7	Unlimited	CMCC	9.14	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-100GB/10MB
+SATIR 2827	2824	Asia	China Mainland（TT&GPT)	Daypass	8	Unlimited	CMCC	10.44	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-100GB/10MB
+SATIR 2828	2825	Asia	China Mainland（TT&GPT)	Daypass	9	Unlimited	CMCC	11.75	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-100GB/10MB
+SATIR 2829	2826	Asia	China Mainland（TT&GPT)	Daypass	10	Unlimited	CMCC	13.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-100GB/10MB
+SATIR 2830	2827	Asia	China Mainland（TT&GPT)	Daypass	11	Unlimited	CMCC	14.36	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-100GB/10MB
+SATIR 2831	2828	Asia	China Mainland（TT&GPT)	Daypass	12	Unlimited	CMCC	15.66	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-100GB/10MB
+SATIR 2832	2829	Asia	China Mainland（TT&GPT)	Daypass	13	Unlimited	CMCC	16.97	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-100GB/10MB
+SATIR 2833	2830	Asia	China Mainland（TT&GPT)	Daypass	14	Unlimited	CMCC	18.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-100GB/10MB
+SATIR 2834	2831	Asia	China Mainland（TT&GPT)	Daypass	15	Unlimited	CMCC	19.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-100GB/10MB
+SATIR 2835	2832	Asia	China Mainland（TT&GPT)	Daypass	16	Unlimited	CMCC	20.88	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-100GB/10MB
+SATIR 2836	2833	Asia	China Mainland（TT&GPT)	Daypass	17	Unlimited	CMCC	22.19	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-100GB/10MB
+SATIR 2837	2834	Asia	China Mainland（TT&GPT)	Daypass	18	Unlimited	CMCC	22.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-100GB/10MB
+SATIR 2838	2835	Asia	China Mainland（TT&GPT)	Daypass	19	Unlimited	CMCC	24	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-100GB/10MB
+SATIR 2839	2836	Asia	China Mainland（TT&GPT)	Daypass	20	Unlimited	CMCC	25.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-100GB/10MB
+SATIR 2840	2837	Asia	China Mainland（TT&GPT)	Daypass	21	Unlimited	CMCC	26.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-100GB/10MB
+SATIR 2841	2838	Asia	China Mainland（TT&GPT)	Daypass	22	Unlimited	CMCC	27.79	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-100GB/10MB
+SATIR 2842	2839	Asia	China Mainland（TT&GPT)	Daypass	23	Unlimited	CMCC	29.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-100GB/10MB
+SATIR 2843	2840	Asia	China Mainland（TT&GPT)	Daypass	24	Unlimited	CMCC	30.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-100GB/10MB
+SATIR 2844	2841	Asia	China Mainland（TT&GPT)	Daypass	25	Unlimited	CMCC	31.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-100GB/10MB
+SATIR 2845	2842	Asia	China Mainland（TT&GPT)	Daypass	26	Unlimited	CMCC	32.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-100GB/10MB
+SATIR 2846	2843	Asia	China Mainland（TT&GPT)	Daypass	27	Unlimited	CMCC	34.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-100GB/10MB
+SATIR 2847	2844	Asia	China Mainland（TT&GPT)	Daypass	28	Unlimited	CMCC	35.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-100GB/10MB
+SATIR 2848	2845	Asia	China Mainland（TT&GPT)	Daypass	29	Unlimited	CMCC	36.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-100GB/10MB
+SATIR 2849	2846	Asia	China Mainland（TT&GPT)	Daypass	30	Unlimited	CMCC	37.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-100GB/10MB
+SATIR 2850	2847	Asia	China Mainland（TT&GPT)	Data Package	3	1GB /3 Days	CMCC	0.42	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-1GB
+SATIR 2851	2848	Asia	China Mainland（TT&GPT)	Data Package	5	1GB /5 Days	CMCC	0.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-1GB
+SATIR 2852	2849	Asia	China Mainland（TT&GPT)	Data Package	7	1GB /7 Days	CMCC	0.51	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-1GB
+SATIR 2853	2850	Asia	China Mainland（TT&GPT)	Data Package	10	1GB /10 Days	CMCC	0.55	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-1GB
+SATIR 2854	2851	Asia	China Mainland（TT&GPT)	Data Package	15	1GB /15 Days	CMCC	0.59	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-1GB
+SATIR 2855	2852	Asia	China Mainland（TT&GPT)	Data Package	30	1GB /30 Days	CMCC	0.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-1GB
+SATIR 2856	2853	Asia	China Mainland（TT&GPT)	Data Package	3	3GB /3 Days	CMCC	1.01	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-3GB
+SATIR 2857	2854	Asia	China Mainland（TT&GPT)	Data Package	5	3GB /5 Days	CMCC	1.18	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-3GB
+SATIR 2858	2855	Asia	China Mainland（TT&GPT)	Data Package	7	3GB /7 Days	CMCC	1.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-3GB
+SATIR 2859	2856	Asia	China Mainland（TT&GPT)	Data Package	10	3GB /10 Days	CMCC	1.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-3GB
+SATIR 2860	2857	Asia	China Mainland（TT&GPT)	Data Package	15	3GB /15 Days	CMCC	1.6	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-3GB
+SATIR 2861	2858	Asia	China Mainland（TT&GPT)	Data Package	30	3GB /30 Days	CMCC	1.77	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-3GB
+SATIR 2862	2859	Asia	China Mainland（TT&GPT)	Data Package	3	5GB /3 Days	CMCC	1.81	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-5GB
+SATIR 2863	2860	Asia	China Mainland（TT&GPT)	Data Package	5	5GB /5 Days	CMCC	1.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-5GB
+SATIR 2864	2861	Asia	China Mainland（TT&GPT)	Data Package	7	5GB /7 Days	CMCC	2.02	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-5GB
+SATIR 2865	2862	Asia	China Mainland（TT&GPT)	Data Package	10	5GB /10 Days	CMCC	2.15	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-5GB
+SATIR 2866	2863	Asia	China Mainland（TT&GPT)	Data Package	15	5GB /15 Days	CMCC	2.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-5GB
+SATIR 2867	2864	Asia	China Mainland（TT&GPT)	Data Package	30	5GB /30 Days	CMCC	2.44	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-5GB
+SATIR 2868	2865	Asia	China Mainland（TT&GPT)	Data Package	3	10GB /3 Days	CMCC	2.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-10GB
+SATIR 2869	2866	Asia	China Mainland（TT&GPT)	Data Package	5	10GB /5 Days	CMCC	2.95	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-10GB
+SATIR 2870	2867	Asia	China Mainland（TT&GPT)	Data Package	7	10GB /7 Days	CMCC	3.2	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-10GB
+SATIR 2871	2868	Asia	China Mainland（TT&GPT)	Data Package	10	10GB /10 Days	CMCC	3.45	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-10GB
+SATIR 2872	2869	Asia	China Mainland（TT&GPT)	Data Package	15	10GB /15 Days	CMCC	3.75	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-10GB
+SATIR 2873	2870	Asia	China Mainland（TT&GPT)	Data Package	30	10GB /30 Days	CMCC	4.04	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-10GB
+SATIR 2874	2871	Asia	China Mainland（TT&GPT)	Data Package	3	20GB /3 Days	CMCC	5.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-20GB
+SATIR 2875	2872	Asia	China Mainland（TT&GPT)	Data Package	5	20GB /5 Days	CMCC	5.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-20GB
+SATIR 2876	2873	Asia	China Mainland（TT&GPT)	Data Package	7	20GB /7 Days	CMCC	5.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-20GB
+SATIR 2877	2874	Asia	China Mainland（TT&GPT)	Data Package	10	20GB /10 Days	CMCC	6.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-20GB
+SATIR 2878	2875	Asia	China Mainland（TT&GPT)	Data Package	15	20GB /15 Days	CMCC	6.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-20GB
+SATIR 2879	2876	Asia	China Mainland（TT&GPT)	Data Package	30	20GB /30 Days	CMCC	7.16	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-20GB
+SATIR 2880	2877	Asia	China Mainland（TT&GPT)	Data Package	3	30GB /3 Days	CMCC	8	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-30GB
+SATIR 2881	2878	Asia	China Mainland（TT&GPT)	Data Package	5	30GB /5 Days	CMCC	8.42	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-30GB
+SATIR 2882	2879	Asia	China Mainland（TT&GPT)	Data Package	7	30GB /7 Days	CMCC	8.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-30GB
+SATIR 2883	2880	Asia	China Mainland（TT&GPT)	Data Package	10	30GB /10 Days	CMCC	9.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-30GB
+SATIR 2884	2881	Asia	China Mainland（TT&GPT)	Data Package	15	30GB /15 Days	CMCC	9.68	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-30GB
+SATIR 2885	2882	Asia	China Mainland（TT&GPT)	Data Package	30	30GB /30 Days	CMCC	10.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-30GB
+SATIR 2886	2883	Asia	China Mainland（TT&GPT)	Data Package	3	50GB /3 Days	CMCC	12.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-50GB
+SATIR 2887	2884	Asia	China Mainland（TT&GPT)	Data Package	5	50GB /5 Days	CMCC	13.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-50GB
+SATIR 2888	2885	Asia	China Mainland（TT&GPT)	Data Package	7	50GB /7 Days	CMCC	13.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-50GB
+SATIR 2889	2886	Asia	China Mainland（TT&GPT)	Data Package	10	50GB /10 Days	CMCC	14.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-50GB
+SATIR 2890	2887	Asia	China Mainland（TT&GPT)	Data Package	15	50GB /15 Days	CMCC	15.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-50GB
+SATIR 2891	2888	Asia	China Mainland（TT&GPT)	Data Package	30	50GB /30 Days	CMCC	16.42	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-50GB
+
+===== DOSYA: media_1793216291488_e5de521e | SAYFA: CTExcel | 18 sarı satır =====
+BASLIK	Global eSIM Quote Sheet																
+SATIR 58	55	Asia	China&Hong Kong&Macau	Daypass	1	3GB high-speed data per day, down to 384kbps		0.99	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-1D/60D-3GB
+SATIR 59	56	Asia	China&Hong Kong&Macau	Daypass	2	3GB high-speed data per day, down to 384kbps		1.78	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-2D/60D-3GB
+SATIR 60	57	Asia	China&Hong Kong&Macau	Daypass	3	3GB high-speed data per day, down to 384kbps		2.47	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-3D/60D-3GB
+SATIR 61	58	Asia	China&Hong Kong&Macau	Daypass	4	3GB high-speed data per day, down to 384kbps		2.97	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-4D/60D-3GB
+SATIR 62	59	Asia	China&Hong Kong&Macau	Daypass	5	3GB high-speed data per day, down to 384kbps		3.46	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-5D/60D-3GB
+SATIR 63	60	Asia	China&Hong Kong&Macau	Daypass	6	3GB high-speed data per day, down to 384kbps		4.45	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-6D/60D-3GB
+SATIR 64	61	Asia	China&Hong Kong&Macau	Daypass	7	3GB high-speed data per day, down to 384kbps		5.44	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-7D/60D-3GB
+SATIR 65	62	Asia	China&Hong Kong&Macau	Daypass	8	3GB high-speed data per day, down to 384kbps		6.14	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-8D/60D-3GB
+SATIR 66	63	Asia	China&Hong Kong&Macau	Daypass	9	3GB high-speed data per day, down to 384kbps		6.83	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-9D/60D-3GB
+SATIR 67	64	Asia	China&Hong Kong&Macau	Daypass	10	3GB high-speed data per day, down to 384kbps		7.62	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-10D/60D-3GB
+SATIR 68	65	Asia	China&Hong Kong&Macau	Daypass	11	3GB high-speed data per day, down to 384kbps		8.41	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-11D/60D-3GB
+SATIR 69	66	Asia	China&Hong Kong&Macau	Daypass	12	3GB high-speed data per day, down to 384kbps		9.11	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-12D/60D-3GB
+SATIR 70	67	Asia	China&Hong Kong&Macau	Daypass	13	3GB high-speed data per day, down to 384kbps		9.8	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-13D/60D-3GB
+SATIR 71	68	Asia	China&Hong Kong&Macau	Daypass	14	3GB high-speed data per day, down to 384kbps		10.48	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-14D/60D-3GB
+SATIR 72	69	Asia	China&Hong Kong&Macau	Daypass	15	3GB high-speed data per day, down to 384kbps		11.28	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-15D/60D-3GB
+SATIR 73	70	Asia	China&Hong Kong&Macau	Daypass	20	3GB high-speed data per day, down to 384kbps		14.94	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-20D/60D-3GB
+SATIR 74	71	Asia	China&Hong Kong&Macau	Daypass	25	3GB high-speed data per day, down to 384kbps		18.71	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-25D/60D-3GB
+SATIR 75	72	Asia	China&Hong Kong&Macau	Daypass	30	3GB high-speed data per day, down to 384kbps		22.26	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-30D/60D-3GB
+
+===== DOSYA: media_1793216291488_f23bcf03 | SAYFA: C4 | 222 sarı satır =====
+BASLIK	Global SIMCARD Quote Sheet										
+SATIR 2255	2252	Asia	China Mainland（TT&GPT)	Daypass	1	500M high-speed data per day, down to 384kbps	CMCC	0.46			A-003-SC-AU-C4-TTGPT-D-1D/60D-500M
+SATIR 2256	2253	Asia	China Mainland（TT&GPT)	Daypass	2	500M high-speed data per day, down to 384kbps	CMCC	0.71			A-003-SC-AU-C4-TTGPT-D-2D/60D-500M
+SATIR 2257	2254	Asia	China Mainland（TT&GPT)	Daypass	3	500M high-speed data per day, down to 384kbps	CMCC	0.82			A-003-SC-AU-C4-TTGPT-D-3D/60D-500M
+SATIR 2258	2255	Asia	China Mainland（TT&GPT)	Daypass	4	500M high-speed data per day, down to 384kbps	CMCC	1.01			A-003-SC-AU-C4-TTGPT-D-4D/60D-500M
+SATIR 2259	2256	Asia	China Mainland（TT&GPT)	Daypass	5	500M high-speed data per day, down to 384kbps	CMCC	1.26			A-003-SC-AU-C4-TTGPT-D-5D/60D-500M
+SATIR 2260	2257	Asia	China Mainland（TT&GPT)	Daypass	6	500M high-speed data per day, down to 384kbps	CMCC	1.39			A-003-SC-AU-C4-TTGPT-D-6D/60D-500M
+SATIR 2261	2258	Asia	China Mainland（TT&GPT)	Daypass	7	500M high-speed data per day, down to 384kbps	CMCC	1.62			A-003-SC-AU-C4-TTGPT-D-7D/60D-500M
+SATIR 2262	2259	Asia	China Mainland（TT&GPT)	Daypass	8	500M high-speed data per day, down to 384kbps	CMCC	1.85			A-003-SC-AU-C4-TTGPT-D-8D/60D-500M
+SATIR 2263	2260	Asia	China Mainland（TT&GPT)	Daypass	9	500M high-speed data per day, down to 384kbps	CMCC	2.08			A-003-SC-AU-C4-TTGPT-D-9D/60D-500M
+SATIR 2264	2261	Asia	China Mainland（TT&GPT)	Daypass	10	500M high-speed data per day, down to 384kbps	CMCC	2.32			A-003-SC-AU-C4-TTGPT-D-10D/60D-500M
+SATIR 2265	2262	Asia	China Mainland（TT&GPT)	Daypass	11	500M high-speed data per day, down to 384kbps	CMCC	2.55			A-003-SC-AU-C4-TTGPT-D-11D/60D-500M
+SATIR 2266	2263	Asia	China Mainland（TT&GPT)	Daypass	12	500M high-speed data per day, down to 384kbps	CMCC	2.78			A-003-SC-AU-C4-TTGPT-D-12D/60D-500M
+SATIR 2267	2264	Asia	China Mainland（TT&GPT)	Daypass	13	500M high-speed data per day, down to 384kbps	CMCC	3.01			A-003-SC-AU-C4-TTGPT-D-13D/60D-500M
+SATIR 2268	2265	Asia	China Mainland（TT&GPT)	Daypass	14	500M high-speed data per day, down to 384kbps	CMCC	3.24			A-003-SC-AU-C4-TTGPT-D-14D/60D-500M
+SATIR 2269	2266	Asia	China Mainland（TT&GPT)	Daypass	15	500M high-speed data per day, down to 384kbps	CMCC	3.28			A-003-SC-AU-C4-TTGPT-D-15D/60D-500M
+SATIR 2270	2267	Asia	China Mainland（TT&GPT)	Daypass	16	500M high-speed data per day, down to 384kbps	CMCC	3.51			A-003-SC-AU-C4-TTGPT-D-16D/60D-500M
+SATIR 2271	2268	Asia	China Mainland（TT&GPT)	Daypass	17	500M high-speed data per day, down to 384kbps	CMCC	3.73			A-003-SC-AU-C4-TTGPT-D-17D/60D-500M
+SATIR 2272	2269	Asia	China Mainland（TT&GPT)	Daypass	18	500M high-speed data per day, down to 384kbps	CMCC	3.94			A-003-SC-AU-C4-TTGPT-D-18D/60D-500M
+SATIR 2273	2270	Asia	China Mainland（TT&GPT)	Daypass	19	500M high-speed data per day, down to 384kbps	CMCC	4.16			A-003-SC-AU-C4-TTGPT-D-19D/60D-500M
+SATIR 2274	2271	Asia	China Mainland（TT&GPT)	Daypass	20	500M high-speed data per day, down to 384kbps	CMCC	4.38			A-003-SC-AU-C4-TTGPT-D-20D/60D-500M
+SATIR 2275	2272	Asia	China Mainland（TT&GPT)	Daypass	21	500M high-speed data per day, down to 384kbps	CMCC	4.6			A-003-SC-AU-C4-TTGPT-D-21D/60D-500M
+SATIR 2276	2273	Asia	China Mainland（TT&GPT)	Daypass	22	500M high-speed data per day, down to 384kbps	CMCC	4.82			A-003-SC-AU-C4-TTGPT-D-22D/60D-500M
+SATIR 2277	2274	Asia	China Mainland（TT&GPT)	Daypass	23	500M high-speed data per day, down to 384kbps	CMCC	5.03			A-003-SC-AU-C4-TTGPT-D-23D/60D-500M
+SATIR 2278	2275	Asia	China Mainland（TT&GPT)	Daypass	24	500M high-speed data per day, down to 384kbps	CMCC	5.25			A-003-SC-AU-C4-TTGPT-D-24D/60D-500M
+SATIR 2279	2276	Asia	China Mainland（TT&GPT)	Daypass	25	500M high-speed data per day, down to 384kbps	CMCC	5.47			A-003-SC-AU-C4-TTGPT-D-25D/60D-500M
+SATIR 2280	2277	Asia	China Mainland（TT&GPT)	Daypass	26	500M high-speed data per day, down to 384kbps	CMCC	5.69			A-003-SC-AU-C4-TTGPT-D-26D/60D-500M
+SATIR 2281	2278	Asia	China Mainland（TT&GPT)	Daypass	27	500M high-speed data per day, down to 384kbps	CMCC	5.92			A-003-SC-AU-C4-TTGPT-D-27D/60D-500M
+SATIR 2282	2279	Asia	China Mainland（TT&GPT)	Daypass	28	500M high-speed data per day, down to 384kbps	CMCC	6.13			A-003-SC-AU-C4-TTGPT-D-28D/60D-500M
+SATIR 2283	2280	Asia	China Mainland（TT&GPT)	Daypass	29	500M high-speed data per day, down to 384kbps	CMCC	6.35			A-003-SC-AU-C4-TTGPT-D-29D/60D-500M
+SATIR 2284	2281	Asia	China Mainland（TT&GPT)	Daypass	30	500M high-speed data per day, down to 384kbps	CMCC	6.57			A-003-SC-AU-C4-TTGPT-D-30D/60D-500M
+SATIR 2285	2282	Asia	China Mainland（TT&GPT)	Daypass	1	1GB high-speed data per day, down to 384kbps	CMCC	0.46			A-003-SC-AU-C4-TTGPT-D-1D/60D-1GB
+SATIR 2286	2283	Asia	China Mainland（TT&GPT)	Daypass	2	1GB high-speed data per day, down to 384kbps	CMCC	0.71			A-003-SC-AU-C4-TTGPT-D-2D/60D-1GB
+SATIR 2287	2284	Asia	China Mainland（TT&GPT)	Daypass	3	1GB high-speed data per day, down to 384kbps	CMCC	1.02			A-003-SC-AU-C4-TTGPT-D-3D/60D-1GB
+SATIR 2288	2285	Asia	China Mainland（TT&GPT)	Daypass	4	1GB high-speed data per day, down to 384kbps	CMCC	1.33			A-003-SC-AU-C4-TTGPT-D-4D/60D-1GB
+SATIR 2289	2286	Asia	China Mainland（TT&GPT)	Daypass	5	1GB high-speed data per day, down to 384kbps	CMCC	1.62			A-003-SC-AU-C4-TTGPT-D-5D/60D-1GB
+SATIR 2290	2287	Asia	China Mainland（TT&GPT)	Daypass	6	1GB high-speed data per day, down to 384kbps	CMCC	1.92			A-003-SC-AU-C4-TTGPT-D-6D/60D-1GB
+SATIR 2291	2288	Asia	China Mainland（TT&GPT)	Daypass	7	1GB high-speed data per day, down to 384kbps	CMCC	2.21			A-003-SC-AU-C4-TTGPT-D-7D/60D-1GB
+SATIR 2292	2289	Asia	China Mainland（TT&GPT)	Daypass	8	1GB high-speed data per day, down to 384kbps	CMCC	2.53			A-003-SC-AU-C4-TTGPT-D-8D/60D-1GB
+SATIR 2293	2290	Asia	China Mainland（TT&GPT)	Daypass	9	1GB high-speed data per day, down to 384kbps	CMCC	2.8			A-003-SC-AU-C4-TTGPT-D-9D/60D-1GB
+SATIR 2294	2291	Asia	China Mainland（TT&GPT)	Daypass	10	1GB high-speed data per day, down to 384kbps	CMCC	3.12			A-003-SC-AU-C4-TTGPT-D-10D/60D-1GB
+SATIR 2295	2292	Asia	China Mainland（TT&GPT)	Daypass	11	1GB high-speed data per day, down to 384kbps	CMCC	3.43			A-003-SC-AU-C4-TTGPT-D-11D/60D-1GB
+SATIR 2296	2293	Asia	China Mainland（TT&GPT)	Daypass	12	1GB high-speed data per day, down to 384kbps	CMCC	3.74			A-003-SC-AU-C4-TTGPT-D-12D/60D-1GB
+SATIR 2297	2294	Asia	China Mainland（TT&GPT)	Daypass	13	1GB high-speed data per day, down to 384kbps	CMCC	4			A-003-SC-AU-C4-TTGPT-D-13D/60D-1GB
+SATIR 2298	2295	Asia	China Mainland（TT&GPT)	Daypass	14	1GB high-speed data per day, down to 384kbps	CMCC	4.31			A-003-SC-AU-C4-TTGPT-D-14D/60D-1GB
+SATIR 2299	2296	Asia	China Mainland（TT&GPT)	Daypass	15	1GB high-speed data per day, down to 384kbps	CMCC	4.61			A-003-SC-AU-C4-TTGPT-D-15D/60D-1GB
+SATIR 2300	2297	Asia	China Mainland（TT&GPT)	Daypass	16	1GB high-speed data per day, down to 384kbps	CMCC	4.92			A-003-SC-AU-C4-TTGPT-D-16D/60D-1GB
+SATIR 2301	2298	Asia	China Mainland（TT&GPT)	Daypass	17	1GB high-speed data per day, down to 384kbps	CMCC	5.22			A-003-SC-AU-C4-TTGPT-D-17D/60D-1GB
+SATIR 2302	2299	Asia	China Mainland（TT&GPT)	Daypass	18	1GB high-speed data per day, down to 384kbps	CMCC	5.54			A-003-SC-AU-C4-TTGPT-D-18D/60D-1GB
+SATIR 2303	2300	Asia	China Mainland（TT&GPT)	Daypass	19	1GB high-speed data per day, down to 384kbps	CMCC	5.84			A-003-SC-AU-C4-TTGPT-D-19D/60D-1GB
+SATIR 2304	2301	Asia	China Mainland（TT&GPT)	Daypass	20	1GB high-speed data per day, down to 384kbps	CMCC	5.98			A-003-SC-AU-C4-TTGPT-D-20D/60D-1GB
+SATIR 2305	2302	Asia	China Mainland（TT&GPT)	Daypass	21	1GB high-speed data per day, down to 384kbps	CMCC	6.27			A-003-SC-AU-C4-TTGPT-D-21D/60D-1GB
+SATIR 2306	2303	Asia	China Mainland（TT&GPT)	Daypass	22	1GB high-speed data per day, down to 384kbps	CMCC	6.58			A-003-SC-AU-C4-TTGPT-D-22D/60D-1GB
+SATIR 2307	2304	Asia	China Mainland（TT&GPT)	Daypass	23	1GB high-speed data per day, down to 384kbps	CMCC	6.87			A-003-SC-AU-C4-TTGPT-D-23D/60D-1GB
+SATIR 2308	2305	Asia	China Mainland（TT&GPT)	Daypass	24	1GB high-speed data per day, down to 384kbps	CMCC	7.18			A-003-SC-AU-C4-TTGPT-D-24D/60D-1GB
+SATIR 2309	2306	Asia	China Mainland（TT&GPT)	Daypass	25	1GB high-speed data per day, down to 384kbps	CMCC	7.47			A-003-SC-AU-C4-TTGPT-D-25D/60D-1GB
+SATIR 2310	2307	Asia	China Mainland（TT&GPT)	Daypass	26	1GB high-speed data per day, down to 384kbps	CMCC	7.77			A-003-SC-AU-C4-TTGPT-D-26D/60D-1GB
+SATIR 2311	2308	Asia	China Mainland（TT&GPT)	Daypass	27	1GB high-speed data per day, down to 384kbps	CMCC	8.07			A-003-SC-AU-C4-TTGPT-D-27D/60D-1GB
+SATIR 2312	2309	Asia	China Mainland（TT&GPT)	Daypass	28	1GB high-speed data per day, down to 384kbps	CMCC	8.37			A-003-SC-AU-C4-TTGPT-D-28D/60D-1GB
+SATIR 2313	2310	Asia	China Mainland（TT&GPT)	Daypass	29	1GB high-speed data per day, down to 384kbps	CMCC	8.67			A-003-SC-AU-C4-TTGPT-D-29D/60D-1GB
+SATIR 2314	2311	Asia	China Mainland（TT&GPT)	Daypass	30	1GB high-speed data per day, down to 384kbps	CMCC	8.97			A-003-SC-AU-C4-TTGPT-D-30D/60D-1GB
+SATIR 2315	2312	Asia	China Mainland（TT&GPT)	Daypass	1	2GB high-speed data per day, down to 384kbps	CMCC	0.72			A-003-SC-AU-C4-TTGPT-D-1D/60D-2GB
+SATIR 2316	2313	Asia	China Mainland（TT&GPT)	Daypass	2	2GB high-speed data per day, down to 384kbps	CMCC	1.26			A-003-SC-AU-C4-TTGPT-D-2D/60D-2GB
+SATIR 2317	2314	Asia	China Mainland（TT&GPT)	Daypass	3	2GB high-speed data per day, down to 384kbps	CMCC	1.77			A-003-SC-AU-C4-TTGPT-D-3D/60D-2GB
+SATIR 2318	2315	Asia	China Mainland（TT&GPT)	Daypass	4	2GB high-speed data per day, down to 384kbps	CMCC	2.36			A-003-SC-AU-C4-TTGPT-D-4D/60D-2GB
+SATIR 2319	2316	Asia	China Mainland（TT&GPT)	Daypass	5	2GB high-speed data per day, down to 384kbps	CMCC	2.74			A-003-SC-AU-C4-TTGPT-D-5D/60D-2GB
+SATIR 2320	2317	Asia	China Mainland（TT&GPT)	Daypass	6	2GB high-speed data per day, down to 384kbps	CMCC	3.28			A-003-SC-AU-C4-TTGPT-D-6D/60D-2GB
+SATIR 2321	2318	Asia	China Mainland（TT&GPT)	Daypass	7	2GB high-speed data per day, down to 384kbps	CMCC	3.83			A-003-SC-AU-C4-TTGPT-D-7D/60D-2GB
+SATIR 2322	2319	Asia	China Mainland（TT&GPT)	Daypass	8	2GB high-speed data per day, down to 384kbps	CMCC	4.38			A-003-SC-AU-C4-TTGPT-D-8D/60D-2GB
+SATIR 2323	2320	Asia	China Mainland（TT&GPT)	Daypass	9	2GB high-speed data per day, down to 384kbps	CMCC	4.93			A-003-SC-AU-C4-TTGPT-D-9D/60D-2GB
+SATIR 2324	2321	Asia	China Mainland（TT&GPT)	Daypass	10	2GB high-speed data per day, down to 384kbps	CMCC	5.47			A-003-SC-AU-C4-TTGPT-D-10D/60D-2GB
+SATIR 2325	2322	Asia	China Mainland（TT&GPT)	Daypass	11	2GB high-speed data per day, down to 384kbps	CMCC	6.02			A-003-SC-AU-C4-TTGPT-D-11D/60D-2GB
+SATIR 2326	2323	Asia	China Mainland（TT&GPT)	Daypass	12	2GB high-speed data per day, down to 384kbps	CMCC	6.57			A-003-SC-AU-C4-TTGPT-D-12D/60D-2GB
+SATIR 2327	2324	Asia	China Mainland（TT&GPT)	Daypass	13	2GB high-speed data per day, down to 384kbps	CMCC	7.12			A-003-SC-AU-C4-TTGPT-D-13D/60D-2GB
+SATIR 2328	2325	Asia	China Mainland（TT&GPT)	Daypass	14	2GB high-speed data per day, down to 384kbps	CMCC	7.66			A-003-SC-AU-C4-TTGPT-D-14D/60D-2GB
+SATIR 2329	2326	Asia	China Mainland（TT&GPT)	Daypass	15	2GB high-speed data per day, down to 384kbps	CMCC	8.21			A-003-SC-AU-C4-TTGPT-D-15D/60D-2GB
+SATIR 2330	2327	Asia	China Mainland（TT&GPT)	Daypass	16	2GB high-speed data per day, down to 384kbps	CMCC	8.76			A-003-SC-AU-C4-TTGPT-D-16D/60D-2GB
+SATIR 2331	2328	Asia	China Mainland（TT&GPT)	Daypass	17	2GB high-speed data per day, down to 384kbps	CMCC	9.31			A-003-SC-AU-C4-TTGPT-D-17D/60D-2GB
+SATIR 2332	2329	Asia	China Mainland（TT&GPT)	Daypass	18	2GB high-speed data per day, down to 384kbps	CMCC	9.47			A-003-SC-AU-C4-TTGPT-D-18D/60D-2GB
+SATIR 2333	2330	Asia	China Mainland（TT&GPT)	Daypass	19	2GB high-speed data per day, down to 384kbps	CMCC	10			A-003-SC-AU-C4-TTGPT-D-19D/60D-2GB
+SATIR 2334	2331	Asia	China Mainland（TT&GPT)	Daypass	20	2GB high-speed data per day, down to 384kbps	CMCC	10.53			A-003-SC-AU-C4-TTGPT-D-20D/60D-2GB
+SATIR 2335	2332	Asia	China Mainland（TT&GPT)	Daypass	21	2GB high-speed data per day, down to 384kbps	CMCC	11.05			A-003-SC-AU-C4-TTGPT-D-21D/60D-2GB
+SATIR 2336	2333	Asia	China Mainland（TT&GPT)	Daypass	22	2GB high-speed data per day, down to 384kbps	CMCC	11.58			A-003-SC-AU-C4-TTGPT-D-22D/60D-2GB
+SATIR 2337	2334	Asia	China Mainland（TT&GPT)	Daypass	23	2GB high-speed data per day, down to 384kbps	CMCC	12.11			A-003-SC-AU-C4-TTGPT-D-23D/60D-2GB
+SATIR 2338	2335	Asia	China Mainland（TT&GPT)	Daypass	24	2GB high-speed data per day, down to 384kbps	CMCC	12.63			A-003-SC-AU-C4-TTGPT-D-24D/60D-2GB
+SATIR 2339	2336	Asia	China Mainland（TT&GPT)	Daypass	25	2GB high-speed data per day, down to 384kbps	CMCC	13.16			A-003-SC-AU-C4-TTGPT-D-25D/60D-2GB
+SATIR 2340	2337	Asia	China Mainland（TT&GPT)	Daypass	26	2GB high-speed data per day, down to 384kbps	CMCC	13.68			A-003-SC-AU-C4-TTGPT-D-26D/60D-2GB
+SATIR 2341	2338	Asia	China Mainland（TT&GPT)	Daypass	27	2GB high-speed data per day, down to 384kbps	CMCC	14.21			A-003-SC-AU-C4-TTGPT-D-27D/60D-2GB
+SATIR 2342	2339	Asia	China Mainland（TT&GPT)	Daypass	28	2GB high-speed data per day, down to 384kbps	CMCC	14.74			A-003-SC-AU-C4-TTGPT-D-28D/60D-2GB
+SATIR 2343	2340	Asia	China Mainland（TT&GPT)	Daypass	29	2GB high-speed data per day, down to 384kbps	CMCC	15.26			A-003-SC-AU-C4-TTGPT-D-29D/60D-2GB
+SATIR 2344	2341	Asia	China Mainland（TT&GPT)	Daypass	30	2GB high-speed data per day, down to 384kbps	CMCC	15.79			A-003-SC-AU-C4-TTGPT-D-30D/60D-2GB
+SATIR 2345	2342	Asia	China Mainland（TT&GPT)	Daypass	1	3GB high-speed data per day, down to 384kbps	CMCC	0.88			A-003-SC-AU-C4-TTGPT-D-1D/60D-3GB
+SATIR 2346	2343	Asia	China Mainland（TT&GPT)	Daypass	2	3GB high-speed data per day, down to 384kbps	CMCC	1.6			A-003-SC-AU-C4-TTGPT-D-2D/60D-3GB
+SATIR 2347	2344	Asia	China Mainland（TT&GPT)	Daypass	3	3GB high-speed data per day, down to 384kbps	CMCC	2.34			A-003-SC-AU-C4-TTGPT-D-3D/60D-3GB
+SATIR 2348	2345	Asia	China Mainland（TT&GPT)	Daypass	4	3GB high-speed data per day, down to 384kbps	CMCC	3.03			A-003-SC-AU-C4-TTGPT-D-4D/60D-3GB
+SATIR 2349	2346	Asia	China Mainland（TT&GPT)	Daypass	5	3GB high-speed data per day, down to 384kbps	CMCC	3.79			A-003-SC-AU-C4-TTGPT-D-5D/60D-3GB
+SATIR 2350	2347	Asia	China Mainland（TT&GPT)	Daypass	6	3GB high-speed data per day, down to 384kbps	CMCC	4.55			A-003-SC-AU-C4-TTGPT-D-6D/60D-3GB
+SATIR 2351	2348	Asia	China Mainland（TT&GPT)	Daypass	7	3GB high-speed data per day, down to 384kbps	CMCC	5.31			A-003-SC-AU-C4-TTGPT-D-7D/60D-3GB
+SATIR 2352	2349	Asia	China Mainland（TT&GPT)	Daypass	8	3GB high-speed data per day, down to 384kbps	CMCC	5.89			A-003-SC-AU-C4-TTGPT-D-8D/60D-3GB
+SATIR 2353	2350	Asia	China Mainland（TT&GPT)	Daypass	9	3GB high-speed data per day, down to 384kbps	CMCC	6.63			A-003-SC-AU-C4-TTGPT-D-9D/60D-3GB
+SATIR 2354	2351	Asia	China Mainland（TT&GPT)	Daypass	10	3GB high-speed data per day, down to 384kbps	CMCC	7.37			A-003-SC-AU-C4-TTGPT-D-10D/60D-3GB
+SATIR 2355	2352	Asia	China Mainland（TT&GPT)	Daypass	11	3GB high-speed data per day, down to 384kbps	CMCC	8.11			A-003-SC-AU-C4-TTGPT-D-11D/60D-3GB
+SATIR 2356	2353	Asia	China Mainland（TT&GPT)	Daypass	12	3GB high-speed data per day, down to 384kbps	CMCC	8.84			A-003-SC-AU-C4-TTGPT-D-12D/60D-3GB
+SATIR 2357	2354	Asia	China Mainland（TT&GPT)	Daypass	13	3GB high-speed data per day, down to 384kbps	CMCC	9.58			A-003-SC-AU-C4-TTGPT-D-13D/60D-3GB
+SATIR 2358	2355	Asia	China Mainland（TT&GPT)	Daypass	14	3GB high-speed data per day, down to 384kbps	CMCC	10.32			A-003-SC-AU-C4-TTGPT-D-14D/60D-3GB
+SATIR 2359	2356	Asia	China Mainland（TT&GPT)	Daypass	15	3GB high-speed data per day, down to 384kbps	CMCC	10.86			A-003-SC-AU-C4-TTGPT-D-15D/60D-3GB
+SATIR 2360	2357	Asia	China Mainland（TT&GPT)	Daypass	16	3GB high-speed data per day, down to 384kbps	CMCC	11.59			A-003-SC-AU-C4-TTGPT-D-16D/60D-3GB
+SATIR 2361	2358	Asia	China Mainland（TT&GPT)	Daypass	17	3GB high-speed data per day, down to 384kbps	CMCC	12.32			A-003-SC-AU-C4-TTGPT-D-17D/60D-3GB
+SATIR 2362	2359	Asia	China Mainland（TT&GPT)	Daypass	18	3GB high-speed data per day, down to 384kbps	CMCC	13.03			A-003-SC-AU-C4-TTGPT-D-18D/60D-3GB
+SATIR 2363	2360	Asia	China Mainland（TT&GPT)	Daypass	19	3GB high-speed data per day, down to 384kbps	CMCC	13.76			A-003-SC-AU-C4-TTGPT-D-19D/60D-3GB
+SATIR 2364	2361	Asia	China Mainland（TT&GPT)	Daypass	20	3GB high-speed data per day, down to 384kbps	CMCC	14.48			A-003-SC-AU-C4-TTGPT-D-20D/60D-3GB
+SATIR 2365	2362	Asia	China Mainland（TT&GPT)	Daypass	21	3GB high-speed data per day, down to 384kbps	CMCC	15.21			A-003-SC-AU-C4-TTGPT-D-21D/60D-3GB
+SATIR 2366	2363	Asia	China Mainland（TT&GPT)	Daypass	22	3GB high-speed data per day, down to 384kbps	CMCC	15.94			A-003-SC-AU-C4-TTGPT-D-22D/60D-3GB
+SATIR 2367	2364	Asia	China Mainland（TT&GPT)	Daypass	23	3GB high-speed data per day, down to 384kbps	CMCC	16.65			A-003-SC-AU-C4-TTGPT-D-23D/60D-3GB
+SATIR 2368	2365	Asia	China Mainland（TT&GPT)	Daypass	24	3GB high-speed data per day, down to 384kbps	CMCC	17.38			A-003-SC-AU-C4-TTGPT-D-24D/60D-3GB
+SATIR 2369	2366	Asia	China Mainland（TT&GPT)	Daypass	25	3GB high-speed data per day, down to 384kbps	CMCC	18.11			A-003-SC-AU-C4-TTGPT-D-25D/60D-3GB
+SATIR 2370	2367	Asia	China Mainland（TT&GPT)	Daypass	26	3GB high-speed data per day, down to 384kbps	CMCC	18.83			A-003-SC-AU-C4-TTGPT-D-26D/60D-3GB
+SATIR 2371	2368	Asia	China Mainland（TT&GPT)	Daypass	27	3GB high-speed data per day, down to 384kbps	CMCC	19.56			A-003-SC-AU-C4-TTGPT-D-27D/60D-3GB
+SATIR 2372	2369	Asia	China Mainland（TT&GPT)	Daypass	28	3GB high-speed data per day, down to 384kbps	CMCC	20.27			A-003-SC-AU-C4-TTGPT-D-28D/60D-3GB
+SATIR 2373	2370	Asia	China Mainland（TT&GPT)	Daypass	29	3GB high-speed data per day, down to 384kbps	CMCC	21			A-003-SC-AU-C4-TTGPT-D-29D/60D-3GB
+SATIR 2374	2371	Asia	China Mainland（TT&GPT)	Daypass	30	3GB high-speed data per day, down to 384kbps	CMCC	21.73			A-003-SC-AU-C4-TTGPT-D-30D/60D-3GB
+SATIR 2375	2372	Asia	China Mainland（TT&GPT)	Daypass	1	5GB high-speed data per day, down to 384kbps	CMCC	1.09			A-003-SC-AU-C4-TTGPT-D-1D/60D-5GB
+SATIR 2376	2373	Asia	China Mainland（TT&GPT)	Daypass	2	5GB high-speed data per day, down to 384kbps	CMCC	1.94			A-003-SC-AU-C4-TTGPT-D-2D/60D-5GB
+SATIR 2377	2374	Asia	China Mainland（TT&GPT)	Daypass	3	5GB high-speed data per day, down to 384kbps	CMCC	2.91			A-003-SC-AU-C4-TTGPT-D-3D/60D-5GB
+SATIR 2378	2375	Asia	China Mainland（TT&GPT)	Daypass	4	5GB high-speed data per day, down to 384kbps	CMCC	3.87			A-003-SC-AU-C4-TTGPT-D-4D/60D-5GB
+SATIR 2379	2376	Asia	China Mainland（TT&GPT)	Daypass	5	5GB high-speed data per day, down to 384kbps	CMCC	4.84			A-003-SC-AU-C4-TTGPT-D-5D/60D-5GB
+SATIR 2380	2377	Asia	China Mainland（TT&GPT)	Daypass	6	5GB high-speed data per day, down to 384kbps	CMCC	5.81			A-003-SC-AU-C4-TTGPT-D-6D/60D-5GB
+SATIR 2381	2378	Asia	China Mainland（TT&GPT)	Daypass	7	5GB high-speed data per day, down to 384kbps	CMCC	6.78			A-003-SC-AU-C4-TTGPT-D-7D/60D-5GB
+SATIR 2382	2379	Asia	China Mainland（TT&GPT)	Daypass	8	5GB high-speed data per day, down to 384kbps	CMCC	7.75			A-003-SC-AU-C4-TTGPT-D-8D/60D-5GB
+SATIR 2383	2380	Asia	China Mainland（TT&GPT)	Daypass	9	5GB high-speed data per day, down to 384kbps	CMCC	8.72			A-003-SC-AU-C4-TTGPT-D-9D/60D-5GB
+SATIR 2384	2381	Asia	China Mainland（TT&GPT)	Daypass	10	5GB high-speed data per day, down to 384kbps	CMCC	9.68			A-003-SC-AU-C4-TTGPT-D-10D/60D-5GB
+SATIR 2385	2382	Asia	China Mainland（TT&GPT)	Daypass	11	5GB high-speed data per day, down to 384kbps	CMCC	10.65			A-003-SC-AU-C4-TTGPT-D-11D/60D-5GB
+SATIR 2386	2383	Asia	China Mainland（TT&GPT)	Daypass	12	5GB high-speed data per day, down to 384kbps	CMCC	11.62			A-003-SC-AU-C4-TTGPT-D-12D/60D-5GB
+SATIR 2387	2384	Asia	China Mainland（TT&GPT)	Daypass	13	5GB high-speed data per day, down to 384kbps	CMCC	12.59			A-003-SC-AU-C4-TTGPT-D-13D/60D-5GB
+SATIR 2388	2385	Asia	China Mainland（TT&GPT)	Daypass	14	5GB high-speed data per day, down to 384kbps	CMCC	13.56			A-003-SC-AU-C4-TTGPT-D-14D/60D-5GB
+SATIR 2389	2386	Asia	China Mainland（TT&GPT)	Daypass	15	5GB high-speed data per day, down to 384kbps	CMCC	14.53			A-003-SC-AU-C4-TTGPT-D-15D/60D-5GB
+SATIR 2390	2387	Asia	China Mainland（TT&GPT)	Daypass	16	5GB high-speed data per day, down to 384kbps	CMCC	15.49			A-003-SC-AU-C4-TTGPT-D-16D/60D-5GB
+SATIR 2391	2388	Asia	China Mainland（TT&GPT)	Daypass	17	5GB high-speed data per day, down to 384kbps	CMCC	16.46			A-003-SC-AU-C4-TTGPT-D-17D/60D-5GB
+SATIR 2392	2389	Asia	China Mainland（TT&GPT)	Daypass	18	5GB high-speed data per day, down to 384kbps	CMCC	17.43			A-003-SC-AU-C4-TTGPT-D-18D/60D-5GB
+SATIR 2393	2390	Asia	China Mainland（TT&GPT)	Daypass	19	5GB high-speed data per day, down to 384kbps	CMCC	18.4			A-003-SC-AU-C4-TTGPT-D-19D/60D-5GB
+SATIR 2394	2391	Asia	China Mainland（TT&GPT)	Daypass	20	5GB high-speed data per day, down to 384kbps	CMCC	19.37			A-003-SC-AU-C4-TTGPT-D-20D/60D-5GB
+SATIR 2395	2392	Asia	China Mainland（TT&GPT)	Daypass	21	5GB high-speed data per day, down to 384kbps	CMCC	20.34			A-003-SC-AU-C4-TTGPT-D-21D/60D-5GB
+SATIR 2396	2393	Asia	China Mainland（TT&GPT)	Daypass	22	5GB high-speed data per day, down to 384kbps	CMCC	21.31			A-003-SC-AU-C4-TTGPT-D-22D/60D-5GB
+SATIR 2397	2394	Asia	China Mainland（TT&GPT)	Daypass	23	5GB high-speed data per day, down to 384kbps	CMCC	22.27			A-003-SC-AU-C4-TTGPT-D-23D/60D-5GB
+SATIR 2398	2395	Asia	China Mainland（TT&GPT)	Daypass	24	5GB high-speed data per day, down to 384kbps	CMCC	23.24			A-003-SC-AU-C4-TTGPT-D-24D/60D-5GB
+SATIR 2399	2396	Asia	China Mainland（TT&GPT)	Daypass	25	5GB high-speed data per day, down to 384kbps	CMCC	24.21			A-003-SC-AU-C4-TTGPT-D-25D/60D-5GB
+SATIR 2400	2397	Asia	China Mainland（TT&GPT)	Daypass	26	5GB high-speed data per day, down to 384kbps	CMCC	25.18			A-003-SC-AU-C4-TTGPT-D-26D/60D-5GB
+SATIR 2401	2398	Asia	China Mainland（TT&GPT)	Daypass	27	5GB high-speed data per day, down to 384kbps	CMCC	26.15			A-003-SC-AU-C4-TTGPT-D-27D/60D-5GB
+SATIR 2402	2399	Asia	China Mainland（TT&GPT)	Daypass	28	5GB high-speed data per day, down to 384kbps	CMCC	27.12			A-003-SC-AU-C4-TTGPT-D-28D/60D-5GB
+SATIR 2403	2400	Asia	China Mainland（TT&GPT)	Daypass	29	5GB high-speed data per day, down to 384kbps	CMCC	28.08			A-003-SC-AU-C4-TTGPT-D-29D/60D-5GB
+SATIR 2404	2401	Asia	China Mainland（TT&GPT)	Daypass	30	5GB high-speed data per day, down to 384kbps	CMCC	29.05			A-003-SC-AU-C4-TTGPT-D-30D/60D-5GB
+SATIR 2405	2402	Asia	China Mainland（TT&GPT)	Daypass	1	Unlimited	CMCC	1.26			A-003-SC-AU-C4-TTGPT-D-1D/60D-100GB/10MB
+SATIR 2406	2403	Asia	China Mainland（TT&GPT)	Daypass	2	Unlimited	CMCC	2.69			A-003-SC-AU-C4-TTGPT-D-2D/60D-100GB/10MB
+SATIR 2407	2404	Asia	China Mainland（TT&GPT)	Daypass	3	Unlimited	CMCC	4.04			A-003-SC-AU-C4-TTGPT-D-3D/60D-100GB/10MB
+SATIR 2408	2405	Asia	China Mainland（TT&GPT)	Daypass	4	Unlimited	CMCC	5.39			A-003-SC-AU-C4-TTGPT-D-4D/60D-100GB/10MB
+SATIR 2409	2406	Asia	China Mainland（TT&GPT)	Daypass	5	Unlimited	CMCC	6.53			A-003-SC-AU-C4-TTGPT-D-5D/60D-100GB/10MB
+SATIR 2410	2407	Asia	China Mainland（TT&GPT)	Daypass	6	Unlimited	CMCC	7.83			A-003-SC-AU-C4-TTGPT-D-6D/60D-100GB/10MB
+SATIR 2411	2408	Asia	China Mainland（TT&GPT)	Daypass	7	Unlimited	CMCC	9.14			A-003-SC-AU-C4-TTGPT-D-7D/60D-100GB/10MB
+SATIR 2412	2409	Asia	China Mainland（TT&GPT)	Daypass	8	Unlimited	CMCC	10.44			A-003-SC-AU-C4-TTGPT-D-8D/60D-100GB/10MB
+SATIR 2413	2410	Asia	China Mainland（TT&GPT)	Daypass	9	Unlimited	CMCC	11.75			A-003-SC-AU-C4-TTGPT-D-9D/60D-100GB/10MB
+SATIR 2414	2411	Asia	China Mainland（TT&GPT)	Daypass	10	Unlimited	CMCC	13.05			A-003-SC-AU-C4-TTGPT-D-10D/60D-100GB/10MB
+SATIR 2415	2412	Asia	China Mainland（TT&GPT)	Daypass	11	Unlimited	CMCC	14.36			A-003-SC-AU-C4-TTGPT-D-11D/60D-100GB/10MB
+SATIR 2416	2413	Asia	China Mainland（TT&GPT)	Daypass	12	Unlimited	CMCC	15.66			A-003-SC-AU-C4-TTGPT-D-12D/60D-100GB/10MB
+SATIR 2417	2414	Asia	China Mainland（TT&GPT)	Daypass	13	Unlimited	CMCC	16.97			A-003-SC-AU-C4-TTGPT-D-13D/60D-100GB/10MB
+SATIR 2418	2415	Asia	China Mainland（TT&GPT)	Daypass	14	Unlimited	CMCC	18.27			A-003-SC-AU-C4-TTGPT-D-14D/60D-100GB/10MB
+SATIR 2419	2416	Asia	China Mainland（TT&GPT)	Daypass	15	Unlimited	CMCC	19.58			A-003-SC-AU-C4-TTGPT-D-15D/60D-100GB/10MB
+SATIR 2420	2417	Asia	China Mainland（TT&GPT)	Daypass	16	Unlimited	CMCC	20.88			A-003-SC-AU-C4-TTGPT-D-16D/60D-100GB/10MB
+SATIR 2421	2418	Asia	China Mainland（TT&GPT)	Daypass	17	Unlimited	CMCC	22.19			A-003-SC-AU-C4-TTGPT-D-17D/60D-100GB/10MB
+SATIR 2422	2419	Asia	China Mainland（TT&GPT)	Daypass	18	Unlimited	CMCC	22.74			A-003-SC-AU-C4-TTGPT-D-18D/60D-100GB/10MB
+SATIR 2423	2420	Asia	China Mainland（TT&GPT)	Daypass	19	Unlimited	CMCC	24			A-003-SC-AU-C4-TTGPT-D-19D/60D-100GB/10MB
+SATIR 2424	2421	Asia	China Mainland（TT&GPT)	Daypass	20	Unlimited	CMCC	25.26			A-003-SC-AU-C4-TTGPT-D-20D/60D-100GB/10MB
+SATIR 2425	2422	Asia	China Mainland（TT&GPT)	Daypass	21	Unlimited	CMCC	26.53			A-003-SC-AU-C4-TTGPT-D-21D/60D-100GB/10MB
+SATIR 2426	2423	Asia	China Mainland（TT&GPT)	Daypass	22	Unlimited	CMCC	27.79			A-003-SC-AU-C4-TTGPT-D-22D/60D-100GB/10MB
+SATIR 2427	2424	Asia	China Mainland（TT&GPT)	Daypass	23	Unlimited	CMCC	29.05			A-003-SC-AU-C4-TTGPT-D-23D/60D-100GB/10MB
+SATIR 2428	2425	Asia	China Mainland（TT&GPT)	Daypass	24	Unlimited	CMCC	30.32			A-003-SC-AU-C4-TTGPT-D-24D/60D-100GB/10MB
+SATIR 2429	2426	Asia	China Mainland（TT&GPT)	Daypass	25	Unlimited	CMCC	31.58			A-003-SC-AU-C4-TTGPT-D-25D/60D-100GB/10MB
+SATIR 2430	2427	Asia	China Mainland（TT&GPT)	Daypass	26	Unlimited	CMCC	32.84			A-003-SC-AU-C4-TTGPT-D-26D/60D-100GB/10MB
+SATIR 2431	2428	Asia	China Mainland（TT&GPT)	Daypass	27	Unlimited	CMCC	34.11			A-003-SC-AU-C4-TTGPT-D-27D/60D-100GB/10MB
+SATIR 2432	2429	Asia	China Mainland（TT&GPT)	Daypass	28	Unlimited	CMCC	35.37			A-003-SC-AU-C4-TTGPT-D-28D/60D-100GB/10MB
+SATIR 2433	2430	Asia	China Mainland（TT&GPT)	Daypass	29	Unlimited	CMCC	36.63			A-003-SC-AU-C4-TTGPT-D-29D/60D-100GB/10MB
+SATIR 2434	2431	Asia	China Mainland（TT&GPT)	Daypass	30	Unlimited	CMCC	37.89			A-003-SC-AU-C4-TTGPT-D-30D/60D-100GB/10MB
+SATIR 2435	2432	Asia	China Mainland（TT&GPT)	Data Package	3	1GB /3 Days	CMCC	0.42			A-003-SC-AU-TTGPT-T-C4-3D/60D-1GB
+SATIR 2436	2433	Asia	China Mainland（TT&GPT)	Data Package	5	1GB /5 Days	CMCC	0.46			A-003-SC-AU-TTGPT-T-C4-5D/60D-1GB
+SATIR 2437	2434	Asia	China Mainland（TT&GPT)	Data Package	7	1GB /7 Days	CMCC	0.51			A-003-SC-AU-TTGPT-T-C4-7D/60D-1GB
+SATIR 2438	2435	Asia	China Mainland（TT&GPT)	Data Package	10	1GB /10 Days	CMCC	0.55			A-003-SC-AU-TTGPT-T-C4-10D/60D-1GB
+SATIR 2439	2436	Asia	China Mainland（TT&GPT)	Data Package	15	1GB /15 Days	CMCC	0.59			A-003-SC-AU-TTGPT-T-C4-15D/60D-1GB
+SATIR 2440	2437	Asia	China Mainland（TT&GPT)	Data Package	30	1GB /30 Days	CMCC	0.63			A-003-SC-AU-TTGPT-T-C4-30D/60D-1GB
+SATIR 2441	2438	Asia	China Mainland（TT&GPT)	Data Package	3	3GB /3 Days	CMCC	1.01			A-003-SC-AU-TTGPT-T-C4-3D/60D-3GB
+SATIR 2442	2439	Asia	China Mainland（TT&GPT)	Data Package	5	3GB /5 Days	CMCC	1.18			A-003-SC-AU-TTGPT-T-C4-5D/60D-3GB
+SATIR 2443	2440	Asia	China Mainland（TT&GPT)	Data Package	7	3GB /7 Days	CMCC	1.31			A-003-SC-AU-TTGPT-T-C4-7D/60D-3GB
+SATIR 2444	2441	Asia	China Mainland（TT&GPT)	Data Package	10	3GB /10 Days	CMCC	1.47			A-003-SC-AU-TTGPT-T-C4-10D/60D-3GB
+SATIR 2445	2442	Asia	China Mainland（TT&GPT)	Data Package	15	3GB /15 Days	CMCC	1.6			A-003-SC-AU-TTGPT-T-C4-15D/60D-3GB
+SATIR 2446	2443	Asia	China Mainland（TT&GPT)	Data Package	30	3GB /30 Days	CMCC	1.77			A-003-SC-AU-TTGPT-T-C4-30D/60D-3GB
+SATIR 2447	2444	Asia	China Mainland（TT&GPT)	Data Package	3	5GB /3 Days	CMCC	1.81			A-003-SC-AU-TTGPT-T-C4-3D/60D-5GB
+SATIR 2448	2445	Asia	China Mainland（TT&GPT)	Data Package	5	5GB /5 Days	CMCC	1.89			A-003-SC-AU-TTGPT-T-C4-5D/60D-5GB
+SATIR 2449	2446	Asia	China Mainland（TT&GPT)	Data Package	7	5GB /7 Days	CMCC	2.02			A-003-SC-AU-TTGPT-T-C4-7D/60D-5GB
+SATIR 2450	2447	Asia	China Mainland（TT&GPT)	Data Package	10	5GB /10 Days	CMCC	2.15			A-003-SC-AU-TTGPT-T-C4-10D/60D-5GB
+SATIR 2451	2448	Asia	China Mainland（TT&GPT)	Data Package	15	5GB /15 Days	CMCC	2.32			A-003-SC-AU-TTGPT-T-C4-15D/60D-5GB
+SATIR 2452	2449	Asia	China Mainland（TT&GPT)	Data Package	30	5GB /30 Days	CMCC	2.44			A-003-SC-AU-TTGPT-T-C4-30D/60D-5GB
+SATIR 2453	2450	Asia	China Mainland（TT&GPT)	Data Package	3	10GB /3 Days	CMCC	2.74			A-003-SC-AU-TTGPT-T-C4-3D/60D-10GB
+SATIR 2454	2451	Asia	China Mainland（TT&GPT)	Data Package	5	10GB /5 Days	CMCC	2.95			A-003-SC-AU-TTGPT-T-C4-5D/60D-10GB
+SATIR 2455	2452	Asia	China Mainland（TT&GPT)	Data Package	7	10GB /7 Days	CMCC	3.2			A-003-SC-AU-TTGPT-T-C4-7D/60D-10GB
+SATIR 2456	2453	Asia	China Mainland（TT&GPT)	Data Package	10	10GB /10 Days	CMCC	3.45			A-003-SC-AU-TTGPT-T-C4-10D/60D-10GB
+SATIR 2457	2454	Asia	China Mainland（TT&GPT)	Data Package	15	10GB /15 Days	CMCC	3.75			A-003-SC-AU-TTGPT-T-C4-15D/60D-10GB
+SATIR 2458	2455	Asia	China Mainland（TT&GPT)	Data Package	30	10GB /30 Days	CMCC	4.04			A-003-SC-AU-TTGPT-T-C4-30D/60D-10GB
+SATIR 2459	2456	Asia	China Mainland（TT&GPT)	Data Package	3	20GB /3 Days	CMCC	5.26			A-003-SC-AU-TTGPT-T-C4-3D/60D-20GB
+SATIR 2460	2457	Asia	China Mainland（TT&GPT)	Data Package	5	20GB /5 Days	CMCC	5.47			A-003-SC-AU-TTGPT-T-C4-5D/60D-20GB
+SATIR 2461	2458	Asia	China Mainland（TT&GPT)	Data Package	7	20GB /7 Days	CMCC	5.89			A-003-SC-AU-TTGPT-T-C4-7D/60D-20GB
+SATIR 2462	2459	Asia	China Mainland（TT&GPT)	Data Package	10	20GB /10 Days	CMCC	6.32			A-003-SC-AU-TTGPT-T-C4-10D/60D-20GB
+SATIR 2463	2460	Asia	China Mainland（TT&GPT)	Data Package	15	20GB /15 Days	CMCC	6.74			A-003-SC-AU-TTGPT-T-C4-15D/60D-20GB
+SATIR 2464	2461	Asia	China Mainland（TT&GPT)	Data Package	30	20GB /30 Days	CMCC	7.16			A-003-SC-AU-TTGPT-T-C4-30D/60D-20GB
+SATIR 2465	2462	Asia	China Mainland（TT&GPT)	Data Package	3	30GB /3 Days	CMCC	8			A-003-SC-AU-TTGPT-T-C4-3D/60D-30GB
+SATIR 2466	2463	Asia	China Mainland（TT&GPT)	Data Package	5	30GB /5 Days	CMCC	8.42			A-003-SC-AU-TTGPT-T-C4-5D/60D-30GB
+SATIR 2467	2464	Asia	China Mainland（TT&GPT)	Data Package	7	30GB /7 Days	CMCC	8.84			A-003-SC-AU-TTGPT-T-C4-7D/60D-30GB
+SATIR 2468	2465	Asia	China Mainland（TT&GPT)	Data Package	10	30GB /10 Days	CMCC	9.26			A-003-SC-AU-TTGPT-T-C4-10D/60D-30GB
+SATIR 2469	2466	Asia	China Mainland（TT&GPT)	Data Package	15	30GB /15 Days	CMCC	9.68			A-003-SC-AU-TTGPT-T-C4-15D/60D-30GB
+SATIR 2470	2467	Asia	China Mainland（TT&GPT)	Data Package	30	30GB /30 Days	CMCC	10.11			A-003-SC-AU-TTGPT-T-C4-30D/60D-30GB
+SATIR 2471	2468	Asia	China Mainland（TT&GPT)	Data Package	3	50GB /3 Days	CMCC	12.21			A-003-SC-AU-TTGPT-T-C4-3D/60D-50GB
+SATIR 2472	2469	Asia	China Mainland（TT&GPT)	Data Package	5	50GB /5 Days	CMCC	13.05			A-003-SC-AU-TTGPT-T-C4-5D/60D-50GB
+SATIR 2473	2470	Asia	China Mainland（TT&GPT)	Data Package	7	50GB /7 Days	CMCC	13.89			A-003-SC-AU-TTGPT-T-C4-7D/60D-50GB
+SATIR 2474	2471	Asia	China Mainland（TT&GPT)	Data Package	10	50GB /10 Days	CMCC	14.74			A-003-SC-AU-TTGPT-T-C4-10D/60D-50GB
+SATIR 2475	2472	Asia	China Mainland（TT&GPT)	Data Package	15	50GB /15 Days	CMCC	15.58			A-003-SC-AU-TTGPT-T-C4-15D/60D-50GB
+SATIR 2476	2473	Asia	China Mainland（TT&GPT)	Data Package	30	50GB /30 Days	CMCC	16.42			A-003-SC-AU-TTGPT-T-C4-30D/60D-50GB
+
+===== DOSYA: media_1793216557118_802089ba | SAYFA: Global | 222 sarı satır =====
+BASLIK	Global eSIM Quote Sheet																
+SATIR 2670	2667	Asia	China Mainland（TT&GPT)	Daypass	1	500M high-speed data per day, down to 384kbps	CMCC	0.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-500M
+SATIR 2671	2668	Asia	China Mainland（TT&GPT)	Daypass	2	500M high-speed data per day, down to 384kbps	CMCC	0.71	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-500M
+SATIR 2672	2669	Asia	China Mainland（TT&GPT)	Daypass	3	500M high-speed data per day, down to 384kbps	CMCC	0.82	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-500M
+SATIR 2673	2670	Asia	China Mainland（TT&GPT)	Daypass	4	500M high-speed data per day, down to 384kbps	CMCC	1.01	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-500M
+SATIR 2674	2671	Asia	China Mainland（TT&GPT)	Daypass	5	500M high-speed data per day, down to 384kbps	CMCC	1.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-500M
+SATIR 2675	2672	Asia	China Mainland（TT&GPT)	Daypass	6	500M high-speed data per day, down to 384kbps	CMCC	1.39	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-500M
+SATIR 2676	2673	Asia	China Mainland（TT&GPT)	Daypass	7	500M high-speed data per day, down to 384kbps	CMCC	1.62	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-500M
+SATIR 2677	2674	Asia	China Mainland（TT&GPT)	Daypass	8	500M high-speed data per day, down to 384kbps	CMCC	1.85	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-500M
+SATIR 2678	2675	Asia	China Mainland（TT&GPT)	Daypass	9	500M high-speed data per day, down to 384kbps	CMCC	2.08	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-500M
+SATIR 2679	2676	Asia	China Mainland（TT&GPT)	Daypass	10	500M high-speed data per day, down to 384kbps	CMCC	2.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-500M
+SATIR 2680	2677	Asia	China Mainland（TT&GPT)	Daypass	11	500M high-speed data per day, down to 384kbps	CMCC	2.55	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-500M
+SATIR 2681	2678	Asia	China Mainland（TT&GPT)	Daypass	12	500M high-speed data per day, down to 384kbps	CMCC	2.78	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-500M
+SATIR 2682	2679	Asia	China Mainland（TT&GPT)	Daypass	13	500M high-speed data per day, down to 384kbps	CMCC	3.01	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-500M
+SATIR 2683	2680	Asia	China Mainland（TT&GPT)	Daypass	14	500M high-speed data per day, down to 384kbps	CMCC	3.24	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-500M
+SATIR 2684	2681	Asia	China Mainland（TT&GPT)	Daypass	15	500M high-speed data per day, down to 384kbps	CMCC	3.28	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-500M
+SATIR 2685	2682	Asia	China Mainland（TT&GPT)	Daypass	16	500M high-speed data per day, down to 384kbps	CMCC	3.51	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-500M
+SATIR 2686	2683	Asia	China Mainland（TT&GPT)	Daypass	17	500M high-speed data per day, down to 384kbps	CMCC	3.73	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-500M
+SATIR 2687	2684	Asia	China Mainland（TT&GPT)	Daypass	18	500M high-speed data per day, down to 384kbps	CMCC	3.94	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-500M
+SATIR 2688	2685	Asia	China Mainland（TT&GPT)	Daypass	19	500M high-speed data per day, down to 384kbps	CMCC	4.16	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-500M
+SATIR 2689	2686	Asia	China Mainland（TT&GPT)	Daypass	20	500M high-speed data per day, down to 384kbps	CMCC	4.38	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-500M
+SATIR 2690	2687	Asia	China Mainland（TT&GPT)	Daypass	21	500M high-speed data per day, down to 384kbps	CMCC	4.6	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-500M
+SATIR 2691	2688	Asia	China Mainland（TT&GPT)	Daypass	22	500M high-speed data per day, down to 384kbps	CMCC	4.82	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-500M
+SATIR 2692	2689	Asia	China Mainland（TT&GPT)	Daypass	23	500M high-speed data per day, down to 384kbps	CMCC	5.03	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-500M
+SATIR 2693	2690	Asia	China Mainland（TT&GPT)	Daypass	24	500M high-speed data per day, down to 384kbps	CMCC	5.25	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-500M
+SATIR 2694	2691	Asia	China Mainland（TT&GPT)	Daypass	25	500M high-speed data per day, down to 384kbps	CMCC	5.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-500M
+SATIR 2695	2692	Asia	China Mainland（TT&GPT)	Daypass	26	500M high-speed data per day, down to 384kbps	CMCC	5.69	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-500M
+SATIR 2696	2693	Asia	China Mainland（TT&GPT)	Daypass	27	500M high-speed data per day, down to 384kbps	CMCC	5.92	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-500M
+SATIR 2697	2694	Asia	China Mainland（TT&GPT)	Daypass	28	500M high-speed data per day, down to 384kbps	CMCC	6.13	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-500M
+SATIR 2698	2695	Asia	China Mainland（TT&GPT)	Daypass	29	500M high-speed data per day, down to 384kbps	CMCC	6.35	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-500M
+SATIR 2699	2696	Asia	China Mainland（TT&GPT)	Daypass	30	500M high-speed data per day, down to 384kbps	CMCC	6.57	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-500M
+SATIR 2700	2697	Asia	China Mainland（TT&GPT)	Daypass	1	1GB high-speed data per day, down to 384kbps	CMCC	0.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-1GB
+SATIR 2701	2698	Asia	China Mainland（TT&GPT)	Daypass	2	1GB high-speed data per day, down to 384kbps	CMCC	0.71	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-1GB
+SATIR 2702	2699	Asia	China Mainland（TT&GPT)	Daypass	3	1GB high-speed data per day, down to 384kbps	CMCC	1.02	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-1GB
+SATIR 2703	2700	Asia	China Mainland（TT&GPT)	Daypass	4	1GB high-speed data per day, down to 384kbps	CMCC	1.33	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-1GB
+SATIR 2704	2701	Asia	China Mainland（TT&GPT)	Daypass	5	1GB high-speed data per day, down to 384kbps	CMCC	1.62	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-1GB
+SATIR 2705	2702	Asia	China Mainland（TT&GPT)	Daypass	6	1GB high-speed data per day, down to 384kbps	CMCC	1.92	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-1GB
+SATIR 2706	2703	Asia	China Mainland（TT&GPT)	Daypass	7	1GB high-speed data per day, down to 384kbps	CMCC	2.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-1GB
+SATIR 2707	2704	Asia	China Mainland（TT&GPT)	Daypass	8	1GB high-speed data per day, down to 384kbps	CMCC	2.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-1GB
+SATIR 2708	2705	Asia	China Mainland（TT&GPT)	Daypass	9	1GB high-speed data per day, down to 384kbps	CMCC	2.8	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-1GB
+SATIR 2709	2706	Asia	China Mainland（TT&GPT)	Daypass	10	1GB high-speed data per day, down to 384kbps	CMCC	3.12	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-1GB
+SATIR 2710	2707	Asia	China Mainland（TT&GPT)	Daypass	11	1GB high-speed data per day, down to 384kbps	CMCC	3.43	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-1GB
+SATIR 2711	2708	Asia	China Mainland（TT&GPT)	Daypass	12	1GB high-speed data per day, down to 384kbps	CMCC	3.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-1GB
+SATIR 2712	2709	Asia	China Mainland（TT&GPT)	Daypass	13	1GB high-speed data per day, down to 384kbps	CMCC	4	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-1GB
+SATIR 2713	2710	Asia	China Mainland（TT&GPT)	Daypass	14	1GB high-speed data per day, down to 384kbps	CMCC	4.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-1GB
+SATIR 2714	2711	Asia	China Mainland（TT&GPT)	Daypass	15	1GB high-speed data per day, down to 384kbps	CMCC	4.61	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-1GB
+SATIR 2715	2712	Asia	China Mainland（TT&GPT)	Daypass	16	1GB high-speed data per day, down to 384kbps	CMCC	4.92	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-1GB
+SATIR 2716	2713	Asia	China Mainland（TT&GPT)	Daypass	17	1GB high-speed data per day, down to 384kbps	CMCC	5.22	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-1GB
+SATIR 2717	2714	Asia	China Mainland（TT&GPT)	Daypass	18	1GB high-speed data per day, down to 384kbps	CMCC	5.54	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-1GB
+SATIR 2718	2715	Asia	China Mainland（TT&GPT)	Daypass	19	1GB high-speed data per day, down to 384kbps	CMCC	5.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-1GB
+SATIR 2719	2716	Asia	China Mainland（TT&GPT)	Daypass	20	1GB high-speed data per day, down to 384kbps	CMCC	5.98	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-1GB
+SATIR 2720	2717	Asia	China Mainland（TT&GPT)	Daypass	21	1GB high-speed data per day, down to 384kbps	CMCC	6.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-1GB
+SATIR 2721	2718	Asia	China Mainland（TT&GPT)	Daypass	22	1GB high-speed data per day, down to 384kbps	CMCC	6.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-1GB
+SATIR 2722	2719	Asia	China Mainland（TT&GPT)	Daypass	23	1GB high-speed data per day, down to 384kbps	CMCC	6.87	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-1GB
+SATIR 2723	2720	Asia	China Mainland（TT&GPT)	Daypass	24	1GB high-speed data per day, down to 384kbps	CMCC	7.18	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-1GB
+SATIR 2724	2721	Asia	China Mainland（TT&GPT)	Daypass	25	1GB high-speed data per day, down to 384kbps	CMCC	7.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-1GB
+SATIR 2725	2722	Asia	China Mainland（TT&GPT)	Daypass	26	1GB high-speed data per day, down to 384kbps	CMCC	7.77	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-1GB
+SATIR 2726	2723	Asia	China Mainland（TT&GPT)	Daypass	27	1GB high-speed data per day, down to 384kbps	CMCC	8.07	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-1GB
+SATIR 2727	2724	Asia	China Mainland（TT&GPT)	Daypass	28	1GB high-speed data per day, down to 384kbps	CMCC	8.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-1GB
+SATIR 2728	2725	Asia	China Mainland（TT&GPT)	Daypass	29	1GB high-speed data per day, down to 384kbps	CMCC	8.67	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-1GB
+SATIR 2729	2726	Asia	China Mainland（TT&GPT)	Daypass	30	1GB high-speed data per day, down to 384kbps	CMCC	8.97	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-1GB
+SATIR 2730	2727	Asia	China Mainland（TT&GPT)	Daypass	1	2GB high-speed data per day, down to 384kbps	CMCC	0.72	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-2GB
+SATIR 2731	2728	Asia	China Mainland（TT&GPT)	Daypass	2	2GB high-speed data per day, down to 384kbps	CMCC	1.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-2GB
+SATIR 2732	2729	Asia	China Mainland（TT&GPT)	Daypass	3	2GB high-speed data per day, down to 384kbps	CMCC	1.77	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-2GB
+SATIR 2733	2730	Asia	China Mainland（TT&GPT)	Daypass	4	2GB high-speed data per day, down to 384kbps	CMCC	2.36	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-2GB
+SATIR 2734	2731	Asia	China Mainland（TT&GPT)	Daypass	5	2GB high-speed data per day, down to 384kbps	CMCC	2.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-2GB
+SATIR 2735	2732	Asia	China Mainland（TT&GPT)	Daypass	6	2GB high-speed data per day, down to 384kbps	CMCC	3.28	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-2GB
+SATIR 2736	2733	Asia	China Mainland（TT&GPT)	Daypass	7	2GB high-speed data per day, down to 384kbps	CMCC	3.83	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-2GB
+SATIR 2737	2734	Asia	China Mainland（TT&GPT)	Daypass	8	2GB high-speed data per day, down to 384kbps	CMCC	4.38	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-2GB
+SATIR 2738	2735	Asia	China Mainland（TT&GPT)	Daypass	9	2GB high-speed data per day, down to 384kbps	CMCC	4.93	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-2GB
+SATIR 2739	2736	Asia	China Mainland（TT&GPT)	Daypass	10	2GB high-speed data per day, down to 384kbps	CMCC	5.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-2GB
+SATIR 2740	2737	Asia	China Mainland（TT&GPT)	Daypass	11	2GB high-speed data per day, down to 384kbps	CMCC	6.02	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-2GB
+SATIR 2741	2738	Asia	China Mainland（TT&GPT)	Daypass	12	2GB high-speed data per day, down to 384kbps	CMCC	6.57	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-2GB
+SATIR 2742	2739	Asia	China Mainland（TT&GPT)	Daypass	13	2GB high-speed data per day, down to 384kbps	CMCC	7.12	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-2GB
+SATIR 2743	2740	Asia	China Mainland（TT&GPT)	Daypass	14	2GB high-speed data per day, down to 384kbps	CMCC	7.66	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-2GB
+SATIR 2744	2741	Asia	China Mainland（TT&GPT)	Daypass	15	2GB high-speed data per day, down to 384kbps	CMCC	8.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-2GB
+SATIR 2745	2742	Asia	China Mainland（TT&GPT)	Daypass	16	2GB high-speed data per day, down to 384kbps	CMCC	8.76	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-2GB
+SATIR 2746	2743	Asia	China Mainland（TT&GPT)	Daypass	17	2GB high-speed data per day, down to 384kbps	CMCC	9.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-2GB
+SATIR 2747	2744	Asia	China Mainland（TT&GPT)	Daypass	18	2GB high-speed data per day, down to 384kbps	CMCC	9.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-2GB
+SATIR 2748	2745	Asia	China Mainland（TT&GPT)	Daypass	19	2GB high-speed data per day, down to 384kbps	CMCC	10	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-2GB
+SATIR 2749	2746	Asia	China Mainland（TT&GPT)	Daypass	20	2GB high-speed data per day, down to 384kbps	CMCC	10.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-2GB
+SATIR 2750	2747	Asia	China Mainland（TT&GPT)	Daypass	21	2GB high-speed data per day, down to 384kbps	CMCC	11.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-2GB
+SATIR 2751	2748	Asia	China Mainland（TT&GPT)	Daypass	22	2GB high-speed data per day, down to 384kbps	CMCC	11.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-2GB
+SATIR 2752	2749	Asia	China Mainland（TT&GPT)	Daypass	23	2GB high-speed data per day, down to 384kbps	CMCC	12.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-2GB
+SATIR 2753	2750	Asia	China Mainland（TT&GPT)	Daypass	24	2GB high-speed data per day, down to 384kbps	CMCC	12.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-2GB
+SATIR 2754	2751	Asia	China Mainland（TT&GPT)	Daypass	25	2GB high-speed data per day, down to 384kbps	CMCC	13.16	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-2GB
+SATIR 2755	2752	Asia	China Mainland（TT&GPT)	Daypass	26	2GB high-speed data per day, down to 384kbps	CMCC	13.68	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-2GB
+SATIR 2756	2753	Asia	China Mainland（TT&GPT)	Daypass	27	2GB high-speed data per day, down to 384kbps	CMCC	14.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-2GB
+SATIR 2757	2754	Asia	China Mainland（TT&GPT)	Daypass	28	2GB high-speed data per day, down to 384kbps	CMCC	14.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-2GB
+SATIR 2758	2755	Asia	China Mainland（TT&GPT)	Daypass	29	2GB high-speed data per day, down to 384kbps	CMCC	15.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-2GB
+SATIR 2759	2756	Asia	China Mainland（TT&GPT)	Daypass	30	2GB high-speed data per day, down to 384kbps	CMCC	15.79	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-2GB
+SATIR 2760	2757	Asia	China Mainland（TT&GPT)	Daypass	1	3GB high-speed data per day, down to 384kbps	CMCC	0.88	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-3GB
+SATIR 2761	2758	Asia	China Mainland（TT&GPT)	Daypass	2	3GB high-speed data per day, down to 384kbps	CMCC	1.6	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-3GB
+SATIR 2762	2759	Asia	China Mainland（TT&GPT)	Daypass	3	3GB high-speed data per day, down to 384kbps	CMCC	2.34	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-3GB
+SATIR 2763	2760	Asia	China Mainland（TT&GPT)	Daypass	4	3GB high-speed data per day, down to 384kbps	CMCC	3.03	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-3GB
+SATIR 2764	2761	Asia	China Mainland（TT&GPT)	Daypass	5	3GB high-speed data per day, down to 384kbps	CMCC	3.79	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-3GB
+SATIR 2765	2762	Asia	China Mainland（TT&GPT)	Daypass	6	3GB high-speed data per day, down to 384kbps	CMCC	4.55	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-3GB
+SATIR 2766	2763	Asia	China Mainland（TT&GPT)	Daypass	7	3GB high-speed data per day, down to 384kbps	CMCC	5.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-3GB
+SATIR 2767	2764	Asia	China Mainland（TT&GPT)	Daypass	8	3GB high-speed data per day, down to 384kbps	CMCC	5.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-3GB
+SATIR 2768	2765	Asia	China Mainland（TT&GPT)	Daypass	9	3GB high-speed data per day, down to 384kbps	CMCC	6.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-3GB
+SATIR 2769	2766	Asia	China Mainland（TT&GPT)	Daypass	10	3GB high-speed data per day, down to 384kbps	CMCC	7.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-3GB
+SATIR 2770	2767	Asia	China Mainland（TT&GPT)	Daypass	11	3GB high-speed data per day, down to 384kbps	CMCC	8.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-3GB
+SATIR 2771	2768	Asia	China Mainland（TT&GPT)	Daypass	12	3GB high-speed data per day, down to 384kbps	CMCC	8.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-3GB
+SATIR 2772	2769	Asia	China Mainland（TT&GPT)	Daypass	13	3GB high-speed data per day, down to 384kbps	CMCC	9.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-3GB
+SATIR 2773	2770	Asia	China Mainland（TT&GPT)	Daypass	14	3GB high-speed data per day, down to 384kbps	CMCC	10.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-3GB
+SATIR 2774	2771	Asia	China Mainland（TT&GPT)	Daypass	15	3GB high-speed data per day, down to 384kbps	CMCC	10.86	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-3GB
+SATIR 2775	2772	Asia	China Mainland（TT&GPT)	Daypass	16	3GB high-speed data per day, down to 384kbps	CMCC	11.59	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-3GB
+SATIR 2776	2773	Asia	China Mainland（TT&GPT)	Daypass	17	3GB high-speed data per day, down to 384kbps	CMCC	12.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-3GB
+SATIR 2777	2774	Asia	China Mainland（TT&GPT)	Daypass	18	3GB high-speed data per day, down to 384kbps	CMCC	13.03	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-3GB
+SATIR 2778	2775	Asia	China Mainland（TT&GPT)	Daypass	19	3GB high-speed data per day, down to 384kbps	CMCC	13.76	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-3GB
+SATIR 2779	2776	Asia	China Mainland（TT&GPT)	Daypass	20	3GB high-speed data per day, down to 384kbps	CMCC	14.48	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-3GB
+SATIR 2780	2777	Asia	China Mainland（TT&GPT)	Daypass	21	3GB high-speed data per day, down to 384kbps	CMCC	15.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-3GB
+SATIR 2781	2778	Asia	China Mainland（TT&GPT)	Daypass	22	3GB high-speed data per day, down to 384kbps	CMCC	15.94	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-3GB
+SATIR 2782	2779	Asia	China Mainland（TT&GPT)	Daypass	23	3GB high-speed data per day, down to 384kbps	CMCC	16.65	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-3GB
+SATIR 2783	2780	Asia	China Mainland（TT&GPT)	Daypass	24	3GB high-speed data per day, down to 384kbps	CMCC	17.38	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-3GB
+SATIR 2784	2781	Asia	China Mainland（TT&GPT)	Daypass	25	3GB high-speed data per day, down to 384kbps	CMCC	18.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-3GB
+SATIR 2785	2782	Asia	China Mainland（TT&GPT)	Daypass	26	3GB high-speed data per day, down to 384kbps	CMCC	18.83	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-3GB
+SATIR 2786	2783	Asia	China Mainland（TT&GPT)	Daypass	27	3GB high-speed data per day, down to 384kbps	CMCC	19.56	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-3GB
+SATIR 2787	2784	Asia	China Mainland（TT&GPT)	Daypass	28	3GB high-speed data per day, down to 384kbps	CMCC	20.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-3GB
+SATIR 2788	2785	Asia	China Mainland（TT&GPT)	Daypass	29	3GB high-speed data per day, down to 384kbps	CMCC	21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-3GB
+SATIR 2789	2786	Asia	China Mainland（TT&GPT)	Daypass	30	3GB high-speed data per day, down to 384kbps	CMCC	21.73	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-3GB
+SATIR 2790	2787	Asia	China Mainland（TT&GPT)	Daypass	1	5GB high-speed data per day, down to 384kbps	CMCC	1.09	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-5GB
+SATIR 2791	2788	Asia	China Mainland（TT&GPT)	Daypass	2	5GB high-speed data per day, down to 384kbps	CMCC	1.94	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-5GB
+SATIR 2792	2789	Asia	China Mainland（TT&GPT)	Daypass	3	5GB high-speed data per day, down to 384kbps	CMCC	2.91	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-5GB
+SATIR 2793	2790	Asia	China Mainland（TT&GPT)	Daypass	4	5GB high-speed data per day, down to 384kbps	CMCC	3.87	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-5GB
+SATIR 2794	2791	Asia	China Mainland（TT&GPT)	Daypass	5	5GB high-speed data per day, down to 384kbps	CMCC	4.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-5GB
+SATIR 2795	2792	Asia	China Mainland（TT&GPT)	Daypass	6	5GB high-speed data per day, down to 384kbps	CMCC	5.81	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-5GB
+SATIR 2796	2793	Asia	China Mainland（TT&GPT)	Daypass	7	5GB high-speed data per day, down to 384kbps	CMCC	6.78	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-5GB
+SATIR 2797	2794	Asia	China Mainland（TT&GPT)	Daypass	8	5GB high-speed data per day, down to 384kbps	CMCC	7.75	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-5GB
+SATIR 2798	2795	Asia	China Mainland（TT&GPT)	Daypass	9	5GB high-speed data per day, down to 384kbps	CMCC	8.72	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-5GB
+SATIR 2799	2796	Asia	China Mainland（TT&GPT)	Daypass	10	5GB high-speed data per day, down to 384kbps	CMCC	9.68	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-5GB
+SATIR 2800	2797	Asia	China Mainland（TT&GPT)	Daypass	11	5GB high-speed data per day, down to 384kbps	CMCC	10.65	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-5GB
+SATIR 2801	2798	Asia	China Mainland（TT&GPT)	Daypass	12	5GB high-speed data per day, down to 384kbps	CMCC	11.62	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-5GB
+SATIR 2802	2799	Asia	China Mainland（TT&GPT)	Daypass	13	5GB high-speed data per day, down to 384kbps	CMCC	12.59	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-5GB
+SATIR 2803	2800	Asia	China Mainland（TT&GPT)	Daypass	14	5GB high-speed data per day, down to 384kbps	CMCC	13.56	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-5GB
+SATIR 2804	2801	Asia	China Mainland（TT&GPT)	Daypass	15	5GB high-speed data per day, down to 384kbps	CMCC	14.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-5GB
+SATIR 2805	2802	Asia	China Mainland（TT&GPT)	Daypass	16	5GB high-speed data per day, down to 384kbps	CMCC	15.49	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-5GB
+SATIR 2806	2803	Asia	China Mainland（TT&GPT)	Daypass	17	5GB high-speed data per day, down to 384kbps	CMCC	16.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-5GB
+SATIR 2807	2804	Asia	China Mainland（TT&GPT)	Daypass	18	5GB high-speed data per day, down to 384kbps	CMCC	17.43	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-5GB
+SATIR 2808	2805	Asia	China Mainland（TT&GPT)	Daypass	19	5GB high-speed data per day, down to 384kbps	CMCC	18.4	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-5GB
+SATIR 2809	2806	Asia	China Mainland（TT&GPT)	Daypass	20	5GB high-speed data per day, down to 384kbps	CMCC	19.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-5GB
+SATIR 2810	2807	Asia	China Mainland（TT&GPT)	Daypass	21	5GB high-speed data per day, down to 384kbps	CMCC	20.34	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-5GB
+SATIR 2811	2808	Asia	China Mainland（TT&GPT)	Daypass	22	5GB high-speed data per day, down to 384kbps	CMCC	21.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-5GB
+SATIR 2812	2809	Asia	China Mainland（TT&GPT)	Daypass	23	5GB high-speed data per day, down to 384kbps	CMCC	22.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-5GB
+SATIR 2813	2810	Asia	China Mainland（TT&GPT)	Daypass	24	5GB high-speed data per day, down to 384kbps	CMCC	23.24	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-5GB
+SATIR 2814	2811	Asia	China Mainland（TT&GPT)	Daypass	25	5GB high-speed data per day, down to 384kbps	CMCC	24.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-5GB
+SATIR 2815	2812	Asia	China Mainland（TT&GPT)	Daypass	26	5GB high-speed data per day, down to 384kbps	CMCC	25.18	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-5GB
+SATIR 2816	2813	Asia	China Mainland（TT&GPT)	Daypass	27	5GB high-speed data per day, down to 384kbps	CMCC	26.15	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-5GB
+SATIR 2817	2814	Asia	China Mainland（TT&GPT)	Daypass	28	5GB high-speed data per day, down to 384kbps	CMCC	27.12	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-5GB
+SATIR 2818	2815	Asia	China Mainland（TT&GPT)	Daypass	29	5GB high-speed data per day, down to 384kbps	CMCC	28.08	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-5GB
+SATIR 2819	2816	Asia	China Mainland（TT&GPT)	Daypass	30	5GB high-speed data per day, down to 384kbps	CMCC	29.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-5GB
+SATIR 2820	2817	Asia	China Mainland（TT&GPT)	Daypass	1	Unlimited	CMCC	1.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-1D/60D-100GB/10MB
+SATIR 2821	2818	Asia	China Mainland（TT&GPT)	Daypass	2	Unlimited	CMCC	2.69	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-2D/60D-100GB/10MB
+SATIR 2822	2819	Asia	China Mainland（TT&GPT)	Daypass	3	Unlimited	CMCC	4.04	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-3D/60D-100GB/10MB
+SATIR 2823	2820	Asia	China Mainland（TT&GPT)	Daypass	4	Unlimited	CMCC	5.39	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-4D/60D-100GB/10MB
+SATIR 2824	2821	Asia	China Mainland（TT&GPT)	Daypass	5	Unlimited	CMCC	6.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-5D/60D-100GB/10MB
+SATIR 2825	2822	Asia	China Mainland（TT&GPT)	Daypass	6	Unlimited	CMCC	7.83	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-6D/60D-100GB/10MB
+SATIR 2826	2823	Asia	China Mainland（TT&GPT)	Daypass	7	Unlimited	CMCC	9.14	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-7D/60D-100GB/10MB
+SATIR 2827	2824	Asia	China Mainland（TT&GPT)	Daypass	8	Unlimited	CMCC	10.44	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-8D/60D-100GB/10MB
+SATIR 2828	2825	Asia	China Mainland（TT&GPT)	Daypass	9	Unlimited	CMCC	11.75	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-9D/60D-100GB/10MB
+SATIR 2829	2826	Asia	China Mainland（TT&GPT)	Daypass	10	Unlimited	CMCC	13.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-10D/60D-100GB/10MB
+SATIR 2830	2827	Asia	China Mainland（TT&GPT)	Daypass	11	Unlimited	CMCC	14.36	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-11D/60D-100GB/10MB
+SATIR 2831	2828	Asia	China Mainland（TT&GPT)	Daypass	12	Unlimited	CMCC	15.66	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-12D/60D-100GB/10MB
+SATIR 2832	2829	Asia	China Mainland（TT&GPT)	Daypass	13	Unlimited	CMCC	16.97	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-13D/60D-100GB/10MB
+SATIR 2833	2830	Asia	China Mainland（TT&GPT)	Daypass	14	Unlimited	CMCC	18.27	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-14D/60D-100GB/10MB
+SATIR 2834	2831	Asia	China Mainland（TT&GPT)	Daypass	15	Unlimited	CMCC	19.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-15D/60D-100GB/10MB
+SATIR 2835	2832	Asia	China Mainland（TT&GPT)	Daypass	16	Unlimited	CMCC	20.88	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-16D/60D-100GB/10MB
+SATIR 2836	2833	Asia	China Mainland（TT&GPT)	Daypass	17	Unlimited	CMCC	22.19	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-17D/60D-100GB/10MB
+SATIR 2837	2834	Asia	China Mainland（TT&GPT)	Daypass	18	Unlimited	CMCC	22.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-18D/60D-100GB/10MB
+SATIR 2838	2835	Asia	China Mainland（TT&GPT)	Daypass	19	Unlimited	CMCC	24	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-19D/60D-100GB/10MB
+SATIR 2839	2836	Asia	China Mainland（TT&GPT)	Daypass	20	Unlimited	CMCC	25.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-20D/60D-100GB/10MB
+SATIR 2840	2837	Asia	China Mainland（TT&GPT)	Daypass	21	Unlimited	CMCC	26.53	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-21D/60D-100GB/10MB
+SATIR 2841	2838	Asia	China Mainland（TT&GPT)	Daypass	22	Unlimited	CMCC	27.79	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-22D/60D-100GB/10MB
+SATIR 2842	2839	Asia	China Mainland（TT&GPT)	Daypass	23	Unlimited	CMCC	29.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-23D/60D-100GB/10MB
+SATIR 2843	2840	Asia	China Mainland（TT&GPT)	Daypass	24	Unlimited	CMCC	30.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-24D/60D-100GB/10MB
+SATIR 2844	2841	Asia	China Mainland（TT&GPT)	Daypass	25	Unlimited	CMCC	31.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-25D/60D-100GB/10MB
+SATIR 2845	2842	Asia	China Mainland（TT&GPT)	Daypass	26	Unlimited	CMCC	32.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-26D/60D-100GB/10MB
+SATIR 2846	2843	Asia	China Mainland（TT&GPT)	Daypass	27	Unlimited	CMCC	34.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-27D/60D-100GB/10MB
+SATIR 2847	2844	Asia	China Mainland（TT&GPT)	Daypass	28	Unlimited	CMCC	35.37	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-28D/60D-100GB/10MB
+SATIR 2848	2845	Asia	China Mainland（TT&GPT)	Daypass	29	Unlimited	CMCC	36.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-29D/60D-100GB/10MB
+SATIR 2849	2846	Asia	China Mainland（TT&GPT)	Daypass	30	Unlimited	CMCC	37.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-C4-TTGPT-D-30D/60D-100GB/10MB
+SATIR 2850	2847	Asia	China Mainland（TT&GPT)	Data Package	3	1GB /3 Days	CMCC	0.42	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-1GB
+SATIR 2851	2848	Asia	China Mainland（TT&GPT)	Data Package	5	1GB /5 Days	CMCC	0.46	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-1GB
+SATIR 2852	2849	Asia	China Mainland（TT&GPT)	Data Package	7	1GB /7 Days	CMCC	0.51	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-1GB
+SATIR 2853	2850	Asia	China Mainland（TT&GPT)	Data Package	10	1GB /10 Days	CMCC	0.55	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-1GB
+SATIR 2854	2851	Asia	China Mainland（TT&GPT)	Data Package	15	1GB /15 Days	CMCC	0.59	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-1GB
+SATIR 2855	2852	Asia	China Mainland（TT&GPT)	Data Package	30	1GB /30 Days	CMCC	0.63	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-1GB
+SATIR 2856	2853	Asia	China Mainland（TT&GPT)	Data Package	3	3GB /3 Days	CMCC	1.01	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-3GB
+SATIR 2857	2854	Asia	China Mainland（TT&GPT)	Data Package	5	3GB /5 Days	CMCC	1.18	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-3GB
+SATIR 2858	2855	Asia	China Mainland（TT&GPT)	Data Package	7	3GB /7 Days	CMCC	1.31	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-3GB
+SATIR 2859	2856	Asia	China Mainland（TT&GPT)	Data Package	10	3GB /10 Days	CMCC	1.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-3GB
+SATIR 2860	2857	Asia	China Mainland（TT&GPT)	Data Package	15	3GB /15 Days	CMCC	1.6	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-3GB
+SATIR 2861	2858	Asia	China Mainland（TT&GPT)	Data Package	30	3GB /30 Days	CMCC	1.77	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-3GB
+SATIR 2862	2859	Asia	China Mainland（TT&GPT)	Data Package	3	5GB /3 Days	CMCC	1.81	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-5GB
+SATIR 2863	2860	Asia	China Mainland（TT&GPT)	Data Package	5	5GB /5 Days	CMCC	1.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-5GB
+SATIR 2864	2861	Asia	China Mainland（TT&GPT)	Data Package	7	5GB /7 Days	CMCC	2.02	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-5GB
+SATIR 2865	2862	Asia	China Mainland（TT&GPT)	Data Package	10	5GB /10 Days	CMCC	2.15	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-5GB
+SATIR 2866	2863	Asia	China Mainland（TT&GPT)	Data Package	15	5GB /15 Days	CMCC	2.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-5GB
+SATIR 2867	2864	Asia	China Mainland（TT&GPT)	Data Package	30	5GB /30 Days	CMCC	2.44	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-5GB
+SATIR 2868	2865	Asia	China Mainland（TT&GPT)	Data Package	3	10GB /3 Days	CMCC	2.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-10GB
+SATIR 2869	2866	Asia	China Mainland（TT&GPT)	Data Package	5	10GB /5 Days	CMCC	2.95	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-10GB
+SATIR 2870	2867	Asia	China Mainland（TT&GPT)	Data Package	7	10GB /7 Days	CMCC	3.2	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-10GB
+SATIR 2871	2868	Asia	China Mainland（TT&GPT)	Data Package	10	10GB /10 Days	CMCC	3.45	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-10GB
+SATIR 2872	2869	Asia	China Mainland（TT&GPT)	Data Package	15	10GB /15 Days	CMCC	3.75	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-10GB
+SATIR 2873	2870	Asia	China Mainland（TT&GPT)	Data Package	30	10GB /30 Days	CMCC	4.04	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-10GB
+SATIR 2874	2871	Asia	China Mainland（TT&GPT)	Data Package	3	20GB /3 Days	CMCC	5.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-20GB
+SATIR 2875	2872	Asia	China Mainland（TT&GPT)	Data Package	5	20GB /5 Days	CMCC	5.47	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-20GB
+SATIR 2876	2873	Asia	China Mainland（TT&GPT)	Data Package	7	20GB /7 Days	CMCC	5.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-20GB
+SATIR 2877	2874	Asia	China Mainland（TT&GPT)	Data Package	10	20GB /10 Days	CMCC	6.32	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-20GB
+SATIR 2878	2875	Asia	China Mainland（TT&GPT)	Data Package	15	20GB /15 Days	CMCC	6.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-20GB
+SATIR 2879	2876	Asia	China Mainland（TT&GPT)	Data Package	30	20GB /30 Days	CMCC	7.16	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-20GB
+SATIR 2880	2877	Asia	China Mainland（TT&GPT)	Data Package	3	30GB /3 Days	CMCC	8	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-30GB
+SATIR 2881	2878	Asia	China Mainland（TT&GPT)	Data Package	5	30GB /5 Days	CMCC	8.42	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-30GB
+SATIR 2882	2879	Asia	China Mainland（TT&GPT)	Data Package	7	30GB /7 Days	CMCC	8.84	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-30GB
+SATIR 2883	2880	Asia	China Mainland（TT&GPT)	Data Package	10	30GB /10 Days	CMCC	9.26	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-30GB
+SATIR 2884	2881	Asia	China Mainland（TT&GPT)	Data Package	15	30GB /15 Days	CMCC	9.68	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-30GB
+SATIR 2885	2882	Asia	China Mainland（TT&GPT)	Data Package	30	30GB /30 Days	CMCC	10.11	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-30GB
+SATIR 2886	2883	Asia	China Mainland（TT&GPT)	Data Package	3	50GB /3 Days	CMCC	12.21	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-3D/60D-50GB
+SATIR 2887	2884	Asia	China Mainland（TT&GPT)	Data Package	5	50GB /5 Days	CMCC	13.05	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-5D/60D-50GB
+SATIR 2888	2885	Asia	China Mainland（TT&GPT)	Data Package	7	50GB /7 Days	CMCC	13.89	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-7D/60D-50GB
+SATIR 2889	2886	Asia	China Mainland（TT&GPT)	Data Package	10	50GB /10 Days	CMCC	14.74	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-10D/60D-50GB
+SATIR 2890	2887	Asia	China Mainland（TT&GPT)	Data Package	15	50GB /15 Days	CMCC	15.58	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-15D/60D-50GB
+SATIR 2891	2888	Asia	China Mainland（TT&GPT)	Data Package	30	50GB /30 Days	CMCC	16.42	Auto Activate			C4	Y		Absolute 24 hours	A-003-ES-AU-TTGPT-T-C4-30D/60D-50GB
+
+===== DOSYA: media_1793216557118_802089ba | SAYFA: CTExcel | 18 sarı satır =====
+BASLIK	Global eSIM Quote Sheet																
+SATIR 58	55	Asia	China&Hong Kong&Macau	Daypass	1	3GB high-speed data per day, down to 384kbps		0.99	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-1D/60D-3GB
+SATIR 59	56	Asia	China&Hong Kong&Macau	Daypass	2	3GB high-speed data per day, down to 384kbps		1.78	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-2D/60D-3GB
+SATIR 60	57	Asia	China&Hong Kong&Macau	Daypass	3	3GB high-speed data per day, down to 384kbps		2.47	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-3D/60D-3GB
+SATIR 61	58	Asia	China&Hong Kong&Macau	Daypass	4	3GB high-speed data per day, down to 384kbps		2.97	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-4D/60D-3GB
+SATIR 62	59	Asia	China&Hong Kong&Macau	Daypass	5	3GB high-speed data per day, down to 384kbps		3.46	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-5D/60D-3GB
+SATIR 63	60	Asia	China&Hong Kong&Macau	Daypass	6	3GB high-speed data per day, down to 384kbps		4.45	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-6D/60D-3GB
+SATIR 64	61	Asia	China&Hong Kong&Macau	Daypass	7	3GB high-speed data per day, down to 384kbps		5.44	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-7D/60D-3GB
+SATIR 65	62	Asia	China&Hong Kong&Macau	Daypass	8	3GB high-speed data per day, down to 384kbps		6.14	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-8D/60D-3GB
+SATIR 66	63	Asia	China&Hong Kong&Macau	Daypass	9	3GB high-speed data per day, down to 384kbps		6.83	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-9D/60D-3GB
+SATIR 67	64	Asia	China&Hong Kong&Macau	Daypass	10	3GB high-speed data per day, down to 384kbps		7.62	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-10D/60D-3GB
+SATIR 68	65	Asia	China&Hong Kong&Macau	Daypass	11	3GB high-speed data per day, down to 384kbps		8.41	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-11D/60D-3GB
+SATIR 69	66	Asia	China&Hong Kong&Macau	Daypass	12	3GB high-speed data per day, down to 384kbps		9.11	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-12D/60D-3GB
+SATIR 70	67	Asia	China&Hong Kong&Macau	Daypass	13	3GB high-speed data per day, down to 384kbps		9.8	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-13D/60D-3GB
+SATIR 71	68	Asia	China&Hong Kong&Macau	Daypass	14	3GB high-speed data per day, down to 384kbps		10.48	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-14D/60D-3GB
+SATIR 72	69	Asia	China&Hong Kong&Macau	Daypass	15	3GB high-speed data per day, down to 384kbps		11.28	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-15D/60D-3GB
+SATIR 73	70	Asia	China&Hong Kong&Macau	Daypass	20	3GB high-speed data per day, down to 384kbps		14.94	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-20D/60D-3GB
+SATIR 74	71	Asia	China&Hong Kong&Macau	Daypass	25	3GB high-speed data per day, down to 384kbps		18.71	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-25D/60D-3GB
+SATIR 75	72	Asia	China&Hong Kong&Macau	Daypass	30	3GB high-speed data per day, down to 384kbps		22.26	Auto Activate		ALL NO KYC	at1	Y		UTC+8	A-136-ES-AU-T1-D-30D/60D-3GB

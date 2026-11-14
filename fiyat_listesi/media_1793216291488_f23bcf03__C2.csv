@@ -1,0 +1,236 @@
+﻿Global SIMCARD Quote Sheet,,,,,,,,,,
+#,Region,Country or region,Type,Days,Package,Operator,Wholesale Price USD,Country or region,remark,API Product code （Auto Activate）
+1,Asia,Japan,Daypass,3,"1GB high-speed data per day, down to 384kbps",KDDI / Softbank,4.78,,,A-006-SC-AU-D-3D/60D-1GB
+2,Asia,Japan,Daypass,5,"1GB high-speed data per day, down to 384kbps",KDDI / Softbank,6.58,,,A-006-SC-AU-D-5D/60D-1GB
+3,Asia,Japan,Daypass,7,"1GB high-speed data per day, down to 384kbps",KDDI / Softbank,8.84,,,A-006-SC-AU-D-7D/60D-1GB
+4,Asia,Japan,Daypass,8,"1GB high-speed data per day, down to 384kbps",KDDI / Softbank,9.79,,,A-006-SC-AU-D-8D/60D-1GB
+5,Asia,Japan,Daypass,10,"1GB high-speed data per day, down to 384kbps",KDDI / Softbank,12.19,,,A-006-SC-AU-D-10D/60D-1GB
+6,Asia,Japan,Daypass,12,"1GB high-speed data per day, down to 384kbps",KDDI / Softbank,13.51,,,A-006-SC-AU-D-12D/60D-1GB
+7,Asia,Japan,Daypass,3,"2GB high-speed data per day, down to 384kbps",KDDI / Softbank,7.17,,,A-006-SC-AU-D-3D/60D-2GB
+8,Asia,Japan,Daypass,5,"2GB high-speed data per day, down to 384kbps",KDDI / Softbank,9.88,,,A-006-SC-AU-D-5D/60D-2GB
+9,Asia,Japan,Daypass,7,"2GB high-speed data per day, down to 384kbps",KDDI / Softbank,13.27,,,A-006-SC-AU-D-7D/60D-2GB
+10,Asia,Japan,Daypass,8,"2GB high-speed data per day, down to 384kbps",KDDI / Softbank,14.71,,,A-006-SC-AU-D-8D/60D-2GB
+11,Asia,Japan,Daypass,10,"2GB high-speed data per day, down to 384kbps",KDDI / Softbank,18.28,,,A-006-SC-AU-D-10D/60D-2GB
+12,Asia,Japan,Daypass,12,"2GB high-speed data per day, down to 384kbps",KDDI / Softbank,20.26,,,A-006-SC-AU-D-12D/60D-2GB
+13,Asia,Japan,Data Package,7,3GB  /7 Days,KDDI / Softbank,5.16,,,A-006-SC-AU-T-7D/60D-3GB
+14,Asia,Japan,Data Package,15,5GB  /15 Days,KDDI / Softbank,8.15,,,A-006-SC-AU-T-15D/60D-5GB
+15,Asia,Japan,Data Package,15,7GB  /15 Days,KDDI / Softbank,11,,,A-006-SC-AU-T-15D/60D-7GB
+16,Asia,Japan,Data Package,20,10GB  /20 Days,KDDI / Softbank,13.99,,,A-006-SC-AU-T-20D/60D-10GB
+17,Asia,Japan,Data Package,30,15GB  /30 Days,KDDI / Softbank,15.48,,,A-006-SC-AU-T-30D/60D-15GB
+18,Asia,Japan,Data Package,30,30GB  /30 Days,KDDI / Softbank,30.96,,,A-006-SC-AU-T-30D/60D-30GB
+19,Asia,Asia 14 countries/regions,Daypass,8,"500M high-speed data per day, down to 384kbps",Japan:KDDI /Softbank South Korea:KT Singapore: Singtel Malaysia:Maxis / Celcom / Umobile Thailand:Truemove Indonesia:XL / Indosat Vietnam:Vinaphone / Mobifone / Viettel Cambodia:CamGSM Philippines:Smart Laos:LTC  Mainland China:CMCC Hong Kong:CMHK  Macau: CTM Taiwan:Chunghwa,8.075,"Japan,South Korea, Singapore, Malaysia, Thailand, Indonesia, Vietnam, Cambodia, Philippines, Laos, Mainland China, Hong Kong China, Macau China, Taiwan China",,A-158-SC-AU-D-8D/60D-500MB
+20,Asia,Asia 14 countries/regions,Daypass,12,"500M high-speed data per day, down to 384kbps",,11.35,,,A-158-SC-AU-D-12D/60D-500MB
+21,Asia,Asia 14 countries/regions,Daypass,15,"500M high-speed data per day, down to 384kbps",,13.8,,,A-158-SC-AU-D-15D/60D-500MB
+22,Asia,Asia 14 countries/regions,Daypass,30,"500M high-speed data per day, down to 384kbps",,20.9125,,,A-158-SC-AU-D-30D/60D-500MB
+23,Asia,Asia 14 countries/regions,Daypass,8,"1GB high-speed data per day, down to 384kbps",,12.1125,,,A-158-SC-AU-D-8D/60D-1GB
+24,Asia,Asia 14 countries/regions,Daypass,12,"1GB high-speed data per day, down to 384kbps",,17.025,,,A-158-SC-AU-D-12D/60D-1GB
+25,Asia,Asia 14 countries/regions,Daypass,15,"1GB high-speed data per day, down to 384kbps",,20.7125,,,A-158-SC-AU-D-15D/60D-1GB
+26,Asia,Asia 14 countries/regions,Daypass,30,"1GB high-speed data per day, down to 384kbps",,31.35,,,A-158-SC-AU-D-30D/60D-1GB
+27,Asia,Asia 14 countries/regions,Daypass,8,"2GB high-speed data per day, down to 384kbps",,18.175,,,A-158-SC-AU-D-8D/60D-2GB
+28,Asia,Asia 14 countries/regions,Daypass,12,"2GB high-speed data per day, down to 384kbps",,25.5375,,,A-158-SC-AU-D-12D/60D-2GB
+29,Asia,Asia 14 countries/regions,Daypass,15,"2GB high-speed data per day, down to 384kbps",,31.0625,,,A-158-SC-AU-D-15D/60D-2GB
+30,Asia,Asia 14 countries/regions,Daypass,30,"2GB high-speed data per day, down to 384kbps",,47.0375,,,A-158-SC-AU-D-30D/60D-2GB
+31,Asia,Singapore,Data Package,7,3GB  /7 Days,Singtel,1.91,,,A-019-SC-AU-T-7D/60D-3GB
+32,Asia,Singapore,Data Package,15,5GB  /15 Days,Singtel,2.55,,,A-019-SC-AU-T-15D/60D-5GB
+33,Asia,Singapore,Data Package,15,7GB  /15 Days,Singtel,3.58,,,A-019-SC-AU-T-15D/60D-7GB
+34,Asia,Singapore,Data Package,20,10GB  /20 Days,Singtel,5.1,,,A-019-SC-AU-T-20D/60D-10GB
+35,Asia,Malaysia,Data Package,7,3GB  /7 Days,Maxis / Celcom / Umobile,5.2,,,A-011-SC-AU-T-7D/60D-3GB
+36,Asia,Malaysia,Data Package,10,5GB  /10 Days,Maxis / Celcom / Umobile,8.64,,,A-011-SC-AU-T-15D/60D-5GB
+37,Asia,Malaysia,Data Package,15,7GB  /15 Days,Maxis / Celcom / Umobile,12.08,,,A-011-SC-AU-T-15D/60D-7GB
+38,Asia,Malaysia,Data Package,20,10GB  /20 Days,Maxis / Celcom / Umobile,17.28,,,A-011-SC-AU-T-20D/60D-10GB
+39,Asia,Thailand,Data Package,7,3GB  /7 Days,Real Future (Truemove),4.2,,,A-007-SC-AU-T-7D/60D-3GB
+40,Asia,Thailand,Data Package,15,5GB  /15 Days,Real Future (Truemove),7.14,,,A-007-SC-AU-T-15D/60D-5GB
+41,Asia,Thailand,Data Package,15,7GB  /15 Days,Real Future (Truemove),9.95,,,A-007-SC-AU-T-15D/60D-7GB
+42,Asia,Thailand,Data Package,20,10GB  /20 Days,Real Future (Truemove),14.28,,,A-007-SC-AU-T-20D/60D-10GB
+43,Asia,Turkey,Data Package,30,10GB  /30 Days,AVEA / Turkcell,46.75,,,E-015-SC-AU-D-C2-30D/60D-10GB
+44,Africa,South Africa,Data Package,30,10GB  /30 Days,MTN SA / Vodafone (Vodacom),40.63,,,D-001-SC-AU-D-C2-30D/60D-10GB
+45,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,5,"500M high-speed data per day, down to 384kbps",Saudi Arabia:Etihad Etisalat Qatar:Qtel (Ooredoo) Oman:Ooredoo(Nawras)  Kuwait:Ooredoo(Wataniya),3.95,,,G-109-SC-AU-D-5D/60D-500MB
+46,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,7,"500M high-speed data per day, down to 384kbps",,5.4875,,,G-109-SC-AU-D-7D/60D-500MB
+47,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,10,"500M high-speed data per day, down to 384kbps",,7.825,,,G-109-SC-AU-D-10D/60D-500MB
+48,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,15,"500M high-speed data per day, down to 384kbps",,10.025,,,G-109-SC-AU-D-15D/60D-500MB
+49,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,20,"500M high-speed data per day, down to 384kbps",,12.0375,,,G-109-SC-AU-D-20D/60D-500MB
+50,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,30,"500M high-speed data per day, down to 384kbps",,16.05,,,G-109-SC-AU-D-30D/60D-500MB
+51,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,5,"1GB high-speed data per day, down to 384kbps",,5.9125,,,G-109-SC-AU-D-5D/60D-1GB
+52,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,7,"1GB high-speed data per day, down to 384kbps",,8.225,,,G-109-SC-AU-D-7D/60D-1GB
+53,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,10,"1GB high-speed data per day, down to 384kbps",,11.7375,,,G-109-SC-AU-D-10D/60D-1GB
+54,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,15,"1GB high-speed data per day, down to 384kbps",,15.05,,,G-109-SC-AU-D-15D/60D-1GB
+55,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,20,"1GB high-speed data per day, down to 384kbps",,18.0625,,,G-109-SC-AU-D-20D/60D-1GB
+56,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,30,"1GB high-speed data per day, down to 384kbps",,24.075,,,G-109-SC-AU-D-30D/60D-1GB
+57,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,5,"2GB high-speed data per day, down to 384kbps",,8.8875,,,G-109-SC-AU-D-5D/60D-2GB
+58,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,7,"2GB high-speed data per day, down to 384kbps",,12.3375,,,G-109-SC-AU-D-7D/60D-2GB
+59,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,10,"2GB high-speed data per day, down to 384kbps",,17.6125,,,G-109-SC-AU-D-10D/60D-2GB
+60,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,15,"2GB high-speed data per day, down to 384kbps",,22.575,,,G-109-SC-AU-D-15D/60D-2GB
+61,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,20,"2GB high-speed data per day, down to 384kbps",,27.0875,,,G-109-SC-AU-D-20D/60D-2GB
+62,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Daypass,30,"2GB high-speed data per day, down to 384kbps",,36.1125,,,G-109-SC-AU-D-30D/60D-2GB
+63,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Data Package,15,5GB  /15 Days,,10.3125,,,G-109-SC-AU-T-15D/60D-5GB
+64,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Data Package,20,10GB  /20 Days,,17.2,,,G-109-SC-AU-T-20D/60D-10GB
+65,Asia,Saudi Arabia&Oman&Kuwait&Qatar,Data Package,30,20GB  /30 Days,,26.2625,,,G-109-SC-AU-D-30D/60D-20GB
+66,Europe,European 42 countries,Daypass,5,"1GB high-speed data per day, down to 384kbps",,6.88,,,E-150-SC-AU-D-5D/60D-1GB
+67,Europe,European 42 countries,Daypass,7,"1GB high-speed data per day, down to 384kbps",,8.79,,,E-150-SC-AU-D-7D/60D-1GB
+68,Europe,European 42 countries,Daypass,10,"1GB high-speed data per day, down to 384kbps",,11.85,,,E-150-SC-AU-D-10D/60D-1GB
+69,Europe,European 42 countries,Daypass,15,"1GB high-speed data per day, down to 384kbps",,14.71,,,E-150-SC-AU-D-15D/60D-1GB
+70,Europe,European 42 countries,Daypass,20,"1GB high-speed data per day, down to 384kbps",,19.49,,,E-150-SC-AU-D-20D/60D-1GB
+71,Europe,European 42 countries,Daypass,30,"1GB high-speed data per day, down to 384kbps",,24.65,,,E-150-SC-AU-D-30D/60D-1GB
+72,Europe,European 42 countries,Daypass,5,"2GB high-speed data per day, down to 384kbps",,10.31,,,E-150-SC-AU-D-5D/60D-2GB
+73,Europe,European 42 countries,Daypass,7,"2GB high-speed data per day, down to 384kbps",,13.19,,,E-150-SC-AU-D-7D/60D-2GB
+74,Europe,European 42 countries,Daypass,10,"2GB high-speed data per day, down to 384kbps",,17.78,,,E-150-SC-AU-D-10D/60D-2GB
+75,Europe,European 42 countries,Daypass,15,"2GB high-speed data per day, down to 384kbps",,22.08,,,E-150-SC-AU-D-15D/60D-2GB
+76,Europe,European 42 countries,Daypass,20,"2GB high-speed data per day, down to 384kbps",,29.24,,,E-150-SC-AU-D-20D/60D-2GB
+77,Europe,European 42 countries,Daypass,30,"2GB high-speed data per day, down to 384kbps",,36.98,,,E-150-SC-AU-D-30D/60D-2GB
+78,Europe,European 42 countries,Data Package,10,5GB  /10 Days,,8.2,,,E-150-SC-AU-T-10D/60D-5GB
+79,Europe,European 42 countries,Data Package,15,6GB  /15 Days,,9.15,,,E-150-SC-AU-T-15D/60D-6GB
+80,Europe,European 42 countries,Data Package,30,10GB  /30 Days,,16.57,,,E-150-SC-AU-T-30D/60D-10GB
+81,Europe,European 42 countries,Data Package,30,20GB  /30 Days,,31.85,,,E-150-SC-AU-T-30D/60D-20GB
+82,Europe,European 42 countries,Data Package,30,30GB  /30 Days,,42.04,,,E-150-SC-AU-T-30D/60D-30GB
+83,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,7,"500M high-speed data per day, down to 384kbps",USA:AT&T / T-Mobile Guam:Docomo Pacific,5.83,,,B-113-SC-AU-D-7D/60D-500MB
+84,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,10,"500M high-speed data per day, down to 384kbps",,8.33,,,B-113-SC-AU-D-10D/60D-500MB
+85,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,12,"500M high-speed data per day, down to 384kbps",,9.99,,,B-113-SC-AU-D-12D/60D-500MB
+86,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,15,"500M high-speed data per day, down to 384kbps",,10.78,,,B-113-SC-AU-D-15D/60D-500MB
+87,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,20,"500M high-speed data per day, down to 384kbps",,14.13,,,B-113-SC-AU-D-20D/60D-500MB
+88,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,30,"500M high-speed data per day, down to 384kbps",,20.04,,,B-113-SC-AU-D-30D/60D-500MB
+89,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,7,"1GB high-speed data per day, down to 384kbps",,8.74,,,B-113-SC-AU-D-7D/60D-1GB
+90,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,10,"1GB high-speed data per day, down to 384kbps",,12.49,,,B-113-SC-AU-D-10D/60D-1GB
+91,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,12,"1GB high-speed data per day, down to 384kbps",,14.98,,,B-113-SC-AU-D-12D/60D-1GB
+92,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,15,"1GB high-speed data per day, down to 384kbps",,16.16,,,B-113-SC-AU-D-15D/60D-1GB
+93,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,20,"1GB high-speed data per day, down to 384kbps",,21.19,,,B-113-SC-AU-D-20D/60D-1GB
+94,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,30,"1GB high-speed data per day, down to 384kbps",,30.08,,,B-113-SC-AU-D-30D/60D-1GB
+95,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,7,"2GB high-speed data per day, down to 384kbps",,13.11,,,B-113-SC-AU-D-7D/60D-2GB
+96,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,10,"2GB high-speed data per day, down to 384kbps",,18.73,,,B-113-SC-AU-D-10D/60D-2GB
+97,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,12,"2GB high-speed data per day, down to 384kbps",,22.48,,,B-113-SC-AU-D-12D/60D-2GB
+98,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,15,"2GB high-speed data per day, down to 384kbps",,24.25,,,B-113-SC-AU-D-15D/60D-2GB
+99,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,20,"2GB high-speed data per day, down to 384kbps",,31.78,,,B-113-SC-AU-D-20D/60D-2GB
+100,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands,Guam)",Daypass,30,"2GB high-speed data per day, down to 384kbps",,45.11,,,B-113-SC-AU-D-30D/60D-2GB
+101,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands)",Data Package,15,5GB  /15 Days,,6.64,,,B-113-SC-AU-T-15D/60D-5GB
+102,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands)",Data Package,30,10GB  /30 Days,,12.49,,,B-113-SC-AU-T-30D/60D-10GB
+103,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands)",Data Package,30,20GB  /30 Days,,22.83,,,B-113-SC-AU-T-30D/60D-20GB
+104,North America,"USA(USA,Hawaii,Puerto Rico,US Virgin Islands)",Data Package,30,30GB  /30 Days,,32.1,,,B-113-SC-AU-T-30D/60D-30GB
+105,North America,America and Canada and Mexico (including Hawaii),Daypass,7,"500M high-speed data per day, down to 384kbps",AT&T / T-Mobile Bell / Telus / Sasktel / Rogers,9.175,,,B-101-SC-AU-D-7D/60D-500MB
+106,North America,America and Canada and Mexico (including Hawaii),Daypass,10,"500M high-speed data per day, down to 384kbps",,13.075,,,B-101-SC-AU-D-10D/60D-500MB
+107,North America,America and Canada and Mexico (including Hawaii),Daypass,12,"500M high-speed data per day, down to 384kbps",,15.6875,,,B-101-SC-AU-D-12D/60D-500MB
+108,North America,America and Canada and Mexico (including Hawaii),Daypass,15,"500M high-speed data per day, down to 384kbps",,16.9125,,,B-101-SC-AU-D-15D/60D-500MB
+109,North America,America and Canada and Mexico (including Hawaii),Daypass,20,"500M high-speed data per day, down to 384kbps",,22.2125,,,B-101-SC-AU-D-20D/60D-500MB
+110,North America,America and Canada and Mexico (including Hawaii),Daypass,30,"500M high-speed data per day, down to 384kbps",,31.5,,,B-101-SC-AU-D-30D/60D-500MB
+111,North America,America and Canada and Mexico (including Hawaii),Daypass,7,"1GB high-speed data per day, down to 384kbps",,13.7375,,,B-101-SC-AU-D-7D/60D-1GB
+112,North America,America and Canada and Mexico (including Hawaii),Daypass,10,"1GB high-speed data per day, down to 384kbps",,19.6,,,B-101-SC-AU-D-10D/60D-1GB
+113,North America,America and Canada and Mexico (including Hawaii),Daypass,12,"1GB high-speed data per day, down to 384kbps",,23.525,,,B-101-SC-AU-D-12D/60D-1GB
+114,North America,America and Canada and Mexico (including Hawaii),Daypass,15,"1GB high-speed data per day, down to 384kbps",,25.3875,,,B-101-SC-AU-D-15D/60D-1GB
+115,North America,America and Canada and Mexico (including Hawaii),Daypass,20,"1GB high-speed data per day, down to 384kbps",,33.325,,,B-101-SC-AU-D-20D/60D-1GB
+116,North America,America and Canada and Mexico (including Hawaii),Daypass,30,"1GB high-speed data per day, down to 384kbps",,47.225,,,B-101-SC-AU-D-30D/60D-1GB
+117,North America,America and Canada and Mexico (including Hawaii),Daypass,7,"2GB high-speed data per day, down to 384kbps",,20.6,,,B-101-SC-AU-D-7D/60D-2GB
+118,North America,America and Canada and Mexico (including Hawaii),Daypass,10,"2GB high-speed data per day, down to 384kbps",,29.425,,,B-101-SC-AU-D-10D/60D-2GB
+119,North America,America and Canada and Mexico (including Hawaii),Daypass,12,"2GB high-speed data per day, down to 384kbps",,35.3,,,B-101-SC-AU-D-12D/60D-2GB
+120,North America,America and Canada and Mexico (including Hawaii),Daypass,15,"2GB high-speed data per day, down to 384kbps",,38.0625,,,B-101-SC-AU-D-15D/60D-2GB
+121,North America,America and Canada and Mexico (including Hawaii),Daypass,20,"2GB high-speed data per day, down to 384kbps",,49.9875,,,B-101-SC-AU-D-20D/60D-2GB
+122,North America,America and Canada and Mexico (including Hawaii),Daypass,30,"2GB high-speed data per day, down to 384kbps",,70.8625,,,B-101-SC-AU-D-30D/60D-2GB
+123,Oceania,Australia&New Zealand,Daypass,5,"500M high-speed data per day, down to 384kbps",Optus Spark (Telecom New Zealand) / Vodafone/ NZC (2degrees),7.14,,,C-101-SC-AU-D-5D/60D-500MB
+124,Oceania,Australia&New Zealand,Daypass,7,"500M high-speed data per day, down to 384kbps",,8.96,,,C-101-SC-AU-D-7D/60D-500MB
+125,Oceania,Australia&New Zealand,Daypass,10,"500M high-speed data per day, down to 384kbps",,10.7,,,C-101-SC-AU-D-10D/60D-500MB
+126,Oceania,Australia&New Zealand,Daypass,15,"500M high-speed data per day, down to 384kbps",,16.1,,,C-101-SC-AU-D-15D/60D-500MB
+127,Oceania,Australia&New Zealand,Daypass,20,"500M high-speed data per day, down to 384kbps",,21.5,,,C-101-SC-AU-D-20D/60D-500MB
+128,Oceania,Australia&New Zealand,Daypass,5,"1GB high-speed data per day, down to 384kbps",,10.7,,,C-101-SC-AU-D-5D/60D-1GB
+129,Oceania,Australia&New Zealand,Daypass,7,"1GB high-speed data per day, down to 384kbps",,13.45,,,C-101-SC-AU-D-7D/60D-1GB
+130,Oceania,Australia&New Zealand,Daypass,10,"1GB high-speed data per day, down to 384kbps",,16.05,,,C-101-SC-AU-D-10D/60D-1GB
+131,Oceania,Australia&New Zealand,Daypass,15,"1GB high-speed data per day, down to 384kbps",,24.15,,,C-101-SC-AU-D-15D/60D-1GB
+132,Oceania,Australia&New Zealand,Daypass,20,"1GB high-speed data per day, down to 384kbps",,32.25,,,C-101-SC-AU-D-20D/60D-1GB
+133,Oceania,Australia&New Zealand,Daypass,5,"2GB high-speed data per day, down to 384kbps",,16.05,,,C-101-SC-AU-D-5D/60D-2GB
+134,Oceania,Australia&New Zealand,Daypass,7,"2GB high-speed data per day, down to 384kbps",,20.18,,,C-101-SC-AU-D-7D/60D-2GB
+135,Oceania,Australia&New Zealand,Daypass,10,"2GB high-speed data per day, down to 384kbps",,24.08,,,C-101-SC-AU-D-10D/60D-2GB
+136,Oceania,Australia&New Zealand,Daypass,15,"2GB high-speed data per day, down to 384kbps",,36.23,,,C-101-SC-AU-D-15D/60D-2GB
+137,Oceania,Australia&New Zealand,Daypass,20,"2GB high-speed data per day, down to 384kbps",,48.39,,,C-101-SC-AU-D-20D/60D-2GB
+138,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,5,"500M high-speed data per day, down to 384kbps",Tele2/Unitel/Sky Mobile/Beeline,13.91,,,A-161-SC-AU-D-5D/60D-500MB
+139,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,7,"500M high-speed data per day, down to 384kbps",,19.49,,,A-161-SC-AU-D-7D/60D-500MB
+140,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,10,"500M high-speed data per day, down to 384kbps",,27.84,,,A-161-SC-AU-D-10D/60D-500MB
+141,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,15,"500M high-speed data per day, down to 384kbps",,30.61,,,A-161-SC-AU-D-15D/60D-500MB
+142,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,20,"500M high-speed data per day, down to 384kbps",,36.19,,,A-161-SC-AU-D-20D/60D-500MB
+143,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,30,"500M high-speed data per day, down to 384kbps",,44.18,,,A-161-SC-AU-D-30D/60D-500MB
+144,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,5,"1GB high-speed data per day, down to 384kbps",,20.88,,,A-161-SC-AU-D-5D/60D-1GB
+145,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,7,"1GB high-speed data per day, down to 384kbps",,29.23,,,A-161-SC-AU-D-7D/60D-1GB
+146,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,10,"1GB high-speed data per day, down to 384kbps",,41.75,,,A-161-SC-AU-D-10D/60D-1GB
+147,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,15,"1GB high-speed data per day, down to 384kbps",,45.93,,,A-161-SC-AU-D-15D/60D-1GB
+148,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,20,"1GB high-speed data per day, down to 384kbps",,54.28,,,A-161-SC-AU-D-20D/60D-1GB
+149,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,30,"1GB high-speed data per day, down to 384kbps",,66.26,,,A-161-SC-AU-D-30D/60D-1GB
+150,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,5,"2GB high-speed data per day, down to 384kbps",,31.31,,,A-161-SC-AU-D-5D/60D-2GB
+151,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,7,"2GB high-speed data per day, down to 384kbps",,43.84,,,A-161-SC-AU-D-7D/60D-2GB
+152,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,10,"2GB high-speed data per day, down to 384kbps",,62.69,,,A-161-SC-AU-D-10D/60D-2GB
+153,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,15,"2GB high-speed data per day, down to 384kbps",,68.89,,,A-161-SC-AU-D-15D/60D-2GB
+154,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,20,"2GB high-speed data per day, down to 384kbps",,81.41,,,A-161-SC-AU-D-20D/60D-2GB
+155,Asia,Kazakhstan&Uzbekistan&Kyrgyzstan&Tajikistan,Daypass,30,"2GB high-speed data per day, down to 384kbps",,99.39,,,A-161-SC-AU-D-30D/60D-2GB
+156,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,5,"500M high-speed data per day, down to 384kbps",Brazil：VIVO Argentina：Claro / Telefonica Chile：Claro / Telefonica Peru：Claro / Telefonica Paraguay：Claro Uruguay：Antel / Telefonica Ecuador：Claro (Conecel) / Telefonica (Otecel) Colombia：Telefonica (Movistar) / Comcel (Claro),13.91,,,F-107-SC-AU-D-5D/60D-500MB
+157,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,7,"500M high-speed data per day, down to 384kbps",,19.49,,,F-107-SC-AU-D-7D/60D-500MB
+158,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,10,"500M high-speed data per day, down to 384kbps",,27.84,,,F-107-SC-AU-D-10D/60D-500MB
+159,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,15,"500M high-speed data per day, down to 384kbps",,30.61,,,F-107-SC-AU-D-15D/60D-500MB
+160,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,20,"500M high-speed data per day, down to 384kbps",,36.19,,,F-107-SC-AU-D-20D/60D-500MB
+161,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,30,"500M high-speed data per day, down to 384kbps",,44.18,,,F-107-SC-AU-D-30D/60D-500MB
+162,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,5,"1GB high-speed data per day, down to 384kbps",,20.88,,,F-107-SC-AU-D-5D/60D-1GB
+163,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,7,"1GB high-speed data per day, down to 384kbps",,29.23,,,F-107-SC-AU-D-7D/60D-1GB
+164,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,10,"1GB high-speed data per day, down to 384kbps",,41.75,,,F-107-SC-AU-D-10D/60D-1GB
+165,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,15,"1GB high-speed data per day, down to 384kbps",,45.93,,,F-107-SC-AU-D-15D/60D-1GB
+166,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,20,"1GB high-speed data per day, down to 384kbps",,54.28,,,F-107-SC-AU-D-20D/60D-1GB
+167,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,30,"1GB high-speed data per day, down to 384kbps",,66.26,,,F-107-SC-AU-D-30D/60D-1GB
+168,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,5,"2GB high-speed data per day, down to 384kbps",,31.31,,,F-107-SC-AU-D-5D/60D-2GB
+169,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,7,"2GB high-speed data per day, down to 384kbps",,43.84,,,F-107-SC-AU-D-7D/60D-2GB
+170,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,10,"2GB high-speed data per day, down to 384kbps",,62.69,,,F-107-SC-AU-D-10D/60D-2GB
+171,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,15,"2GB high-speed data per day, down to 384kbps",,68.89,,,F-107-SC-AU-D-15D/60D-2GB
+172,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,20,"2GB high-speed data per day, down to 384kbps",,81.41,,,F-107-SC-AU-D-20D/60D-2GB
+173,Americas,Brazil/Argentina/Chile/Peru/Paraguay/Uruguay/Ecuador/Colombia,Daypass,30,"2GB high-speed data per day, down to 384kbps",,99.39,,,F-107-SC-AU-D-30D/60D-2GB
+174,Global,Global(Not Include Mainland China),Daypass,1,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",Albania:Vodafone Algeria:Mobilis Anguilla:Digicel Antigua and Barbuda:Digicel Argentina:Claro / Telefonica Armenia:ArmenTel Aruba:Digicel Australia:Optus Austria:T-mobile / Orange (H3G)/A1 Azerbaijan:Azercell Bangladesh:GrameenPhone Barbados:Digicel Belarus:FE VELCOM/Velcom / MTS Belgium:Orange (Mobistar) / Belgacom(Proximus) / Base Bermuda:Digicel Bosnia and Herzegovina:HT (Eronet)/BH Telecom Brazil:VIVO British Virgin Island:Digicel Brunei:UNN/DST Bulgaria:MOBILTEL / Yettel (Telenor) Cameroon:Orange Cameroun S.A./ MTN Cambodia:CamGSM/Smart (Hello) Canada:Bell / Telus / Sasktel / Rogers Cayman Islands:Digicel Centrafrique:Orange Centrafrique Chile:Claro / Telefonica Colombia:Telefonica (Movistar) / Comcel (Claro) Costa Rica:Telefonica (Movistar) Ivory Coast (Cote d'Ivoire):MTN Cote d'Ivoire Croatia:T-mobile / A1 Hrvatska (Vipnet)/Telemach (Tele2) Cyprus:EPIC (MTN Cyprus) / CYTA Czech Republic:Vodafone / T-mobile/Cetin (O2) Democratic Republic of Congo:Airtel Denmark:TDC / Telenor / Telia / Hi3G Danemark Dominica:Digicel Dominican Republic:Claro Egypt:Vodafone / Orange Ecuador:Claro (Conecel) / Telefonica (Otecel) El Salvador:Claro Estonia:Tele2/ Elisa EMT Faroe Islands:Faroese Telecom Fiji:Digicel Finland:Alcom / Elisa / DNA France:SFR / BOUYGUES / Orange French Guiana:Digicel Georgia:Geocell / Mobitel (VimpelCom) Germany:Vodafone / Telefonica O2 Ghana:Scancom (MTN) Gibraltar:Gibtel Greece:Vodafone / Cosmote (T-mobile)/ Wind Hellas Grenada:Digicel Guadeloupe:Digicel Guam:Docomo Pacific Guatemala:Claro (Telefonica) Haiti:Digicel Honduras:Claro Hong Kong:CMHK Hungary:Telenor / Vodafone Iceland:Siminn / Nova India:Airtel (Bharti) Indonesia:XL (Excelcom) / Indosat Iran:MTN Irancell Ireland:Meteor / Hutchison Israel:Partner / Cellcom / Pelephone Italy:WIND / Vodafone / H3G / Iliad Italia / TIM Jamaica:Digicel Japan:KDDI / Softbank Jordan:Zain Kazakhstan:Tele2 Kenya:Airtel Kuwait:Ooredoo (Wataniya) Kyrgyzstan:Sky Mobile (VimpelCom) Laos:LTC Latvia:SIA BITE / Tele2 Liberia:Cellcom Liberia Lithuania:UAB BITE / Tele2 Luxembourg:TANGO / P&T(POST) / Orange Macau:CTM Madagascar:Airtel Malaysia:Maxis / Celcom Malta:Epic (Vodafone) / GO Malawi:Airtel Martinique:Digicel Mauritius:Emtel Mexico:Telefonica (Movistar) / Telcel (Claro),2.95,"Albania, Algeria, Anguilla, Antigua and Barbuda, Argentina, Armenia, Aruba, Australia, Austria, Azerbaijan, Bangladesh, Barbados, Belarus, Belgium, Bermuda, Bosnia and Herzegovina, Brazil, British Virgin Island, Brunei, Bulgaria, Cambodia, Cameroon, Canada, Cayman Islands, Centrafrique, Chile, Colombia, Costa Rica, Ivory Coast (Cote d'Ivoire), Croatia, Cyprus, Czech Republic, Democratic Republic of Congo, Denmark, Dominica, Dominican Republic, Egypt, Ecuador, El Salvador, Estonia, Faroe Islands, Fiji, Finland, France, French Guiana, Georgia, Germany, Ghana, Gibraltar, Greece, Grenada, Guadeloupe, Guam, Guatemala, Haiti, Honduras, Hong Kong China, Hungary, Iceland, India, Indonesia, Iran, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kuwait, kyrgyzstan, kazakhstan, Kenya, Laos, Latvia, Liberia, Madagascar, Lithuania, Luxembourg, Macau China, Malaysia, Malta, Malawi, Martinique, Mauritius, Mexico, Moldova,Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Nepal, Netherlands, New Zealand, Nicaragua, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Romania, Russia, Qatar , Rwanda, Kenya, Saudi Arabia, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sri Lanka, St. Kitts/Nevis, St. Lucia, St. Vincent, Sudan, Sweden, Switzerland, Taiwan China, Tajikistan, Tanzania, Thailand, Tonga, Trinidad and Tobago, Tunisia, Turkey, Turks and Caicos, United Arab Emirates, Uganda, Ukraine, United Kingdom, Uruguay, United States, Uzbekistan, Vanuatu, Vietnam, Yemen, Zambia",,ALL-035-SC-AU-D-1D/60D-500MB
+175,Global,Global(Not Include Mainland China),Daypass,3,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,8.92,,,ALL-035-SC-AU-D-3D/60D-500MB
+176,Global,Global(Not Include Mainland China),Daypass,5,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,14.91,,,ALL-035-SC-AU-D-5D/60D-500MB
+177,Global,Global(Not Include Mainland China),Daypass,7,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,20.9,,,ALL-035-SC-AU-D-7D/60D-500MB
+178,Global,Global(Not Include Mainland China),Daypass,10,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,29.83,,,ALL-035-SC-AU-D-10D/60D-500MB
+179,Global,Global(Not Include Mainland China),Daypass,15,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,32.24,,,ALL-035-SC-AU-D-15D/60D-500MB
+180,Global,Global(Not Include Mainland China),Daypass,20,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,38.11,,,ALL-035-SC-AU-D-20D/60D-500MB
+181,Global,Global(Not Include Mainland China),Daypass,25,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,43.08,,,ALL-035-SC-AU-D-25D/60D-500MB
+182,Global,Global(Not Include Mainland China),Daypass,30,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,46.52,,,ALL-035-SC-AU-D-30D/60D-500MB
+183,Global,Global(Not Include Mainland China),Daypass,1,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,4.43,,,ALL-035-SC-AU-D-1D/60D-1GB
+184,Global,Global(Not Include Mainland China),Daypass,3,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,13.38,,,ALL-035-SC-AU-D-3D/60D-1GB
+185,Global,Global(Not Include Mainland China),Daypass,5,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,22.37,,,ALL-035-SC-AU-D-5D/60D-1GB
+186,Global,Global(Not Include Mainland China),Daypass,7,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,31.35,,,ALL-035-SC-AU-D-7D/60D-1GB
+187,Global,Global(Not Include Mainland China),Daypass,10,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,44.73,,,ALL-035-SC-AU-D-10D/60D-1GB
+188,Global,Global(Not Include Mainland China),Daypass,15,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,48.37,,,ALL-035-SC-AU-D-15D/60D-1GB
+189,Global,Global(Not Include Mainland China),Daypass,20,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,57.16,,,ALL-035-SC-AU-D-20D/60D-1GB
+190,Global,Global(Not Include Mainland China),Daypass,25,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,64.62,,,ALL-035-SC-AU-D-25D/60D-1GB
+191,Global,Global(Not Include Mainland China),Daypass,30,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,69.78,,,ALL-035-SC-AU-D-30D/60D-1GB
+192,Global,Global(Not Include Mainland China),Daypass,1,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,6.64,,,ALL-035-SC-AU-D-1D/60D-2GB
+193,Global,Global(Not Include Mainland China),Daypass,3,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,20.07,,,ALL-035-SC-AU-D-3D/60D-2GB
+194,Global,Global(Not Include Mainland China),Daypass,5,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,33.55,,,ALL-035-SC-AU-D-5D/60D-2GB
+195,Global,Global(Not Include Mainland China),Daypass,7,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,47.03,,,ALL-035-SC-AU-D-7D/60D-2GB
+196,Global,Global(Not Include Mainland China),Daypass,10,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,67.11,,,ALL-035-SC-AU-D-10D/60D-2GB
+197,Global,Global(Not Include Mainland China),Daypass,15,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,72.55,,,ALL-035-SC-AU-D-15D/60D-2GB
+198,Global,Global(Not Include Mainland China),Daypass,20,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,85.74,,,ALL-035-SC-AU-D-20D/60D-2GB
+199,Global,Global(Not Include Mainland China),Daypass,25,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,96.92,,,ALL-035-SC-AU-D-25D/60D-2GB
+200,Global,Global(Not Include Mainland China),Daypass,30,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,104.66,,,ALL-035-SC-AU-D-30D/60D-2GB
+201,Global,Global(Including Mainland China),Daypass,1,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,3.31,,,ALL-036-SC-AU-D-1D/60D-500MB
+202,Global,Global(Including Mainland China),Daypass,3,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,9.55,,,ALL-036-SC-AU-D-3D/60D-500MB
+203,Global,Global(Including Mainland China),Daypass,5,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,15.81,,,ALL-036-SC-AU-D-5D/60D-500MB
+204,Global,Global(Including Mainland China),Daypass,7,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,21.8,,,ALL-036-SC-AU-D-7D/60D-500MB
+205,Global,Global(Including Mainland China),Daypass,10,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,30.96,,,ALL-036-SC-AU-D-10D/60D-500MB
+206,Global,Global(Including Mainland China),Daypass,15,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,33.39,,,ALL-036-SC-AU-D-15D/60D-500MB
+207,Global,Global(Including Mainland China),Daypass,20,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,38.62,,,ALL-036-SC-AU-D-20D/60D-500MB
+208,Global,Global(Including Mainland China),Daypass,25,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,43.85,,,ALL-036-SC-AU-D-25D/60D-500MB
+209,Global,Global(Including Mainland China),Daypass,30,"500MB high-speed data per day, down to 384kbps, unlimited/ UAE 300 MB high-speed data per day, down to 128kbps, unlimited",,47.66,,,ALL-036-SC-AU-D-30D/60D-500MB
+210,Global,Global(Including Mainland China),Daypass,1,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,5,,,ALL-036-SC-AU-D-1D/60D-1GB
+211,Global,Global(Including Mainland China),Daypass,3,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,14.33,,,ALL-036-SC-AU-D-3D/60D-1GB
+212,Global,Global(Including Mainland China),Daypass,5,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,23.71,,,ALL-036-SC-AU-D-5D/60D-1GB
+213,Global,Global(Including Mainland China),Daypass,7,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,32.69,,,ALL-036-SC-AU-D-7D/60D-1GB
+214,Global,Global(Including Mainland China),Daypass,10,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,46.46,,,ALL-036-SC-AU-D-10D/60D-1GB
+215,Global,Global(Including Mainland China),Daypass,15,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,50.09,,,ALL-036-SC-AU-D-15D/60D-1GB
+216,Global,Global(Including Mainland China),Daypass,20,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,57.93,,,ALL-036-SC-AU-D-20D/60D-1GB
+217,Global,Global(Including Mainland China),Daypass,25,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,65.77,,,ALL-036-SC-AU-D-25D/60D-1GB
+218,Global,Global(Including Mainland China),Daypass,30,"1GB high-speed data per day, down to 384kbps, unlimited/ UAE 500 MB high-speed data per day, down to 128kbps, unlimited",,71.5,,,ALL-036-SC-AU-D-30D/60D-1GB
+219,Global,Global(Including Mainland China),Daypass,1,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,7.45,,,ALL-036-SC-AU-D-1D/60D-2GB
+220,Global,Global(Including Mainland China),Daypass,3,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,21.51,,,ALL-036-SC-AU-D-3D/60D-2GB
+221,Global,Global(Including Mainland China),Daypass,5,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,35.55,,,ALL-036-SC-AU-D-5D/60D-2GB
+222,Global,Global(Including Mainland China),Daypass,7,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,49.04,,,ALL-036-SC-AU-D-7D/60D-2GB
+223,Global,Global(Including Mainland China),Daypass,10,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,69.68,,,ALL-036-SC-AU-D-10D/60D-2GB
+224,Global,Global(Including Mainland China),Daypass,15,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,75.14,,,ALL-036-SC-AU-D-15D/60D-2GB
+225,Global,Global(Including Mainland China),Daypass,20,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,86.89,,,ALL-036-SC-AU-D-20D/60D-2GB
+226,Global,Global(Including Mainland China),Daypass,25,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,98.65,,,ALL-036-SC-AU-D-25D/60D-2GB
+227,Global,Global(Including Mainland China),Daypass,30,"2GB high-speed data per day, down to 384kbps, unlimited/ UAE 1GB high-speed data per day, down to 128kbps, unlimited",,107.25,,,ALL-036-SC-AU-D-30D/60D-2GB
+,Remark:,,"1. According to the latest policy of Hong Kong, starting from March 1, 2022, SIM cards used in Hong Kong must complete real-name registration.",,,,,,,
+,,,2. Tuge Technology will dynamically adjust the operators and network types according to the cooperation situation of local suppliers.,,,,,,,
+,,,"3. This quotation sheet is only applicable to mobile phones, not MIFI and CPE.",,,,,,,
+,,,4. The quotation is in USD and the settlement currency is USD.,,,,,,,
+,,,"5. The price will fluctuate and change according to the price policy of the operators. Our company will notify 15 days in advance, the time of the placing order is the criterion.",,,,,,,
+,,,6. The product is valid within 60 days of spontaneous delivery.,,,,,,,
+,,,"7. This quotation is published on November 1, 2022 and shall be valid until the new quotation is published. (Finally, prices in the cloud communication platform are the criteria)",,,,,,,
