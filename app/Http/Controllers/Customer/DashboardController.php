@@ -45,6 +45,13 @@ class DashboardController extends Controller
         }
         $totalOrdersCount = $ordersCountQuery->count();
 
+        // Auto-sync IWC products if table is empty
+        if (\App\Models\IwcProduct::count() === 0) {
+            try {
+                \Illuminate\Support\Facades\Artisan::call('iwc:sync-products', ['--seed-from-json' => true]);
+            } catch (\Throwable $e) {}
+        }
+
         // IWC Tour & Experience Packages (Credit Card)
         $iwcProducts = \App\Models\IwcProduct::where('status', 'Available')->orderBy('id', 'asc')->get();
         $iwcOrdersCount = \App\Models\IwcOrder::where('user_id', $effectiveCustomer->id)->count();

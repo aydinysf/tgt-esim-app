@@ -54,5 +54,13 @@ class DatabaseSeeder extends Seeder
         Setting::set('tgt_base_url', 'https://enterpriseapi.tugegroup.com:8070/openapi');
         Setting::set('tgt_account_id', 'checkfortrips');
         Setting::set('tgt_secret', 'RA0RQB54QNTRMWT9');
+
+        // 3. IWC Settings default
+        Setting::set('iwc_base_url', 'https://testpartnersdev.istanbulwelcomecard.com');
+        Setting::set('iwc_profile_id', 'NNNCX6MLBAFG');
+        Setting::set('iwc_access_key', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXJ0bmVyX2lkIjo0LCJuYW1lIjoiV2hpdGVsYWJlbCIsInN0YXR1cyI6MSwiZ2VuZXJhdGVkX2F0IjoiMjAyNi0xMS0xMlQxMToyMTo1MiswMzowMCIsIndpdGhvdXRfaXAiOnRydWUsImlwIjpudWxsfQ.z6rJGwlmsGI4OOPzCtlccKLeJ6RtjCtHIdZxzRhw6BI');
+
+        // 4. Initial IWC Products seed
+        $this->call(IwcProductsSeeder::class);
     }
 }

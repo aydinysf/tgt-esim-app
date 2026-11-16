@@ -76,6 +76,7 @@ Route::middleware(['auth'])->prefix('customer')->name('customer.')->group(functi
     // IWC Tours & Experiences (Credit Card / Stripe)
     Route::prefix('tours')->name('iwc.')->group(function () {
         Route::get('/', [IwcController::class, 'index'])->name('index');
+        Route::post('/sync', [IwcController::class, 'sync'])->name('sync');
         Route::get('/orders', [IwcController::class, 'orders'])->name('orders');
         Route::get('/orders/{id}/detail', [IwcController::class, 'orderDetail'])->name('orders.detail');
         Route::get('/{id}', [IwcController::class, 'show'])->name('show');

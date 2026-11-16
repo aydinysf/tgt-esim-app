@@ -17,6 +17,15 @@
         </div>
 
         <div class="flex items-center gap-3">
+            <!-- Sync Button -->
+            <form action="{{ route('customer.iwc.sync') }}" method="POST" class="inline">
+                @csrf
+                <button type="submit" class="glass-card px-3.5 py-2.5 rounded-2xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 flex items-center gap-2 shadow-sm transition active:scale-95">
+                    <i class="fa-solid fa-arrows-rotate text-blue-600"></i>
+                    <span>Ürünleri Senkronize Et</span>
+                </button>
+            </form>
+
             <!-- Stripe Credit Card Badge -->
             <div class="glass-panel px-4 py-2.5 rounded-2xl border-l-4 border-indigo-600 flex items-center gap-3 shadow-sm bg-white">
                 <div class="w-9 h-9 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-base font-bold shrink-0 border border-indigo-200">
@@ -39,6 +48,12 @@
         </div>
     </div>
 
+    @if(session('success'))
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold flex items-center gap-2 shadow-sm">
+            <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+            <span>{{ session('success') }}</span>
+        </div>
+    @endif
     @if(session('info'))
         <div class="p-4 rounded-xl bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold flex items-center gap-2 shadow-sm">
             <i class="fa-solid fa-circle-info text-blue-600 text-base"></i>
@@ -153,8 +168,15 @@
                 <p class="text-xs text-slate-500 mt-1 max-w-sm mx-auto">
                     Arama kriterlerinize uygun tur bulunamadı veya henüz ürün senkronizasyonu yapılmamış.
                 </p>
-                <div class="mt-4">
-                    <a href="{{ route('customer.iwc.index') }}" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition inline-block">
+                <div class="mt-4 flex items-center justify-center gap-3">
+                    <form action="{{ route('customer.iwc.sync') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-extrabold rounded-xl shadow-md transition flex items-center gap-2 active:scale-95">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span>IWC API'den Ürünleri Şimdi Çek</span>
+                        </button>
+                    </form>
+                    <a href="{{ route('customer.iwc.index') }}" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition inline-block">
                         Filtreleri Temizle
                     </a>
                 </div>

@@ -22,6 +22,15 @@ class IwcController extends Controller
         $user = Auth::user();
         $effectiveCustomer = $user->getEffectiveCustomer();
 
+        // Auto-sync products if the database table is empty on production
+        if (IwcProduct::count() === 0) {
+            try {
+                \Illuminate\Support\Facades\Artisan::call('iwc:sync-products', ['--seed-from-json' => true]);
+            } catch (\Throwable $e) {
+                Log::warning('Initial IWC products auto-sync: ' . $e->getMessage());
+            }
+        }
+
         $search = trim((string) $request->query('search', ''));
         $sort = $request->query('sort', 'default');
 
@@ -48,6 +57,20 @@ class IwcController extends Controller
         $tourOrdersCount = IwcOrder::where('user_id', $effectiveCustomer->id)->count();
 
         return view('customer.iwc.index', compact('products', 'effectiveCustomer', 'tourOrdersCount', 'search', 'sort'));
+    }
+
+    /**
+     * Web endpoint to manually trigger product synchronization from IWC API
+     */
+    public function sync(Request $request)
+    {
+        try {
+            \Illuminate\Support\Facades\Artisan::call('iwc:sync-products', ['--seed-from-json' => true]);
+            $count = IwcProduct::count();
+            return back()->with('success', "IWC ürünleri başarıyla senkronize edildi. Toplam {$count} aktif tur/deneyim hazır.");
+        } catch (\Throwable $e) {
+            return back()->with('error', 'Senkronizasyon hatası: ' . $e->getMessage());
+        }
     }
 
     /**
