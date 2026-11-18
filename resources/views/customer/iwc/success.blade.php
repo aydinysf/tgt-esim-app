@@ -1,26 +1,52 @@
 @extends('layouts.app')
 
-@section('title', 'Ödeme Başarılı — Rezervasyon Onayı')
+@section('title', $order->iwc_order_id ? 'Rezervasyon Onaylandı' : 'Ödeme Alındı — IWC İletim Bekleniyor')
 
 @section('content')
 <div class="max-w-2xl mx-auto py-8">
     <div class="glass-card rounded-3xl p-8 bg-white border border-slate-200 shadow-xl text-center space-y-6">
-        <!-- Success Icon -->
-        <div class="w-20 h-20 mx-auto rounded-3xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-3xl border-2 border-emerald-200 shadow-sm animate-bounce">
-            <i class="fa-solid fa-check"></i>
-        </div>
+        @if($order->iwc_order_id)
+            <!-- Success Icon -->
+            <div class="w-20 h-20 mx-auto rounded-3xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-3xl border-2 border-emerald-200 shadow-sm animate-bounce">
+                <i class="fa-solid fa-check"></i>
+            </div>
 
-        <div>
-            <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-200 inline-block mb-2">
-                Ödeme Başarılı • Stripe Korumalı
-            </span>
-            <h1 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                Rezervasyonunuz Onaylandı!
-            </h1>
-            <p class="text-xs md:text-sm text-slate-500 mt-2 max-w-md mx-auto">
-                Kredi kartı ödemeniz tahsil edilmiş olup, rezervasyon kaydınız Istanbul Welcome Card sistemine başarıyla iletilmiştir.
-            </p>
-        </div>
+            <div>
+                <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-200 inline-block mb-2">
+                    Ödeme Başarılı • Stripe Korumalı
+                </span>
+                <h1 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+                    Rezervasyonunuz Onaylandı!
+                </h1>
+                <p class="text-xs md:text-sm text-slate-500 mt-2 max-w-md mx-auto">
+                    Kredi kartı ödemeniz tahsil edilmiş olup, rezervasyon kaydınız Istanbul Welcome Card sistemine başarıyla iletilmiştir.
+                </p>
+            </div>
+        @else
+            <!-- Warning / Pending Icon -->
+            <div class="w-20 h-20 mx-auto rounded-3xl bg-amber-50 text-amber-600 flex items-center justify-center text-3xl border-2 border-amber-200 shadow-sm">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+
+            <div>
+                <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200 inline-block mb-2">
+                    Ödeme Alındı • IWC İletim Bekleniyor
+                </span>
+                <h1 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+                    Ödemeniz Tahsil Edildi
+                </h1>
+                <p class="text-xs md:text-sm text-slate-500 mt-2 max-w-md mx-auto">
+                    Ödemeniz Stripe üzerinden başarıyla tamamlanmıştır. Ancak Istanbul Welcome Card sağlayıcı sistemine rezervasyon aktarımı sırasında bir yanıt beklenmektedir veya sağlayıcı onayı gerekmektedir.
+                </p>
+
+                @if($order->error_message)
+                    <div class="mt-3 p-3 bg-rose-50 border border-rose-200 rounded-xl text-rose-800 text-xs font-mono max-w-md mx-auto text-left">
+                        <i class="fa-solid fa-circle-exclamation mr-1 text-rose-600"></i>
+                        <span>Sağlayıcı Yanıtı: {{ $order->error_message }}</span>
+                    </div>
+                @endif
+            </div>
+        @endif
 
         <!-- Reservation Details Summary Card -->
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-left space-y-3.5 text-xs">
@@ -29,20 +55,33 @@
                 <span class="font-mono font-black text-slate-900">{{ $order->order_no }}</span>
             </div>
 
-            @if($order->iwc_order_id)
-                <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-                    <span class="text-slate-500 font-semibold">IWC Rezervasyon No:</span>
-                    <span class="font-mono font-black text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">#{{ $order->iwc_order_id }}</span>
-                </div>
-            @endif
+            <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+                <span class="text-slate-500 font-semibold">IWC Sistem Durumu:</span>
+                @if($order->iwc_order_id)
+                    <span class="font-mono font-black text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+                        IWC #{{ $order->iwc_order_id }} ({{ ucfirst($order->iwc_order_status ?? 'Onaylı') }})
+                    </span>
+                @else
+                    <span class="font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+                        Beklemede / Sağlayıcı Yanıtı Bekleniyor
+                    </span>
+                @endif
+            </div>
 
             <div class="flex items-center justify-between pb-3 border-b border-slate-200">
                 <span class="text-slate-500 font-semibold">Tur / Deneyim:</span>
                 <span class="font-bold text-slate-800 text-right">{{ $order->product_name }}</span>
             </div>
 
+            @if($order->variant_label)
+                <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+                    <span class="text-slate-500 font-semibold">Paket / Seçenek:</span>
+                    <span class="font-semibold text-slate-700">{{ $order->variant_label }}</span>
+                </div>
+            @endif
+
             <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-                <span class="text-slate-500 font-semibold">Etkinlik Tarihi & Saati:</span>
+                <span class="text-slate-500 font-semibold">Etkinlik Tarihi:</span>
                 <span class="font-extrabold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">{{ $order->service_date }}</span>
             </div>
 
@@ -59,6 +98,16 @@
 
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            @if(!$order->iwc_order_id)
+                <form action="{{ route('customer.iwc.orders.retry-iwc', $order->id) }}" method="POST" class="w-full sm:w-auto">
+                    @csrf
+                    <button type="submit" class="w-full sm:w-auto px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs rounded-xl transition shadow-md flex items-center justify-center gap-2 active:scale-95">
+                        <i class="fa-solid fa-rotate-right text-xs"></i>
+                        <span>IWC'ye Yeniden İlet</span>
+                    </button>
+                </form>
+            @endif
+
             <a href="{{ route('customer.iwc.orders') }}" class="w-full sm:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-extrabold text-xs rounded-xl transition shadow-md flex items-center justify-center gap-2 active:scale-95">
                 <i class="fa-solid fa-ticket text-xs"></i>
                 <span>Satın Alınan Turlarıma Git</span>

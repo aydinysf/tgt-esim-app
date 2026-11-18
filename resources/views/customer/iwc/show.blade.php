@@ -29,15 +29,28 @@
     @endif
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Left Column: Product Details & Content Tabs (8 cols) -->
+        <!-- Left Column: Product Details & Content Tabs (7 cols) -->
         <div class="lg:col-span-7 space-y-6">
             <!-- Main Hero Card -->
             <div class="glass-card rounded-2xl p-6 md:p-8 bg-white border border-slate-200 space-y-5">
-                <div class="flex items-center gap-2.5">
+                <div class="flex flex-wrap items-center gap-2.5">
                     <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1.5">
                         <i class="fa-solid fa-landmark text-[10px]"></i>
                         <span>{{ ucfirst($product->type ?: 'Tur & Deneyim') }}</span>
                     </span>
+
+                    @if(($availabilityType ?? $product->availability_type) === 'time_period')
+                        <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-blue-50 text-blue-700 border border-blue-200 flex items-center gap-1.5">
+                            <i class="fa-solid fa-calendar-day text-[10px]"></i>
+                            <span>Gün Boyu Geçerli (Time Period)</span>
+                        </span>
+                    @else
+                        <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock text-[10px]"></i>
+                            <span>Sabit Saat Slotlu (Time Point)</span>
+                        </span>
+                    @endif
+
                     <span class="text-xs font-mono text-slate-400">Ürün ID: #{{ $product->id }}</span>
                 </div>
 
@@ -102,7 +115,10 @@
                 <form action="{{ route('customer.iwc.checkout') }}" method="POST" id="bookingForm" class="space-y-4">
                     @csrf
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
-                    <input type="hidden" name="service_time" id="selectedServiceTime" value="19:00">
+                    <input type="hidden" name="availability_type" id="productAvailabilityType" value="{{ $availabilityType ?? $product->availability_type ?? 'time_point' }}">
+
+                    <!-- Hidden service_time: for time_period defaults to 00:00, for time_point filled on slot select -->
+                    <input type="hidden" name="service_time" id="selectedServiceTime" value="{{ ($availabilityType ?? $product->availability_type) === 'time_period' ? '00:00' : '' }}">
 
                     <!-- Step 1: Select Variant / Package Type -->
                     <div>
@@ -138,36 +154,39 @@
                         <div class="relative">
                             <input type="date" name="service_date" id="serviceDateInput" min="{{ date('Y-m-d') }}" value="{{ date('Y-m-d', strtotime('+1 day')) }}"
                                 class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition"
-                                onchange="fetchSlotsForDate(this.value)" required>
+                                onchange="onDateChanged(this.value)" required>
                         </div>
                     </div>
 
-                    <!-- Step 3: Available Time Slots -->
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 mb-1.5 flex items-center justify-between">
-                            <span>3. Saat Slotu <span class="text-red-500">*</span></span>
-                            <span id="slotLoadingText" class="text-[10px] text-amber-600 font-semibold hidden">
-                                <i class="fa-solid fa-spinner fa-spin mr-1"></i> Slotlar güncelleniyor...
-                            </span>
-                        </label>
-                        <div id="slotsContainer" class="grid grid-cols-3 gap-2">
-                            <!-- Dynamic or default buttons -->
-                            <button type="button" class="slot-btn px-2.5 py-2 rounded-xl border border-amber-500 bg-amber-50 text-amber-800 font-bold text-xs text-center transition" onclick="selectSlot(this, '19:00')">
-                                19:00
-                            </button>
-                            <button type="button" class="slot-btn px-2.5 py-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs text-center hover:border-amber-400 transition" onclick="selectSlot(this, '19:30')">
-                                19:30
-                            </button>
-                            <button type="button" class="slot-btn px-2.5 py-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs text-center hover:border-amber-400 transition" onclick="selectSlot(this, '20:00')">
-                                20:00
-                            </button>
+                    <!-- Step 3: Available Time Slots (ONLY for time_point) -->
+                    @if(($availabilityType ?? $product->availability_type) === 'time_period')
+                        <div class="p-3.5 rounded-xl bg-blue-50/70 border border-blue-200 flex items-start gap-2.5 text-xs text-blue-900">
+                            <i class="fa-solid fa-circle-check text-blue-600 mt-0.5 text-sm"></i>
+                            <div>
+                                <span class="font-extrabold block text-blue-950">Gün Boyu Geçerli Paket</span>
+                                <span class="text-blue-800/90 text-[11px] leading-relaxed">Bu kart/bilet seçilen tarih boyunca geçerlidir, belirli bir saat slotu seçmenize gerek yoktur.</span>
+                            </div>
                         </div>
-                    </div>
+                    @else
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5 flex items-center justify-between">
+                                <span>3. Saat Slotu Seçimi <span class="text-red-500">*</span></span>
+                                <span id="slotLoadingText" class="text-[10px] text-amber-600 font-semibold hidden">
+                                    <i class="fa-solid fa-spinner fa-spin mr-1"></i> Slotlar güncelleniyor...
+                                </span>
+                            </label>
+                            <div id="slotsContainer" class="grid grid-cols-3 gap-2">
+                                <div class="col-span-3 text-center py-3 text-xs text-slate-400 italic">
+                                    Slotlar yükleniyor...
+                                </div>
+                            </div>
+                        </div>
+                    @endif
 
                     <!-- Step 4: Number of Guests (Quantity) -->
                     <div>
                         <label class="block text-xs font-bold text-slate-700 mb-1.5">
-                            4. Kişi Sayısı (Katılımcı) <span class="text-red-500">*</span>
+                            {{ ($availabilityType ?? $product->availability_type) === 'time_period' ? '3' : '4' }}. Kişi Sayısı (Katılımcı) <span class="text-red-500">*</span>
                         </label>
                         <div class="flex items-center gap-3">
                             <button type="button" onclick="adjustQty(-1)" class="w-10 h-10 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold hover:bg-slate-100 transition active:scale-95 flex items-center justify-center">
@@ -182,9 +201,60 @@
                         </div>
                     </div>
 
-                    <!-- Step 5: Contact Information -->
+                    <!-- Step 5: Dynamic Required Order Data (If requested by IWC) -->
+                    @php $reqFields = $requiredOrderData ?? $product->required_order_data ?? []; @endphp
+                    @if(!empty($reqFields))
+                        <div class="pt-3 border-t border-slate-100 space-y-3">
+                            <div class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                                <i class="fa-solid fa-list-check text-amber-600"></i>
+                                <span>Deneyim İçin Gerekli Ek Bilgiler</span>
+                            </div>
+
+                            @foreach($reqFields as $field)
+                                @php
+                                    $fieldKey = $field['key'] ?? '';
+                                    $fieldLabel = $field['label'] ?? ucfirst(str_replace('_', ' ', $fieldKey));
+                                    $fieldType = $field['type'] ?? 'text';
+                                    $isRequired = !empty($field['required']);
+                                    $options = $field['options'] ?? [];
+                                @endphp
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-700 mb-1">
+                                        {{ $fieldLabel }} @if($isRequired)<span class="text-red-500">*</span>@endif
+                                    </label>
+
+                                    @if($fieldType === 'select' && !empty($options))
+                                        <select name="required_data[{{ $fieldKey }}]" {{ $isRequired ? 'required' : '' }}
+                                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                                            <option value="">Seçiniz...</option>
+                                            @foreach($options as $opt)
+                                                <option value="{{ $opt }}">{{ $opt }}</option>
+                                            @endforeach
+                                        </select>
+                                    @elseif($fieldType === 'textarea')
+                                        <textarea name="required_data[{{ $fieldKey }}]" rows="2" {{ $isRequired ? 'required' : '' }}
+                                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500"></textarea>
+                                    @elseif($fieldType === 'date')
+                                        <input type="date" name="required_data[{{ $fieldKey }}]" {{ $isRequired ? 'required' : '' }}
+                                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                                    @elseif($fieldType === 'time')
+                                        <input type="time" name="required_data[{{ $fieldKey }}]" {{ $isRequired ? 'required' : '' }}
+                                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                                    @elseif($fieldType === 'number')
+                                        <input type="number" name="required_data[{{ $fieldKey }}]" {{ $isRequired ? 'required' : '' }}
+                                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                                    @else
+                                        <input type="text" name="required_data[{{ $fieldKey }}]" placeholder="{{ $fieldLabel }}" {{ $isRequired ? 'required' : '' }}
+                                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                                    @endif
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
+
+                    <!-- Step 6: Contact Information -->
                     <div class="pt-3 border-t border-slate-100 space-y-3">
-                        <div class="text-xs font-bold text-slate-700">5. Katılımcı Bilgileri</div>
+                        <div class="text-xs font-bold text-slate-700">İletişim & Rezervasyon Sahibi</div>
                         <div class="grid grid-cols-2 gap-2.5">
                             <input type="text" name="customer_first_name" placeholder="Adınız *" value="{{ Auth::user()->name }}" required
                                 class="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
@@ -195,8 +265,11 @@
                             class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
                         <input type="tel" name="customer_phone" placeholder="Telefon Numarası (Örn: +905321234567) *" required
                             class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
-                        <input type="text" name="hotel_name" placeholder="Alınacağınız Otel / Konum (Opsiyonel)"
-                            class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                        
+                        @if(empty($reqFields) || !collect($reqFields)->contains('key', 'hotel_name'))
+                            <input type="text" name="hotel_name" placeholder="Konaklayacağınız Otel Adı (Opsiyonel)"
+                                class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 focus:outline-none focus:border-amber-500">
+                        @endif
                     </div>
 
                     <!-- Total Amount Summary Box -->
@@ -242,6 +315,7 @@
 
 @push('scripts')
 <script>
+    const isTimePeriod = "{{ ($availabilityType ?? $product->availability_type) === 'time_period' ? '1' : '0' }}" === '1';
     let currentUnitPrice = {{ (float) $product->price }};
 
     function adjustQty(amount) {
@@ -277,28 +351,42 @@
         btn.className = 'slot-btn px-2.5 py-2 rounded-xl border border-amber-500 bg-amber-50 text-amber-800 font-bold text-xs text-center transition';
     }
 
+    function onDateChanged(date) {
+        if (!isTimePeriod) {
+            fetchSlotsForDate(date);
+        }
+    }
+
     function fetchSlotsForDate(date) {
         const loading = document.getElementById('slotLoadingText');
         const container = document.getElementById('slotsContainer');
-        loading.classList.remove('hidden');
+        if (!container) return;
+
+        if (loading) loading.classList.remove('hidden');
 
         fetch(`{{ route('customer.iwc.availability', $product->id) }}?date=${date}`)
             .then(res => res.json())
             .then(data => {
-                loading.classList.add('hidden');
+                if (loading) loading.classList.add('hidden');
                 if (data.status && data.slots && data.slots.length > 0) {
                     container.innerHTML = '';
+                    let firstSelected = false;
+
                     data.slots.forEach((slot, index) => {
                         const time = slot.start_time;
-                        const isFirst = index === 0;
-                        if (isFirst) {
-                            document.getElementById('selectedServiceTime').value = time;
-                        }
                         const isFull = slot.status === 'full' || slot.available === 0;
+
+                        if (!firstSelected && !isFull) {
+                            document.getElementById('selectedServiceTime').value = time;
+                            firstSelected = true;
+                        }
+
                         const disabledAttr = isFull ? 'disabled' : '';
+                        const isCurrent = document.getElementById('selectedServiceTime').value === time;
+
                         const btnClass = isFull 
                             ? 'slot-btn opacity-40 cursor-not-allowed px-2.5 py-2 rounded-xl border border-slate-200 bg-slate-100 text-slate-400 font-semibold text-xs text-center'
-                            : (isFirst 
+                            : (isCurrent 
                                 ? 'slot-btn px-2.5 py-2 rounded-xl border border-amber-500 bg-amber-50 text-amber-800 font-bold text-xs text-center transition'
                                 : 'slot-btn px-2.5 py-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs text-center hover:border-amber-400 transition');
 
@@ -308,16 +396,29 @@
                             </button>
                         `;
                     });
+
+                    if (!firstSelected) {
+                        container.innerHTML = '<div class="col-span-3 text-center py-2 text-xs text-red-500 font-semibold">Bu tarihte uygun saat slotu bulunmamaktadır.</div>';
+                    }
+                } else {
+                    container.innerHTML = '<div class="col-span-3 text-center py-2 text-xs text-slate-400">Bu tarihte uygun slot bulunamadı.</div>';
                 }
             })
             .catch(() => {
-                loading.classList.add('hidden');
+                if (loading) loading.classList.add('hidden');
+                container.innerHTML = '<div class="col-span-3 text-center py-2 text-xs text-slate-400">Slotlar yüklenemedi.</div>';
             });
     }
 
     // Initial calculation on page load
     document.addEventListener('DOMContentLoaded', function() {
         calculateTotal();
+        if (!isTimePeriod) {
+            const dateInput = document.getElementById('serviceDateInput');
+            if (dateInput && dateInput.value) {
+                fetchSlotsForDate(dateInput.value);
+            }
+        }
     });
 </script>
 @endpush

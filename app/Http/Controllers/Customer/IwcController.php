@@ -99,7 +99,10 @@ class IwcController extends Controller
             $variants = $liveData['variants'];
         }
 
-        return view('customer.iwc.show', compact('product', 'variants', 'effectiveCustomer', 'liveData'));
+        $availabilityType = $liveData['availability_type'] ?? $product->availability_type ?? 'time_point';
+        $requiredOrderData = $liveData['required_order_data'] ?? $product->required_order_data ?? [];
+
+        return view('customer.iwc.show', compact('product', 'variants', 'effectiveCustomer', 'liveData', 'availabilityType', 'requiredOrderData'));
     }
 
     /**
@@ -112,6 +115,27 @@ class IwcController extends Controller
             return response()->json(['status' => false, 'message' => 'Tarih belirtilmedi.'], 400);
         }
 
+        $product = IwcProduct::findOrFail($id);
+        $availabilityType = $product->availability_type ?? 'time_point';
+
+        // For time_period products, specific hourly slots are not required (whole day valid)
+        if ($availabilityType === 'time_period') {
+            return response()->json([
+                'status' => true,
+                'availability_type' => 'time_period',
+                'date' => $date,
+                'slots' => [
+                    [
+                        'start_time' => '00:00',
+                        'end_time' => '23:55',
+                        'available' => 100,
+                        'status' => 'available',
+                        'type' => 'time_period'
+                    ]
+                ]
+            ]);
+        }
+
         $slots = [];
 
         if ($iwcService->isConfigured()) {
@@ -121,23 +145,22 @@ class IwcController extends Controller
             }
         }
 
-        // If no slots returned from live API, check product raw_data fallback or generate available slots
+        // If no slots returned from live API, check product raw_data fallback
         if (empty($slots)) {
-            $product = IwcProduct::find($id);
-            if ($product && !empty($product->raw_data['availabilities'][$date])) {
+            if (!empty($product->raw_data['availabilities'][$date])) {
                 $slots = $product->raw_data['availabilities'][$date];
             } else {
-                // Default daylight/evening sample slots for demonstration
                 $slots = [
-                    ['start_time' => '10:00', 'end_time' => '10:00', 'available' => 10, 'status' => 'available'],
-                    ['start_time' => '14:00', 'end_time' => '14:00', 'available' => 8, 'status' => 'available'],
-                    ['start_time' => '19:00', 'end_time' => '19:00', 'available' => 12, 'status' => 'available'],
+                    ['start_time' => '10:00', 'end_time' => '10:00', 'available' => 10, 'status' => 'available', 'type' => 'time_point'],
+                    ['start_time' => '14:00', 'end_time' => '14:00', 'available' => 8, 'status' => 'available', 'type' => 'time_point'],
+                    ['start_time' => '19:00', 'end_time' => '19:00', 'available' => 12, 'status' => 'available', 'type' => 'time_point'],
                 ];
             }
         }
 
         return response()->json([
             'status' => true,
+            'availability_type' => 'time_point',
             'date' => $date,
             'slots' => $slots
         ]);
@@ -151,20 +174,27 @@ class IwcController extends Controller
         $user = Auth::user();
         $effectiveCustomer = $user->getEffectiveCustomer();
 
-        $validated = $request->validate([
+        $product = IwcProduct::findOrFail($request->input('product_id'));
+        $availabilityType = $product->availability_type ?? 'time_point';
+
+        $rules = [
             'product_id' => 'required|exists:iwc_products,id',
             'product_variant_id' => 'required',
             'service_date' => 'required|date',
-            'service_time' => 'required|string',
             'quantity' => 'required|integer|min:1|max:50',
             'customer_first_name' => 'required|string|max:100',
             'customer_last_name' => 'required|string|max:100',
             'customer_email' => 'required|email|max:150',
             'customer_phone' => 'required|string|max:30',
-            'hotel_name' => 'nullable|string|max:200',
-        ]);
+        ];
 
-        $product = IwcProduct::findOrFail($validated['product_id']);
+        if ($availabilityType === 'time_point') {
+            $rules['service_time'] = 'required|string';
+        } else {
+            $rules['service_time'] = 'nullable|string';
+        }
+
+        $validated = $request->validate($rules);
 
         // Find selected variant price & label
         $variantLabel = 'Standart Katılım';
@@ -182,13 +212,47 @@ class IwcController extends Controller
 
         $totalAmount = $unitPrice * $validated['quantity'];
         $orderNo = 'IWC-' . date('Ymd') . '-' . strtoupper(Str::random(6));
-        $fullServiceDate = $validated['service_date'] . ' ' . $validated['service_time'];
 
-        $requiredData = [];
-        if (!empty($validated['hotel_name'])) {
-            $requiredData[] = [
+        // Format service_date depending on availability type
+        $serviceTime = !empty($validated['service_time']) ? trim($validated['service_time']) : '00:00';
+        $fullServiceDate = $validated['service_date'] . ' ' . $serviceTime;
+
+        // Process dynamic required_order_data
+        $requiredDataInput = $request->input('required_data', []);
+        $requiredDataPayload = [];
+        $hotelName = null;
+
+        if (!empty($product->required_order_data) && is_array($product->required_order_data)) {
+            foreach ($product->required_order_data as $field) {
+                $key = $field['key'] ?? null;
+                if (!$key) continue;
+
+                $val = $requiredDataInput[$key] ?? $request->input($key);
+
+                if (!empty($field['required']) && (is_null($val) || $val === '')) {
+                    $fieldLabel = $field['label'] ?? $key;
+                    return back()->with('error', "{$fieldLabel} alanı zorunludur.")->withInput();
+                }
+
+                if ($val !== null && $val !== '') {
+                    $requiredDataPayload[] = [
+                        'key' => $key,
+                        'value' => (string) $val
+                    ];
+
+                    if ($key === 'hotel_name') {
+                        $hotelName = (string) $val;
+                    }
+                }
+            }
+        }
+
+        // Check fallback direct hotel_name input if provided
+        if (!$hotelName && $request->filled('hotel_name')) {
+            $hotelName = $request->input('hotel_name');
+            $requiredDataPayload[] = [
                 'key' => 'hotel_name',
-                'value' => $validated['hotel_name']
+                'value' => $hotelName
             ];
         }
 
@@ -212,8 +276,8 @@ class IwcController extends Controller
             'customer_last_name' => $validated['customer_last_name'],
             'customer_email' => $validated['customer_email'],
             'customer_phone' => $validated['customer_phone'],
-            'hotel_name' => $validated['hotel_name'] ?? null,
-            'required_data' => $requiredData,
+            'hotel_name' => $hotelName,
+            'required_data' => $requiredDataPayload,
             'total_amount' => $totalAmount,
             'currency' => $product->currency ?: 'EUR',
             'payment_method' => 'stripe',
@@ -244,7 +308,7 @@ class IwcController extends Controller
         return redirect()->route('customer.iwc.stripe.success', [
             'orderNo' => $order->order_no,
             'simulated' => 1
-        ])->with('info', 'Stripe API anahtarı girilmediği için test modunda ödeme simüle edildi.');
+        ])->with('info', 'Stripe API anahtarı tanımlanmadığı için test modunda ödeme simüle edildi.');
     }
 
     /**
@@ -268,51 +332,93 @@ class IwcController extends Controller
 
         // If payment is confirmed and not yet pushed to IWC, push to IWC API
         if ($order->isPaid() && empty($order->iwc_order_id)) {
-            if ($iwcService->isConfigured()) {
-                $payload = [
-                    'product_id' => (int) $order->iwc_product_id,
-                    'first_name' => $order->customer_first_name,
-                    'last_name' => $order->customer_last_name,
-                    'phone_number' => $order->customer_phone,
-                    'email' => $order->customer_email,
-                    'service_date' => $order->service_date,
-                    'language' => 'en',
-                    'external_reference' => $order->order_no,
-                    'required_data' => $order->required_data ?? [],
-                    'variants' => [
-                        [
-                            'product_variant_id' => (int) $order->product_variant_id,
-                            'quantity' => (int) $order->quantity,
-                        ]
-                    ],
-                    'send_email' => false,
-                ];
-
-                $iwcResult = $iwcService->createOrder($payload);
-
-                if (!empty($iwcResult['status']) && !empty($iwcResult['data']['id'])) {
-                    $order->update([
-                        'iwc_order_id' => $iwcResult['data']['id'],
-                        'iwc_order_status' => $iwcResult['data']['status'] ?? 'processing',
-                        'iwc_response_data' => $iwcResult['data'],
-                    ]);
-                } else {
-                    $order->update([
-                        'iwc_order_status' => 'pending_review',
-                        'error_message' => $iwcResult['message'] ?? 'IWC sipariş kaydı beklemede.',
-                    ]);
-                }
-            } else {
-                // Mock IWC Order ID for test mode
-                $order->update([
-                    'iwc_order_id' => rand(150000, 199999),
-                    'iwc_order_status' => 'processing',
-                    'iwc_response_data' => ['simulated' => true],
-                ]);
-            }
+            $this->pushOrderToIwc($order, $iwcService);
         }
 
         return view('customer.iwc.success', compact('order'));
+    }
+
+    /**
+     * Manually retry transmitting a paid order to IWC API
+     */
+    public function retryIwc($id, IwcService $iwcService)
+    {
+        $user = Auth::user();
+        $effectiveCustomer = $user->getEffectiveCustomer();
+
+        $order = IwcOrder::where('user_id', $effectiveCustomer->id)->findOrFail($id);
+
+        if (!$order->isPaid()) {
+            return back()->with('error', 'Ödemesi tamamlanmamış siparişler IWC sistemine iletilemez.');
+        }
+
+        if (!empty($order->iwc_order_id)) {
+            return back()->with('info', "Bu sipariş zaten IWC sisteminde kayıtlı (#{$order->iwc_order_id}).");
+        }
+
+        $res = $this->pushOrderToIwc($order, $iwcService);
+
+        if (!empty($res['success'])) {
+            return back()->with('success', "Sipariş IWC sistemine başarıyla iletildi (IWC No: #{$order->iwc_order_id}).");
+        }
+
+        return back()->with('error', 'IWC iletim hatası: ' . ($order->error_message ?? 'Bilinmeyen hata'));
+    }
+
+    /**
+     * Internal helper to transmit an order to IWC API
+     */
+    protected function pushOrderToIwc(IwcOrder $order, IwcService $iwcService): array
+    {
+        if (!$iwcService->isConfigured()) {
+            $order->update([
+                'iwc_order_status' => 'unconfigured',
+                'error_message' => 'IWC API kimlik bilgileri sunucu ortamında (.env) henüz tanımlanmamış.',
+            ]);
+            return ['success' => false, 'message' => 'IWC API kimlik bilgileri eksik.'];
+        }
+
+        $payload = [
+            'product_id' => (int) $order->iwc_product_id,
+            'first_name' => $order->customer_first_name,
+            'last_name' => $order->customer_last_name,
+            'phone_number' => $order->customer_phone,
+            'email' => $order->customer_email,
+            'service_date' => $order->service_date,
+            'language' => 'en',
+            'external_reference' => $order->order_no,
+            'required_data' => $order->required_data ?? [],
+            'variants' => [
+                [
+                    'product_variant_id' => (int) $order->product_variant_id,
+                    'quantity' => (int) $order->quantity,
+                ]
+            ],
+            'send_email' => false,
+        ];
+
+        Log::info("IWC API createOrder dispatch for {$order->order_no}", $payload);
+        $iwcResult = $iwcService->createOrder($payload);
+        Log::info("IWC API createOrder response for {$order->order_no}", (array) $iwcResult);
+
+        if (!empty($iwcResult['status']) && !empty($iwcResult['data']['id'])) {
+            $order->update([
+                'iwc_order_id' => $iwcResult['data']['id'],
+                'iwc_order_status' => $iwcResult['data']['status'] ?? 'processing',
+                'iwc_response_data' => $iwcResult['data'],
+                'error_message' => null,
+            ]);
+            return ['success' => true, 'iwc_order_id' => $iwcResult['data']['id']];
+        }
+
+        $errMsg = $iwcResult['message'] ?? 'IWC API sipariş kaydı oluşturulamadı.';
+        $order->update([
+            'iwc_order_status' => 'failed',
+            'error_message' => $errMsg,
+            'iwc_response_data' => $iwcResult,
+        ]);
+
+        return ['success' => false, 'message' => $errMsg];
     }
 
     /**

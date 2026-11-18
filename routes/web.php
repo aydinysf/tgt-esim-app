@@ -78,6 +78,7 @@ Route::middleware(['auth'])->prefix('customer')->name('customer.')->group(functi
         Route::get('/', [IwcController::class, 'index'])->name('index');
         Route::post('/sync', [IwcController::class, 'sync'])->name('sync');
         Route::get('/orders', [IwcController::class, 'orders'])->name('orders');
+        Route::post('/orders/{id}/retry-iwc', [IwcController::class, 'retryIwc'])->name('orders.retry-iwc');
         Route::get('/orders/{id}/detail', [IwcController::class, 'orderDetail'])->name('orders.detail');
         Route::get('/{id}', [IwcController::class, 'show'])->name('show');
         Route::get('/{id}/availability', [IwcController::class, 'getAvailability'])->name('availability');

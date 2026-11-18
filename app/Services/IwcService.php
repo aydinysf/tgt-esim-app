@@ -125,10 +125,14 @@ class IwcService
             }
 
             Log::error('IWC API createOrder failed: ' . $response->body());
+            $errorMsg = $response->json('message') ?? 'IWC sipariş oluşturulamadı (' . $response->status() . ')';
             return [
                 'status' => false,
-                'message' => $response->json('message') ?? 'IWC sipariş oluşturulamadı (' . $response->status() . ')',
-                'data' => $response->json('data') ?? null
+                'message' => $errorMsg,
+                'data' => $response->json('data') ?? null,
+                'errors' => $response->json('errors') ?? null,
+                'status_code' => $response->status(),
+                'raw_body' => $response->body(),
             ];
         } catch (\Throwable $e) {
             Log::error('IWC API createOrder exception: ' . $e->getMessage());

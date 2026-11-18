@@ -24,6 +24,27 @@
         </div>
     </div>
 
+    @if(session('success'))
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold flex items-center gap-2 shadow-sm">
+            <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+            <span>{{ session('success') }}</span>
+        </div>
+    @endif
+
+    @if(session('error'))
+        <div class="p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs font-semibold flex items-center gap-2 shadow-sm">
+            <i class="fa-solid fa-circle-exclamation text-red-600 text-base"></i>
+            <span>{{ session('error') }}</span>
+        </div>
+    @endif
+
+    @if(session('info'))
+        <div class="p-4 rounded-xl bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold flex items-center gap-2 shadow-sm">
+            <i class="fa-solid fa-circle-info text-blue-600 text-base"></i>
+            <span>{{ session('info') }}</span>
+        </div>
+    @endif
+
     <!-- Search & Filter Toolbar -->
     <div class="glass-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
         <form method="GET" action="{{ route('customer.iwc.orders') }}" class="relative w-full md:w-96" data-no-loader>
@@ -116,6 +137,16 @@
                                         <i class="fa-solid fa-circle-check text-blue-600"></i>
                                         <span>IWC #{{ $order->iwc_order_id }} ({{ ucfirst($order->iwc_order_status ?? 'Onaylı') }})</span>
                                     </span>
+                                @elseif($order->iwc_order_status === 'failed' || $order->error_message)
+                                    <div>
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-50 text-rose-700 border border-rose-200 inline-flex items-center gap-1">
+                                            <i class="fa-solid fa-triangle-exclamation text-rose-600"></i>
+                                            <span>IWC İletim Bekleniyor</span>
+                                        </span>
+                                        <span class="text-[9px] text-slate-400 block mt-0.5 truncate max-w-[170px]" title="{{ $order->error_message }}">
+                                            {{ Str::limit($order->error_message, 25) }}
+                                        </span>
+                                    </div>
                                 @else
                                     <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-slate-100 text-slate-600 border border-slate-200 inline-flex items-center gap-1">
                                         <i class="fa-solid fa-spinner fa-spin text-[10px]"></i>
@@ -124,7 +155,18 @@
                                 @endif
                             </td>
 
-                            <td class="p-4 text-center whitespace-nowrap">
+                            <td class="p-4 text-center whitespace-nowrap space-x-1.5">
+                                @if(!$order->iwc_order_id && $order->isPaid())
+                                    <form action="{{ route('customer.iwc.orders.retry-iwc', $order->id) }}" method="POST" class="inline-block" data-no-loader>
+                                        @csrf
+                                        <button type="submit" title="IWC Sistemine Yeniden Gönder"
+                                            class="px-2.5 py-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-[11px] rounded-lg transition border border-indigo-200 inline-flex items-center gap-1 active:scale-95">
+                                            <i class="fa-solid fa-rotate-right text-[10px]"></i>
+                                            <span>IWC'ye Gönder</span>
+                                        </button>
+                                    </form>
+                                @endif
+
                                 <button type="button" onclick="openVoucherModal({{ json_encode($order) }})"
                                     class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-[11px] rounded-lg transition border border-slate-200 inline-flex items-center gap-1.5 active:scale-95">
                                     <i class="fa-solid fa-file-invoice text-amber-600"></i>
