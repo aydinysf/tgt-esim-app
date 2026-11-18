@@ -39,6 +39,7 @@ return [
         'base_url' => env('IWC_BASE_URL', 'https://partners-api.istanbulwelcomecard.com'),
         'profile_id' => env('IWC_PROFILE_ID', ''),
         'access_key' => env('IWC_ACCESS_KEY', ''),
+        'payment_owner' => env('IWC_PAYMENT_OWNER', 'polosim'),
     ],
 
     'stripe' => [

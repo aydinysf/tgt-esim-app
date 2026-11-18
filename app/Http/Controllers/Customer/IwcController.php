@@ -395,6 +395,9 @@ class IwcController extends Controller
                 ]
             ],
             'send_email' => false,
+            'payment_owner' => config('services.iwc.payment_owner', 'polosim'),
+            'payment_gateway' => $order->payment_method === 'paypal' ? 'paypal' : 'stripe',
+            'payment_id' => $order->stripe_payment_intent_id ?: ($order->stripe_session_id ?: 'pi_' . Str::random(16)),
         ];
 
         Log::info("IWC API createOrder dispatch for {$order->order_no}", $payload);
